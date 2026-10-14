@@ -1,0 +1,233 @@
+{
+  "source_kind": "ordinary Python byte inspection (not REA evidence)",
+  "layout_status": "Prefix and block offsets confirmed by REA file writer/loader and map-transfer/allocator code.",
+  "records": [
+    {
+      "relative_source": "maps/planet.MP",
+      "source_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/maps/planet.MP",
+      "source_size": 143667,
+      "source_sha256": "24b1a6b018f0aaddde0ecc5712cc302359c872228b0342f0f30b9004670cdb30",
+      "first_15_bytes_hex": "54455252414e4d4150001a05000000",
+      "observed_version_at_11": 5,
+      "observed_width_at_15": 80,
+      "observed_height_at_19": 80,
+      "stored_tile_count_at_35": 3200,
+      "tile_bytes_sha256": "12172ff922b894b1d5c557a2d7cacd6ff279686ca493e8f55515d01d895349c7",
+      "tile_bytes_length": 140800,
+      "secondary_bytes_length": 128,
+      "samples": [
+        {
+          "index": 0,
+          "file_offset": 2739,
+          "hex": "603c0f3f000000ff20000000000040ff00000000000000000000000000000000000000000000000000000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 1,
+          "file_offset": 2783,
+          "hex": "603c0f3f000000ff20000000000040ff00000000000000000000000000000000000000000000000000000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 20,
+          "file_offset": 3619,
+          "hex": "603c0f3f000000ff20000000000040ff00000000000000000000000000000000000000000000000000000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 1600,
+          "file_offset": 73139,
+          "hex": "32151f41000080ff00001000000040ff00001000000010000000100000001000000010000000100000001000",
+          "flags": 1048576,
+          "faction_nibble": 15
+        },
+        {
+          "index": 3199,
+          "file_offset": 143495,
+          "hex": "40390f7f000080ff20000000000040ff00000000000000000000000000000000000000000000000000000000",
+          "flags": 32,
+          "faction_nibble": 15
+        }
+      ],
+      "verified_header_size": 2724,
+      "verified_tile_offset": 2739,
+      "imported_path": "public/game-data/maps/planet.MP",
+      "imported_sha256": "24b1a6b018f0aaddde0ecc5712cc302359c872228b0342f0f30b9004670cdb30"
+    },
+    {
+      "relative_source": "maps/planetx.MP",
+      "source_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/maps/planetx.MP",
+      "source_size": 363525,
+      "source_sha256": "81e96fbe71c7be0b829e014bb66a15e033052e9c86d0e9b01c93aab10fc2614c",
+      "first_15_bytes_hex": "54455252414e4d4150001a05000000",
+      "observed_version_at_11": 5,
+      "observed_width_at_15": 128,
+      "observed_height_at_19": 128,
+      "stored_tile_count_at_35": 8192,
+      "tile_bytes_sha256": "202fae0815f2af9db8eda865aaf9691131a4c365c75adc3e157b8167b453d77b",
+      "tile_bytes_length": 360448,
+      "secondary_bytes_length": 338,
+      "samples": [
+        {
+          "index": 0,
+          "file_offset": 2739,
+          "hex": "603c0f3f000000ff20000000800040ff20000000200000002000000020000000200000002000000020000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 1,
+          "file_offset": 2783,
+          "hex": "603c0f3f000000ff20000000800040ff20000000200000002000000020000000200000002000000020000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 32,
+          "file_offset": 4147,
+          "hex": "603c0f3f000000ff20000000800040ff20000000200000002000000020000000200000002000000020000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 4096,
+          "file_offset": 182963,
+          "hex": "32151f41000080ff00001000000040ff00001000000010000000100000001000000010000000100000001000",
+          "flags": 1048576,
+          "faction_nibble": 15
+        },
+        {
+          "index": 8191,
+          "file_offset": 363143,
+          "hex": "603c0f3f000000ff20000000800040ff20000000200000002000000020000000200000002000000020000000",
+          "flags": 32,
+          "faction_nibble": 15
+        }
+      ],
+      "verified_header_size": 2724,
+      "verified_tile_offset": 2739,
+      "imported_path": "public/game-data/maps/planetx.MP",
+      "imported_sha256": "81e96fbe71c7be0b829e014bb66a15e033052e9c86d0e9b01c93aab10fc2614c"
+    },
+    {
+      "relative_source": "maps/xplanet.MP",
+      "source_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/maps/xplanet.MP",
+      "source_size": 143667,
+      "source_sha256": "f9e99006281a88f33cfe1ae390eae8e6870e1baeb520947a0169d329e0ef50d6",
+      "first_15_bytes_hex": "54455252414e4d4150001a05000000",
+      "observed_version_at_11": 5,
+      "observed_width_at_15": 80,
+      "observed_height_at_19": 80,
+      "stored_tile_count_at_35": 3200,
+      "tile_bytes_sha256": "00ea60505389fca8cc64b4537a29c380e83fb7da25fcba11e0df9f3d502bf0f0",
+      "tile_bytes_length": 140800,
+      "secondary_bytes_length": 128,
+      "samples": [
+        {
+          "index": 0,
+          "file_offset": 2739,
+          "hex": "603c0f3f000000ff20000000000040ff00000000000000000000000000000000000000000000000000000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 1,
+          "file_offset": 2783,
+          "hex": "603c0f3f000000ff20000000000040ff00000000000000000000000000000000000000000000000000000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 20,
+          "file_offset": 3619,
+          "hex": "603c0f3f000000ff20000000000040ff00000000000000000000000000000000000000000000000000000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 1600,
+          "file_offset": 73139,
+          "hex": "32151f41000080ff00001000000040ff00001000000010000000100000001000000010000000100000001000",
+          "flags": 1048576,
+          "faction_nibble": 15
+        },
+        {
+          "index": 3199,
+          "file_offset": 143495,
+          "hex": "40390f7f000080ff20000000000040ff00000000000000000000000000000000000000000000000000000000",
+          "flags": 32,
+          "faction_nibble": 15
+        }
+      ],
+      "verified_header_size": 2724,
+      "verified_tile_offset": 2739,
+      "imported_path": "public/game-data/maps/xplanet.MP",
+      "imported_sha256": "f9e99006281a88f33cfe1ae390eae8e6870e1baeb520947a0169d329e0ef50d6"
+    },
+    {
+      "relative_source": "maps/xplanetx.MP",
+      "source_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/maps/xplanetx.MP",
+      "source_size": 363525,
+      "source_sha256": "f93deb3cc59aaf74a4d5efdda08358ce2c2a1a4e837c043a82afea59bce90023",
+      "first_15_bytes_hex": "54455252414e4d4150001a05000000",
+      "observed_version_at_11": 5,
+      "observed_width_at_15": 128,
+      "observed_height_at_19": 128,
+      "stored_tile_count_at_35": 8192,
+      "tile_bytes_sha256": "9350c0bfe82b2ca3f0186e74e3868b9472b56e733614fb6b4ab1e7b898209da9",
+      "tile_bytes_length": 360448,
+      "secondary_bytes_length": 338,
+      "samples": [
+        {
+          "index": 0,
+          "file_offset": 2739,
+          "hex": "603c0f3f000000ff20000000800040ff20000000200000002000000020000000200000002000000020000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 1,
+          "file_offset": 2783,
+          "hex": "603c0f3f000000ff20000000800040ff20000000200000002000000020000000200000002000000020000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 32,
+          "file_offset": 4147,
+          "hex": "603c0f3f000000ff20000000800040ff20000000200000002000000020000000200000002000000020000000",
+          "flags": 32,
+          "faction_nibble": 15
+        },
+        {
+          "index": 4096,
+          "file_offset": 182963,
+          "hex": "32151f41000080ff00001000000040ff00001000000010000000100000001000000010000000100000001000",
+          "flags": 1048576,
+          "faction_nibble": 15
+        },
+        {
+          "index": 8191,
+          "file_offset": 363143,
+          "hex": "603c0f3f000000ff20000000800040ff20000000200000002000000020000000200000002000000020000000",
+          "flags": 32,
+          "faction_nibble": 15
+        }
+      ],
+      "verified_header_size": 2724,
+      "verified_tile_offset": 2739,
+      "imported_path": "public/game-data/maps/xplanetx.MP",
+      "imported_sha256": "f93deb3cc59aaf74a4d5efdda08358ce2c2a1a4e837c043a82afea59bce90023"
+    }
+  ],
+  "code_evidence": [
+    "ev_5d88a3328ccd7912e75f84e141d4c6a64b707d41577b81ed9855acd35ef98404",
+    "ev_0e340fb7c87af1abb56f18b024df3b8eb1b8a88b6ed5397e7ee45d0df3bfdf44",
+    "ev_2a3ac535463d0b2f659333a31c9793ec6452a4a024c50dbc267daed68f12304c",
+    "ev_3908bc07c956a80709ee9c94aba81870adf7a2d472caf7ed20dc31a72bbfa899",
+    "ev_4d8afffb48cc79eadb4b5a8f846edd253779f08ba94d897c58912a25f55e442a"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "command": "sh analysis/runtime/jit/run-engine-test.sh 0 5 1",
+  "exitCode": 0,
+  "testEntries": 5,
+  "failed": 0,
+  "scope": [
+    "disjoint JIT ownership regression",
+    "DSP audio write arithmetic",
+    "fast mode helpers",
+    "timed scheduler including six adaptive batch cases",
+    "scheduler timer deadlines"
+  ],
+  "fullUpstreamSuiteRun": false,
+  "testedAtUTC": "2026-10-14T21:28:38.423948+00:00",
+  "artifacts": {
+    "boxedwine.js": "35b7a41a46b3f58e848590a038305afce4a3a8f8ca98a75e318a0f42c8264b7a",
+    "boxedwine.wasm": "e3fad538b1df9f98e0b91c2b1ba30e13711474ebd5d677d02064bb9593d67782"
+  },
+  "log": "analysis/performance/engine-tests.log"
+}

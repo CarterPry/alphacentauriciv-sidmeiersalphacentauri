@@ -1,0 +1,19 @@
+{
+  "started": 1792014746206,
+  "longTasks": [
+    {
+      "start": 26326.455000042915,
+      "duration": 76
+    }
+  ],
+  "events": [
+    {
+      "type": "keydown",
+      "at": 26319.975000023842,
+      "delay": 0.6699999570846558
+    }
+  ],
+  "elapsed": 65692.89499998093,
+  "title": "BoxedWine 160 MIPS",
+  "state": "{\"edition\":\"alpha-centauri\",\"executable\":\"terran.exe\",\"engine\":\"SingleThreadedJitFast\",\"phase\":\"booting\",\"error\":null,\"log\":[\"013c:err:setupapi:SetupDefaultQueueCallbackW copy error 1812 L\\\"@C:\\\\\\\\windows\\\\\\\\system32\\\\\\\\drivers\\\\\\\\wineusb.sys,-1\\\" -> L\\\"C:\\\\\\\\windows\\\\\\\\inf\\\\\\\\wineusb.inf\\\"\",\"[MIPS] count=20 raw=121 avg=147 min=65 max=286 warmAvg=121 warmSamples=1\",\"0024:err:winediag:wined3d_dll_init Disabling 3D support.\",\"0024:err:ole:com_get_class_object class {d8f1eee0-f634-11cf-8700-00a0245d918b} not registered\",\"0024:err:ole:com_get_class_object no class object {d8f1eee0-f634-11cf-8700-00a0245d918b} could be created for context 0x1\",\"[MIPS] count=30 raw=224 avg=174 min=86 max=286 warmAvg=160 warmSamples=11\"],\"source\":\"Installed original x86 executable; CPU emulated in WebAssembly\",\"persistence\":\"IndexedDB, this browser and origin\",\"coordinates\":\"Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.\",\"gameFiles\":1683,\"gameSha256\":\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\",\"browserSaveCount\":1,\"runtimeInitialized\":true,\"readiness\":{\"kind\":null,\"menuMatches\":0,\"worldMatches\":0},\"canvas\":{\"width\":1024,\"height\":768}}"
+}

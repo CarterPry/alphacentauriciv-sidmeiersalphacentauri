@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/port/state-mechanics-evidence-bundle.json\",\"bytes\":285593,\"records\":21,\"unknowns\":0}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/port/state-mechanics-evidence-bundle.json",
+      "bytes": 285593,
+      "records": 21,
+      "unknowns": 0
+    }
+  }
+}

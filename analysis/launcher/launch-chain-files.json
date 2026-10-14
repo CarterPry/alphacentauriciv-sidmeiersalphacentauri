@@ -1,0 +1,127 @@
+{
+  "macos_wrapper": {
+    "path": "/Users/carte/Applications/CrossOver/Steam/Sid Meier's Alpha Centauri™ Planetary Pack.app/Contents/Info.plist",
+    "size_bytes": 3302,
+    "sha256": "6d2ca3d63fce0903f8e7d8b8bfb8e87784c7b9ab73dc21db61342462f9990dc2",
+    "fields": {
+      "CFBundleExecutable": "Menu Helper",
+      "CFBundleIdentifier": "com.codeweavers.CrossOverHelper.4DB4563826BAD0EB2F60EE6E42D0EA4B.ADFE0F015C6A101E7C5257B7E3C25BB4",
+      "CFBundleName": "Sid Meier's Alpha Centauri™ Planetary Pack",
+      "CFBundleVersion": "1.0",
+      "CXHelperAppBottleName": "Steam",
+      "CXHelperAppBottleTag": "CrossOver-F6E29453-7A7B-4EFF-BA65-65FCDE707A88/",
+      "CXHelperAppVersion": 43,
+      "CXOriginalMenuName": "Sid Meier's Alpha Centauri™ Planetary Pack",
+      "CrossOverHelperCommand": "\"/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/desktopdata/cxmenu/StartMenu.C^5E3A_users_crossover_AppData_Roaming_Microsoft_Windows_Start^2BMenu/Programs/Steam/Sid+Meier's+Alpha+Centauri™+Planetary+Pack.url\"",
+      "CrossOverHelperMenuPath": "StartMenu.C^3A_users_crossover_AppData_Roaming_Microsoft_Windows_Start+Menu/Programs/Steam/Sid Meier's Alpha Centauri™ Planetary Pack.url"
+    }
+  },
+  "windows_desktop_shortcut": {
+    "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/users/crossover/Desktop/Sid Meier's Alpha Centauri™ Planetary Pack.url",
+    "size_bytes": 160,
+    "sha256": "1ea89fa140c8d77490d1bda3e73f7634f9f1573006d965b03d150115ff63716c",
+    "selected_lines": [
+      {
+        "line": 1,
+        "text": "[InternetShortcut]"
+      },
+      {
+        "line": 2,
+        "text": "URL=steam://rungameid/2204130"
+      }
+    ]
+  },
+  "steam_appmanifest": {
+    "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/appmanifest_2204130.acf",
+    "size_bytes": 1024,
+    "sha256": "bce8b6025c21087e9c9b31b4fb4acd298c4202cbb0fd711dc857de332de9addb",
+    "selected_lines": [
+      {
+        "line": 3,
+        "key": "appid",
+        "value": "2204130"
+      },
+      {
+        "line": 5,
+        "key": "LauncherPath",
+        "value": "C:\\\\Program Files (x86)\\\\Steam\\\\steam.exe"
+      },
+      {
+        "line": 6,
+        "key": "name",
+        "value": "Sid Meier's Alpha Centauri™ Planetary Pack"
+      },
+      {
+        "line": 8,
+        "key": "installdir",
+        "value": "Sid Meier's Alpha Centauri"
+      },
+      {
+        "line": 13,
+        "key": "buildid",
+        "value": "12965079"
+      }
+    ]
+  },
+  "crossover_menu_target": {
+    "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/desktopdata/cxmenu/StartMenu.C^5E3A_users_crossover_AppData_Roaming_Microsoft_Windows_Start^2BMenu/Programs/Steam/Sid+Meier's+Alpha+Centauri™+Planetary+Pack.url",
+    "size_bytes": 283,
+    "sha256": "661051d72f7927725f971955addb5df07b10a7f98bb05ab0b25a18b491a95e69",
+    "text": "#!/bin/sh\nexec \"/Users/carte/Applications/CrossOver.app/Contents/SharedSupport/CrossOver/bin/wine\" --bottle \"Steam\" --check --wait-children --start \"C:/users/crossover/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Steam/Sid Meier's Alpha Centauri™ Planetary Pack.url\" \"$@\"\n"
+  },
+  "launcher_filename_table": {
+    "source": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/axstart.exe",
+    "source_sha256": "b1b5ac399584e569bd7ec00a1cb405360f1408e8fb9b036155eb9f8e691750cd",
+    "image_base": "0x400000",
+    "file_offset": 499916,
+    "byte_length": 24,
+    "entries": [
+      {
+        "table_va": "0x47a0cc",
+        "pointer_va": "0x258",
+        "nul_terminated_string": null
+      },
+      {
+        "table_va": "0x47a0d0",
+        "pointer_va": "0x47a134",
+        "nul_terminated_string": "terran.exe"
+      },
+      {
+        "table_va": "0x47a0d4",
+        "pointer_va": "0x47a128",
+        "nul_terminated_string": "terranx.exe"
+      },
+      {
+        "table_va": "0x47a0d8",
+        "pointer_va": "0x393",
+        "nul_terminated_string": null
+      },
+      {
+        "table_va": "0x47a0dc",
+        "pointer_va": "0x2a0",
+        "nul_terminated_string": null
+      },
+      {
+        "table_va": "0x47a0e0",
+        "pointer_va": "0x45b",
+        "nul_terminated_string": null
+      }
+    ],
+    "limitation": "Raw little-endian pointer table reading; function selection needs decompiler evidence."
+  },
+  "windows_start_menu_shortcut": {
+    "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/users/crossover/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Steam/Sid Meier's Alpha Centauri™ Planetary Pack.url",
+    "sha256": "1ea89fa140c8d77490d1bda3e73f7634f9f1573006d965b03d150115ff63716c",
+    "size_bytes": 160,
+    "selected_lines": [
+      {
+        "line": 1,
+        "text": "[InternetShortcut]"
+      },
+      {
+        "line": 2,
+        "text": "URL=steam://rungameid/2204130"
+      }
+    ]
+  }
+}

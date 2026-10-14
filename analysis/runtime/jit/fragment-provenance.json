@@ -1,0 +1,28 @@
+{
+  "commit": "65467424603484756a73308412f40b906d28b650",
+  "sourceURL": "https://github.com/danoon2/Boxedwine/tree/65467424603484756a73308412f40b906d28b650",
+  "fragments": [
+    {
+      "path": "source/emulation/cpu/wasm/jitWasmCodeGen.cpp",
+      "firstLine": 4741,
+      "lastLine": 4760,
+      "fileSha256": "14bcb286da84e6b0fd992f68b766d203ae9a663e1700c75ab1d953e3f4ded526"
+    },
+    {
+      "path": "source/kernel/kmemory.cpp",
+      "firstLine": 1524,
+      "lastLine": 1553,
+      "fileSha256": "9af6eb819ac1609c798ca353b132a9250d02981b68952028dcd4e3c297216ede"
+    }
+  ],
+  "localGuard": {
+    "path": "Boxedwine-disjoint/source/emulation/cpu/jit/jitCodeGen.cpp",
+    "function": "wasmJitRangeIsUnowned",
+    "status": "experimental local policy, not upstream code"
+  },
+  "limitations": [
+    "The ownership-marking function and commit loop are copied verbatim; types, collection, and panic handling are small test stubs.",
+    "Does not execute JIT code, generate WASM, exercise the complete allocator, or prove which decoded blocks triggered the browser failure.",
+    "Unmodified fragments reproduce assertion/uncleared-tail outcomes; the experimental range guard prevents those inputs in the stub harness. This is not full-engine or game validation."
+  ]
+}

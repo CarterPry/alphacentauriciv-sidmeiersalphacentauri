@@ -1,0 +1,37 @@
+{
+  "started": 1792014076579,
+  "longTasks": [
+    {
+      "start": 428.7000000476837,
+      "duration": 82
+    },
+    {
+      "start": 1840.3450000286102,
+      "duration": 64
+    },
+    {
+      "start": 180421.77499997616,
+      "duration": 98
+    }
+  ],
+  "events": [
+    {
+      "type": "pointermove",
+      "at": 180422.24500000477,
+      "delay": 11
+    },
+    {
+      "type": "pointerdown",
+      "at": 180422.5950000286,
+      "delay": 11.290000081062317
+    },
+    {
+      "type": "keydown",
+      "at": 197075.58500003815,
+      "delay": 7.1600000858306885
+    }
+  ],
+  "elapsed": 199840.37999999523,
+  "title": "BoxedWine 533 MIPS",
+  "state": "{\"edition\":\"alien-crossfire\",\"executable\":\"terranx.exe\",\"engine\":\"SingleThreadedJitFast\",\"phase\":\"game-ready\",\"error\":null,\"log\":[\"[MIPS] count=160 raw=216 avg=216 min=214 max=218 warmAvg=203 warmSamples=141\",\"[MIPS] count=170 raw=217 avg=216 min=213 max=218 warmAvg=204 warmSamples=151\",\"openAudio: freq=22050(got 22050) format=8120(got 8120) channels=2(got 2)\",\"Audio output: AudioWorklet (fixed 30 ms queue target)\",\"[MIPS] count=180 raw=214 avg=214 min=191 max=219 warmAvg=205 warmSamples=161\",\"[MIPS] count=190 raw=208 avg=377 min=191 max=3486 warmAvg=224 warmSamples=171\"],\"source\":\"Installed original x86 executable; CPU emulated in WebAssembly\",\"persistence\":\"IndexedDB, this browser and origin\",\"coordinates\":\"Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.\",\"gameFiles\":1683,\"gameSha256\":\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\",\"runtimeInitialized\":true,\"readiness\":{\"kind\":\"menu\",\"menuMatches\":7,\"worldMatches\":0},\"nativeReady\":{\"kind\":\"menu\",\"consecutive\":2,\"elapsedMs\":42908},\"canvas\":{\"width\":1024,\"height\":768}}"
+}

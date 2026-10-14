@@ -1,0 +1,2675 @@
+{
+  "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+  "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced",
+  "bytes": 3201128,
+  "machine": "0x14c",
+  "image_base": "0x400000",
+  "entry_va": "0x6616bd",
+  "subsystem": 2,
+  "cli_directory_rva": 0,
+  "sections": [
+    {
+      "name": ".text",
+      "rva": 4096,
+      "virtual_size": 2641061,
+      "raw_size": 2641920,
+      "file_offset": 4096,
+      "flags": "0x60000020"
+    },
+    {
+      "name": "_SELFMOD",
+      "rva": 2646016,
+      "virtual_size": 16733,
+      "raw_size": 20480,
+      "file_offset": 2646016,
+      "flags": "0xe0000020"
+    },
+    {
+      "name": ".rdata",
+      "rva": 2666496,
+      "virtual_size": 109267,
+      "raw_size": 110592,
+      "file_offset": 2666496,
+      "flags": "0x40000040"
+    },
+    {
+      "name": ".data",
+      "rva": 2777088,
+      "virtual_size": 3295224,
+      "raw_size": 135168,
+      "file_offset": 2777088,
+      "flags": "0xc0000040"
+    },
+    {
+      "name": "",
+      "rva": 6074368,
+      "virtual_size": 5720,
+      "raw_size": 8192,
+      "file_offset": 2912256,
+      "flags": "0xc0000040"
+    },
+    {
+      "name": "UVA_DATA",
+      "rva": 6082560,
+      "virtual_size": 19144,
+      "raw_size": 20480,
+      "file_offset": 2920448,
+      "flags": "0xc0000040"
+    },
+    {
+      "name": ".rsrc",
+      "rva": 6103040,
+      "virtual_size": 23640,
+      "raw_size": 24576,
+      "file_offset": 2940928,
+      "flags": "0x40000040"
+    },
+    {
+      "name": ".reloc",
+      "rva": 6127616,
+      "virtual_size": 225198,
+      "raw_size": 225280,
+      "file_offset": 2965504,
+      "flags": "0x42000040"
+    }
+  ],
+  "imports": [
+    {
+      "dll": "ADVAPI32.dll",
+      "functions": [
+        {
+          "name": "RegQueryValueExA",
+          "iat_va": "0x68b000"
+        },
+        {
+          "name": "RegCreateKeyExA",
+          "iat_va": "0x68b004"
+        },
+        {
+          "name": "RegSetValueExA",
+          "iat_va": "0x68b008"
+        },
+        {
+          "name": "RegOpenKeyExA",
+          "iat_va": "0x68b00c"
+        },
+        {
+          "name": "RegCloseKey",
+          "iat_va": "0x68b010"
+        }
+      ]
+    },
+    {
+      "dll": "SHELL32.dll",
+      "functions": [
+        {
+          "name": "ShellExecuteA",
+          "iat_va": "0x68b2a4"
+        }
+      ]
+    },
+    {
+      "dll": "DDRAW.dll",
+      "functions": [
+        {
+          "name": "DirectDrawEnumerateA",
+          "iat_va": "0x68b018"
+        },
+        {
+          "name": "DirectDrawCreate",
+          "iat_va": "0x68b01c"
+        }
+      ]
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "functions": [
+        {
+          "name": "GetStringTypeW",
+          "iat_va": "0x68b0e0"
+        },
+        {
+          "name": "GetFileSize",
+          "iat_va": "0x68b0e4"
+        },
+        {
+          "name": "Sleep",
+          "iat_va": "0x68b0e8"
+        },
+        {
+          "name": "FreeLibrary",
+          "iat_va": "0x68b0ec"
+        },
+        {
+          "name": "GetProcAddress",
+          "iat_va": "0x68b0f0"
+        },
+        {
+          "name": "LoadLibraryA",
+          "iat_va": "0x68b0f4"
+        },
+        {
+          "name": "FindClose",
+          "iat_va": "0x68b0f8"
+        },
+        {
+          "name": "FindNextFileA",
+          "iat_va": "0x68b0fc"
+        },
+        {
+          "name": "FindFirstFileA",
+          "iat_va": "0x68b100"
+        },
+        {
+          "name": "SetCurrentDirectoryA",
+          "iat_va": "0x68b104"
+        },
+        {
+          "name": "GetCurrentDirectoryA",
+          "iat_va": "0x68b108"
+        },
+        {
+          "name": "GetModuleFileNameA",
+          "iat_va": "0x68b10c"
+        },
+        {
+          "name": "GetSystemTime",
+          "iat_va": "0x68b110"
+        },
+        {
+          "name": "GetPrivateProfileStringA",
+          "iat_va": "0x68b114"
+        },
+        {
+          "name": "WritePrivateProfileStringA",
+          "iat_va": "0x68b118"
+        },
+        {
+          "name": "InterlockedExchange",
+          "iat_va": "0x68b11c"
+        },
+        {
+          "name": "InterlockedIncrement",
+          "iat_va": "0x68b120"
+        },
+        {
+          "name": "InterlockedDecrement",
+          "iat_va": "0x68b124"
+        },
+        {
+          "name": "GetTickCount",
+          "iat_va": "0x68b128"
+        },
+        {
+          "name": "SetThreadPriority",
+          "iat_va": "0x68b12c"
+        },
+        {
+          "name": "GetCurrentThread",
+          "iat_va": "0x68b130"
+        },
+        {
+          "name": "OutputDebugStringA",
+          "iat_va": "0x68b134"
+        },
+        {
+          "name": "SetEnvironmentVariableA",
+          "iat_va": "0x68b138"
+        },
+        {
+          "name": "CompareStringW",
+          "iat_va": "0x68b13c"
+        },
+        {
+          "name": "GetModuleHandleA",
+          "iat_va": "0x68b140"
+        },
+        {
+          "name": "GetCurrentThreadId",
+          "iat_va": "0x68b144"
+        },
+        {
+          "name": "GetDriveTypeA",
+          "iat_va": "0x68b148"
+        },
+        {
+          "name": "GetLastError",
+          "iat_va": "0x68b14c"
+        },
+        {
+          "name": "GetPrivateProfileIntA",
+          "iat_va": "0x68b150"
+        },
+        {
+          "name": "CloseHandle",
+          "iat_va": "0x68b154"
+        },
+        {
+          "name": "UnmapViewOfFile",
+          "iat_va": "0x68b158"
+        },
+        {
+          "name": "MapViewOfFile",
+          "iat_va": "0x68b15c"
+        },
+        {
+          "name": "CreateFileMappingA",
+          "iat_va": "0x68b160"
+        },
+        {
+          "name": "CreateFileA",
+          "iat_va": "0x68b164"
+        },
+        {
+          "name": "SetEndOfFile",
+          "iat_va": "0x68b168"
+        },
+        {
+          "name": "SetFilePointer",
+          "iat_va": "0x68b16c"
+        },
+        {
+          "name": "InitializeCriticalSection",
+          "iat_va": "0x68b170"
+        },
+        {
+          "name": "CreateEventA",
+          "iat_va": "0x68b174"
+        },
+        {
+          "name": "DeleteCriticalSection",
+          "iat_va": "0x68b178"
+        },
+        {
+          "name": "LeaveCriticalSection",
+          "iat_va": "0x68b17c"
+        },
+        {
+          "name": "SetEvent",
+          "iat_va": "0x68b180"
+        },
+        {
+          "name": "EnterCriticalSection",
+          "iat_va": "0x68b184"
+        },
+        {
+          "name": "WinExec",
+          "iat_va": "0x68b188"
+        },
+        {
+          "name": "WaitForMultipleObjects",
+          "iat_va": "0x68b18c"
+        },
+        {
+          "name": "ResetEvent",
+          "iat_va": "0x68b190"
+        },
+        {
+          "name": "ExitProcess",
+          "iat_va": "0x68b194"
+        },
+        {
+          "name": "TerminateProcess",
+          "iat_va": "0x68b198"
+        },
+        {
+          "name": "GetCurrentProcess",
+          "iat_va": "0x68b19c"
+        },
+        {
+          "name": "HeapFree",
+          "iat_va": "0x68b1a0"
+        },
+        {
+          "name": "RtlUnwind",
+          "iat_va": "0x68b1a4"
+        },
+        {
+          "name": "CreateDirectoryA",
+          "iat_va": "0x68b1a8"
+        },
+        {
+          "name": "DeleteFileA",
+          "iat_va": "0x68b1ac"
+        },
+        {
+          "name": "MoveFileA",
+          "iat_va": "0x68b1b0"
+        },
+        {
+          "name": "GetStartupInfoA",
+          "iat_va": "0x68b1b4"
+        },
+        {
+          "name": "GetCommandLineA",
+          "iat_va": "0x68b1b8"
+        },
+        {
+          "name": "GetVersion",
+          "iat_va": "0x68b1bc"
+        },
+        {
+          "name": "HeapAlloc",
+          "iat_va": "0x68b1c0"
+        },
+        {
+          "name": "ResumeThread",
+          "iat_va": "0x68b1c4"
+        },
+        {
+          "name": "CreateThread",
+          "iat_va": "0x68b1c8"
+        },
+        {
+          "name": "TlsSetValue",
+          "iat_va": "0x68b1cc"
+        },
+        {
+          "name": "ExitThread",
+          "iat_va": "0x68b1d0"
+        },
+        {
+          "name": "HeapReAlloc",
+          "iat_va": "0x68b1d4"
+        },
+        {
+          "name": "FatalAppExitA",
+          "iat_va": "0x68b1d8"
+        },
+        {
+          "name": "GetEnvironmentVariableA",
+          "iat_va": "0x68b1dc"
+        },
+        {
+          "name": "GetVersionExA",
+          "iat_va": "0x68b1e0"
+        },
+        {
+          "name": "HeapDestroy",
+          "iat_va": "0x68b1e4"
+        },
+        {
+          "name": "CompareStringA",
+          "iat_va": "0x68b1e8"
+        },
+        {
+          "name": "VirtualFree",
+          "iat_va": "0x68b1ec"
+        },
+        {
+          "name": "VirtualAlloc",
+          "iat_va": "0x68b1f0"
+        },
+        {
+          "name": "IsBadWritePtr",
+          "iat_va": "0x68b1f4"
+        },
+        {
+          "name": "TlsAlloc",
+          "iat_va": "0x68b1f8"
+        },
+        {
+          "name": "TlsFree",
+          "iat_va": "0x68b1fc"
+        },
+        {
+          "name": "SetLastError",
+          "iat_va": "0x68b200"
+        },
+        {
+          "name": "TlsGetValue",
+          "iat_va": "0x68b204"
+        },
+        {
+          "name": "HeapSize",
+          "iat_va": "0x68b208"
+        },
+        {
+          "name": "WriteFile",
+          "iat_va": "0x68b20c"
+        },
+        {
+          "name": "ReadFile",
+          "iat_va": "0x68b210"
+        },
+        {
+          "name": "WideCharToMultiByte",
+          "iat_va": "0x68b214"
+        },
+        {
+          "name": "MultiByteToWideChar",
+          "iat_va": "0x68b218"
+        },
+        {
+          "name": "LCMapStringA",
+          "iat_va": "0x68b21c"
+        },
+        {
+          "name": "LCMapStringW",
+          "iat_va": "0x68b220"
+        },
+        {
+          "name": "UnhandledExceptionFilter",
+          "iat_va": "0x68b224"
+        },
+        {
+          "name": "FreeEnvironmentStringsA",
+          "iat_va": "0x68b228"
+        },
+        {
+          "name": "FreeEnvironmentStringsW",
+          "iat_va": "0x68b22c"
+        },
+        {
+          "name": "GetEnvironmentStrings",
+          "iat_va": "0x68b230"
+        },
+        {
+          "name": "GetEnvironmentStringsW",
+          "iat_va": "0x68b234"
+        },
+        {
+          "name": "SetHandleCount",
+          "iat_va": "0x68b238"
+        },
+        {
+          "name": "GetStdHandle",
+          "iat_va": "0x68b23c"
+        },
+        {
+          "name": "GetFileType",
+          "iat_va": "0x68b240"
+        },
+        {
+          "name": "RaiseException",
+          "iat_va": "0x68b244"
+        },
+        {
+          "name": "SetUnhandledExceptionFilter",
+          "iat_va": "0x68b248"
+        },
+        {
+          "name": "IsBadReadPtr",
+          "iat_va": "0x68b24c"
+        },
+        {
+          "name": "IsBadCodePtr",
+          "iat_va": "0x68b250"
+        },
+        {
+          "name": "GetStringTypeA",
+          "iat_va": "0x68b254"
+        },
+        {
+          "name": "HeapCreate",
+          "iat_va": "0x68b258"
+        },
+        {
+          "name": "SetStdHandle",
+          "iat_va": "0x68b25c"
+        },
+        {
+          "name": "FlushFileBuffers",
+          "iat_va": "0x68b260"
+        },
+        {
+          "name": "GetCPInfo",
+          "iat_va": "0x68b264"
+        },
+        {
+          "name": "IsValidLocale",
+          "iat_va": "0x68b268"
+        },
+        {
+          "name": "IsValidCodePage",
+          "iat_va": "0x68b26c"
+        },
+        {
+          "name": "GetLocaleInfoA",
+          "iat_va": "0x68b270"
+        },
+        {
+          "name": "EnumSystemLocalesA",
+          "iat_va": "0x68b274"
+        },
+        {
+          "name": "GetUserDefaultLCID",
+          "iat_va": "0x68b278"
+        },
+        {
+          "name": "GetACP",
+          "iat_va": "0x68b27c"
+        },
+        {
+          "name": "GetOEMCP",
+          "iat_va": "0x68b280"
+        },
+        {
+          "name": "SetConsoleCtrlHandler",
+          "iat_va": "0x68b284"
+        },
+        {
+          "name": "GetTimeZoneInformation",
+          "iat_va": "0x68b288"
+        },
+        {
+          "name": "GetLocaleInfoW",
+          "iat_va": "0x68b28c"
+        }
+      ]
+    },
+    {
+      "dll": "USER32.dll",
+      "functions": [
+        {
+          "name": "EqualRect",
+          "iat_va": "0x68b2ac"
+        },
+        {
+          "name": "SetRect",
+          "iat_va": "0x68b2b0"
+        },
+        {
+          "name": "ValidateRect",
+          "iat_va": "0x68b2b4"
+        },
+        {
+          "name": "GetDC",
+          "iat_va": "0x68b2b8"
+        },
+        {
+          "name": "ReleaseDC",
+          "iat_va": "0x68b2bc"
+        },
+        {
+          "name": "GetCursorPos",
+          "iat_va": "0x68b2c0"
+        },
+        {
+          "name": "SetCursor",
+          "iat_va": "0x68b2c4"
+        },
+        {
+          "name": "LoadCursorA",
+          "iat_va": "0x68b2c8"
+        },
+        {
+          "name": "MapVirtualKeyA",
+          "iat_va": "0x68b2cc"
+        },
+        {
+          "name": "FillRect",
+          "iat_va": "0x68b2d0"
+        },
+        {
+          "name": "CreateWindowExA",
+          "iat_va": "0x68b2d4"
+        },
+        {
+          "name": "RegisterClassA",
+          "iat_va": "0x68b2d8"
+        },
+        {
+          "name": "LoadIconA",
+          "iat_va": "0x68b2dc"
+        },
+        {
+          "name": "UnregisterClassA",
+          "iat_va": "0x68b2e0"
+        },
+        {
+          "name": "DestroyWindow",
+          "iat_va": "0x68b2e4"
+        },
+        {
+          "name": "EnumThreadWindows",
+          "iat_va": "0x68b2e8"
+        },
+        {
+          "name": "DefWindowProcA",
+          "iat_va": "0x68b2ec"
+        },
+        {
+          "name": "EndPaint",
+          "iat_va": "0x68b2f0"
+        },
+        {
+          "name": "BeginPaint",
+          "iat_va": "0x68b2f4"
+        },
+        {
+          "name": "IsZoomed",
+          "iat_va": "0x68b2f8"
+        },
+        {
+          "name": "SetParent",
+          "iat_va": "0x68b2fc"
+        },
+        {
+          "name": "GetParent",
+          "iat_va": "0x68b300"
+        },
+        {
+          "name": "IsWindow",
+          "iat_va": "0x68b304"
+        },
+        {
+          "name": "PtInRect",
+          "iat_va": "0x68b308"
+        },
+        {
+          "name": "ClientToScreen",
+          "iat_va": "0x68b30c"
+        },
+        {
+          "name": "ScreenToClient",
+          "iat_va": "0x68b310"
+        },
+        {
+          "name": "GetWindowRect",
+          "iat_va": "0x68b314"
+        },
+        {
+          "name": "InvalidateRect",
+          "iat_va": "0x68b318"
+        },
+        {
+          "name": "ReleaseCapture",
+          "iat_va": "0x68b31c"
+        },
+        {
+          "name": "SendMessageA",
+          "iat_va": "0x68b320"
+        },
+        {
+          "name": "DlgDirListA",
+          "iat_va": "0x68b324"
+        },
+        {
+          "name": "MessageBeep",
+          "iat_va": "0x68b328"
+        },
+        {
+          "name": "KillTimer",
+          "iat_va": "0x68b32c"
+        },
+        {
+          "name": "SetTimer",
+          "iat_va": "0x68b330"
+        },
+        {
+          "name": "PostThreadMessageA",
+          "iat_va": "0x68b334"
+        },
+        {
+          "name": "CreateIconIndirect",
+          "iat_va": "0x68b338"
+        },
+        {
+          "name": "DestroyCursor",
+          "iat_va": "0x68b33c"
+        },
+        {
+          "name": "PeekMessageA",
+          "iat_va": "0x68b340"
+        },
+        {
+          "name": "GetMessageA",
+          "iat_va": "0x68b344"
+        },
+        {
+          "name": "TranslateMessage",
+          "iat_va": "0x68b348"
+        },
+        {
+          "name": "DispatchMessageA",
+          "iat_va": "0x68b34c"
+        },
+        {
+          "name": "IsRectEmpty",
+          "iat_va": "0x68b350"
+        },
+        {
+          "name": "IntersectRect",
+          "iat_va": "0x68b354"
+        },
+        {
+          "name": "GetSystemMetrics",
+          "iat_va": "0x68b358"
+        },
+        {
+          "name": "GetAsyncKeyState",
+          "iat_va": "0x68b35c"
+        },
+        {
+          "name": "GetKeyState",
+          "iat_va": "0x68b360"
+        },
+        {
+          "name": "UnionRect",
+          "iat_va": "0x68b364"
+        },
+        {
+          "name": "MoveWindow",
+          "iat_va": "0x68b368"
+        },
+        {
+          "name": "ShowWindow",
+          "iat_va": "0x68b36c"
+        },
+        {
+          "name": "CharUpperA",
+          "iat_va": "0x68b370"
+        },
+        {
+          "name": "MessageBoxA",
+          "iat_va": "0x68b374"
+        },
+        {
+          "name": "GetWindowLongA",
+          "iat_va": "0x68b378"
+        },
+        {
+          "name": "GetFocus",
+          "iat_va": "0x68b37c"
+        },
+        {
+          "name": "CharLowerA",
+          "iat_va": "0x68b380"
+        },
+        {
+          "name": "SetWindowLongA",
+          "iat_va": "0x68b384"
+        },
+        {
+          "name": "CallWindowProcA",
+          "iat_va": "0x68b388"
+        },
+        {
+          "name": "PostMessageA",
+          "iat_va": "0x68b38c"
+        },
+        {
+          "name": "SetCursorPos",
+          "iat_va": "0x68b390"
+        },
+        {
+          "name": "IsChild",
+          "iat_va": "0x68b394"
+        },
+        {
+          "name": "ShowCursor",
+          "iat_va": "0x68b398"
+        }
+      ]
+    },
+    {
+      "dll": "GDI32.dll",
+      "functions": [
+        {
+          "name": "GetTextMetricsA",
+          "iat_va": "0x68b03c"
+        },
+        {
+          "name": "RemoveFontResourceA",
+          "iat_va": "0x68b040"
+        },
+        {
+          "name": "GetPaletteEntries",
+          "iat_va": "0x68b044"
+        },
+        {
+          "name": "CreatePalette",
+          "iat_va": "0x68b048"
+        },
+        {
+          "name": "AnimatePalette",
+          "iat_va": "0x68b04c"
+        },
+        {
+          "name": "GetSystemPaletteEntries",
+          "iat_va": "0x68b050"
+        },
+        {
+          "name": "CreatePenIndirect",
+          "iat_va": "0x68b054"
+        },
+        {
+          "name": "SetSystemPaletteUse",
+          "iat_va": "0x68b058"
+        },
+        {
+          "name": "SelectPalette",
+          "iat_va": "0x68b05c"
+        },
+        {
+          "name": "RealizePalette",
+          "iat_va": "0x68b060"
+        },
+        {
+          "name": "MoveToEx",
+          "iat_va": "0x68b064"
+        },
+        {
+          "name": "LineTo",
+          "iat_va": "0x68b068"
+        },
+        {
+          "name": "SetArcDirection",
+          "iat_va": "0x68b06c"
+        },
+        {
+          "name": "CreateFontIndirectA",
+          "iat_va": "0x68b070"
+        },
+        {
+          "name": "Pie",
+          "iat_va": "0x68b074"
+        },
+        {
+          "name": "Ellipse",
+          "iat_va": "0x68b078"
+        },
+        {
+          "name": "TextOutA",
+          "iat_va": "0x68b07c"
+        },
+        {
+          "name": "GetStockObject",
+          "iat_va": "0x68b080"
+        },
+        {
+          "name": "SetTextColor",
+          "iat_va": "0x68b084"
+        },
+        {
+          "name": "SetDIBColorTable",
+          "iat_va": "0x68b088"
+        },
+        {
+          "name": "StretchBlt",
+          "iat_va": "0x68b08c"
+        },
+        {
+          "name": "CreateRectRgnIndirect",
+          "iat_va": "0x68b090"
+        },
+        {
+          "name": "SelectClipRgn",
+          "iat_va": "0x68b094"
+        },
+        {
+          "name": "CreateCompatibleDC",
+          "iat_va": "0x68b098"
+        },
+        {
+          "name": "CreateDIBSection",
+          "iat_va": "0x68b09c"
+        },
+        {
+          "name": "SetBkMode",
+          "iat_va": "0x68b0a0"
+        },
+        {
+          "name": "SetTextAlign",
+          "iat_va": "0x68b0a4"
+        },
+        {
+          "name": "SelectObject",
+          "iat_va": "0x68b0a8"
+        },
+        {
+          "name": "DeleteDC",
+          "iat_va": "0x68b0ac"
+        },
+        {
+          "name": "DeleteObject",
+          "iat_va": "0x68b0b0"
+        },
+        {
+          "name": "BitBlt",
+          "iat_va": "0x68b0b4"
+        },
+        {
+          "name": "SetDIBits",
+          "iat_va": "0x68b0b8"
+        },
+        {
+          "name": "AddFontResourceA",
+          "iat_va": "0x68b0bc"
+        },
+        {
+          "name": "CreateScalableFontResourceA",
+          "iat_va": "0x68b0c0"
+        },
+        {
+          "name": "GetTextExtentPoint32A",
+          "iat_va": "0x68b0c4"
+        },
+        {
+          "name": "GdiFlush",
+          "iat_va": "0x68b0c8"
+        },
+        {
+          "name": "GetDeviceCaps",
+          "iat_va": "0x68b0cc"
+        },
+        {
+          "name": "CreateDCA",
+          "iat_va": "0x68b0d0"
+        },
+        {
+          "name": "SetStretchBltMode",
+          "iat_va": "0x68b0d4"
+        },
+        {
+          "name": "CreateSolidBrush",
+          "iat_va": "0x68b0d8"
+        }
+      ]
+    },
+    {
+      "dll": "WINMM.dll",
+      "functions": [
+        {
+          "name": "timeGetTime",
+          "iat_va": "0x68b3a0"
+        },
+        {
+          "name": "mmioRead",
+          "iat_va": "0x68b3a4"
+        },
+        {
+          "name": "mmioDescend",
+          "iat_va": "0x68b3a8"
+        },
+        {
+          "name": "mmioAscend",
+          "iat_va": "0x68b3ac"
+        },
+        {
+          "name": "timeSetEvent",
+          "iat_va": "0x68b3b0"
+        },
+        {
+          "name": "timeKillEvent",
+          "iat_va": "0x68b3b4"
+        },
+        {
+          "name": "mciSendCommandA",
+          "iat_va": "0x68b3b8"
+        },
+        {
+          "name": "mmioClose",
+          "iat_va": "0x68b3bc"
+        },
+        {
+          "name": "mmioOpenA",
+          "iat_va": "0x68b3c0"
+        },
+        {
+          "name": "mmioSetBuffer",
+          "iat_va": "0x68b3c4"
+        },
+        {
+          "name": "mmioSeek",
+          "iat_va": "0x68b3c8"
+        }
+      ]
+    },
+    {
+      "dll": "MSVFW32.dll",
+      "functions": [
+        {
+          "name": "ICOpen",
+          "iat_va": "0x68b294"
+        },
+        {
+          "name": "ICSendMessage",
+          "iat_va": "0x68b298"
+        },
+        {
+          "name": "ICClose",
+          "iat_va": "0x68b29c"
+        }
+      ]
+    },
+    {
+      "dll": "DSOUND.dll",
+      "functions": [
+        {
+          "name": "ordinal:1",
+          "iat_va": "0x68b034"
+        }
+      ]
+    },
+    {
+      "dll": "comdlg32.dll",
+      "functions": [
+        {
+          "name": "GetOpenFileNameA",
+          "iat_va": "0x68b3d0"
+        },
+        {
+          "name": "GetSaveFileNameA",
+          "iat_va": "0x68b3d4"
+        }
+      ]
+    },
+    {
+      "dll": "DPLAYX.dll",
+      "functions": [
+        {
+          "name": "ordinal:4",
+          "iat_va": "0x68b024"
+        },
+        {
+          "name": "ordinal:2",
+          "iat_va": "0x68b028"
+        },
+        {
+          "name": "ordinal:1",
+          "iat_va": "0x68b02c"
+        }
+      ]
+    }
+  ],
+  "exports": [],
+  "selected_strings": [
+    {
+      "file_offset": 2686952,
+      "va": "0x68ffe8",
+      "value": "The sound header files used in the game do not match the ones used in sound.dll. Check all sound.h and sound device.h versions!"
+    },
+    {
+      "file_offset": 2687080,
+      "va": "0x690068",
+      "value": "Sound Version Warning"
+    },
+    {
+      "file_offset": 2687104,
+      "va": "0x690080",
+      "value": "The sound header files used by jackal do not match the ones used by the game. Check all sound.h and sound device.h versions!"
+    },
+    {
+      "file_offset": 2687232,
+      "va": "0x690100",
+      "value": "The sound header files used by jackal do not match the ones used in sound.dll. "
+    },
+    {
+      "file_offset": 2710980,
+      "va": "0x695dc4",
+      "value": "user32.dll"
+    },
+    {
+      "file_offset": 2771730,
+      "va": "0x6a4b12",
+      "value": "ADVAPI32.dll"
+    },
+    {
+      "file_offset": 2771760,
+      "va": "0x6a4b30",
+      "value": "SHELL32.dll"
+    },
+    {
+      "file_offset": 2771774,
+      "va": "0x6a4b3e",
+      "value": "DirectDrawCreate"
+    },
+    {
+      "file_offset": 2771792,
+      "va": "0x6a4b50",
+      "value": "DDRAW.dll"
+    },
+    {
+      "file_offset": 2771840,
+      "va": "0x6a4b80",
+      "value": "GetProcAddress"
+    },
+    {
+      "file_offset": 2772210,
+      "va": "0x6a4cf2",
+      "value": "KERNEL32.dll"
+    },
+    {
+      "file_offset": 2772536,
+      "va": "0x6a4e38",
+      "value": "USER32.dll"
+    },
+    {
+      "file_offset": 2772568,
+      "va": "0x6a4e58",
+      "value": "GDI32.dll"
+    },
+    {
+      "file_offset": 2772734,
+      "va": "0x6a4efe",
+      "value": "WINMM.dll"
+    },
+    {
+      "file_offset": 2772780,
+      "va": "0x6a4f2c",
+      "value": "MSVFW32.dll"
+    },
+    {
+      "file_offset": 2772792,
+      "va": "0x6a4f38",
+      "value": "DSOUND.dll"
+    },
+    {
+      "file_offset": 2772844,
+      "va": "0x6a4f6c",
+      "value": "comdlg32.dll"
+    },
+    {
+      "file_offset": 2772860,
+      "va": "0x6a4f7c",
+      "value": "DirectDrawEnumerateA"
+    },
+    {
+      "file_offset": 2772882,
+      "va": "0x6a4f92",
+      "value": "DPLAYX.dll"
+    },
+    {
+      "file_offset": 2773240,
+      "va": "0x6a50f8",
+      "value": "WinExec"
+    },
+    {
+      "file_offset": 2775752,
+      "va": "0x6a5ac8",
+      "value": "terran.exe"
+    },
+    {
+      "file_offset": 2778800,
+      "va": "0x6a66b0",
+      "value": "menu2.pcx"
+    },
+    {
+      "file_offset": 2778812,
+      "va": "0x6a66bc",
+      "value": "menu.pcx"
+    },
+    {
+      "file_offset": 2779300,
+      "va": "0x6a68a4",
+      "value": "secproj_sm.pcx"
+    },
+    {
+      "file_offset": 2779324,
+      "va": "0x6a68bc",
+      "value": "facblt_sm.pcx"
+    },
+    {
+      "file_offset": 2779720,
+      "va": "0x6a6a48",
+      "value": "drone_sm.pcx"
+    },
+    {
+      "file_offset": 2779756,
+      "va": "0x6a6a6c",
+      "value": "talent_sm.pcx"
+    },
+    {
+      "file_offset": 2779944,
+      "va": "0x6a6b28",
+      "value": "interface.pcx"
+    },
+    {
+      "file_offset": 2780120,
+      "va": "0x6a6bd8",
+      "value": "palette.PCX"
+    },
+    {
+      "file_offset": 2780416,
+      "va": "0x6a6d00",
+      "value": "council_sm.pcx"
+    },
+    {
+      "file_offset": 2780624,
+      "va": "0x6a6dd0",
+      "value": "credits2.pcx"
+    },
+    {
+      "file_offset": 2780640,
+      "va": "0x6a6de0",
+      "value": "credits.pcx"
+    },
+    {
+      "file_offset": 2781052,
+      "va": "0x6a6f7c",
+      "value": "unit_sm.pcx"
+    },
+    {
+      "file_offset": 2781220,
+      "va": "0x6a7024",
+      "value": "deswin.pcx"
+    },
+    {
+      "file_offset": 2781264,
+      "va": "0x6a7050",
+      "value": "faction.flc"
+    },
+    {
+      "file_offset": 2782860,
+      "va": "0x6a768c",
+      "value": "fx\\CPU faction gone.wav"
+    },
+    {
+      "file_offset": 2783648,
+      "va": "0x6a79a0",
+      "value": "hoficons.pcx"
+    },
+    {
+      "file_offset": 2783664,
+      "va": "0x6a79b0",
+      "value": "hof.pcx"
+    },
+    {
+      "file_offset": 2783672,
+      "va": "0x6a79b8",
+      "value": "frame.pcx"
+    },
+    {
+      "file_offset": 2784512,
+      "va": "0x6a7d00",
+      "value": "nlc.cvr"
+    },
+    {
+      "file_offset": 2784520,
+      "va": "0x6a7d08",
+      "value": "ni.CVR"
+    },
+    {
+      "file_offset": 2784528,
+      "va": "0x6a7d10",
+      "value": "nw.CVR"
+    },
+    {
+      "file_offset": 2784536,
+      "va": "0x6a7d18",
+      "value": "vw13.cvr"
+    },
+    {
+      "file_offset": 2784548,
+      "va": "0x6a7d24",
+      "value": "VM.CVR"
+    },
+    {
+      "file_offset": 2784556,
+      "va": "0x6a7d2c",
+      "value": "vpbr03.cvr"
+    },
+    {
+      "file_offset": 2784568,
+      "va": "0x6a7d38",
+      "value": "vpbr02.cvr"
+    },
+    {
+      "file_offset": 2784580,
+      "va": "0x6a7d44",
+      "value": "vpbr01.cvr"
+    },
+    {
+      "file_offset": 2784592,
+      "va": "0x6a7d50",
+      "value": "vpbr00.cvr"
+    },
+    {
+      "file_offset": 2784604,
+      "va": "0x6a7d5c",
+      "value": "VWNAA.CVR"
+    },
+    {
+      "file_offset": 2784616,
+      "va": "0x6a7d68",
+      "value": "VWNST.CVR"
+    },
+    {
+      "file_offset": 2784628,
+      "va": "0x6a7d74",
+      "value": "VWNTT.CVR"
+    },
+    {
+      "file_offset": 2784640,
+      "va": "0x6a7d80",
+      "value": "VCTB.CVR"
+    },
+    {
+      "file_offset": 2784652,
+      "va": "0x6a7d8c",
+      "value": "vct01.cvr"
+    },
+    {
+      "file_offset": 2784664,
+      "va": "0x6a7d98",
+      "value": "vct00.cvr"
+    },
+    {
+      "file_offset": 2784676,
+      "va": "0x6a7da4",
+      "value": "VCTP.CVR"
+    },
+    {
+      "file_offset": 2784688,
+      "va": "0x6a7db0",
+      "value": "vct.cvr"
+    },
+    {
+      "file_offset": 2784696,
+      "va": "0x6a7db8",
+      "value": "VCUW.CVR"
+    },
+    {
+      "file_offset": 2784708,
+      "va": "0x6a7dc4",
+      "value": "VCUA01.cvr"
+    },
+    {
+      "file_offset": 2784720,
+      "va": "0x6a7dd0",
+      "value": "VCUA00.cvr"
+    },
+    {
+      "file_offset": 2784732,
+      "va": "0x6a7ddc",
+      "value": "VCUP.CVR"
+    },
+    {
+      "file_offset": 2784744,
+      "va": "0x6a7de8",
+      "value": "VCU.cvr"
+    },
+    {
+      "file_offset": 2784752,
+      "va": "0x6a7df0",
+      "value": "VJT01.cvr"
+    },
+    {
+      "file_offset": 2784764,
+      "va": "0x6a7dfc",
+      "value": "VJT00.cvr"
+    },
+    {
+      "file_offset": 2784776,
+      "va": "0x6a7e08",
+      "value": "VJTP.CVR"
+    },
+    {
+      "file_offset": 2784788,
+      "va": "0x6a7e14",
+      "value": "VGSP.CVR"
+    },
+    {
+      "file_offset": 2784800,
+      "va": "0x6a7e20",
+      "value": "VGS.cvr"
+    },
+    {
+      "file_offset": 2784808,
+      "va": "0x6a7e28",
+      "value": "VFL.cvr"
+    },
+    {
+      "file_offset": 2784816,
+      "va": "0x6a7e30",
+      "value": "AVHT-LightsReposition.cvr"
+    },
+    {
+      "file_offset": 2784844,
+      "va": "0x6a7e4c",
+      "value": "AVHT-GunReposition.cvr"
+    },
+    {
+      "file_offset": 2784868,
+      "va": "0x6a7e64",
+      "value": "vhtta01.cvr"
+    },
+    {
+      "file_offset": 2784880,
+      "va": "0x6a7e70",
+      "value": "vhtta00.cvr"
+    },
+    {
+      "file_offset": 2784892,
+      "va": "0x6a7e7c",
+      "value": "vhttp.cvr"
+    },
+    {
+      "file_offset": 2784904,
+      "va": "0x6a7e88",
+      "value": "vhta01.cvr"
+    },
+    {
+      "file_offset": 2784916,
+      "va": "0x6a7e94",
+      "value": "vhta00.cvr"
+    },
+    {
+      "file_offset": 2784928,
+      "va": "0x6a7ea0",
+      "value": "vhtp.cvr"
+    },
+    {
+      "file_offset": 2784940,
+      "va": "0x6a7eac",
+      "value": "vht-vbp.cvr"
+    },
+    {
+      "file_offset": 2784952,
+      "va": "0x6a7eb8",
+      "value": "vsptb.cvr"
+    },
+    {
+      "file_offset": 2784964,
+      "va": "0x6a7ec4",
+      "value": "vsptf.cvr"
+    },
+    {
+      "file_offset": 2784976,
+      "va": "0x6a7ed0",
+      "value": "VSPA02.CVR"
+    },
+    {
+      "file_offset": 2784988,
+      "va": "0x6a7edc",
+      "value": "VSPA01.CVR"
+    },
+    {
+      "file_offset": 2785000,
+      "va": "0x6a7ee8",
+      "value": "VSP.cvr"
+    },
+    {
+      "file_offset": 2785008,
+      "va": "0x6a7ef0",
+      "value": "VCLT00.CVR"
+    },
+    {
+      "file_offset": 2785020,
+      "va": "0x6a7efc",
+      "value": "VCL.cvr"
+    },
+    {
+      "file_offset": 2785028,
+      "va": "0x6a7f04",
+      "value": "vt.cvr"
+    },
+    {
+      "file_offset": 2785036,
+      "va": "0x6a7f0c",
+      "value": "vwntu.cvr"
+    },
+    {
+      "file_offset": 2785048,
+      "va": "0x6a7f18",
+      "value": "adroper.cvr"
+    },
+    {
+      "file_offset": 2785060,
+      "va": "0x6a7f24",
+      "value": "droplet.cvr"
+    },
+    {
+      "file_offset": 2785072,
+      "va": "0x6a7f30",
+      "value": "drop.cvr"
+    },
+    {
+      "file_offset": 2785084,
+      "va": "0x6a7f3c",
+      "value": "AVGMTGUN.CVR"
+    },
+    {
+      "file_offset": 2785100,
+      "va": "0x6a7f4c",
+      "value": "VW12.CVR"
+    },
+    {
+      "file_offset": 2785112,
+      "va": "0x6a7f58",
+      "value": "VW11.CVR"
+    },
+    {
+      "file_offset": 2785124,
+      "va": "0x6a7f64",
+      "value": "VW10.CVR"
+    },
+    {
+      "file_offset": 2785136,
+      "va": "0x6a7f70",
+      "value": "VW09.CVR"
+    },
+    {
+      "file_offset": 2785148,
+      "va": "0x6a7f7c",
+      "value": "VW08.CVR"
+    },
+    {
+      "file_offset": 2785160,
+      "va": "0x6a7f88",
+      "value": "VW07.CVR"
+    },
+    {
+      "file_offset": 2785172,
+      "va": "0x6a7f94",
+      "value": "VW06.CVR"
+    },
+    {
+      "file_offset": 2785184,
+      "va": "0x6a7fa0",
+      "value": "VW05.CVR"
+    },
+    {
+      "file_offset": 2785196,
+      "va": "0x6a7fac",
+      "value": "VW04.CVR"
+    },
+    {
+      "file_offset": 2785208,
+      "va": "0x6a7fb8",
+      "value": "VW03.CVR"
+    },
+    {
+      "file_offset": 2785220,
+      "va": "0x6a7fc4",
+      "value": "VW02.CVR"
+    },
+    {
+      "file_offset": 2785232,
+      "va": "0x6a7fd0",
+      "value": "VW01.CVR"
+    },
+    {
+      "file_offset": 2785244,
+      "va": "0x6a7fdc",
+      "value": "VGMTP.CVR"
+    },
+    {
+      "file_offset": 2785256,
+      "va": "0x6a7fe8",
+      "value": "VGMT.CVR"
+    },
+    {
+      "file_offset": 2785268,
+      "va": "0x6a7ff4",
+      "value": "VI.CVR"
+    },
+    {
+      "file_offset": 2785276,
+      "va": "0x6a7ffc",
+      "value": "VRCP03.cvr"
+    },
+    {
+      "file_offset": 2785288,
+      "va": "0x6a8008",
+      "value": "VRCP02.cvr"
+    },
+    {
+      "file_offset": 2785300,
+      "va": "0x6a8014",
+      "value": "VRCP01.cvr"
+    },
+    {
+      "file_offset": 2785312,
+      "va": "0x6a8020",
+      "value": "VRCP00.cvr"
+    },
+    {
+      "file_offset": 2785324,
+      "va": "0x6a802c",
+      "value": "VHR.CVR"
+    },
+    {
+      "file_offset": 2785332,
+      "va": "0x6a8034",
+      "value": "VR03.cvr"
+    },
+    {
+      "file_offset": 2785344,
+      "va": "0x6a8040",
+      "value": "VR02.cvr"
+    },
+    {
+      "file_offset": 2785356,
+      "va": "0x6a804c",
+      "value": "VR01.cvr"
+    },
+    {
+      "file_offset": 2785368,
+      "va": "0x6a8058",
+      "value": "VR00.cvr"
+    },
+    {
+      "file_offset": 2785380,
+      "va": "0x6a8064",
+      "value": "VA01.cvr"
+    },
+    {
+      "file_offset": 2785392,
+      "va": "0x6a8070",
+      "value": "VLIGHTS.CVR"
+    },
+    {
+      "file_offset": 2785404,
+      "va": "0x6a807c",
+      "value": "VGMCP.CVR"
+    },
+    {
+      "file_offset": 2785416,
+      "va": "0x6a8088",
+      "value": "VGMC.CVR"
+    },
+    {
+      "file_offset": 2785428,
+      "va": "0x6a8094",
+      "value": "VBP.CVR"
+    },
+    {
+      "file_offset": 2785436,
+      "va": "0x6a809c",
+      "value": "VB.CVR"
+    },
+    {
+      "file_offset": 2785444,
+      "va": "0x6a80a4",
+      "value": "asgen.cvr"
+    },
+    {
+      "file_offset": 2785456,
+      "va": "0x6a80b0",
+      "value": "apsid.cvr"
+    },
+    {
+      "file_offset": 2785468,
+      "va": "0x6a80bc",
+      "value": "apwall.cvr"
+    },
+    {
+      "file_offset": 2785480,
+      "va": "0x6a80c8",
+      "value": "a.cvr"
+    },
+    {
+      "file_offset": 2785488,
+      "va": "0x6a80d0",
+      "value": "vpt.cvr"
+    },
+    {
+      "file_offset": 2785496,
+      "va": "0x6a80d8",
+      "value": "ptmod.cvr"
+    },
+    {
+      "file_offset": 2785508,
+      "va": "0x6a80e4",
+      "value": "vipta01.cvr"
+    },
+    {
+      "file_offset": 2785520,
+      "va": "0x6a80f0",
+      "value": "vipta00.cvr"
+    },
+    {
+      "file_offset": 2785532,
+      "va": "0x6a80fc",
+      "value": "viptr03.cvr"
+    },
+    {
+      "file_offset": 2785544,
+      "va": "0x6a8108",
+      "value": "viptr02.cvr"
+    },
+    {
+      "file_offset": 2785556,
+      "va": "0x6a8114",
+      "value": "viptr01.cvr"
+    },
+    {
+      "file_offset": 2785568,
+      "va": "0x6a8120",
+      "value": "viptr00.cvr"
+    },
+    {
+      "file_offset": 2785580,
+      "va": "0x6a812c",
+      "value": "viptapsi.cvr"
+    },
+    {
+      "file_offset": 2785596,
+      "va": "0x6a813c",
+      "value": "viptasgn.cvr"
+    },
+    {
+      "file_offset": 2785612,
+      "va": "0x6a814c",
+      "value": "viptawal.cvr"
+    },
+    {
+      "file_offset": 2785628,
+      "va": "0x6a815c",
+      "value": "vw00.cvr"
+    },
+    {
+      "file_offset": 2785640,
+      "va": "0x6a8168",
+      "value": "asas.cvr"
+    },
+    {
+      "file_offset": 2785652,
+      "va": "0x6a8174",
+      "value": "srb.cvr"
+    },
+    {
+      "file_offset": 2785660,
+      "va": "0x6a817c",
+      "value": "sht.cvr"
+    },
+    {
+      "file_offset": 2785668,
+      "va": "0x6a8184",
+      "value": "vhr.cvr"
+    },
+    {
+      "file_offset": 2785676,
+      "va": "0x6a818c",
+      "value": "sft.cvr"
+    },
+    {
+      "file_offset": 2785684,
+      "va": "0x6a8194",
+      "value": "sags.cvr"
+    },
+    {
+      "file_offset": 2785696,
+      "va": "0x6a81a0",
+      "value": "scj.cvr"
+    },
+    {
+      "file_offset": 2785704,
+      "va": "0x6a81a8",
+      "value": "scd.cvr"
+    },
+    {
+      "file_offset": 2785712,
+      "va": "0x6a81b0",
+      "value": "sas.cvr"
+    },
+    {
+      "file_offset": 2785720,
+      "va": "0x6a81b8",
+      "value": "sdp.cvr"
+    },
+    {
+      "file_offset": 2785728,
+      "va": "0x6a81c0",
+      "value": "ssf.cvr"
+    },
+    {
+      "file_offset": 2785736,
+      "va": "0x6a81c8",
+      "value": "PALETTE.PCX"
+    },
+    {
+      "file_offset": 2785768,
+      "va": "0x6a81e8",
+      "value": "TER1.PCX"
+    },
+    {
+      "file_offset": 2785780,
+      "va": "0x6a81f4",
+      "value": "glow.pcx"
+    },
+    {
+      "file_offset": 2785792,
+      "va": "0x6a8200",
+      "value": "RAINFALL.PCX"
+    },
+    {
+      "file_offset": 2785808,
+      "va": "0x6a8210",
+      "value": "TEXTURE.PCX"
+    },
+    {
+      "file_offset": 2785820,
+      "va": "0x6a821c",
+      "value": "faction.pcx"
+    },
+    {
+      "file_offset": 2785832,
+      "va": "0x6a8228",
+      "value": "UNITS.PCX"
+    },
+    {
+      "file_offset": 2785844,
+      "va": "0x6a8234",
+      "value": "XF.PCX"
+    },
+    {
+      "file_offset": 2785852,
+      "va": "0x6a823c",
+      "value": "XI.PCX"
+    },
+    {
+      "file_offset": 2785860,
+      "va": "0x6a8244",
+      "value": "ICONS.PCX"
+    },
+    {
+      "file_offset": 2785872,
+      "va": "0x6a8250",
+      "value": "NEWICONS.PCX"
+    },
+    {
+      "file_offset": 2785888,
+      "va": "0x6a8260",
+      "value": "btchi.pcx"
+    },
+    {
+      "file_offset": 2785900,
+      "va": "0x6a826c",
+      "value": "btisl.pcx"
+    },
+    {
+      "file_offset": 2785912,
+      "va": "0x6a8278",
+      "value": "btwrm.pcx"
+    },
+    {
+      "file_offset": 2785960,
+      "va": "0x6a82a8",
+      "value": "CURSOR.PCX"
+    },
+    {
+      "file_offset": 2785996,
+      "va": "0x6a82cc",
+      "value": "iface.pcx"
+    },
+    {
+      "file_offset": 2786060,
+      "va": "0x6a830c",
+      "value": "console_x2.pcx"
+    },
+    {
+      "file_offset": 2786076,
+      "va": "0x6a831c",
+      "value": "console_x.pcx"
+    },
+    {
+      "file_offset": 2786104,
+      "va": "0x6a8338",
+      "value": "iface_down2.pcx"
+    },
+    {
+      "file_offset": 2786120,
+      "va": "0x6a8348",
+      "value": "iface_up2.pcx"
+    },
+    {
+      "file_offset": 2786136,
+      "va": "0x6a8358",
+      "value": "iface_down.pcx"
+    },
+    {
+      "file_offset": 2786152,
+      "va": "0x6a8368",
+      "value": "iface_up.pcx"
+    },
+    {
+      "file_offset": 2786168,
+      "va": "0x6a8378",
+      "value": "console2.pcx"
+    },
+    {
+      "file_offset": 2786184,
+      "va": "0x6a8388",
+      "value": "console.pcx"
+    },
+    {
+      "file_offset": 2786244,
+      "va": "0x6a83c4",
+      "value": "Sid Meier's Alpha Centauri"
+    },
+    {
+      "file_offset": 2786280,
+      "va": "0x6a83e8",
+      "value": "DirectDraw"
+    },
+    {
+      "file_offset": 2786356,
+      "va": "0x6a8434",
+      "value": "NETWORK"
+    },
+    {
+      "file_offset": 2790256,
+      "va": "0x6a9370",
+      "value": "monicons.pcx"
+    },
+    {
+      "file_offset": 2790272,
+      "va": "0x6a9380",
+      "value": "3.pcx"
+    },
+    {
+      "file_offset": 2790280,
+      "va": "0x6a9388",
+      "value": "monzoom2.pcx"
+    },
+    {
+      "file_offset": 2790296,
+      "va": "0x6a9398",
+      "value": "monzoom1.pcx"
+    },
+    {
+      "file_offset": 2790348,
+      "va": "0x6a93cc",
+      "value": "KILLFACTION"
+    },
+    {
+      "file_offset": 2790840,
+      "va": "0x6a95b8",
+      "value": "multi.pcx"
+    },
+    {
+      "file_offset": 2790968,
+      "va": "0x6a9638",
+      "value": "ENTERPASSWORDFACTION"
+    },
+    {
+      "file_offset": 2791024,
+      "va": "0x6a9670",
+      "value": "RULES"
+    },
+    {
+      "file_offset": 2791048,
+      "va": "0x6a9688",
+      "value": "FACTIONS"
+    },
+    {
+      "file_offset": 2791112,
+      "va": "0x6a96c8",
+      "value": "TECHSHORTS.TXT"
+    },
+    {
+      "file_offset": 2791132,
+      "va": "0x6a96dc",
+      "value": "TECHNOLOGY"
+    },
+    {
+      "file_offset": 2791452,
+      "va": "0x6a981c",
+      "value": "holobook.pcx"
+    },
+    {
+      "file_offset": 2791780,
+      "va": "0x6a9964",
+      "value": "space_sm.pcx"
+    },
+    {
+      "file_offset": 2791848,
+      "va": "0x6a99a8",
+      "value": "report.pcx"
+    },
+    {
+      "file_offset": 2791972,
+      "va": "0x6a9a24",
+      "value": "script.txt"
+    },
+    {
+      "file_offset": 2792012,
+      "va": "0x6a9a4c",
+      "value": "genwarning_sm.pcx"
+    },
+    {
+      "file_offset": 2792052,
+      "va": "0x6a9a74",
+      "value": "socwin.pcx"
+    },
+    {
+      "file_offset": 2792084,
+      "va": "0x6a9a94",
+      "value": "text.pcx"
+    },
+    {
+      "file_offset": 2792568,
+      "va": "0x6a9c78",
+      "value": "SOCTOURFACTION"
+    },
+    {
+      "file_offset": 2793472,
+      "va": "0x6aa000",
+      "value": "8BitMovieSound"
+    },
+    {
+      "file_offset": 2793556,
+      "va": "0x6aa054",
+      "value": ".\\sound.dll"
+    },
+    {
+      "file_offset": 2793600,
+      "va": "0x6aa080",
+      "value": "VERSIONCHECK_SOUND_HEADER"
+    },
+    {
+      "file_offset": 2794176,
+      "va": "0x6aa2c0",
+      "value": "air_sm.pcx"
+    },
+    {
+      "file_offset": 2794232,
+      "va": "0x6aa2f8",
+      "value": "airdp_sm.pcx"
+    },
+    {
+      "file_offset": 2794304,
+      "va": "0x6aa340",
+      "value": "baseobl_sm.pcx"
+    },
+    {
+      "file_offset": 2794440,
+      "va": "0x6aa3c8",
+      "value": "satbat_sm.pcx"
+    },
+    {
+      "file_offset": 2794480,
+      "va": "0x6aa3f0",
+      "value": "colfoun_sm.pcx"
+    },
+    {
+      "file_offset": 2794496,
+      "va": "0x6aa400",
+      "value": "seabas_sm.pcx"
+    },
+    {
+      "file_offset": 2794584,
+      "va": "0x6aa458",
+      "value": "bureau_sm.pcx"
+    },
+    {
+      "file_offset": 2794928,
+      "va": "0x6aa5b0",
+      "value": "navun_sm.pcx"
+    },
+    {
+      "file_offset": 2795024,
+      "va": "0x6aa610",
+      "value": "native_sm.pcx"
+    },
+    {
+      "file_offset": 2796352,
+      "va": "0x6aab40",
+      "value": "SCENRULES"
+    },
+    {
+      "file_offset": 2796796,
+      "va": "0x6aacfc",
+      "value": "econwin_sm.pcx"
+    },
+    {
+      "file_offset": 2797356,
+      "va": "0x6aaf2c",
+      "value": "pop_sm.pcx"
+    },
+    {
+      "file_offset": 2797376,
+      "va": "0x6aaf40",
+      "value": "starv_sm.pcx"
+    },
+    {
+      "file_offset": 2797604,
+      "va": "0x6ab024",
+      "value": "asctran_sm.pcx"
+    },
+    {
+      "file_offset": 2797620,
+      "va": "0x6ab034",
+      "value": "isle_sm.pcx"
+    },
+    {
+      "file_offset": 2797632,
+      "va": "0x6ab040",
+      "value": "chiron_sm.pcx"
+    },
+    {
+      "file_offset": 2797864,
+      "va": "0x6ab128",
+      "value": "volc_sm.pcx"
+    },
+    {
+      "file_offset": 2797908,
+      "va": "0x6ab154",
+      "value": "searis_sm.pcx"
+    },
+    {
+      "file_offset": 2797952,
+      "va": "0x6ab180",
+      "value": "fung_sm.pcx"
+    },
+    {
+      "file_offset": 2798116,
+      "va": "0x6ab224",
+      "value": "astp_sm.pcx"
+    },
+    {
+      "file_offset": 2798156,
+      "va": "0x6ab24c",
+      "value": "batwon_sm.pcx"
+    },
+    {
+      "file_offset": 2798408,
+      "va": "0x6ab348",
+      "value": "hasty_sm.pcx"
+    },
+    {
+      "file_offset": 2798480,
+      "va": "0x6ab390",
+      "value": "biohazd_sm.pcx"
+    },
+    {
+      "file_offset": 2798576,
+      "va": "0x6ab3f0",
+      "value": "liberate_sm.pcx"
+    },
+    {
+      "file_offset": 2798596,
+      "va": "0x6ab404",
+      "value": "seized_sm.pcx"
+    },
+    {
+      "file_offset": 2800428,
+      "va": "0x6abb2c",
+      "value": "SOFTWARE\\Microsoft\\DirectPlay\\Applications\\Sid Meier's Alpha Centauri"
+    },
+    {
+      "file_offset": 2800780,
+      "va": "0x6abc8c",
+      "value": "Rules checksum = "
+    },
+    {
+      "file_offset": 2801148,
+      "va": "0x6abdfc",
+      "value": "netcr_sm.pcx"
+    },
+    {
+      "file_offset": 2801240,
+      "va": "0x6abe58",
+      "value": "hail_sm.pcx"
+    },
+    {
+      "file_offset": 2801276,
+      "va": "0x6abe7c",
+      "value": "markbm_sm.pcx"
+    },
+    {
+      "file_offset": 2801304,
+      "va": "0x6abe98",
+      "value": "solar_sm.pcx"
+    },
+    {
+      "file_offset": 2801332,
+      "va": "0x6abeb4",
+      "value": "astm_sm.pcx"
+    },
+    {
+      "file_offset": 2801368,
+      "va": "0x6abed8",
+      "value": "sun_sm.pcx"
+    },
+    {
+      "file_offset": 2801380,
+      "va": "0x6abee4",
+      "value": "rdminl_sm.pcx"
+    },
+    {
+      "file_offset": 2801396,
+      "va": "0x6abef4",
+      "value": "rdminw_sm.pcx"
+    },
+    {
+      "file_offset": 2801412,
+      "va": "0x6abf04",
+      "value": "rdneul_sm.pcx"
+    },
+    {
+      "file_offset": 2801440,
+      "va": "0x6abf20",
+      "value": "rdneuw_sm.pcx"
+    },
+    {
+      "file_offset": 2801504,
+      "va": "0x6abf60",
+      "value": "cloud_sm.pcx"
+    },
+    {
+      "file_offset": 2801552,
+      "va": "0x6abf90",
+      "value": "indbm_sm.pcx"
+    },
+    {
+      "file_offset": 2801588,
+      "va": "0x6abfb4",
+      "value": "bump_sm.pcx"
+    },
+    {
+      "file_offset": 2801620,
+      "va": "0x6abfd4",
+      "value": "heat_sm.pcx"
+    },
+    {
+      "file_offset": 2801660,
+      "va": "0x6abffc",
+      "value": "stars_sm.pcx"
+    },
+    {
+      "file_offset": 2801688,
+      "va": "0x6ac018",
+      "value": "mindworm_sm.pcx"
+    },
+    {
+      "file_offset": 2801716,
+      "va": "0x6ac034",
+      "value": "forgr_sm.pcx"
+    },
+    {
+      "file_offset": 2801744,
+      "va": "0x6ac050",
+      "value": "kelp_sm.pcx"
+    },
+    {
+      "file_offset": 2801824,
+      "va": "0x6ac0a0",
+      "value": "seafal_sm.pcx"
+    },
+    {
+      "file_offset": 2801992,
+      "va": "0x6ac148",
+      "value": "http:\\\\www.alphacentauri.com"
+    },
+    {
+      "file_offset": 2802024,
+      "va": "0x6ac168",
+      "value": "demosplash800_2.pcx"
+    },
+    {
+      "file_offset": 2802044,
+      "va": "0x6ac17c",
+      "value": "demosplash1024_2.pcx"
+    },
+    {
+      "file_offset": 2802068,
+      "va": "0x6ac194",
+      "value": "demosplash800.pcx"
+    },
+    {
+      "file_offset": 2802088,
+      "va": "0x6ac1a8",
+      "value": "demosplash1024.pcx"
+    },
+    {
+      "file_offset": 2802280,
+      "va": "0x6ac268",
+      "value": "dipvic_sm.pcx"
+    },
+    {
+      "file_offset": 2802652,
+      "va": "0x6ac3dc",
+      "value": "bad_sm.pcx"
+    },
+    {
+      "file_offset": 2804784,
+      "va": "0x6acc30",
+      "value": "RULESYNCHFAC"
+    },
+    {
+      "file_offset": 2804800,
+      "va": "0x6acc40",
+      "value": "RULESYNCHVEH"
+    },
+    {
+      "file_offset": 2804816,
+      "va": "0x6acc50",
+      "value": "RULESYNCHTERR"
+    },
+    {
+      "file_offset": 2804832,
+      "va": "0x6acc60",
+      "value": "RULESYNCHTECH"
+    },
+    {
+      "file_offset": 2810720,
+      "va": "0x6ae360",
+      "value": "FACTIONTREATY"
+    },
+    {
+      "file_offset": 2810816,
+      "va": "0x6ae3c0",
+      "value": "FACTIONTRUCE"
+    },
+    {
+      "file_offset": 2811632,
+      "va": "0x6ae6f0",
+      "value": "break_sm.pcx"
+    },
+    {
+      "file_offset": 2812136,
+      "va": "0x6ae8e8",
+      "value": "monolith_sm.pcx"
+    },
+    {
+      "file_offset": 2812344,
+      "va": "0x6ae9b8",
+      "value": "art_dis_sm.pcx"
+    },
+    {
+      "file_offset": 2812408,
+      "va": "0x6ae9f8",
+      "value": "quake_sm.pcx"
+    },
+    {
+      "file_offset": 2812460,
+      "va": "0x6aea2c",
+      "value": "supply_sm.pcx"
+    },
+    {
+      "file_offset": 2813220,
+      "va": "0x6aed24",
+      "value": "FACTIONTAKEN"
+    },
+    {
+      "file_offset": 2813236,
+      "va": "0x6aed34",
+      "value": "FACTION"
+    },
+    {
+      "file_offset": 2813244,
+      "va": "0x6aed3c",
+      "value": "USERULES"
+    },
+    {
+      "file_offset": 2813300,
+      "va": "0x6aed74",
+      "value": "MOON3.PCX"
+    },
+    {
+      "file_offset": 2813312,
+      "va": "0x6aed80",
+      "value": "moon3_800.pcx"
+    },
+    {
+      "file_offset": 2813328,
+      "va": "0x6aed90",
+      "value": "MOON2.PCX"
+    },
+    {
+      "file_offset": 2813340,
+      "va": "0x6aed9c",
+      "value": "moon2_800.pcx"
+    },
+    {
+      "file_offset": 2813356,
+      "va": "0x6aedac",
+      "value": "MOON1.PCX"
+    },
+    {
+      "file_offset": 2813368,
+      "va": "0x6aedb8",
+      "value": "moon1_800.pcx"
+    },
+    {
+      "file_offset": 2813384,
+      "va": "0x6aedc8",
+      "value": "S1L1C1.PCX"
+    },
+    {
+      "file_offset": 2813536,
+      "va": "0x6aee60",
+      "value": "openinga.pcx"
+    },
+    {
+      "file_offset": 2813552,
+      "va": "0x6aee70",
+      "value": "openingb.pcx"
+    },
+    {
+      "file_offset": 2813984,
+      "va": "0x6af020",
+      "value": "subbase_sm.pcx"
+    },
+    {
+      "file_offset": 2814084,
+      "va": "0x6af084",
+      "value": "artstolen_sm.pcx"
+    },
+    {
+      "file_offset": 2814676,
+      "va": "0x6af2d4",
+      "value": "capture_sm.pcx"
+    },
+    {
+      "file_offset": 2814744,
+      "va": "0x6af318",
+      "value": "Alpha Centauri"
+    },
+    {
+      "file_offset": 2814760,
+      "va": "0x6af328",
+      "value": ".\\Alpha Centauri.Ini"
+    },
+    {
+      "file_offset": 2814860,
+      "va": "0x6af38c",
+      "value": "Rules"
+    },
+    {
+      "file_offset": 2814936,
+      "va": "0x6af3d8",
+      "value": "Faction"
+    },
+    {
+      "file_offset": 2815832,
+      "va": "0x6af758",
+      "value": "infil_sm.pcx"
+    },
+    {
+      "file_offset": 2815888,
+      "va": "0x6af790",
+      "value": "huntsk_sm.pcx"
+    },
+    {
+      "file_offset": 2815952,
+      "va": "0x6af7d0",
+      "value": "TERRAN"
+    },
+    {
+      "file_offset": 2815960,
+      "va": "0x6af7d8",
+      "value": "TERRANMAP"
+    },
+    {
+      "file_offset": 2816236,
+      "va": "0x6af8ec",
+      "value": "saves\\auto\\Alpha Centauri Autosave 1.SAV"
+    },
+    {
+      "file_offset": 2816280,
+      "va": "0x6af918",
+      "value": "saves\\auto\\Alpha Centauri Autosave 10"
+    },
+    {
+      "file_offset": 2816320,
+      "va": "0x6af940",
+      "value": "saves\\auto\\Alpha Centauri Autosave 1"
+    },
+    {
+      "file_offset": 2816360,
+      "va": "0x6af968",
+      "value": "saves\\auto\\Alpha Centauri Autosave 2.SAV"
+    },
+    {
+      "file_offset": 2816404,
+      "va": "0x6af994",
+      "value": "saves\\auto\\Alpha Centauri Autosave 3.SAV"
+    },
+    {
+      "file_offset": 2816448,
+      "va": "0x6af9c0",
+      "value": "saves\\auto\\Alpha Centauri Autosave 4.SAV"
+    },
+    {
+      "file_offset": 2816492,
+      "va": "0x6af9ec",
+      "value": "saves\\auto\\Alpha Centauri Autosave 5.SAV"
+    },
+    {
+      "file_offset": 2816536,
+      "va": "0x6afa18",
+      "value": "saves\\auto\\Alpha Centauri Autosave 10.SAV"
+    },
+    {
+      "file_offset": 2816580,
+      "va": "0x6afa44",
+      "value": "saves\\auto\\Alpha Centauri Autosave 20.SAV"
+    },
+    {
+      "file_offset": 2816624,
+      "va": "0x6afa70",
+      "value": "saves\\auto\\Alpha Centauri Autosave 30.SAV"
+    },
+    {
+      "file_offset": 2816688,
+      "va": "0x6afab0",
+      "value": "Alpha Centauri Autosave 1.SAV"
+    },
+    {
+      "file_offset": 2816720,
+      "va": "0x6afad0",
+      "value": "Alpha Centauri Autosave 1"
+    },
+    {
+      "file_offset": 2816868,
+      "va": "0x6afb64",
+      "value": "conq_sm.pcx"
+    },
+    {
+      "file_offset": 2816896,
+      "va": "0x6afb80",
+      "value": "escpod_sm.pcx"
+    },
+    {
+      "file_offset": 2816912,
+      "va": "0x6afb90",
+      "value": "2.PCX"
+    },
+    {
+      "file_offset": 2818052,
+      "va": "0x6b0004",
+      "value": "ALPHA"
+    },
+    {
+      "file_offset": 2818084,
+      "va": "0x6b0024",
+      "value": "SCRIPT.txt"
+    },
+    {
+      "file_offset": 2832436,
+      "va": "0x6b3834",
+      "value": "DDERR_NODIRECTDRAWHW"
+    },
+    {
+      "file_offset": 2832460,
+      "va": "0x6b384c",
+      "value": "DDERR_DIRECTDRAWALREADYCREATED"
+    },
+    {
+      "file_offset": 2832492,
+      "va": "0x6b386c",
+      "value": "DDERR_INVALIDDIRECTDRAWGUID"
+    },
+    {
+      "file_offset": 2833348,
+      "va": "0x6b3bc4",
+      "value": "DDERR_NODIRECTDRAWSUPPORT"
+    },
+    {
+      "file_offset": 2833484,
+      "va": "0x6b3c4c",
+      "value": "DDERR_NOALPHAHW"
+    },
+    {
+      "file_offset": 2838656,
+      "va": "0x6b5080",
+      "value": "logo.pcx"
+    },
+    {
+      "file_offset": 2839336,
+      "va": "0x6b5328",
+      "value": "jackal.pcx"
+    },
+    {
+      "file_offset": 2839536,
+      "va": "0x6b53f0",
+      "value": ".\\Alpha Centauri.ini"
+    },
+    {
+      "file_offset": 2839560,
+      "va": "0x6b5408",
+      "value": "ForceOldVoxelAlgorithm"
+    },
+    {
+      "file_offset": 2839596,
+      "va": "0x6b542c",
+      "value": ".\\Alpha Centauri.ini"
+    },
+    {
+      "file_offset": 2839624,
+      "va": "0x6b5448",
+      "value": "ForceOldVoxelAlgorithm"
+    },
+    {
+      "file_offset": 2839808,
+      "va": "0x6b5500",
+      "value": "logfile.txt"
+    },
+    {
+      "file_offset": 2840000,
+      "va": "0x6b55c0",
+      "value": "directx\\dsetup.dll"
+    },
+    {
+      "file_offset": 2840308,
+      "va": "0x6b56f4",
+      "value": "jackal.txt"
+    },
+    {
+      "file_offset": 2840804,
+      "va": "0x6b58e4",
+      "value": "DPLAYERROR"
+    },
+    {
+      "file_offset": 2840932,
+      "va": "0x6b5964",
+      "value": "DPERR_CANTCREATEPROCESS"
+    },
+    {
+      "file_offset": 2841252,
+      "va": "0x6b5aa4",
+      "value": "DPERR_INVALIDPLAYER"
+    },
+    {
+      "file_offset": 2841428,
+      "va": "0x6b5b54",
+      "value": "DPERR_CANTADDPLAYER"
+    },
+    {
+      "file_offset": 2841780,
+      "va": "0x6b5cb4",
+      "value": "logo.pcx"
+    },
+    {
+      "file_offset": 3190800,
+      "va": null,
+      "value": "C:\\Alpha Centauri v5\\Release\\terran.pdb"
+    }
+  ]
+}

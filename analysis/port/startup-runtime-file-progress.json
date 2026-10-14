@@ -1,0 +1,1809 @@
+{
+  "sourcePath": "analysis/runtime/browser-probe/console.ndjson",
+  "sourceSnapshotSizeBytes": 12424601,
+  "sourceSnapshotSha256": "8a1c4dd9a250d1343ea01f0a2ad356317b514757260b535a0b72fc1231e552b0",
+  "captureUtc": "2026-10-14T18:48:10.074414+00:00",
+  "filter": "Wine CreateFileW entries whose immediate path ends in .pcx, .txt, .cvr, or .fot; directory enumeration ignored.",
+  "records": [
+    {
+      "sourceLine": 26653,
+      "record": {
+        "time": "2026-10-14T18:45:29.829Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"logfile.txt\" GENERIC_WRITE FILE_SHARE_READ FILE_SHARE_WRITE  creation 2 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 26710,
+      "record": {
+        "time": "2026-10-14T18:45:30.148Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"logo.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 27347,
+      "record": {
+        "time": "2026-10-14T18:45:31.242Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"jackal.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 27981,
+      "record": {
+        "time": "2026-10-14T18:45:31.913Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"jackal.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 28007,
+      "record": {
+        "time": "2026-10-14T18:45:31.977Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"jackal.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 28642,
+      "record": {
+        "time": "2026-10-14T18:45:32.654Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"jackal.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 28665,
+      "record": {
+        "time": "2026-10-14T18:45:32.846Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"jackal.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 28904,
+      "record": {
+        "time": "2026-10-14T18:45:33.807Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"arialn.fot\" GENERIC_READ GENERIC_WRITE  creation 1 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 28911,
+      "record": {
+        "time": "2026-10-14T18:45:33.819Z",
+        "type": "log",
+        "text": "0024:warn:file:CreateFileW Unable to create file L\"arialn.fot\" (status c0000035)"
+      }
+    },
+    {
+      "sourceLine": 28919,
+      "record": {
+        "time": "2026-10-14T18:45:33.839Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"arialn.fot\" GENERIC_READ  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 28986,
+      "record": {
+        "time": "2026-10-14T18:45:33.952Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"text.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 29009,
+      "record": {
+        "time": "2026-10-14T18:45:34.085Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"labels.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 29666,
+      "record": {
+        "time": "2026-10-14T18:45:34.961Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"PALETTE.PCX\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 29689,
+      "record": {
+        "time": "2026-10-14T18:45:35.156Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"iface.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 29713,
+      "record": {
+        "time": "2026-10-14T18:45:46.024Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"interface.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 29738,
+      "record": {
+        "time": "2026-10-14T18:45:59.635Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"interface.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 29747,
+      "record": {
+        "time": "2026-10-14T18:45:59.961Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ssf.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 29844,
+      "record": {
+        "time": "2026-10-14T18:46:00.077Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"sdp.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 29980,
+      "record": {
+        "time": "2026-10-14T18:46:00.257Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"sas.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 30077,
+      "record": {
+        "time": "2026-10-14T18:46:00.413Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"scd.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 30174,
+      "record": {
+        "time": "2026-10-14T18:46:00.568Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"scj.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 30271,
+      "record": {
+        "time": "2026-10-14T18:46:00.719Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"sags.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 30368,
+      "record": {
+        "time": "2026-10-14T18:46:00.830Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"sft.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 30465,
+      "record": {
+        "time": "2026-10-14T18:46:00.968Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vhr.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 30562,
+      "record": {
+        "time": "2026-10-14T18:46:01.092Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"sht.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 30659,
+      "record": {
+        "time": "2026-10-14T18:46:01.252Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"srb.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 30756,
+      "record": {
+        "time": "2026-10-14T18:46:01.387Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"asas.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 30844,
+      "record": {
+        "time": "2026-10-14T18:46:01.550Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"reslaser.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 31298,
+      "record": {
+        "time": "2026-10-14T18:46:02.146Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"resbolt.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 32181,
+      "record": {
+        "time": "2026-10-14T18:46:03.306Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"funload.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 32284,
+      "record": {
+        "time": "2026-10-14T18:46:03.481Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"tecload.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 32387,
+      "record": {
+        "time": "2026-10-14T18:46:03.657Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"SP-SOPORIFIC.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 32490,
+      "record": {
+        "time": "2026-10-14T18:46:03.810Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"SP-DISSWAVE.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 32593,
+      "record": {
+        "time": "2026-10-14T18:46:03.953Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"SP-MARINED.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 32696,
+      "record": {
+        "time": "2026-10-14T18:46:04.091Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"SP-NANOO.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 32799,
+      "record": {
+        "time": "2026-10-14T18:46:04.230Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"AA01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 32902,
+      "record": {
+        "time": "2026-10-14T18:46:04.366Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"AA-Rover.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 33005,
+      "record": {
+        "time": "2026-10-14T18:46:04.520Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"AA-WING0.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 33108,
+      "record": {
+        "time": "2026-10-14T18:46:04.660Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"AA-WING.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 33211,
+      "record": {
+        "time": "2026-10-14T18:46:04.812Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ACP00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 33314,
+      "record": {
+        "time": "2026-10-14T18:46:04.945Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ACP01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 33417,
+      "record": {
+        "time": "2026-10-14T18:46:05.078Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ACP02.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 33520,
+      "record": {
+        "time": "2026-10-14T18:46:05.214Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ACP03.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 33620,
+      "record": {
+        "time": "2026-10-14T18:46:05.354Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"AA.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 34191,
+      "record": {
+        "time": "2026-10-14T18:46:06.141Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"SSFA.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 34295,
+      "record": {
+        "time": "2026-10-14T18:46:06.315Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"SFTA.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 34398,
+      "record": {
+        "time": "2026-10-14T18:46:06.478Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vw00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 34495,
+      "record": {
+        "time": "2026-10-14T18:46:06.641Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"viptawal.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 34592,
+      "record": {
+        "time": "2026-10-14T18:46:06.788Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"viptasgn.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 34689,
+      "record": {
+        "time": "2026-10-14T18:46:06.935Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"viptapsi.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 34786,
+      "record": {
+        "time": "2026-10-14T18:46:07.090Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"viptr00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 34883,
+      "record": {
+        "time": "2026-10-14T18:46:07.243Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"viptr01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 34980,
+      "record": {
+        "time": "2026-10-14T18:46:07.404Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"viptr02.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 35077,
+      "record": {
+        "time": "2026-10-14T18:46:07.541Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"viptr03.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 35174,
+      "record": {
+        "time": "2026-10-14T18:46:07.680Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vipta00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 35271,
+      "record": {
+        "time": "2026-10-14T18:46:07.865Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vipta01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 35368,
+      "record": {
+        "time": "2026-10-14T18:46:08.037Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ptmod.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 35465,
+      "record": {
+        "time": "2026-10-14T18:46:08.194Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vpt.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 37785,
+      "record": {
+        "time": "2026-10-14T18:46:11.428Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"a.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 37882,
+      "record": {
+        "time": "2026-10-14T18:46:11.603Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"apwall.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 37979,
+      "record": {
+        "time": "2026-10-14T18:46:11.736Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"apsid.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 38076,
+      "record": {
+        "time": "2026-10-14T18:46:11.900Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"asgen.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 38173,
+      "record": {
+        "time": "2026-10-14T18:46:12.045Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VB.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 38270,
+      "record": {
+        "time": "2026-10-14T18:46:12.224Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VBP.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 38367,
+      "record": {
+        "time": "2026-10-14T18:46:12.379Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VGMC.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 38464,
+      "record": {
+        "time": "2026-10-14T18:46:12.552Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VGMCP.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 38561,
+      "record": {
+        "time": "2026-10-14T18:46:12.712Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VLIGHTS.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 38664,
+      "record": {
+        "time": "2026-10-14T18:46:12.839Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VA01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 38761,
+      "record": {
+        "time": "2026-10-14T18:46:12.974Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VR00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 38858,
+      "record": {
+        "time": "2026-10-14T18:46:13.127Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VR01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 38955,
+      "record": {
+        "time": "2026-10-14T18:46:13.281Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VR02.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 39052,
+      "record": {
+        "time": "2026-10-14T18:46:13.448Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VR03.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 39149,
+      "record": {
+        "time": "2026-10-14T18:46:13.621Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VHR.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 39246,
+      "record": {
+        "time": "2026-10-14T18:46:13.769Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VRCP00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 39343,
+      "record": {
+        "time": "2026-10-14T18:46:13.899Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VRCP01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 39446,
+      "record": {
+        "time": "2026-10-14T18:46:14.040Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VRCP02.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 39543,
+      "record": {
+        "time": "2026-10-14T18:46:14.182Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VRCP03.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 39640,
+      "record": {
+        "time": "2026-10-14T18:46:14.325Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VI.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 41961,
+      "record": {
+        "time": "2026-10-14T18:46:17.521Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VGMT.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 42058,
+      "record": {
+        "time": "2026-10-14T18:46:17.665Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VGMTP.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 42155,
+      "record": {
+        "time": "2026-10-14T18:46:17.806Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW01.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 42291,
+      "record": {
+        "time": "2026-10-14T18:46:18.016Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW02.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 43486,
+      "record": {
+        "time": "2026-10-14T18:46:19.683Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW03.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 43700,
+      "record": {
+        "time": "2026-10-14T18:46:20.014Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW04.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 43953,
+      "record": {
+        "time": "2026-10-14T18:46:20.397Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW05.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 44245,
+      "record": {
+        "time": "2026-10-14T18:46:20.846Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW06.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 44381,
+      "record": {
+        "time": "2026-10-14T18:46:21.074Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW07.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 44556,
+      "record": {
+        "time": "2026-10-14T18:46:21.303Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW08.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 44731,
+      "record": {
+        "time": "2026-10-14T18:46:21.582Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW09.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 44867,
+      "record": {
+        "time": "2026-10-14T18:46:21.782Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW10.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 45003,
+      "record": {
+        "time": "2026-10-14T18:46:21.992Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW11.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 45139,
+      "record": {
+        "time": "2026-10-14T18:46:22.196Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW12.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 45236,
+      "record": {
+        "time": "2026-10-14T18:46:22.375Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW14.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 46860,
+      "record": {
+        "time": "2026-10-14T18:46:24.619Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VW12.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 46957,
+      "record": {
+        "time": "2026-10-14T18:46:24.790Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"AX.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 47489,
+      "record": {
+        "time": "2026-10-14T18:46:25.545Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ACOLPOD.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 47631,
+      "record": {
+        "time": "2026-10-14T18:46:25.736Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"AT.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 48320,
+      "record": {
+        "time": "2026-10-14T18:46:26.709Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VTA.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 48813,
+      "record": {
+        "time": "2026-10-14T18:46:27.412Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ATp.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 48916,
+      "record": {
+        "time": "2026-10-14T18:46:27.559Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"AVGMTGUN.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 49010,
+      "record": {
+        "time": "2026-10-14T18:46:27.713Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"drop.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 49107,
+      "record": {
+        "time": "2026-10-14T18:46:27.900Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"droplet.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 49204,
+      "record": {
+        "time": "2026-10-14T18:46:28.081Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"adroper.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 49298,
+      "record": {
+        "time": "2026-10-14T18:46:28.241Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vwntu.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 49902,
+      "record": {
+        "time": "2026-10-14T18:46:29.157Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vt.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 49999,
+      "record": {
+        "time": "2026-10-14T18:46:29.304Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VCL.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 50096,
+      "record": {
+        "time": "2026-10-14T18:46:29.452Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VCLT00.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 50193,
+      "record": {
+        "time": "2026-10-14T18:46:29.590Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VSP.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 50290,
+      "record": {
+        "time": "2026-10-14T18:46:29.727Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VSPA01.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 50387,
+      "record": {
+        "time": "2026-10-14T18:46:29.889Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VSPA02.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 50484,
+      "record": {
+        "time": "2026-10-14T18:46:30.041Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vsptf.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 50581,
+      "record": {
+        "time": "2026-10-14T18:46:30.220Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vsptb.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 50678,
+      "record": {
+        "time": "2026-10-14T18:46:30.397Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vht-vbp.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 50775,
+      "record": {
+        "time": "2026-10-14T18:46:30.576Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vhtp.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 50872,
+      "record": {
+        "time": "2026-10-14T18:46:30.758Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vhta00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 50969,
+      "record": {
+        "time": "2026-10-14T18:46:30.900Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vhta01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 51066,
+      "record": {
+        "time": "2026-10-14T18:46:31.035Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vhttp.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 51169,
+      "record": {
+        "time": "2026-10-14T18:46:31.212Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vhtta00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 51266,
+      "record": {
+        "time": "2026-10-14T18:46:31.365Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vhtta01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 51363,
+      "record": {
+        "time": "2026-10-14T18:46:31.526Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"AVHT-GunReposition.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 51457,
+      "record": {
+        "time": "2026-10-14T18:46:31.671Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"AVHT-LightsReposition.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 51551,
+      "record": {
+        "time": "2026-10-14T18:46:31.810Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VFL.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 51648,
+      "record": {
+        "time": "2026-10-14T18:46:31.953Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VGS.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 51745,
+      "record": {
+        "time": "2026-10-14T18:46:32.083Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VGSP.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 51842,
+      "record": {
+        "time": "2026-10-14T18:46:32.217Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VJTP.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 51939,
+      "record": {
+        "time": "2026-10-14T18:46:32.392Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VJT00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 52036,
+      "record": {
+        "time": "2026-10-14T18:46:32.520Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VJT01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 52133,
+      "record": {
+        "time": "2026-10-14T18:46:32.663Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VCU.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 52230,
+      "record": {
+        "time": "2026-10-14T18:46:32.801Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VCUP.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 52327,
+      "record": {
+        "time": "2026-10-14T18:46:32.969Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VCUA00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 52424,
+      "record": {
+        "time": "2026-10-14T18:46:33.132Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VCUA01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 52521,
+      "record": {
+        "time": "2026-10-14T18:46:33.238Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VCUW.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 52969,
+      "record": {
+        "time": "2026-10-14T18:46:33.908Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vct.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 53066,
+      "record": {
+        "time": "2026-10-14T18:46:34.083Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VCTP.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 53163,
+      "record": {
+        "time": "2026-10-14T18:46:34.245Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vct00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 53260,
+      "record": {
+        "time": "2026-10-14T18:46:34.410Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vct01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 53357,
+      "record": {
+        "time": "2026-10-14T18:46:34.589Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VCTB.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 53454,
+      "record": {
+        "time": "2026-10-14T18:46:34.758Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VWNTT.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 53551,
+      "record": {
+        "time": "2026-10-14T18:46:34.929Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VWNST.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 53648,
+      "record": {
+        "time": "2026-10-14T18:46:35.114Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VWNAA.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 53745,
+      "record": {
+        "time": "2026-10-14T18:46:35.281Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vpbr00.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 53842,
+      "record": {
+        "time": "2026-10-14T18:46:35.467Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vpbr01.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 53939,
+      "record": {
+        "time": "2026-10-14T18:46:35.603Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vpbr02.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 54036,
+      "record": {
+        "time": "2026-10-14T18:46:35.736Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vpbr03.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 54133,
+      "record": {
+        "time": "2026-10-14T18:46:35.891Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"VM.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 54230,
+      "record": {
+        "time": "2026-10-14T18:46:36.058Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"vw13.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 54327,
+      "record": {
+        "time": "2026-10-14T18:46:36.215Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"nw.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 54581,
+      "record": {
+        "time": "2026-10-14T18:46:36.621Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ni.CVR\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 54834,
+      "record": {
+        "time": "2026-10-14T18:46:37.033Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"nlc.cvr\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 54945,
+      "record": {
+        "time": "2026-10-14T18:46:37.192Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55126,
+      "record": {
+        "time": "2026-10-14T18:46:37.533Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55150,
+      "record": {
+        "time": "2026-10-14T18:46:37.588Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55174,
+      "record": {
+        "time": "2026-10-14T18:46:37.633Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55198,
+      "record": {
+        "time": "2026-10-14T18:46:37.679Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55222,
+      "record": {
+        "time": "2026-10-14T18:46:37.725Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55246,
+      "record": {
+        "time": "2026-10-14T18:46:37.770Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55270,
+      "record": {
+        "time": "2026-10-14T18:46:37.802Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55294,
+      "record": {
+        "time": "2026-10-14T18:46:37.841Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55318,
+      "record": {
+        "time": "2026-10-14T18:46:37.885Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55342,
+      "record": {
+        "time": "2026-10-14T18:46:37.930Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55366,
+      "record": {
+        "time": "2026-10-14T18:46:37.978Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55390,
+      "record": {
+        "time": "2026-10-14T18:46:38.024Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55414,
+      "record": {
+        "time": "2026-10-14T18:46:38.073Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55438,
+      "record": {
+        "time": "2026-10-14T18:46:38.114Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55462,
+      "record": {
+        "time": "2026-10-14T18:46:38.164Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55489,
+      "record": {
+        "time": "2026-10-14T18:46:38.215Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55516,
+      "record": {
+        "time": "2026-10-14T18:46:38.276Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 55543,
+      "record": {
+        "time": "2026-10-14T18:46:38.332Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 56181,
+      "record": {
+        "time": "2026-10-14T18:46:39.233Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"palette.PCX\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 56600,
+      "record": {
+        "time": "2026-10-14T18:46:40.089Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 56624,
+      "record": {
+        "time": "2026-10-14T18:46:40.132Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"system.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 56857,
+      "record": {
+        "time": "2026-10-14T18:46:40.921Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"console2_A.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 57524,
+      "record": {
+        "time": "2026-10-14T18:46:41.832Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"console_x2_A.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 57547,
+      "record": {
+        "time": "2026-10-14T18:46:42.094Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"interface.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 57947,
+      "record": {
+        "time": "2026-10-14T18:46:43.301Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"menu2.pcx\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 57970,
+      "record": {
+        "time": "2026-10-14T18:46:43.366Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"labels.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 58617,
+      "record": {
+        "time": "2026-10-14T18:46:44.254Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"SCRIPT.txt\" GENERIC_READ  creation 3 attributes 0x10000080"
+      }
+    },
+    {
+      "sourceLine": 59251,
+      "record": {
+        "time": "2026-10-14T18:46:45.284Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ  creation 3 attributes 0x10000080"
+      }
+    },
+    {
+      "sourceLine": 59885,
+      "record": {
+        "time": "2026-10-14T18:46:46.131Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 60533,
+      "record": {
+        "time": "2026-10-14T18:46:47.056Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 61180,
+      "record": {
+        "time": "2026-10-14T18:46:48.000Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 61818,
+      "record": {
+        "time": "2026-10-14T18:46:48.820Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 62459,
+      "record": {
+        "time": "2026-10-14T18:46:49.653Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 63097,
+      "record": {
+        "time": "2026-10-14T18:46:50.515Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 63735,
+      "record": {
+        "time": "2026-10-14T18:46:51.424Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 64376,
+      "record": {
+        "time": "2026-10-14T18:46:52.341Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 65026,
+      "record": {
+        "time": "2026-10-14T18:46:53.213Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 65676,
+      "record": {
+        "time": "2026-10-14T18:46:54.089Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 66326,
+      "record": {
+        "time": "2026-10-14T18:46:54.944Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 66976,
+      "record": {
+        "time": "2026-10-14T18:46:55.825Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 67629,
+      "record": {
+        "time": "2026-10-14T18:46:56.706Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 68283,
+      "record": {
+        "time": "2026-10-14T18:46:57.659Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 68939,
+      "record": {
+        "time": "2026-10-14T18:46:58.565Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 69595,
+      "record": {
+        "time": "2026-10-14T18:46:59.481Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 70263,
+      "record": {
+        "time": "2026-10-14T18:47:00.449Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 70931,
+      "record": {
+        "time": "2026-10-14T18:47:01.382Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 71599,
+      "record": {
+        "time": "2026-10-14T18:47:02.345Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 72267,
+      "record": {
+        "time": "2026-10-14T18:47:03.296Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 72935,
+      "record": {
+        "time": "2026-10-14T18:47:04.244Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 73603,
+      "record": {
+        "time": "2026-10-14T18:47:05.170Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 74271,
+      "record": {
+        "time": "2026-10-14T18:47:06.128Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 74940,
+      "record": {
+        "time": "2026-10-14T18:47:07.091Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 75608,
+      "record": {
+        "time": "2026-10-14T18:47:08.089Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 76279,
+      "record": {
+        "time": "2026-10-14T18:47:09.046Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 76956,
+      "record": {
+        "time": "2026-10-14T18:47:10.031Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 77633,
+      "record": {
+        "time": "2026-10-14T18:47:11.060Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 78310,
+      "record": {
+        "time": "2026-10-14T18:47:12.051Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 78990,
+      "record": {
+        "time": "2026-10-14T18:47:13.033Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 79670,
+      "record": {
+        "time": "2026-10-14T18:47:14.040Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALPHAX.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 80350,
+      "record": {
+        "time": "2026-10-14T18:47:15.042Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"MENU.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 80988,
+      "record": {
+        "time": "2026-10-14T18:47:16.379Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"MENU.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 81624,
+      "record": {
+        "time": "2026-10-14T18:47:17.304Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"MENU.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 82259,
+      "record": {
+        "time": "2026-10-14T18:47:18.271Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"MENU.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 82894,
+      "record": {
+        "time": "2026-10-14T18:47:19.195Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"MENU.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 83529,
+      "record": {
+        "time": "2026-10-14T18:47:20.123Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"MENU.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 84164,
+      "record": {
+        "time": "2026-10-14T18:47:21.048Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"MENU.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 84799,
+      "record": {
+        "time": "2026-10-14T18:47:21.949Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"MENU.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 85437,
+      "record": {
+        "time": "2026-10-14T18:47:22.853Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"MENU.txt\" GENERIC_READ FILE_SHARE_READ FILE_SHARE_WRITE  creation 3 attributes 0x80"
+      }
+    },
+    {
+      "sourceLine": 86075,
+      "record": {
+        "time": "2026-10-14T18:47:23.878Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"CURSOR.PCX\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 86710,
+      "record": {
+        "time": "2026-10-14T18:47:30.944Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"NEWICONS.PCX\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 87345,
+      "record": {
+        "time": "2026-10-14T18:47:41.680Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"ALIENCIT.PCX\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 87994,
+      "record": {
+        "time": "2026-10-14T18:47:44.352Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"XI.PCX\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 88628,
+      "record": {
+        "time": "2026-10-14T18:47:45.670Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"XF.PCX\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 89263,
+      "record": {
+        "time": "2026-10-14T18:47:47.809Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"PALETTE.PCX\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    },
+    {
+      "sourceLine": 89897,
+      "record": {
+        "time": "2026-10-14T18:47:48.875Z",
+        "type": "log",
+        "text": "0024:trace:file:CreateFileW L\"UNITS.PCX\" GENERIC_READ  creation 3 attributes 0x8000080"
+      }
+    }
+  ]
+}

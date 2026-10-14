@@ -1,0 +1,44 @@
+{
+  "output": "/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/public/game-data",
+  "counts": {
+    "assets": 1632,
+    "images": 760,
+    "audio": 508,
+    "factions": 14,
+    "unregisteredFactions": 2,
+    "scenarioRuleOverrides": 1,
+    "failures": 0,
+    "byExtension": {
+      ".016": 2,
+      ".256": 2,
+      ".amb": 8,
+      ".cvr": 140,
+      ".dll": 7,
+      ".exe": 6,
+      ".flc": 37,
+      ".fot": 1,
+      ".icd": 2,
+      ".ini": 1,
+      ".mp": 4,
+      ".mp3": 154,
+      ".pcx": 760,
+      ".pdf": 1,
+      ".sc": 16,
+      ".sdb": 2,
+      ".sys": 1,
+      ".ttf": 5,
+      ".txt": 68,
+      ".wav": 354,
+      ".wve": 61
+    },
+    "excluded": {
+      "save-or-hidden": 4,
+      "transient-or-session-state": 47
+    }
+  },
+  "workThisRun": {
+    "inventoried": 1632,
+    "reused": 1268
+  },
+  "failures": []
+}

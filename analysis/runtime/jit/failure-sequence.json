@@ -1,0 +1,69 @@
+{
+  "capturedAtUTC": "2026-10-14T18:55:56.185559+00:00",
+  "logs": [
+    {
+      "path": "analysis/runtime/browser-probe/console.ndjson",
+      "sha256": "603912111f8a01db36b330a3722e047debd2238ba5ab4c224851ed7cacf00d02",
+      "lineCountAtRead": 167141,
+      "firstOwnerAssertion": {
+        "count": 1,
+        "first": {
+          "line": 98,
+          "time": "2026-10-14T18:36:00.456Z",
+          "type": "error",
+          "text": "[alert suppressed] Error\n\nKMemory::commitPreparedCodeInvalidation nextOp->blockStart"
+        }
+      },
+      "firstNestedAssertion": {
+        "count": 21879,
+        "first": {
+          "line": 99,
+          "time": "2026-10-14T18:36:00.458Z",
+          "type": "error",
+          "text": "[alert suppressed] Error\n\nnested code invalidation preparation"
+        }
+      },
+      "firstWasmBoundsError": {
+        "count": 1,
+        "first": {
+          "line": 21978,
+          "time": "2026-10-14T18:36:01.565Z",
+          "type": "error",
+          "text": "Uncaught RuntimeError: memory access out of bounds at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.js:1:326\nRuntimeError: memory access out of bounds\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[11952]:0x36dbd5\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[452]:0x1683f\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[6210]:0x1d3f00\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[6212]:0x1d4266\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[1166]:0x774a5\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[1956]:0xb8548\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[3207]:0x111e92\n    at wasm://wasm/def50976:wasm-function[48]:0x392\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[2216]:0xcbafd\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[1880]:0xb4dce"
+        }
+      }
+    },
+    {
+      "path": "analysis/runtime/browser-jit-default/console.ndjson",
+      "sha256": "8537c0c359e12374e380b02c4fda23e301e46343b1da2a4759645878f1ead1f3",
+      "lineCountAtRead": 21968,
+      "firstOwnerAssertion": {
+        "count": 1,
+        "first": {
+          "line": 86,
+          "time": "2026-10-14T18:48:11.892Z",
+          "type": "error",
+          "text": "[alert suppressed] Error\n\nKMemory::commitPreparedCodeInvalidation nextOp->blockStart"
+        }
+      },
+      "firstNestedAssertion": {
+        "count": 21881,
+        "first": {
+          "line": 87,
+          "time": "2026-10-14T18:48:11.893Z",
+          "type": "error",
+          "text": "[alert suppressed] Error\n\nnested code invalidation preparation"
+        }
+      },
+      "firstWasmBoundsError": {
+        "count": 1,
+        "first": {
+          "line": 21968,
+          "time": "2026-10-14T18:48:13.170Z",
+          "type": "error",
+          "text": "Uncaught RuntimeError: memory access out of bounds at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.js:1:326\nRuntimeError: memory access out of bounds\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[11952]:0x36d872\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[6218]:0x1d4924\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[6210]:0x1d3ef8\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[6212]:0x1d4266\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[1166]:0x774a5\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[1956]:0xb8548\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[3207]:0x111e92\n    at wasm://wasm/c01a9b16:wasm-function[48]:0x392\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[2216]:0xcbafd\n    at http://localhost:5173/runtime/SingleThreadedJit/boxedwine.wasm:wasm-function[1880]:0xb4dce"
+        }
+      }
+    }
+  ]
+}

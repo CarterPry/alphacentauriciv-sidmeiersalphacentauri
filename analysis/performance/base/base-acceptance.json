@@ -1,0 +1,83 @@
+{
+  "started": 1792014746206,
+  "longTasks": [
+    {
+      "start": 26326.455000042915,
+      "duration": 76
+    },
+    {
+      "start": 95155.99500000477,
+      "duration": 92
+    }
+  ],
+  "events": [
+    {
+      "type": "keydown",
+      "at": 26319.975000023842,
+      "delay": 0.6699999570846558
+    },
+    {
+      "type": "pointermove",
+      "at": 65842.53500008583,
+      "delay": 19.195000052452087
+    },
+    {
+      "type": "pointerdown",
+      "at": 65842.66500008106,
+      "delay": 19.265000104904175
+    },
+    {
+      "type": "pointermove",
+      "at": 95156.06500005722,
+      "delay": 9.259999990463257
+    },
+    {
+      "type": "pointerdown",
+      "at": 95156.34500002861,
+      "delay": 9.509999990463257
+    },
+    {
+      "type": "keydown",
+      "at": 107439.26999998093,
+      "delay": 9.669999957084656
+    },
+    {
+      "type": "keydown",
+      "at": 124115.64999997616,
+      "delay": 1.1699999570846558
+    },
+    {
+      "type": "keydown",
+      "at": 143410.29000008106,
+      "delay": 0.4500000476837158
+    },
+    {
+      "type": "keydown",
+      "at": 145625.96000003815,
+      "delay": 18.100000023841858
+    },
+    {
+      "type": "keydown",
+      "at": 145635.97500002384,
+      "delay": 9.600000023841858
+    },
+    {
+      "type": "keydown",
+      "at": 177370.66000008583,
+      "delay": 5.425000071525574
+    },
+    {
+      "type": "pointermove",
+      "at": 178908.88499999046,
+      "delay": 8.84499990940094
+    },
+    {
+      "type": "pointerdown",
+      "at": 178908.9850000143,
+      "delay": 8.919999957084656
+    }
+  ],
+  "elapsed": 178959.28500008583,
+  "title": "BoxedWine 184 MIPS",
+  "state": "{\"edition\":\"alpha-centauri\",\"executable\":\"terran.exe\",\"engine\":\"SingleThreadedJitFast\",\"phase\":\"game-ready\",\"error\":null,\"log\":[\"[MIPS] count=100 raw=159 avg=192 min=122 max=213 warmAvg=183 warmSamples=81\",\"[MIPS] count=110 raw=177 avg=186 min=122 max=213 warmAvg=183 warmSamples=91\",\"[MIPS] count=120 raw=179 avg=176 min=151 max=182 warmAvg=182 warmSamples=101\",\"[MIPS] count=130 raw=183 avg=180 min=151 max=190 warmAvg=182 warmSamples=111\",\"[MIPS] count=140 raw=187 avg=185 min=179 max=190 warmAvg=182 warmSamples=121\",\"[MIPS] count=150 raw=183 avg=184 min=180 max=188 warmAvg=182 warmSamples=131\"],\"source\":\"Installed original x86 executable; CPU emulated in WebAssembly\",\"persistence\":\"IndexedDB, this browser and origin\",\"coordinates\":\"Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.\",\"gameFiles\":1683,\"gameSha256\":\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\",\"browserSaveCount\":5,\"runtimeInitialized\":true,\"readiness\":{\"kind\":\"menu\",\"menuMatches\":7,\"worldMatches\":0},\"nativeReady\":{\"kind\":\"menu\",\"consecutive\":2,\"elapsedMs\":54128},\"canvas\":{\"width\":1024,\"height\":768}}"
+}

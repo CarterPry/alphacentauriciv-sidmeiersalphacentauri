@@ -1,0 +1,26 @@
+{
+  "source": "analysis/performance/baseline/menu-baseline.json",
+  "sourceSha256": "c20f5b4ecd7cd5efa81f2d0faef3669b5aa7142a8d82377f6535e9459b58fabf",
+  "nativeReady": {
+    "kind": "menu",
+    "menuMatches": 7,
+    "worldMatches": 0,
+    "menuErrors": [
+      12.4765625,
+      10.46875,
+      9.463541666666666,
+      11.5625,
+      11.497395833333334,
+      10.151041666666666,
+      10.190104166666666
+    ],
+    "worldErrors": [
+      47.5390625,
+      49.143229166666664,
+      37.557291666666664
+    ],
+    "consecutive": 2,
+    "elapsed": 197250.88499999046
+  },
+  "scope": "Actual original Alien Crossfire menu sampled from live emulator display canvases on unchanged baseline; full loading-cover transition tested separately."
+}

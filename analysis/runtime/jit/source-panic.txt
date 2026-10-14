@@ -1,0 +1,29 @@
+Official pinned source: source/util/log.cpp
+Commit: 65467424603484756a73308412f40b906d28b650
+SHA-256: 66f8e41103e0694fc14ad7419394bea68fcd8d0e65e8b822e747b7de368a3892
+
+
+31: void kpanic(const char* msg) {
+32:     internal_kpanic(BString::copy(msg));
+33: }
+34: 
+35: void internal_kpanic(BString msg) {
+36:     BOXEDWINE_CRITICAL_SECTION_WITH_MUTEX(logMutex);
+37:     if (KSystem::logFile.isOpen()) {
+38:         KSystem::logFile.write(msg);
+39:     }
+40:     fwrite(msg.c_str(), 1, msg.length(), stderr);
+41:     fflush(stderr);
+42: #if defined(BOXEDWINE_MSVC) && defined(_DEBUG)
+43:     OutputDebugStringA(msg.c_str());
+44: #endif
+45:     if (KSystem::videoOption == VIDEO_NORMAL) {
+46: #ifndef _TEST
+47:         KNativeSystem::exit(msg.c_str(), 1);
+48: #endif
+49:     } else {
+50:         KNativeThread::sleep(5000);
+51:     }
+52:     exit(1);
+53: }
+54: 

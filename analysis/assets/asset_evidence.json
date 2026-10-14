@@ -1,0 +1,1130 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-14T18:06:32.349363+00:00",
+  "target_root": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri",
+  "method": "Read-only static file inspection by asset subagent; no target execution, network requests or REA active session operations. Text byte offsets calculated before decoding; lines are 1-based inclusive. SHA-256 covers entire source file.",
+  "source_change_check": "Hashes represent files at collection; no runtime quiescence guarantee needed for shipped assets. Save files could change externally; no game was launched in this investigation.",
+  "inventory": {
+    "recursive_file_count": 1683,
+    "total_size_bytes": 596954709,
+    "extension_counts": {
+      ".016": 2,
+      ".256": 2,
+      ".amb": 8,
+      ".cfg": 1,
+      ".cvr": 140,
+      ".dll": 7,
+      ".dmp": 2,
+      ".exe": 6,
+      ".flc": 37,
+      ".fot": 1,
+      ".icd": 2,
+      ".ini": 1,
+      ".mp": 4,
+      ".mp3": 154,
+      ".pcx": 760,
+      ".pdf": 1,
+      ".sav": 3,
+      ".sc": 16,
+      ".sdb": 2,
+      ".sfk": 2,
+      ".sys": 1,
+      ".tmp": 41,
+      ".ttf": 5,
+      ".txt": 69,
+      ".vdf": 1,
+      ".wav": 354,
+      ".wve": 61
+    },
+    "limitation": "Extension counts classify names, not verified formats; selected sample headers were parsed separately."
+  },
+  "sources": {
+    "alpha.txt": {
+      "relative_path": "alpha.txt",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/alpha.txt",
+      "size_bytes": 53073,
+      "sha256": "38399e1d0b967455a9146b1c468b9ec9decda43dd168afd8c3c23e0f46e357d4"
+    },
+    "alphax.txt": {
+      "relative_path": "alphax.txt",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/alphax.txt",
+      "size_bytes": 62778,
+      "sha256": "bb01e3ac23793da0a46713f4851d65e63b599c24aef8300ffe45e7e57b332c42"
+    },
+    "FACTION.TXT": {
+      "relative_path": "FACTION.TXT",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/FACTION.TXT",
+      "size_bytes": 9282,
+      "sha256": "7bb5c84a2e5b5b3f2eb7a61a404a3e0e1a6e8268597d9974cdf2a9e05c8137cc"
+    },
+    "GAIANS.TXT": {
+      "relative_path": "GAIANS.TXT",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/GAIANS.TXT",
+      "size_bytes": 3996,
+      "sha256": "6c25fe3492f83a9ac3a8da7c7e2ddc0a62134c46e244f8872e1e9067b2564cf2"
+    },
+    "Script.txt": {
+      "relative_path": "Script.txt",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/Script.txt",
+      "size_bytes": 275395,
+      "sha256": "eaf44ddeb066952cfb4f441a64c5f3517c1e8c59e0bc3bdf72e10fd80a2fc87d"
+    },
+    "menu.txt": {
+      "relative_path": "menu.txt",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/menu.txt",
+      "size_bytes": 4882,
+      "sha256": "29e02c37ae104c7f861810f147e0be7a39d0c70b1a1e3f83ac800fdb68fffc38"
+    },
+    "system.txt": {
+      "relative_path": "system.txt",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/system.txt",
+      "size_bytes": 5206,
+      "sha256": "cadbe5153d3e36fbb95638f6aec54ba929b6f60af56e782b38042fb835cb146f"
+    },
+    "Alpha Centauri.Ini": {
+      "relative_path": "Alpha Centauri.Ini",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/Alpha Centauri.Ini",
+      "size_bytes": 92,
+      "sha256": "80058746c56d5d15d24d4fe8b74e4b8bd90c95685beb715bab23157eafeed3f1"
+    },
+    "readme_ac.txt": {
+      "relative_path": "readme_ac.txt",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/readme_ac.txt",
+      "size_bytes": 34380,
+      "sha256": "ff562beb6c5e4a79d3eb8628b2c3b3e19ced340377fedea04e9ed58995d3c26a"
+    },
+    "scenarios/Alpha Centauri Scenarios/2Build/scenario.txt": {
+      "relative_path": "scenarios/Alpha Centauri Scenarios/2Build/scenario.txt",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/scenarios/Alpha Centauri Scenarios/2Build/scenario.txt",
+      "size_bytes": 3556,
+      "sha256": "6a535900eda4217944f6e7eb1c4cd1538a112a49f7e14a5111deacd51154f4f0"
+    },
+    "scenarios/Alpha Centauri Scenarios/2Build/alpha.txt": {
+      "relative_path": "scenarios/Alpha Centauri Scenarios/2Build/alpha.txt",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/scenarios/Alpha Centauri Scenarios/2Build/alpha.txt",
+      "size_bytes": 52186,
+      "sha256": "1753379104a03ee14395a2da1a528d86ac3cb12eeb156316482dc2766b3ba0c2"
+    },
+    "movlist.txt": {
+      "relative_path": "movlist.txt",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/movlist.txt",
+      "size_bytes": 12825,
+      "sha256": "99f067d32a50351ea98811b5e0e8f1d2a72f53210066d2a777d7b77b5c8b43c1"
+    },
+    "palette.pcx": {
+      "relative_path": "palette.pcx",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/palette.pcx",
+      "size_bytes": 78073,
+      "sha256": "54341b1bee31736997950e432ff3312a620f7cf722016c154098a4c78d28f866"
+    },
+    "Gaians.pcx": {
+      "relative_path": "Gaians.pcx",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/Gaians.pcx",
+      "size_bytes": 216752,
+      "sha256": "a2d4214c3857c130586a249adf8c48c27d877f3da8321f5d53155ca5836d0891"
+    },
+    "Cursor.pcx": {
+      "relative_path": "Cursor.pcx",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/Cursor.pcx",
+      "size_bytes": 31883,
+      "sha256": "6fc5ff4372644ed4dbf165a006dca17f9cf56935398ffee203bed30a2b091e15"
+    },
+    "ACP00.cvr": {
+      "relative_path": "ACP00.cvr",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/ACP00.cvr",
+      "size_bytes": 53389,
+      "sha256": "08ce5cfc6dcf9208cf833f1515f71299bc93c67445bf6d33ac3c22b7cf7d81dd"
+    },
+    "fx/gset1.amb": {
+      "relative_path": "fx/gset1.amb",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/fx/gset1.amb",
+      "size_bytes": 16754,
+      "sha256": "dbf85288c17795926fc7c7f910ad3097fd0099b595849a82227d4d69230d9e72"
+    },
+    "maps/planet.MP": {
+      "relative_path": "maps/planet.MP",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/maps/planet.MP",
+      "size_bytes": 143667,
+      "sha256": "24b1a6b018f0aaddde0ecc5712cc302359c872228b0342f0f30b9004670cdb30"
+    },
+    "scenarios/Alpha Centauri Scenarios/2Build/Build.SC": {
+      "relative_path": "scenarios/Alpha Centauri Scenarios/2Build/Build.SC",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/scenarios/Alpha Centauri Scenarios/2Build/Build.SC",
+      "size_bytes": 195866,
+      "sha256": "bf56d50d18866f715a036cc5322bef579455af5f953d1981a415fcf0dafde310"
+    },
+    "saves/auto/Alpha Centauri Autosave 1.SAV": {
+      "relative_path": "saves/auto/Alpha Centauri Autosave 1.SAV",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/saves/auto/Alpha Centauri Autosave 1.SAV",
+      "size_bytes": 290608,
+      "sha256": "b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42"
+    },
+    "saves/auto/Alpha Centauri Autosave 2.SAV": {
+      "relative_path": "saves/auto/Alpha Centauri Autosave 2.SAV",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/saves/auto/Alpha Centauri Autosave 2.SAV",
+      "size_bytes": 290608,
+      "sha256": "8653f590dbef8727120556550d786858a3f90386a8d9d69e96a3e654bae36f34"
+    },
+    "saves/auto/Alpha Centauri Autosave 10.SAV": {
+      "relative_path": "saves/auto/Alpha Centauri Autosave 10.SAV",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/saves/auto/Alpha Centauri Autosave 10.SAV",
+      "size_bytes": 290608,
+      "sha256": "d312da86b550ff877c8220bf76f0c389113bd65d936de862f992fe165cfc42e7"
+    },
+    "movies/openingx.wve": {
+      "relative_path": "movies/openingx.wve",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/movies/openingx.wve",
+      "size_bytes": 21022986,
+      "sha256": "8946b715105f3fa3fa8d9c5cbd5c516e03177ef082b623fa4514fc83a4a0430d"
+    },
+    "fx/dchoir a2.wav": {
+      "relative_path": "fx/dchoir a2.wav",
+      "absolute_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/fx/dchoir a2.wav",
+      "size_bytes": 249588,
+      "sha256": "3a9b7d5adc7d8c4411fcf5a075c4f9f0896842f8958d45e483b38b7dca4b0754"
+    }
+  },
+  "text_excerpts": [
+    {
+      "id": "ASSET-01",
+      "title": "Rules startup loading and scenario override as documented in shipped file",
+      "source": "alpha.txt",
+      "line_start": 8,
+      "line_end_inclusive": 15,
+      "byte_start": 135,
+      "byte_end_exclusive": 597,
+      "encoding": "windows-1252",
+      "text": "; ALPHA CENTAURI reads the rules of the game from this file at\r\n; startup. Feel free, at your own risk, to experiment with editing\r\n; this file. We recommend you make a backup copy of the original.\r\n;\r\n; If you are building a scenario and need custom rules, copy this\r\n; file into a subdirectory with your scenario file before editing.\r\n; Files in the same subdirectory as a scenario file automatically\r\n; take precedence over files in the main game directory.\r\n"
+    },
+    {
+      "id": "ASSET-02",
+      "title": "Baseline rule values: combat, movement, economy, gating technologies",
+      "source": "alpha.txt",
+      "line_start": 24,
+      "line_end_inclusive": 94,
+      "byte_start": 773,
+      "byte_end_exclusive": 4828,
+      "encoding": "windows-1252",
+      "text": "#RULES\r\n3,       ; Movement rate along roads\r\n2,       ; Nutrient intake requirement for citizens\r\n3,2      ; Numerator & Denominator for artillery fire damage\r\n2,       ; Max artillery range (larger will break multiplayer)\r\n8,       ; Max airdrop range w/o orbital insertion\r\n10,      ; Nutrient cost multiplier\r\n10,      ; Minerals cost multiplier\r\n100,     ; Technology discovery rate as a percentage of standard\r\n1,       ; Limits mineral increase for mine without road in square\r\n-1,      ; Nutrient effect in mine square (0 or -1)\r\n5,       ; Minimum base size to support specialists\r\n1,       ; Drones induced by Genejack factory\r\n7,       ; Population limit w/o hab complex\r\n14,      ; Population limit w/o hab dome\r\n50,      ; Extra percentage cost of prototype LAND unit\r\n50,      ; Extra percentage cost of prototype SEA unit\r\n50,      ; Extra percentage cost of prototype AIR unit\r\n3,2,     ; Psi combat offense-to-defense ratio (LAND unit defending)\r\n1,1,     ; Psi combat offense-to-defense ratio (SEA unit defending)\r\n1,1,     ; Psi combat offense-to-defense ratio (AIR unit defending)\r\n10,      ; Players' starting energy reserves\r\n25,      ; Combat % -> intrinsic base defense\r\n0,       ; Combat % -> attacking along road\r\n0,       ; Combat % -> for attacking from higher elevation\r\n0,       ; Combat penalty % -> attacking from lower elevation\r\n25,      ; Combat % -> Mobile unit in open ground\r\n0,       ; Combat % -> Defend vs. mobile in rough\r\n25,      ; Combat % -> Infantry vs. Base\r\n50,      ; Combat penalty % -> attack after airdrop\r\n25,      ; Combat % -> Fanatic attack bonus\r\n50,      ; Combat % -> Land based guns vs. ship artillery bonus\r\n25,      ; Combat % -> Artillery bonus per level of altitude\r\n50,      ; Combat % -> Trance bonus defending vs. psi\r\n50,      ; Combat % -> Empath Song bonus attacking vs. psi\r\n50,      ; Combat penalty % -> Air superiority unit vs. ground unit\r\n100,     ; Combat % -> Air superiority unit vs. air unit\r\n50,      ; Combat penalty % -> Non-combat unit defending vs. combat unit\r\n50,      ; Combat % -> Comm Jammer unit defending vs. mobile unit\r\n100,     ; Combat % -> Bonus vs. ships caught in port\r\n100,     ; Combat % -> AAA bonus vs. air units\r\n25,      ; Combat % -> Defend in range of friendly Sensor\r\n10,      ; Combat % -> Psi attack bonus/penalty per +PLANET\r\n50,      ; Retool percent penalty for production change\r\n2,       ; Retool strictness (0 = Always Free, 1 = Free in Category, 2 = Free if Project, 3 = Never Free)\r\n10,      ; Retool exemption (first X minerals not affected by penalty)\r\n20,      ; Minimum # of turns between councils\r\n5,       ; Minerals for harvesting forest\r\n8,       ; Territory: max distance from base\r\n20,      ; Turns to corner Global Energy Market\r\nCentPsi, ; Technology to improve fungus squares\r\nCentPsi, ; Technology to ease fungus movement\r\nCentEmp, ; Technology to build roads in fungus\r\nNeural,  ; Technology to allow 2 special abilities for a unit\r\nGene,    ; Technology to allow 3 nutrients in a square\r\nEcoEng,  ; Technology to allow 3 minerals in a square\r\nEnvEcon, ; Technology to allow 3 energy in a square\r\nGravity, ; Technology to allow orbital insertion w/o Space Elevator\r\nEcoEng2, ; Technology for +1 mining platform bonus\r\nPlaEcon, ; Technology for economic victory\r\n1,       ; If non-zero, probe teams can steal technologies\r\n1,       ; If non-zero, humans can always contact each other in net games\r\n1,       ; If non-zero, humans can always contact each other in hotseat/email games\r\n50,      ; Maximum % damage inflicted by arty versus units in base/bunker\r\n99,      ; Maximum % damage inflicted by arty versus units in open\r\n100,     ; Maximum % damage inflicted by arty versus units at sea\r\n1, 1     ; Numerator/Denominator for frequency of global warming (1,2 would be \"half\" normal warming).\r\n2100     ; Normal starting year\r\n2600     ; Normal ending year for lowest 3 difficulty levels\r\n2500     ; Normal ending year for highest 3 difficulty levels\r\n1        ; If non-zero, obliterating a base counts as an atrocity\r\n"
+    },
+    {
+      "id": "ASSET-03",
+      "title": "Terraform schema and rows",
+      "source": "alpha.txt",
+      "line_start": 98,
+      "line_end_inclusive": 128,
+      "byte_start": 4835,
+      "byte_end_exclusive": 6870,
+      "encoding": "windows-1252",
+      "text": "; TERRAFORMING IMPROVEMENTS\r\n;\r\n; Name, Preq, Sea Name, Sea Preq, Rate, Order, Letter, Keystroke\r\n;\r\n; Rate      = # of turns to build\r\n; Order     = Description of unit orders\r\n; Letter    = Order letter\r\n; Keystroke = Keystroke description (changing text does not change\r\n;             the actual key mappings in the game)\r\n;\r\n#TERRAIN\r\nFarm,             None,    Kelp Farm,        None,     4,  Cultivate $STR0, f, F\r\nSoil Enricher,    EcoEng2, Soil Enricher,    Disable,  8,  Construct $STR0, f, F\r\nMine,             None,    Mining Platform,  None,     8,  Construct $STR0, M, M\r\nSolar Collector,  None,    Tidal Harness,    None,     4,  Construct $STR0, S, S\r\nForest,           None,    ...,              Disable,  4,  Plant $STR0,     F, Shift+F\r\nRoad,             None,    Road,             Disable,  1,  Build $STR0,     R, R\r\nMag Tube,         Magnets, Mag Tube,         Disable,  3,  Build $STR0,     R, R\r\nBunker,           MilAlg,  Bunker,           Disable,  5,  Construct $STR0, K, K\r\nAirbase,          DocAir,  Airbase,          Disable,  10, Construct $STR0, ., .\r\nSensor Array,     None,    Sensor Array,     Disable,  4,  Construct $STR0, O, O\r\nFungus,           None,    Sea Fungus,       None,     6,  Remove $STR0,    F, F\r\nFungus,           EcoEng,  Sea Fungus,       EcoEng,   6,  Plant $STR0,     F, Ctrl+F\r\nCondenser,        EcoEng,  Condenser,        Disable,  12, Construct $STR0, N, N\r\nEchelon Mirror,   EcoEng,  Echelon Mirror,   Disable,  12, Construct $STR0, E, Shift+E\r\nThermal Borehole, EcoEng,  Thermal Borehole, Disable,  24, Construct $STR0, B, Shift+B\r\nAquifer,          EcoEng,  Aquifer,          Disable,  18, Drill to $STR0,  Q, Q\r\nRaise Land,       EnvEcon, Raise Sea Floor,  EnvEcon,  12, Terraform UP,    ], ]]\r\nLower Land,       EnvEcon, Lower Sea Floor,  EnvEcon,  12, Terraform DOWN,  [, [[\r\nLevel Terrain,    None,    Level Terrain,    Disable,  8,  Terraform LEVEL, _, _\r\nMonolith,         Disable, Monolith,         Disable,  8,  Place Monolith,  ?, ?, (this is here for map editor)\r\n"
+    },
+    {
+      "id": "ASSET-04",
+      "title": "Resource production, world generation controls and sizes",
+      "source": "alpha.txt",
+      "line_start": 132,
+      "line_end_inclusive": 196,
+      "byte_start": 6877,
+      "byte_end_exclusive": 9976,
+      "encoding": "windows-1252",
+      "text": "; RESOURCE INFORMATION\r\n;\r\n; Resource production (nutrient, minerals, energy, <unused>) for\r\n; special squares. In normal squares, these values are determined\r\n; by the temperature, rainfall, rockiness, etc. of the square.\r\n;\r\n; \"Bonus Square\" value for particular category is added to other\r\n; production in a square.\r\n;\r\n; \"Improved Land\" means farm, mine, solar\r\n; \"Improved Sea\"  means desal, platform, harness\r\n;\r\n#RESOURCEINFO\r\nOcean Square,     1, 0, 0, 0,\r\nBase Square,      2, 1, 1, 0,\r\nBonus Square,     2, 2, 2, 0, * Mineral +1 if mine present\r\nForest Square,    1, 2, 1, 0,\r\nRecycling Tanks,  1, 1, 1, 0,\r\nImproved Land,    1, *, *, 0, \"*\" columns are ignored entirely\r\nImproved Sea,     2, 1, 3, 0, * Mineral +1 with Advanced Ecological Engineering\r\nMonolith,         2, 2, 2, 0,\r\nBorehole Square,  0, 6, 6, 0,\r\n\r\n;\r\n; WORLDBUILDER\r\n;   These parameters control the finer points of the world builder,\r\n;   along with the player's \"custom planet\" selections. Values are\r\n;   automatically scaled based on the size of the world.\r\n;\r\n#WORLDBUILDER\r\n384, ; Land base        (Seeded land size of a standard world)\r\n256, ; Land modifier    (additional land from LAND selection: x0, x1, x2)\r\n12,  ; Continent base   (Base size of a land mass seed)\r\n24,  ; Continent modif. (Increased size from LAND selection: x0, x1, x2)\r\n1,   ; Hills base       (Base # of extra hills)\r\n2,   ; Hills modifier   (additional hills from TIDAL selection: x0, x1, x2)\r\n4,   ; Plateau base     (Basic plateau size)\r\n8,   ; Plateau modifier (Plateau modifier based on LAND selection: x0, x1, x2)\r\n8,   ; Rivers base      (Basic # of rivers)\r\n12,  ; Rivers rain mod. (Additional rivers based on RAIN selection)\r\n14,  ; Solar Energy     (Latitude DIVISOR for temperature based on HEAT) Smaller # increases effect of HEAT selection\r\n14,  ; Thermal band     (Latitude DIVISOR for thermal banding)  Smaller # widens hot bands\r\n8,   ; Thermal deviance (Latitude DIVISOR for thermal deviance) Smaller # increases randomness\r\n8,   ; Global Warming   (Latitude DIVISOR for global warming)   Smaller # increases effect of warming\r\n5,   ; Sea Level Rises  (Magnitude of sea level changes from ice cap melting/freezing)\r\n5,   ; Cloudmass peaks  (Size of cloud mass trapped by peaks)\r\n3,   ; Cloudmass hills  (Size of cloud mass trapped by hills)\r\n1,   ; Rainfall coeff.  (Multiplier for rainfall belts)\r\n15,  ; Deep water       (Encourages fractal to grow deep water)\r\n10,  ; Shelf            (Encourages fractal to grow shelf)\r\n15,  ; Plains           (Encourages highland plains)\r\n10,  ; Beach            (Encourages wider beaches)\r\n10,  ; Hills            (Encourages hills x TIDAL selection)\r\n25,  ; Peaks            (Encourages peaks)\r\n1,   ; Fungus           (Fungus coefficient based on LIFE selection)\r\n3,6,12,18,24 ; Ratio    (Continent size ratios)\r\n36   ; Islands          (Higher # increases island count)\r\n\r\n#WORLDSIZE\r\n5\r\nTiny planet|(early conflict), 24, 48\r\nSmall planet,                 32, 64\r\nStandard planet,              40, 80\r\nLarge planet,                 44, 90\r\nHuge planet|(late conflict),  64, 128\r\n"
+    },
+    {
+      "id": "ASSET-05",
+      "title": "Tech schema, AI weights, prerequisites and sample rows",
+      "source": "alpha.txt",
+      "line_start": 220,
+      "line_end_inclusive": 266,
+      "byte_start": 10675,
+      "byte_end_exclusive": 13094,
+      "encoding": "windows-1252",
+      "text": "; TECHNOLOGY TREE\r\n;\r\n; Name, id, ai-mil, ai-tech, ai-infra, ai-colonize, preq(1), preq(2), flags\r\n;\r\n; Name     = Name of technology\r\n;\r\n; id       = 3 letter id code; this code is used when assigning\r\n;            the tech as a prerequisite.\r\n;\r\n; power    = military value\r\n; tech     = advance-of-knowledge value\r\n; wealth   = infrastructure value\r\n; growth   = colonization value\r\n;\r\n; preq(n)  = Prerequisite technology\r\n;            a) 3 character id code of tech\r\n;            b) \"nil\" to allow w/o prerequisite\r\n;            c) \"no\" to disallow entirely from game\r\n;\r\n; flags    = Special tech flags\r\n;            000000001 = \"Secrets\": first discoverer gains free tech\r\n;            000000010 = Improves Probe Team success rate\r\n;            000000100 = Increases commerce income\r\n;            000001000 = Reveals map\r\n;            000010000 = Allows gene warfare atrocity\r\n;            000100000 = Increases intrinsic defense against gene warfare\r\n;            001000000 = Increases ENERGY production in fungus\r\n;            010000000 = Increases MINERALS production in fungus\r\n;            100000000 = Increases NUTRIENT production in fungus\r\n;\r\n#TECHNOLOGY\r\nBiogenetics,                Biogen,  0, 3, 2, 2, None,    None,    000100000\r\nIndustrial Base,            Indust,  2, 1, 3, 0, None,    None,    000000000\r\nInformation Networks,       InfNet,  0, 3, 2, 1, None,    None,    000000000\r\nApplied Physics,            Physic,  4, 2, 1, 0, None,    None,    000000000\r\nSocial Psych,               Psych,   0, 1, 3, 2, None,    None,    000000000\r\nDoctrine: Mobility,         Mobile,  2, 0, 0, 3, None,    None,    000000000\r\nCentauri Ecology,           Ecology, 0, 1, 2, 3, None,    None,    100000000\r\nSuperconductor,             Super,   4, 2, 0, 0, OptComp, Indust,  000000000\r\nNonlinear Mathematics,      Chaos,   4, 3, 0, 0, Physic,  InfNet,  000000000\r\nApplied Relativity,         E=Mc2,   1, 3, 2, 0, Super,   Subat,   000000000\r\nFusion Power,               Fusion,  3, 4, 3, 1, Algor,   Super,   000000000\r\nSilksteel Alloys,           Alloys,  3, 0, 4, 2, Subat,   IndAuto, 000000000\r\nAdvanced Subatomic Theory,  Subat,   2, 3, 2, 0, Chemist, Poly,    000000000\r\nHigh Energy Chemistry,      Chemist, 3, 1, 2, 0, Indust,  Physic,  000000000\r\nFrictionless Surfaces,      Surface, 1, 3, 2, 0, Unified, IndRob,  000000000\r\nNanometallurgy,             Metal,   1, 1, 0, 3, ProbMec, DocInit, 000000000\r\n"
+    },
+    {
+      "id": "ASSET-06",
+      "title": "Movement chassis and reactor components",
+      "source": "alpha.txt",
+      "line_start": 340,
+      "line_end_inclusive": 380,
+      "byte_start": 18789,
+      "byte_end_exclusive": 20846,
+      "encoding": "windows-1252",
+      "text": "\r\n;\r\n; Chassis\r\n;\r\n; Names..., Speed, Triad, Range, Cargo, Cost, Preq, ...Large names\r\n;\r\n; Names...= First two names used for offensive units.\r\n;           Second two names used for defensive units.\r\n;           M1 = Masculine Singular (For foreign translations)\r\n;           M2 = Masculine Plural\r\n;           (etc. Use F for female, N for neuter)\r\n;\r\n; Speed   = # of moves\r\n; Triad   = Movement (0=Land 1=Sea 2=Air)\r\n; Range   = Range in turns from base (air units only)\r\n; Missile = Chassis is a \"missile\" (destroyed after attacking)\r\n; Cargo   = # units transported (multiply by reactor rating)\r\n; Cost    = Cost factor of chassis type (normally equal to speed)\r\n; Preq    = Technology required (see TECHNOLOGY)\r\n;\r\n#CHASSIS\r\nInfantry,M1,  Squad,M1,      Sentinels,M2,   Garrison,M1,  1, 0, 0, 0, 1, 1, None,     Shock Troops,M2,   Elite Guard,M1,\r\nSpeeder,M1,   Rover,M1,      Defensive,M1,   Skirmisher,M1,2, 0, 0, 0, 1, 2, Mobile,   Dragon,M1,         Enforcer,M1,\r\nHovertank,M1, Tank,M1,       Skimmer,M1,     Evasive,M1,   3, 0, 0, 0, 1, 3, NanoMin,  Behemoth,M1,       Guardian,M1,\r\nFoil,M1,      Skimship,M1,   Hoverboat,M1,   Coastal,M1,   4, 1, 0, 0, 2, 4, DocFlex,  Megafoil,M1,       Superfoil,M1,\r\nCruiser,M1,   Destroyer,M1,  Cutter,M1,      Gunboat,M1,   6, 1, 0, 0, 4, 6, DocInit,  Battleship,M1,     Monitor,M1,\r\nNeedlejet,M1, Penetrator,M1, Interceptor,M1, Tactical,M1,  8, 2, 2, 0, 1, 8, DocAir,   Thunderbolt,M1,    Sovereign,M1,\r\n'Copter,M1,   Chopper,M1,    Rotor,M1,       Lifter,M1,    8, 2, 1, 0, 1, 8, MindMac,  Gunship,M1,        Warbird,M1,\r\nGravship,M1,  Skybase,M1,    Antigrav,M1,    Skyfort,M1,   8, 2, 0, 0, 1, 8, Gravity,  Deathsphere,M1,    Doomwall,M1,\r\nMissile,M1,   Missile,M1,    Missile,M1,     Missile,M1,  12, 2, 1, 1, 0,12, Orbital,  Missile,M1,        Missile,M1,\r\n\r\n;\r\n; Reactors\r\n;\r\n; Name, power, preq\r\n;\r\n#REACTORS\r\nFission Plant,        Fission,     1, None,\r\nFusion Reactor,       Fusion,      2, Fusion,\r\nQuantum Chamber,      Quantum,     3, Quantum,\r\nSingularity Engine,   Singularity, 4, SingMec,\r\n"
+    },
+    {
+      "id": "ASSET-07",
+      "title": "Weapon/package and armor schemas and records",
+      "source": "alpha.txt",
+      "line_start": 382,
+      "line_end_inclusive": 444,
+      "byte_start": 20848,
+      "byte_end_exclusive": 23606,
+      "encoding": "windows-1252",
+      "text": ";\r\n; Weapons & non-combat packages\r\n;\r\n; Name, Name2, Offense, Mode, Cost, Preq\r\n;\r\n; Name    = Full name\r\n; Name2   = Short name\r\n; Offense = Attack rating (-1 = Psi Offense)\r\n; Mode    = Offense mode (or noncombat package type)\r\n;           Combat modes: 0=Projectile, 1=Energy, 2 = Missile\r\n;           Noncombat: 7=Transport 8=Colonist\r\n;                      9=Terraformer 10=Convoy 11=InfoWar\r\n;                      12=Artifact\r\n; Cost   = Cost factor of weapon or package\r\n; Icon   = Special unit icon (used only if chassis is Infantry)\r\n; Preq   = Technology prerequisite (see TECHNOLOGY)\r\n;\r\n#WEAPONS\r\nHand Weapons,         Gun,            1, 0, 1, -1, None,\r\nLaser,                Laser,          2, 0, 2, -1, Physic,\r\nParticle Impactor,    Impact,         4, 0, 4, -1, Chaos,\r\nGatling Laser,        Gatling,        5, 1, 5, -1, Super,\r\nMissile Launcher,     Missile,        6, 2, 6, -1, Fossil,\r\nChaos Gun,            Chaos,          8, 0, 8, -1, String,\r\nFusion Laser,         Fusion,        10, 1,10, -1, SupLube,\r\nTachyon Bolt,         Tachyon,       12, 1,12, -1, Unified,\r\nPlasma Shard,         Shard,         13, 2,13, -1, Space,\r\nQuantum Laser,        Quantum,       16, 1,16, -1, QuanMac,\r\nGraviton Gun,         Graviton,      20, 0,20, -1, AGrav,\r\nSingularity Laser,    Singularity,   24, 1,24, -1, ConSing,\r\nPsi Attack,           Psi,           -1, 2,10, -1, CentPsi,\r\nPlanet Buster,        Planet Buster, 99, 0,32, -1, Orbital,\r\nColony Module,        Colony Pod,     0, 8,10, -1, None,     ; Noncombat packages\r\nTerraforming Unit,    Formers,        0, 9, 6, -1, Ecology,\r\nTroop Transport,      Transport,      0, 7, 4, -1, DocFlex,\r\nSupply Transport,     Supply,         0,10, 8, -1, IndAuto,\r\nProbe Team,           Probe Team,     0,11, 4, -1, PlaNets,\r\nAlien Artifact,       Artifact,       0,12,36, -1, Disable,\r\nConventional Payload, Conventional,  12, 0,12, -1, Orbital,\r\n\r\n;\r\n; Armor\r\n;\r\n; Name, Name2, Armor, Mode, Cost, Preq\r\n;\r\n; Name    = Full Name\r\n; Name2   = Short Name\r\n; Armor   = Armor rating (-1 = Psi)\r\n; Mode    = Armor mode (0=Projectile, 1=Energy, 2=Binary)\r\n; Cost    = Cost factor of armor (should usually equal Armor)\r\n; Preq    = Technology prerequisite (see TECHNOLOGY)\r\n;\r\n#DEFENSES\r\nNo Armor,            Scout,       1, 0, 1, None,\r\nSynthmetal Armor,    Synthmetal,  2, 0, 2, Indust,\r\nPlasma Steel Armor,  Plasma,      3, 2, 3, Chemist,\r\nSilksteel Armor,     Silksteel,   4, 1, 4, Alloys,\r\nPhoton Wall,         Photon,      5, 1, 5, DocSec,\r\nProbability Sheath,  Probability, 6, 2, 6, ProbMec,\r\nNeutronium Armor,    Neutronium,  8, 1, 8, MatComp,\r\nAntimatter Plate,    Antimatter, 10, 2,10, NanEdit,\r\nStasis Generator,    Stasis,     12, 2,12, TempMec,\r\nPsi Defense,         Psi,        -1, 2, 6, Eudaim,\r\n"
+    },
+    {
+      "id": "ASSET-08",
+      "title": "Ability costs, applicability flags and rows",
+      "source": "alpha.txt",
+      "line_start": 447,
+      "line_end_inclusive": 507,
+      "byte_start": 23611,
+      "byte_end_exclusive": 27160,
+      "encoding": "windows-1252",
+      "text": "; Special Unit Abilities\r\n;\r\n; Name, Cost, Preq, Abbrev, Desc\r\n;\r\n; Name   = Name of ability\r\n; Cost   = Cost factor of ability\r\n;          1+ = Straight Cost; 25% increase per unit of cost\r\n;           0 = None\r\n;          -1 = Increases w/ ratio of weapon to armor: 0, 1, or 2.\r\n;               Rounded DOWN. Never higher than 2.\r\n;               Examples: For a W1,A2 unit, cost is 0\r\n;                         For a W3,A2 unit, cost is 1 (3/2 rounded down)\r\n;                         For a W6,A3 unit, cost is 2\r\n;          -2 = Increases w/ weapon value\r\n;          -3 = Increases w/ armor value\r\n;          -4 = Increases w/ speed value\r\n;          -5 = Increases w/ weapon+armor value\r\n;          -6 = Increases w/ weapon+speed value\r\n;          -7 = Increases w/ armor+speed value\r\n; Preq   = Technology prerequisite (see TECHNOLOGY)\r\n; Abbrev = Abbreviation for use in unit names\r\n; Desc   = Description of ability (keep it brief!)\r\n;\r\n; Flags  =\r\n;          00000000001 = Allowed for Land units\r\n;          00000000010 = Allowed for Sea units\r\n;          00000000100 = Allowed for Air units\r\n;          00000001000 = Allowed for Combat units\r\n;          00000010000 = Allowed for Terraformer units\r\n;          00000100000 = Allowed for Noncombat units (non-terraformer)\r\n;          00001000000 = Not allowed for probe teams\r\n;          00010000000 = Not allowed for psi units\r\n;          00100000000 = Transport units only\r\n;          01000000000 = Not allowed for fast-moving units\r\n;          10000000000 = Cost increased for land units\r\n;\r\n#ABILITIES\r\nSuper Former,           1, EcoEng2,  Super,     00000010111, Terraform rate doubled\r\nDeep Radar,             0, MilAlg,   ,          10000111111, Sees 2 spaces\r\nCloaking Device,        1, Surface,  Cloaked,   00001111001, Invisible; Ignores ZOCs\r\nAmphibious Pods,        1, DocInit,  Amphibious,00000001001, Attacks from ship\r\nDrop Pods,              2, MindMac,  Drop,      00000111001, Makes air drops\r\nAir Superiority,        1, DocAir,   SAM,       00000001111, Attacks air units\r\nDeep Pressure Hull,     1, Metal,    Sub,       00000111010, Operates underwater\r\nCarrier Deck,           1, Metal,    Carrier,   00101101010, Mobile Airbase\r\nAAA Tracking,           1, MilAlg,   AAA,       00010001011, x2 vs. air attacks\r\nComm Jammer,           -1, Subat,    ECM,       00010111001, +50% vs. fast units\r\nAntigrav Struts,        1, Gravity,  Grav,      00000111001, +1 movement rate (or +Reactor*2 for Air)\r\nEmpath Song,            2, CentEmp,  Empath,    00010001111, +50% attack vs. Psi\r\nPolymorphic Encryption, 1, Algor,    Secure,    00000111111, x2 cost to subvert\r\nFungicide Tanks,        1, Fossil,   Fungicidal,00000010111, Clear fungus at double speed\r\nHigh Morale,            1, Integ,    Trained,   00000001111, Gains morale upgrade\r\nHeavy Artillery,       -7, Poly,     Artillery, 00010001001, Bombards\r\nClean Reactor,          2, BioEng,   Clean,     00000111111, Requires no support\r\nBlink Displacer,        1, Matter,   Blink,     00000001111, Bypass base defenses\r\nHypnotic Trance,       -1, Brain,    Trance,    00010111111, +50% defense vs. PSI\r\nHeavy Transport,        1, Disable,  Heavy,     00100100111, +50% transport capacity\r\nNerve Gas Pods,         1, Chemist,  X,         00011001101, Can +50% offense (Atrocity)\r\nRepair Bay,             1, Metal,    Repair,    00100100111, Repairs ground units on board\r\nNon-Lethal Methods,     1, Integ,    Police,    00000001001, x2 Police powers\r\nSlow Unit,              0, Disable,  Slow,      00000111111, -1 moves\r\n"
+    },
+    {
+      "id": "ASSET-09",
+      "title": "Unit templates reference components, AI plans, auto-calculated costs and bit flags",
+      "source": "alphax.txt",
+      "line_start": 559,
+      "line_end_inclusive": 614,
+      "byte_start": 29106,
+      "byte_end_exclusive": 32699,
+      "encoding": "windows-1252",
+      "text": ";\r\n; Basic Units - Units predesigned for all players\r\n;\r\n; Name, Chassis, Weapon, Armor, Plan, Cost, Carry, Preq, Icon, Abil\r\n;\r\n; Name    = Name of unit\r\n; Chassis = Chassis type   (index to CHASSIS list, above)\r\n; Weapon  = Weapon/package (index to WEAPONS list, above)\r\n; Armor   = Armor          (index to ARMOR   list, above)\r\n;\r\n; Plan    = Unit \"plan\" for AI purposes:\r\n;          -1  = Auto Calculate\r\n;           0  = Offensive\r\n;           1  = Combat\r\n;           2  = Defensive\r\n;           3  = Reconnaisance\r\n;           4  = Air Superiority\r\n;           5  = Planet Buster\r\n;           6  = Naval Superiority\r\n;           7  = Naval Transport\r\n;           8  = Colonization\r\n;           9  = Terraforming\r\n;           10 = Supply Convoy\r\n;           11 = Info Warfare\r\n;           12 = Alien Artifact\r\n; Cost    = Cost in minerals (0 = Autocalculate)\r\n; Carry   = Carrying capacity (0 = Autocalculate)\r\n; Preq    = Technology prerequisite (see TECHNOLOGY, above)\r\n; Icon    = Special icon, if any\r\n; Abil    = Special ability flags\r\n;\r\n#UNITS\r\n23\r\nColony Pod,             Infantry, Colony Pod,   Scout,      8, 0, 0, None,    -1, 00000000000000000000000000\r\nFormers,                Infantry, Formers,      Scout,      9, 0, 0, Ecology, -1, 00000000000000000000000000\r\nScout Patrol,           Infantry, Gun,          Scout,      3, 0, 0, None,    -1, 00000000000000000000000000\r\nTransport Foil,         Foil,     Transport,    Scout,      7, 0, 0, DocFlex, -1, 00000000000000000000000000\r\n*Sea Formers,           Foil,     Formers,      Scout,      9, 0, 0, Disable, -1, 00000000000000000000000000\r\nSupply Crawler,         Infantry, Supply,       Scout,     10, 0, 0, IndAuto, -1, 00000000000000000000000000\r\nProbe Team,             Speeder,  Probe Team,   Scout,     11, 0, 0, PlaNets, -1, 00000000000000000000000000\r\nAlien Artifact,         Infantry, Artifact,     Scout,     12,10, 0, Disable,  2, 00000000000000000000000000\r\nMind Worms,             Infantry, Psi,          Psi,        1, 5, 0, CentEmp,  3, 00000000000000000000000000\r\nIsle of the Deep,       Foil,     Psi,          Psi,        7, 8, 4, CentMed, -1, 00000000000000000000000000\r\nLocusts of Chiron,      Gravship, Psi,          Psi,        4,10, 0, CentGen, -1, 00000000000000000000100000\r\nUnity Rover,            Speeder,  Gun,          Scout,      3, 0, 0, Disable, -1, 00000000000000000000000000\r\nUnity Scout Chopper,    Copter,   Gun,          Scout,      4, 0, 0, Disable, -1, 00000000000000000000100000\r\nUnity Foil,             Foil,     Transport,    Scout,      7, 0, 0, Disable, -1, 00100000000000000000000000\r\nSealurk,                Foil,     Psi,          Psi,        6, 6, 0, CentPsi,  4, 00000000000000000001000000\r\nSpore Launcher,         Infantry, Psi,          Psi,        0, 5, 0, Bioadap,  5, 00000000001000000000000000\r\nBattle Ogre MK1,        Infantry, R-Laser,      3-Res,      0,10, 0, Disable,  6, 00010000000000000000000000\r\nBattle Ogre MK2,        Infantry, R-Bolt,       8-Res,      0,15, 0, Disable,  6, 10010000000000000000000000\r\nBattle Ogre MK3,        Speeder,  String,       Stasis,     0,20, 0, Disable,  6, 10010000000000000000000000\r\nFungal Tower,           Infantry, Psi,          Psi,        3, 0, 0, Disable,  1, 00000000000000000000000000\r\nUnity Mining Laser,     Infantry, Laser,        Scout,      0, 0, 0, Disable, -1, 00000000000000000000000000\r\nSea Escape Pod,         Foil,     Colony Pod,   Scout,      8, 0, 0, Disable, -1, 00000000000000000000000000\r\nUnity Gunship,          Foil,     Gun,          Scout,     -1, 0, 0, Disable, -1, 00000000000000000000000000\r\n"
+    },
+    {
+      "id": "ASSET-10",
+      "title": "Faction format documentation and personality fields",
+      "source": "FACTION.TXT",
+      "line_start": 9,
+      "line_end_inclusive": 107,
+      "byte_start": 122,
+      "byte_end_exclusive": 5184,
+      "encoding": "windows-1252",
+      "text": "; Factions -- Names & personalities\r\n;\r\n; formal, desc, noun, masc/fem, sing/plural, name, gender, ai-fight, ai-power, ai-tech, ai-wealth, ai-growth\r\n;    title, characteristic, adjective\r\n;    SPECIAL RULES, parameters, ...\r\n;    SOCIAL PRIORITY, setting, result\r\n;\r\n; formal      = Formal name of colony/group\r\n; desc        = Description of basic ideology\r\n; noun        = Plural noun\r\n; masc/fem    = Is faction's noun masculine or feminine\r\n; sing/plural = Is faction's noun singular (Labyrinth) or plural (Gaians)\r\n; name        = Name of default leader\r\n; gender      = M or F (gender of leader)\r\n; ai-fight    = -1,0,1 (willingness to use force to achieve goals)\r\n; ai-power    = 1 or 0 (interest in power)\r\n; ai-tech     = 1 or 0 (interest in knowledge)\r\n; ai-wealth   = 1 or 0 (interest in wealth)\r\n; ai-growth   = 1 or 0 (interest in population growth)\r\n;\r\n; title          = leader's title\r\n; characteristic = leader's descriptive adjective\r\n;\r\n; adjective      = adjectival form of faction name (e.g. Gaian)\r\n;                  TRANSLATOR NOTE: for FRENCH versions, this should\r\n;                  give all four forms (ms:fs:mp:fp):\r\n;                  Gaian:Gaiane:Gaians:Gaianes (or whatever it would be)\r\n;                  for GERMAN it should have all six forms.\r\n;\r\n; SPECIAL RULES = rule, parameter\r\n;\r\n;   TECH        = Free technology at start. Parameter\r\n;                 is either a tech id (e.g. \"Cen\") to\r\n;                 indicate a specific technology, or a\r\n;                 number (e.g. 2) to indicate a number\r\n;                 of player-selected technologies.\r\n;   MORALE      = Morale modifier (if 0, indicates an\r\n;                 exemption from negative modifiers from\r\n;                 other sources).\r\n;   PSI         = Percentage combat bonus for PSI Combat.\r\n;   FACILITY    = Every new base gets this free facility.\r\n;                 Param indicates facility (e.g. \"4\" is\r\n;                 a Perimeter Defense) from the facilities\r\n;                 list. Do NOT attempt to give satellites\r\n;                 and secret projects this way.\r\n;   RESEARCH    = Free research points per base per turn.\r\n;   DRONE       = Extra drone at base (per \"param\"\r\n;                 citizens, rounded down)\r\n;   TALENT      = Extra talent at base (per \"param\"\r\n;                 citizens, rounded up)\r\n;   ENERGY      = Free energy reserves at start\r\n;   INTEREST    = Energy reserves interest.\r\n;                 Non-zero = constant percentage per turn (including negative)\r\n;                 Zero     = +1/base each turn\r\n;   COMMERCE    = Increased commerce rate\r\n;   POPULATION  = # to be added to population limit of\r\n;                 each base for purposes of Habitation\r\n;                 domes, etc.\r\n;   HURRY       = Percentage change in costs of \"Hurry\"\r\n;                 button on construction (e.g. 125 means\r\n;                 125% of normal cost, so 100 costs 125).\r\n;   UNIT        = Extra free unit at start; param is\r\n;                 index from units list (e.g. 0 equals\r\n;                 Colonists, 1 Terraformers, 2 Scout\r\n;                 Crawler)\r\n;   TECHCOST    = Modifier % for tech research rate.\r\n;                 (e.g. 125 means each discovery costs\r\n;                 125% the usual number of research\r\n;                 points).\r\n;   SHARETECH   = Gain any technology known to # other players\r\n;   TERRAFORM   = Halves terraform raise/lower cost\r\n;   SOCIAL      = Gives a modifier in the named social effect category\r\n;                 (\"SOCIAL, +EFFIC\" raises the EFFIC rating by 1;\r\n;                  \"SOCIAL, --POLICE\" lowers POLICE rating by 2);\r\n;   ROBUST      = Halves the intensity of minus effects in the named\r\n;                 social area (\"ROBUST, EFFIC\" halves minus efficiency\r\n;                 effects in social model).\r\n;   IMMUNITY    = Immunity from minus effects in the named social\r\n;                 area. (\"IMMUNITY, ENERGY\" prevents minus energy\r\n;                 effects in social model).\r\n;   IMPUNITY    = Impunity :-) from minus effects from a particular\r\n;                 social setting. \"IMPUNITY, Police State\" prevents\r\n;                 all - effects from \"Police State\" setting.\r\n;   PENALTY     = Opposite of impunity: doubles the negative effects\r\n;                 of a particular setting.\r\n;   FUNGNUTRIENT= Modifier to NUTRIENT produced in fungus squares\r\n;   FUNGMINERALS= Modifier to MINERALS produced in fungus squares\r\n;   FUNGENERGY  = Modifier to ENERGY produced in fungus squares\r\n;   COMMFREQ    = Gets an extra comm frequency (another faction to\r\n;                 talk to) at beginning of game. (Parameter is ignored)\r\n;   MINDCONTROL = Vehicles and bases immune to mind control\r\n;   FANATIC     = +25% bonus on attack\r\n;   VOTES       = Multiplier for governor votes\r\n;   FREEPROTO   = Prototype cost reduced to zero for this faction\r\n;\r\n; SOCIAL PRIORITY:\r\n;   Drawn from the political table above (see #SOCIO), these entries\r\n;   must exactly match the SOCIO entries in spelling. These determine\r\n;   the leader's social priorities.\r\n"
+    },
+    {
+      "id": "ASSET-11",
+      "title": "Gaian faction concrete parameters and flavor fragments",
+      "source": "GAIANS.TXT",
+      "line_start": 13,
+      "line_end_inclusive": 36,
+      "byte_start": 335,
+      "byte_end_exclusive": 1316,
+      "encoding": "windows-1252",
+      "text": "#GAIANS\r\nGaia's Stepdaughters, The Green, Gaians, F, 2, Deirdre, F, -1, 0, 0, 0, 1,\r\n  TECH, Ecology, SOCIAL, -MORALE, SOCIAL, -POLICE, SOCIAL, ++EFFIC, SOCIAL, +PLANET, FUNGNUTRIENT, 1\r\n  Economics, Green, PLANET\r\n  Economics, Free Market, nil\r\n  Gaian, Gaian,\r\n  Lindly, Scott, Lindly's Rest\r\n  Lady, beautiful, tree-crazy, ecologically sensitive, eco-daft,\r\n  Nature Loony\r\n  preserve Planet's native life\r\n  to guard, understand, and preserve Planet's native life\r\n  stamping out all legitimate sentient development of this planet\r\n  stamping out all legitimate sentient development of this planet\r\n  cripple any and all efforts toward sentient progress on this world\r\n  dancing naked through the trees\r\n  dancing naked through the trees\r\n  spouting tree-crazy prattle\r\n  tree-crazy prattle, M1\r\n  environmental initiatives, M2\r\n  pagan rituals, M2\r\n  ecology tax, M1\r\n  preserving and cataloguing Planet's native life\r\n  my Environmental Police\r\n  the Planetary Ecology Code\r\n"
+    },
+    {
+      "id": "ASSET-12",
+      "title": "Land/sea base-name lists, lore, data links",
+      "source": "GAIANS.TXT",
+      "line_start": 38,
+      "line_end_inclusive": 101,
+      "byte_start": 1318,
+      "byte_end_exclusive": 2679,
+      "encoding": "windows-1252",
+      "text": "#BASES\r\nGaia's Landing\r\nGaia's High Garden\r\nForest Primeval\r\nChildren of Earth\r\nVale of Winds\r\nMindworm Pass\r\nBlackroot Palace\r\nGreenhouse Gate\r\nRazorbeak Wood\r\nLast Rose of Summer\r\nLucky Autumn\r\nDreams of Green\r\nThe Pines\r\nVelvetgrass Point\r\nSong of Planet\r\nNessus Shining\r\nSilverbird Park\r\nFallow Time\r\nAutumn Grove\r\nThe Flowers Preach\r\nResplendent Oak\r\nLily of the Valley\r\nVirgin Soil\r\nGarden of Paradise\r\nThorny Vineyard\r\nChiron Preserve\r\nMemory of Earth\r\n#END\r\n\r\n#WATERBASES\r\nGarden of the Deep\r\nDeirdre's Fishery\r\nWater Garden\r\nOcean Flower\r\nFalling Water\r\nGreat Lagoon\r\nSea Cradle\r\nGarden of Fishes\r\n#END\r\n\r\n#BLURB\r\nIn the great commons at Gaia's Landing we have a tall and particularly\r\nbeautiful stand of white pine, planted at the time of the first\r\ncolonies. It represents our promise to the people, and to Planet\r\nitself, never to repeat the tragedy of Earth.\r\n^\r\n^        -- Lady Deirdre Skye,\r\n^           \"Planet Dreams\"\r\n\r\n#DATALINKS1\r\n^LEADER: {Deirdre Skye}\r\n^BACKGROUND: {Free Scotland, Unity Xenobiologist}\r\n^AGENDA: {Green Democracy}\r\n^TECH: {Centauri Ecology}\r\n^\r\n\r\n#DATALINKS2\r\n^+1 PLANET: {Environmental safeguards; can capture mindworms}\r\n^+2 EFFICIENCY: {Experience with life systems & recycling}\r\n^-1 MORALE: {Pacifist tendencies}\r\n^-1 POLICE: {Freedom loving}\r\n^+1 Nutrients in fungus squares\r\n^{May not use Free Market economics.}\r\n"
+    },
+    {
+      "id": "ASSET-13",
+      "title": "Faction diplomacy dialog templates",
+      "source": "GAIANS.TXT",
+      "line_start": 103,
+      "line_end_inclusive": 141,
+      "byte_start": 2681,
+      "byte_end_exclusive": 3950,
+      "encoding": "windows-1252",
+      "text": "#FACTIONTRUCE\r\n#xs 440\r\n#caption $CAPTION7\r\n\"This senseless destruction will surely cause irreparable harm\r\nto Planet's ecology. I urge we mend our differences and\r\npledge Blood Truce.\"\r\n\r\n\"It is as you say. This violence must end.\"\r\n\"Hah! Your rocks and plants won't save you now, $NAME3!\"\r\n\r\n#FACTIONTREATY\r\n#xs 440\r\n#caption $CAPTION7\r\n\"I sense you are a friend of Planet, $TITLE0 $NAME1. I suggest\r\nwe sign a Treaty of Friendship, that our peoples may live\r\nside by side in peace.\"\r\n\r\n\"Agreed. Walk with Planet, $NAME3.\"\r\n\"No. This 'Friend of Planet' stuff gives me the creeps.\"\r\n\r\n#ALIENFACTIONTRUCE\r\n#xs 440\r\n#caption $CAPTION7\r\n\"This senseless destruction will surely cause irreparable harm\r\nto Planet's ecology. I urge we mend our differences and\r\npledge Blood Truce.\"\r\n\r\n\"Destruction of Manifold Six: to be avoided. Agreement.\"\r\n\"Manifold Six: tougher than you, $NAME3. Destruction: prepare!\"\r\n\r\n#ALIENFACTIONTREATY\r\n#xs 440\r\n#caption $CAPTION7\r\n\"$TITLE0 $NAME1, clearly you and your kind know more of Planet than\r\nwe humans ever shall. Cannot we sign a Treaty of Friendship, that\r\nwe may learn at your ... uh ... knee?\"\r\n\r\n\"Manifold Six: sacrosanct. Aims: similar. Treaty: fine idea.\"\r\n\"Your understanding of Manifold Six: feeble. Treaty: not at this time.\"\r\n"
+    },
+    {
+      "id": "ASSET-14",
+      "title": "Baseline, expansion, and custom faction file bindings",
+      "source": "alphax.txt",
+      "line_start": 1164,
+      "line_end_inclusive": 1196,
+      "byte_start": 60245,
+      "byte_end_exclusive": 61050,
+      "encoding": "windows-1252",
+      "text": ";\r\n; First item is file name, second item is search key.\r\n; These should always be the same except for debugging purposes.\r\n;\r\n#FACTIONS\r\nGAIANS,   GAIANS\r\nHIVE,     HIVE\r\nUNIV,     UNIV\r\nMORGAN,   MORGAN\r\nSPARTANS, SPARTANS\r\nBELIEVE,  BELIEVE\r\nPEACE,    PEACE\r\n\r\n;\r\n; First item is file name, second item is search key.\r\n; These should always be the same except for debugging purposes.\r\n;\r\n#NEWFACTIONS\r\nCYBORG,   CYBORG\r\nPIRATES,  PIRATES\r\nDRONE,    DRONE\r\nANGELS,   ANGELS\r\nFUNGBOY,  FUNGBOY\r\nCARETAKE, CARETAKE\r\nUSURPER,  USURPER\r\n\r\n;\r\n; These are factions you want included in the startup list.\r\n; These may also be chosen when a random faction is selected.\r\n; First item is file name, second item is search key.\r\n; These should always be the same except for debugging purposes.\r\n;\r\n#CUSTOMFACTIONS\r\n"
+    },
+    {
+      "id": "ASSET-15",
+      "title": "Dialog text format and number-indexed substitution rules",
+      "source": "Script.txt",
+      "line_start": 11,
+      "line_end_inclusive": 86,
+      "byte_start": 256,
+      "byte_end_exclusive": 3336,
+      "encoding": "windows-1252",
+      "text": "; INSTRUCTIONS FOR TRANSLATORS!\r\n;\r\n; 1) These files must not be saved in \"Microsoft Word Format\", or they will\r\n;    be ruined. They MUST be saved in \"Text Only\" format.\r\n;\r\n; 2) Please do not insert extra blank lines, nor remove existing blank\r\n;    lines, as this will cause the program to malfunction.\r\n;\r\n; 3) But it is normally okay to turn a long line into two shorter lines;\r\n;    for instance:\r\n;\r\n;    This is a very long sentence; it probably won't fit on one line in German.\r\n;\r\n;                       is equivalent to:\r\n;\r\n;    This is a very long sentence; It probably\r\n;    won't fit on one line in German.\r\n;\r\n; 4) It is also okay to have lines be pretty much as long as they need\r\n;    to be off the edge of the screen (up to, say, 150-200 characters\r\n;    long.\r\n;\r\n; 5) Lines beginning with \"#\" are control lines, and the FIRST WORD\r\n;    immediately following the # should NOT be translated. Subsequent\r\n;    words on the line SHOULD be translated. For example:\r\n;\r\n;    #caption Hello\r\n;         to\r\n;    #caption Bonjour\r\n;\r\n;    #button Yes\r\n;         to\r\n;    #button Oui\r\n;\r\n; 6) The \"{\" and \"}\" characters are used to indicate text which should\r\n;    be displayed in BOLD type. The \"[\" and \"]\" characters indicate\r\n;    text which should be displayed in ITALIC type. A {} sequence or\r\n;    a [] sequence can begin and end on different lines.\r\n;\r\n; 7) Lines beginning with \"^\" begin on new lines.\r\n;\r\n; 8) Lines beginning with \"^^\" are centered.\r\n;\r\n; 9) The \"$\" character indicates a string is to be substituted. The\r\n;    $ is followed by the name and ID of the string, as in:\r\n;\r\n;    Greetings, $PLAYERNAME1.\r\n;\r\n;    In this case, the ID of the string is 1. The name of the string\r\n;    is for informational purposes only, so $PLAYERNAME1, $NAME1,\r\n;    $STRING1, and $WHOZIT1 are all equivalent. The names themselves\r\n;    do NOT need to be translated, although translating them won't\r\n;    cause harm as long as the numerical ID is left alone (except in\r\n;    the case below).\r\n;\r\n;    An important EXCEPTION is that $NUM0 (or $NUM1, $NUM2, etc)\r\n;    indicate a numerical value is to be displayed, and $HEX0 $HEX1,\r\n;    etc indicate a hexadecimal value will be displayed. \"NUM\" and\r\n;    \"HEX\" must NOT be translated or their special meaning will be lost.\r\n;\r\n; 10) Sequences enclosed in < > angle brackets are used to perform\r\n;     gender and plurality substitutions.\r\n;\r\n;     $<...> sequences must BEGIN AND END ON THE SAME LINE!\r\n;\r\n;     Here are the substitution forms, followed by some examples:\r\n;\r\n; $FACTION3          = Substitute string 3\r\n; $<3:has:have>      = Substitute based on plurality of string 3\r\n; $<3:le:la:les:les> = Substitute based on plurality & gender of string 3\r\n; $<3:masc:fem:neut:pmasc:pfem:pneut> = plurality & gender, includes neuter\r\n; $<3:$FACTIONADJ4>  = Inserts string 4 and parses based on\r\n;                      plurality & gender of string 3.\r\n; $<M1:$FACTIONADJ4> = Inserts string 4 and parses for the\r\n;                      masculine singular form.\r\n; $<F2:$FACTIONADJ4> = ...Feminine plural, etc.\r\n"
+    },
+    {
+      "id": "ASSET-16",
+      "title": "Game, network and headquarters menu strings and documented shortcuts",
+      "source": "menu.txt",
+      "line_start": 5,
+      "line_end_inclusive": 50,
+      "byte_start": 22,
+      "byte_end_exclusive": 1089,
+      "encoding": "windows-1252",
+      "text": "#GAME\r\n&Game\r\nSwitch To Detailed &Menus|F11\r\nSwitch To Simple &Menus|F11\r\n&Preferences...|Ctrl+P\r\n&Warning Preferences...|Ctrl+W\r\n&Advanced Preferences...|Ctrl+O\r\n&Automation Preferences...|Ctrl+A\r\n&Audio/Visual Preferences...|Ctrl+I\r\n&Map Display Preferences...|Ctrl+M\r\n&Save Game...|Ctrl+S\r\n&Load Game...|Ctrl+L\r\n&Resign|Shift+Q\r\nStart New &Game|Ctrl+Shift+Q\r\n&Quit|Ctrl+Q\r\n\r\n#NETWORK\r\n&Network\r\n&Chat|Ctrl+C\r\n&Voice Transmission|Hold \\ Key\r\n&Pause|BKSP\r\nCustomize Your Faction|+\r\nAlter &Time Controls|Shift+T\r\nZoom to Base Messages|*\r\nUse Time Bonus|Ctrl+SPACE\r\nEnd Turn|Ctrl+ENTER\r\nResume Turn|Ctrl+ENTER\r\n\r\n#HQ\r\n&HQ\r\n&Social Engineering...|E\r\nSet Research Priorities...|Shift+R\r\nChange Research Goal...|Shift+R\r\nDesign &Workshop...|U\r\nDatalinks...|F1\r\nLaboratories Status...|F2\r\nEnergy Banks...|F3\r\nBase Operations Status...|F4\r\nSecret Project Data...|F5\r\nOrbital and Space Status...|F6\r\nMilitary Command Nexus...|F7\r\nAlpha Centauri Score...|F8\r\nView Monuments...|F9\r\nView Hall of Fame...|F10\r\nCommunications and Protocol...|F12\r\nCorner Global Energy Market!|,\r\n"
+    },
+    {
+      "id": "ASSET-17",
+      "title": "Palette cycling and explosion color/opacity definitions",
+      "source": "system.txt",
+      "line_start": 11,
+      "line_end_inclusive": 42,
+      "byte_start": 166,
+      "byte_end_exclusive": 514,
+      "encoding": "windows-1252",
+      "text": ";\r\n; Color Cycling\r\n; Relative Color id, # colors, mSec timing\r\n;\r\n#CYCLING\r\n0\r\n221, 5, 100\r\n226, 5, 200\r\n231, 5, 300\r\n\r\n;\r\n; Explosions\r\n;\r\n; Relative Color id, %opaque\r\n;\r\n#EXPLOSIONS\r\n49,  100\r\n83,  100\r\n85,   99\r\n86,   98\r\n87,   97\r\n88,   96\r\n90,   95\r\n219,  94\r\n220,  93\r\n221,  92\r\n222,  91\r\n121,   90\r\n122,  80\r\n124,  60\r\n126,  40\r\n71,   95\r\n"
+    },
+    {
+      "id": "ASSET-18",
+      "title": "Installed configuration bytes",
+      "source": "Alpha Centauri.Ini",
+      "line_start": 1,
+      "line_end_inclusive": 8,
+      "byte_start": 0,
+      "byte_end_exclusive": 92,
+      "encoding": "windows-1252",
+      "text": "[PREFERENCES]\r\nForceOldVoxelAlgorithm=1\r\n[Alpha Centauri]\r\n\r\nds3d=1\r\neax=1\r\nDirectDraw=0\r\n\r\n"
+    },
+    {
+      "id": "ASSET-19",
+      "title": "Shipped documentation of DirectDraw and old voxel option",
+      "source": "readme_ac.txt",
+      "line_start": 221,
+      "line_end_inclusive": 237,
+      "byte_start": 17095,
+      "byte_end_exclusive": 17796,
+      "encoding": "windows-1252",
+      "text": "WindowsFileBox=1\r\nSettings this to 1 allows you to use the traditional Win95/98 file navigation dialog.\r\n\r\nMainFontSize=16\r\nYou can increase or decrease the size of the font used throughout the game. \r\n\r\nDirectDraw=0\r\nSettings this to 0 disables DirectDraw. This disables the automatic window resolution resizing during program launch.\r\n\r\nVideo Mode=800 or Video Mode=1024\r\nThis forces the screen resolution to either of these two sizes.\r\n\r\n8BitMovieSound=1\r\nThis forces the sound quality to 8-bit from the original 16-bit. If your sound card has DirectX compatibility issues, this may improve movie performance.\r\n\r\nForceOldVoxelAlgorithm=1\r\nIf the game crashes intermittently, try adding this line.\r\n"
+    },
+    {
+      "id": "ASSET-20",
+      "title": "Shipped documentation of DS3D and EAX options",
+      "source": "readme_ac.txt",
+      "line_start": 129,
+      "line_end_inclusive": 129,
+      "byte_start": 10333,
+      "byte_end_exclusive": 10526,
+      "encoding": "windows-1252",
+      "text": "*\tHardware 3D positional and EAX support added - Note: this can be disabled in alpha centauri.ini by entering  ds3d=0 or eax=0. This also provides overall better performance and memory usage.\r\n"
+    },
+    {
+      "id": "ASSET-21",
+      "title": "Scenario dialog override documentation",
+      "source": "scenarios/Alpha Centauri Scenarios/2Build/scenario.txt",
+      "line_start": 4,
+      "line_end_inclusive": 14,
+      "byte_start": 36,
+      "byte_end_exclusive": 456,
+      "encoding": "windows-1252",
+      "text": "; BUILD custom scenario file\r\n;\r\n; Copyright (c) 1997, 1998 by Firaxis Games, Inc.\r\n;\r\n; This file can be copied into the same directory as a scenario\r\n; file and customized for that scenario.\r\n;\r\n; Note that all of the strings and numbers in #INTRO and #OBJECTIVES\r\n; can be used in either. #INTRO is shown at the beginning of the\r\n; scenario; #OBJECTIVES is shown when \"review objectives\" is picked\r\n; from the menu.\r\n"
+    },
+    {
+      "id": "ASSET-22",
+      "title": "Shipped example of per-scenario rule file",
+      "source": "scenarios/Alpha Centauri Scenarios/2Build/alpha.txt",
+      "line_start": 1,
+      "line_end_inclusive": 36,
+      "byte_start": 0,
+      "byte_end_exclusive": 1411,
+      "encoding": "windows-1252",
+      "text": ";\r\n; Sid Meier's ALPHA CENTAURI\r\n;\r\n; Alpha Centauri User-Configurable Rules\r\n;\r\n; Copyright (c) 1997, 1998 by Firaxis Games, Inc.\r\n;\r\n; ALPHA CENTAURI reads the rules of the game from this file at\r\n; startup. Feel free, at your own risk, to experiment with editing\r\n; this file. We recommend you make a backup copy of the original.\r\n;\r\n; If you are building a scenario and need custom rules, copy this\r\n; file into a subdirectory with your scenario file before editing.\r\n; Files in the same subdirectory as a scenario file automatically\r\n; take precedence over files in the main game directory.\r\n;\r\n\r\n;\r\n; FUNDAMENTAL RULES\r\n;   You will find that many of the items on this list have been\r\n;   finely balanced: small changes can have drastic effects on\r\n;   gameplay.\r\n;\r\n#RULES\r\n3,       ; Movement rate along roads\r\n2,       ; Nutrient intake requirement for citizens\r\n3,2      ; Numerator & Denominator for artillery fire damage\r\n2,       ; Max artillery range (larger will break multiplayer)\r\n8,       ; Max airdrop range w/o orbital insertion\r\n10,      ; Nutrient cost multiplier\r\n10,      ; Minerals cost multiplier\r\n100,     ; Technology discovery rate as a percentage of standard\r\n1,       ; Limits mineral increase for mine without road in square\r\n-1,      ; Nutrient effect in mine square (0 or -1)\r\n5,       ; Minimum base size to support specialists\r\n1,       ; Drones induced by Genejack factory\r\n"
+    },
+    {
+      "id": "ASSET-23",
+      "title": "Documented multiplayer save incompatibility",
+      "source": "readme_ac.txt",
+      "line_start": 265,
+      "line_end_inclusive": 267,
+      "byte_start": 20235,
+      "byte_end_exclusive": 20340,
+      "encoding": "windows-1252",
+      "text": "MULTIPLAYER\r\n\r\nNOTE: Encrypted MP saved game files from Alpha Centauri won't work with Alien Crossfire.\r\n"
+    },
+    {
+      "id": "ASSET-24",
+      "title": "Movie-name lookup list",
+      "source": "movlist.txt",
+      "line_start": 1,
+      "line_end_inclusive": 45,
+      "byte_start": 0,
+      "byte_end_exclusive": 940,
+      "encoding": "windows-1252",
+      "text": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\r\n;\r\n; Sid Meier's ALPHA CENTAURI\r\n;\r\n; Lookups for movies\r\n;\r\n; Copyright (c) 1997, 1998 by Firaxis Games, Inc.\r\n;\r\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\r\n\r\n#PROJECTS\r\nhumanGenome, 0\r\ncommandNexus, 1\r\nweatherParadigm, 2\r\nmerchantExchange, 3\r\nempathGuild, 4\r\ncitizensDefense, 5\r\nvirtualWorld, 6\r\nplanetaryTransit, 7\r\nxenoempathyDome, 8\r\nneuralAmplifier, 9\r\nmaritimeControl, 10\r\nplanetaryDatalinks, 11\r\nsuperCollider, 12\r\nasceticVirtues, 13\r\nlongevityVaccine, 14\r\nhunterSeeker, 15\r\npholusMutagen, 16\r\ncyborgFactory, 17\r\ntheoryOfEverything, 18\r\ndreamTwister, 19\r\nuniversalTranslator, 20\r\nnetworkBackbone, 21\r\nnanofactory, 22\r\nlivingRefinery, 23\r\ncloningVats, 24\r\nSelfAwareColony, 25\r\nclinical_Immortality, 26\r\nspaceElevator, 27\r\nsingularityInductor, 28\r\nbulkMatter, 29\r\ntelepathicMatrix, 30\r\nvoiceOfPlanet, 31\r\ntranscend, 32\r\nsmacxmanifold, 33\r\n"
+    },
+    {
+      "id": "ASSET-25",
+      "title": "Facility schema and default Network Node cost",
+      "source": "alpha.txt",
+      "line_start": 590,
+      "line_end_inclusive": 610,
+      "byte_start": 30545,
+      "byte_end_exclusive": 31480,
+      "encoding": "windows-1252",
+      "text": "; Base Facilities\r\n;\r\n; Name, Cost, Maint, Preq, Free, Effect\r\n;\r\n; Name  = Name of facility type\r\n; Cost  = Construction cost in minerals (x Minerals multiplier in RULES)\r\n; Maint = Maintenance cost in energy per turn\r\n; Preq  = Technology prerequisite (see TECHNOLOGY)\r\n; Free  = No longer supported.\r\n; Effect= Brief description of effect\r\n;\r\n;\r\n#FACILITIES\r\nHeadquarters,                  5, 0, None,    Disable,  Efficiency\r\nChildren's Creche,             5, 1, EthCalc, Disable,  Growth/Effic/Morale\r\nRecycling Tanks,               4, 0, Biogen,  EcoEng2,  Bonus Resources\r\nPerimeter Defense,             5, 0, DocLoy,  Disable,  Defense +100%\r\nTachyon Field,                12, 2, ProbMec, Disable,  All Defense +100%\r\nRecreation Commons,            4, 1, Psych,   SentEco,  Fewer Drones\r\nEnergy Bank,                   8, 1, IndEcon, QuanMac,  Economy Bonus\r\nNetwork Node,                  8, 1, InfNet,  HAL9000,  Labs Bonus\r\n"
+    },
+    {
+      "id": "ASSET-26",
+      "title": "Scenario facility schema and reduced Network Node cost",
+      "source": "scenarios/Alpha Centauri Scenarios/2Build/alpha.txt",
+      "line_start": 578,
+      "line_end_inclusive": 598,
+      "byte_start": 29784,
+      "byte_end_exclusive": 30719,
+      "encoding": "windows-1252",
+      "text": "; Base Facilities\r\n;\r\n; Name, Cost, Maint, Preq, Free, Effect\r\n;\r\n; Name  = Name of facility type\r\n; Cost  = Construction cost in minerals (x Minerals multiplier in RULES)\r\n; Maint = Maintenance cost in energy per turn\r\n; Preq  = Technology prerequisite (see TECHNOLOGY)\r\n; Free  = No longer supported.\r\n; Effect= Brief description of effect\r\n;\r\n;\r\n#FACILITIES\r\nHeadquarters,                  5, 0, None,    Disable,  Efficiency\r\nChildren's Creche,             5, 1, EthCalc, Disable,  Growth/Effic/Morale\r\nRecycling Tanks,               4, 0, Biogen,  EcoEng2,  Bonus Resources\r\nPerimeter Defense,             5, 0, DocLoy,  Disable,  Defense +100%\r\nTachyon Field,                12, 2, ProbMec, Disable,  All Defense +100%\r\nRecreation Commons,            4, 1, Psych,   SentEco,  Fewer Drones\r\nEnergy Bank,                   8, 1, IndEcon, QuanMac,  Economy Bonus\r\nNetwork Node,                  2, 1, InfNet,  HAL9000,  Labs Bonus\r\n"
+    }
+  ],
+  "binary_records": [
+    {
+      "id": "ASSET-PCX-1",
+      "source": "palette.pcx",
+      "kind": "PCX_header_fields",
+      "offsets": {
+        "manufacturer": 0,
+        "version": 1,
+        "encoding": 2,
+        "bits_per_plane": 3,
+        "inclusive_coordinates": 4,
+        "planes": 65,
+        "bytes_per_line": 66,
+        "palette_marker": 77304
+      },
+      "manufacturer": 10,
+      "version": 5,
+      "encoding": 1,
+      "bits_per_plane": 8,
+      "coordinates": [
+        0,
+        0,
+        1023,
+        767
+      ],
+      "width": 1024,
+      "height": 768,
+      "planes": 1,
+      "bytes_per_line": 1024,
+      "palette_marker": 12,
+      "header_first_70_bytes_hex": "0a05010800000000ff03ff0200040003000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100040000"
+    },
+    {
+      "id": "ASSET-PCX-2",
+      "source": "Gaians.pcx",
+      "kind": "PCX_header_fields",
+      "offsets": {
+        "manufacturer": 0,
+        "version": 1,
+        "encoding": 2,
+        "bits_per_plane": 3,
+        "inclusive_coordinates": 4,
+        "planes": 65,
+        "bytes_per_line": 66,
+        "palette_marker": 215983
+      },
+      "manufacturer": 10,
+      "version": 5,
+      "encoding": 1,
+      "bits_per_plane": 8,
+      "coordinates": [
+        0,
+        0,
+        1023,
+        767
+      ],
+      "width": 1024,
+      "height": 768,
+      "planes": 1,
+      "bytes_per_line": 1024,
+      "palette_marker": 12,
+      "header_first_70_bytes_hex": "0a05010800000000ff03ff0200030003ac8151a27c519977528f7252856d527e674e78624a715c476a574364513f5d4c3b574637504133493b3043362c3c3028000100040000"
+    },
+    {
+      "id": "ASSET-PCX-3",
+      "source": "Cursor.pcx",
+      "kind": "PCX_header_fields",
+      "offsets": {
+        "manufacturer": 0,
+        "version": 1,
+        "encoding": 2,
+        "bits_per_plane": 3,
+        "inclusive_coordinates": 4,
+        "planes": 65,
+        "bytes_per_line": 66,
+        "palette_marker": 31114
+      },
+      "manufacturer": 10,
+      "version": 5,
+      "encoding": 1,
+      "bits_per_plane": 8,
+      "coordinates": [
+        0,
+        0,
+        1023,
+        767
+      ],
+      "width": 1024,
+      "height": 768,
+      "planes": 1,
+      "bytes_per_line": 1024,
+      "palette_marker": 12,
+      "header_first_70_bytes_hex": "0a05010800000000ff03ff0200040003000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100040000"
+    },
+    {
+      "id": "ASSET-BYTES-4",
+      "source": "ACP00.cvr",
+      "kind": "CVR marker and embedded authoring filename",
+      "byte_start": 0,
+      "byte_end_exclusive": 64,
+      "hex": "43 56 52 00 8d d0 00 00 00 00 00 01 0c 00 00 00 00 00 20 41 00 00 00 02 19 00 00 00 41 6c 69 65 6e 56 65 68 69 63 6c 65 33 2e 6d 61 78 00 00 00 03 2d 4b 00 00 00 00 01 01 0f 00 00 00 63 61 76"
+    },
+    {
+      "id": "ASSET-BYTES-5",
+      "source": "fx/gset1.amb",
+      "kind": "Ambient resource header",
+      "byte_start": 0,
+      "byte_end_exclusive": 64,
+      "hex": "70 72 67 6d 31 00 00 00 40 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fa 00 00 00 66 78 5c 62 6d 61 72 69 6d 62 61 00 62 6d 61 72 69 6d 62 61 00 70 72 67 6d 2d 00 00"
+    },
+    {
+      "id": "ASSET-AMBIENT-PATHS",
+      "source": "fx/gset1.amb",
+      "kind": "literal printable path candidates",
+      "paths": [
+        {
+          "byte_start": 36,
+          "byte_end_exclusive": 47,
+          "text": "fx\\bmarimba"
+        },
+        {
+          "byte_start": 93,
+          "byte_end_exclusive": 102,
+          "text": "fx\\npiano"
+        },
+        {
+          "byte_start": 146,
+          "byte_end_exclusive": 155,
+          "text": "fx\\svoice"
+        },
+        {
+          "byte_start": 199,
+          "byte_end_exclusive": 209,
+          "text": "fx\\cvoyage"
+        },
+        {
+          "byte_start": 254,
+          "byte_end_exclusive": 266,
+          "text": "fx\\east west"
+        },
+        {
+          "byte_start": 313,
+          "byte_end_exclusive": 327,
+          "text": "fx\\strike wind"
+        },
+        {
+          "byte_start": 376,
+          "byte_end_exclusive": 384,
+          "text": "fx\\rband"
+        },
+        {
+          "byte_start": 427,
+          "byte_end_exclusive": 436,
+          "text": "fx\\spiano"
+        },
+        {
+          "byte_start": 480,
+          "byte_end_exclusive": 493,
+          "text": "fx\\plexi plus"
+        },
+        {
+          "byte_start": 541,
+          "byte_end_exclusive": 553,
+          "text": "fx\\orch perc"
+        },
+        {
+          "byte_start": 600,
+          "byte_end_exclusive": 610,
+          "text": "fx\\marcato"
+        },
+        {
+          "byte_start": 655,
+          "byte_end_exclusive": 669,
+          "text": "fx\\marcato lng"
+        },
+        {
+          "byte_start": 718,
+          "byte_end_exclusive": 732,
+          "text": "fx\\bowed viola"
+        },
+        {
+          "byte_start": 794,
+          "byte_end_exclusive": 812,
+          "text": "fx\\bmarimba d4.wav"
+        },
+        {
+          "byte_start": 864,
+          "byte_end_exclusive": 880,
+          "text": "fx\\npiano a4.wav"
+        },
+        {
+          "byte_start": 893,
+          "byte_end_exclusive": 909,
+          "text": "fx\\npiano e5.wav"
+        },
+        {
+          "byte_start": 961,
+          "byte_end_exclusive": 977,
+          "text": "fx\\svoice d2.wav"
+        },
+        {
+          "byte_start": 990,
+          "byte_end_exclusive": 1007,
+          "text": "fx\\svoice g#2.wav"
+        },
+        {
+          "byte_start": 1020,
+          "byte_end_exclusive": 1036,
+          "text": "fx\\svoice a2.wav"
+        },
+        {
+          "byte_start": 1049,
+          "byte_end_exclusive": 1065,
+          "text": "fx\\svoice b3.wav"
+        },
+        {
+          "byte_start": 1078,
+          "byte_end_exclusive": 1094,
+          "text": "fx\\svoice b3.wav"
+        },
+        {
+          "byte_start": 1107,
+          "byte_end_exclusive": 1123,
+          "text": "fx\\svoice b3.wav"
+        },
+        {
+          "byte_start": 1136,
+          "byte_end_exclusive": 1152,
+          "text": "fx\\svoice e4.wav"
+        },
+        {
+          "byte_start": 1165,
+          "byte_end_exclusive": 1181,
+          "text": "fx\\svoice e4.wav"
+        },
+        {
+          "byte_start": 1194,
+          "byte_end_exclusive": 1210,
+          "text": "fx\\svoice e4.wav"
+        },
+        {
+          "byte_start": 1223,
+          "byte_end_exclusive": 1239,
+          "text": "fx\\svoice b4.wav"
+        },
+        {
+          "byte_start": 1252,
+          "byte_end_exclusive": 1268,
+          "text": "fx\\svoice b4.wav"
+        },
+        {
+          "byte_start": 1281,
+          "byte_end_exclusive": 1297,
+          "text": "fx\\svoice b4.wav"
+        },
+        {
+          "byte_start": 1310,
+          "byte_end_exclusive": 1326,
+          "text": "fx\\svoice b4.wav"
+        },
+        {
+          "byte_start": 1379,
+          "byte_end_exclusive": 1396,
+          "text": "fx\\cvoyage e4.wav"
+        },
+        {
+          "byte_start": 1409,
+          "byte_end_exclusive": 1426,
+          "text": "fx\\cvoyage a4.wav"
+        },
+        {
+          "byte_start": 1439,
+          "byte_end_exclusive": 1456,
+          "text": "fx\\cvoyage e5.wav"
+        },
+        {
+          "byte_start": 1469,
+          "byte_end_exclusive": 1486,
+          "text": "fx\\cvoyage b5.wav"
+        },
+        {
+          "byte_start": 1541,
+          "byte_end_exclusive": 1560,
+          "text": "fx\\east west e4.wav"
+        },
+        {
+          "byte_start": 1573,
+          "byte_end_exclusive": 1592,
+          "text": "fx\\east west a4.wav"
+        },
+        {
+          "byte_start": 1605,
+          "byte_end_exclusive": 1624,
+          "text": "fx\\east west e5.wav"
+        },
+        {
+          "byte_start": 1637,
+          "byte_end_exclusive": 1656,
+          "text": "fx\\east west b5.wav"
+        },
+        {
+          "byte_start": 1713,
+          "byte_end_exclusive": 1734,
+          "text": "fx\\strike wind e4.wav"
+        },
+        {
+          "byte_start": 1747,
+          "byte_end_exclusive": 1768,
+          "text": "fx\\strike wind a4.wav"
+        },
+        {
+          "byte_start": 1781,
+          "byte_end_exclusive": 1802,
+          "text": "fx\\strike wind e5.wav"
+        },
+        {
+          "byte_start": 1815,
+          "byte_end_exclusive": 1836,
+          "text": "fx\\strike wind b5.wav"
+        },
+        {
+          "byte_start": 1849,
+          "byte_end_exclusive": 1870,
+          "text": "fx\\strike wind e6.wav"
+        },
+        {
+          "byte_start": 1883,
+          "byte_end_exclusive": 1904,
+          "text": "fx\\strike wind b6.wav"
+        },
+        {
+          "byte_start": 1955,
+          "byte_end_exclusive": 1970,
+          "text": "fx\\rbass d2.wav"
+        },
+        {
+          "byte_start": 1983,
+          "byte_end_exclusive": 1998,
+          "text": "fx\\rbass e2.wav"
+        },
+        {
+          "byte_start": 2011,
+          "byte_end_exclusive": 2026,
+          "text": "fx\\rbass e3.wav"
+        },
+        {
+          "byte_start": 2039,
+          "byte_end_exclusive": 2054,
+          "text": "fx\\rbass c4.wav"
+        },
+        {
+          "byte_start": 2106,
+          "byte_end_exclusive": 2122,
+          "text": "fx\\spiano e4.wav"
+        },
+        {
+          "byte_start": 2135,
+          "byte_end_exclusive": 2151,
+          "text": "fx\\spiano a4.wav"
+        },
+        {
+          "byte_start": 2164,
+          "byte_end_exclusive": 2180,
+          "text": "fx\\spiano e5.wav"
+        },
+        {
+          "byte_start": 2193,
+          "byte_end_exclusive": 2209,
+          "text": "fx\\spiano b5.wav"
+        },
+        {
+          "byte_start": 2265,
+          "byte_end_exclusive": 2285,
+          "text": "fx\\plexi plus e2.wav"
+        },
+        {
+          "byte_start": 2298,
+          "byte_end_exclusive": 2318,
+          "text": "fx\\plexi plus e3.wav"
+        },
+        {
+          "byte_start": 2331,
+          "byte_end_exclusive": 2351,
+          "text": "fx\\plexi plus e4.wav"
+        },
+        {
+          "byte_start": 2364,
+          "byte_end_exclusive": 2384,
+          "text": "fx\\plexi plus e6.wav"
+        },
+        {
+          "byte_start": 2397,
+          "byte_end_exclusive": 2417,
+          "text": "fx\\plexi plus e7.wav"
+        },
+        {
+          "byte_start": 2472,
+          "byte_end_exclusive": 2492,
+          "text": "fx\\orch perc f#2.wav"
+        },
+        {
+          "byte_start": 2505,
+          "byte_end_exclusive": 2524,
+          "text": "fx\\orch perc a2.wav"
+        },
+        {
+          "byte_start": 2537,
+          "byte_end_exclusive": 2557,
+          "text": "fx\\orch perc f#3.wav"
+        },
+        {
+          "byte_start": 2570,
+          "byte_end_exclusive": 2589,
+          "text": "fx\\orch perc a3.wav"
+        },
+        {
+          "byte_start": 2642,
+          "byte_end_exclusive": 2659,
+          "text": "fx\\marcato b4.wav"
+        },
+        {
+          "byte_start": 2672,
+          "byte_end_exclusive": 2689,
+          "text": "fx\\marcato e5.wav"
+        },
+        {
+          "byte_start": 2702,
+          "byte_end_exclusive": 2720,
+          "text": "fx\\marcato a#5.wav"
+        },
+        {
+          "byte_start": 2733,
+          "byte_end_exclusive": 2750,
+          "text": "fx\\marcato e6.wav"
+        },
+        {
+          "byte_start": 2763,
+          "byte_end_exclusive": 2781,
+          "text": "fx\\marcato a#6.wav"
+        },
+        {
+          "byte_start": 2794,
+          "byte_end_exclusive": 2811,
+          "text": "fx\\marcato e7.wav"
+        },
+        {
+          "byte_start": 2824,
+          "byte_end_exclusive": 2842,
+          "text": "fx\\marcato a#7.wav"
+        },
+        {
+          "byte_start": 2899,
+          "byte_end_exclusive": 2920,
+          "text": "fx\\marcato lng a5.wav"
+        },
+        {
+          "byte_start": 2933,
+          "byte_end_exclusive": 2954,
+          "text": "fx\\marcato lng a6.wav"
+        },
+        {
+          "byte_start": 3011,
+          "byte_end_exclusive": 3032,
+          "text": "fx\\bowed viola d5.wav"
+        },
+        {
+          "byte_start": 3045,
+          "byte_end_exclusive": 3066,
+          "text": "fx\\bowed viola a5.wav"
+        },
+        {
+          "byte_start": 3079,
+          "byte_end_exclusive": 3100,
+          "text": "fx\\bowed viola d6.wav"
+        }
+      ],
+      "limitation": "No ambient opcodes, timing or scheduling decoded; paths prove only embedded references."
+    },
+    {
+      "id": "ASSET-BYTES-7",
+      "source": "maps/planet.MP",
+      "kind": "Map prefix",
+      "byte_start": 0,
+      "byte_end_exclusive": 15,
+      "hex": "54 45 52 52 41 4e 4d 41 50 00 1a 05 00 00 00"
+    },
+    {
+      "id": "ASSET-BYTES-8",
+      "source": "scenarios/Alpha Centauri Scenarios/2Build/Build.SC",
+      "kind": "Shipped scenario prefix",
+      "byte_start": 0,
+      "byte_end_exclusive": 12,
+      "hex": "54 45 52 52 41 4e 00 1a 56 00 00 00"
+    },
+    {
+      "id": "ASSET-BYTES-9",
+      "source": "saves/auto/Alpha Centauri Autosave 1.SAV",
+      "kind": "Local save prefix",
+      "byte_start": 0,
+      "byte_end_exclusive": 12,
+      "hex": "54 45 52 52 41 4e 00 1a 56 00 00 00"
+    },
+    {
+      "id": "ASSET-BYTES-10",
+      "source": "saves/auto/Alpha Centauri Autosave 2.SAV",
+      "kind": "Local save prefix",
+      "byte_start": 0,
+      "byte_end_exclusive": 12,
+      "hex": "54 45 52 52 41 4e 00 1a 56 00 00 00"
+    },
+    {
+      "id": "ASSET-BYTES-11",
+      "source": "saves/auto/Alpha Centauri Autosave 10.SAV",
+      "kind": "Local save prefix",
+      "byte_start": 0,
+      "byte_end_exclusive": 12,
+      "hex": "54 45 52 52 41 4e 00 1a 56 00 00 00"
+    },
+    {
+      "id": "ASSET-BYTES-12",
+      "source": "movies/openingx.wve",
+      "kind": "Movie prefix",
+      "byte_start": 0,
+      "byte_end_exclusive": 40,
+      "hex": "53 43 48 6c 28 00 00 00 50 54 00 00 00 01 02 06 01 65 fd 85 03 18 84 36 82 01 02 83 01 07 8a 04 00 00 00 00 ff 00 00 00"
+    },
+    {
+      "id": "ASSET-WAV",
+      "source": "fx/dchoir a2.wav",
+      "kind": "RIFF/WAVE parsed with Python standard wave reader",
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "sample_rate_hz": 22050,
+      "frames": 124712,
+      "compression": "NONE"
+    }
+  ],
+  "section_counts": {
+    "alpha.txt": {
+      "sections": {
+        "TECHNOLOGY": {
+          "data_row_count": 89,
+          "first_line": 251,
+          "last_line": 339
+        },
+        "CHASSIS": {
+          "data_row_count": 9,
+          "first_line": 361,
+          "last_line": 369
+        },
+        "REACTORS": {
+          "data_row_count": 4,
+          "first_line": 377,
+          "last_line": 380
+        },
+        "WEAPONS": {
+          "data_row_count": 21,
+          "first_line": 400,
+          "last_line": 420
+        },
+        "DEFENSES": {
+          "data_row_count": 10,
+          "first_line": 435,
+          "last_line": 444
+        },
+        "ABILITIES": {
+          "data_row_count": 24,
+          "first_line": 484,
+          "last_line": 507
+        },
+        "UNITS": {
+          "data_row_count": 15,
+          "first_line": 573,
+          "last_line": 587
+        },
+        "FACILITIES": {
+          "data_row_count": 71,
+          "first_line": 603,
+          "last_line": 673
+        },
+        "FACTIONS": {
+          "data_row_count": 7,
+          "first_line": 1057,
+          "last_line": 1063
+        }
+      },
+      "unit_count_declared": 14,
+      "technology_row_count_excluding_literal_Disable": 77,
+      "caveat": "UNITS rows include a leading count, FACILITIES rows include disabled placeholders. Counts are records, not proof of runtime availability."
+    },
+    "alphax.txt": {
+      "sections": {
+        "TECHNOLOGY": {
+          "data_row_count": 89,
+          "first_line": 253,
+          "last_line": 341
+        },
+        "CHASSIS": {
+          "data_row_count": 9,
+          "first_line": 363,
+          "last_line": 371
+        },
+        "REACTORS": {
+          "data_row_count": 4,
+          "first_line": 379,
+          "last_line": 382
+        },
+        "WEAPONS": {
+          "data_row_count": 26,
+          "first_line": 402,
+          "last_line": 427
+        },
+        "DEFENSES": {
+          "data_row_count": 14,
+          "first_line": 442,
+          "last_line": 455
+        },
+        "ABILITIES": {
+          "data_row_count": 29,
+          "first_line": 496,
+          "last_line": 524
+        },
+        "UNITS": {
+          "data_row_count": 24,
+          "first_line": 591,
+          "last_line": 614
+        },
+        "FACILITIES": {
+          "data_row_count": 133,
+          "first_line": 635,
+          "last_line": 767
+        },
+        "FACTIONS": {
+          "data_row_count": 7,
+          "first_line": 1169,
+          "last_line": 1175
+        },
+        "NEWFACTIONS": {
+          "data_row_count": 7,
+          "first_line": 1182,
+          "last_line": 1188
+        }
+      },
+      "unit_count_declared": 23,
+      "technology_row_count_excluding_literal_Disable": 86,
+      "caveat": "UNITS rows include a leading count, FACILITIES rows include disabled placeholders. Counts are records, not proof of runtime availability."
+    }
+  },
+  "unknowns": [
+    "Whether these installed preference values are honored by the active executable at runtime.",
+    "Exact AI scoring, turn scheduling, combat execution, and rule loading implementation require executable evidence.",
+    "CVR voxel geometry and AMB audio scheduling formats were not decoded.",
+    "Only save/scenario/map headers were inspected semantically; full field layout, integrity checks, compression and state reconstruction were not established.",
+    "Base/expansion table use is inferred from alpha/alphax naming and differing rows until executable filename references or loaders corroborate it."
+  ]
+}

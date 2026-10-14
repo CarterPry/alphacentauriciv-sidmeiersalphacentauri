@@ -1,0 +1,89 @@
+{
+  "capturedAtUTC": "2026-10-14T21:18:56.393669+00:00",
+  "sourceCommit": "65467424603484756a73308412f40b906d28b650",
+  "sourceStatus": [
+    " M source/emulation/cpu/jit/jitCodeGen.cpp",
+    " M source/test/cpu/testCPU.cpp",
+    " M source/test/testMain.cpp",
+    " M source/x11/xserver.cpp"
+  ],
+  "method": "Read-only local source/config analysis; no browser run, benchmark, heavy build or runtime mutation.",
+  "files": {
+    "analysis/runtime/jit/Boxedwine-disjoint/source/sdl/emscripten/mainloop.cpp": {
+      "sha256": "f0a115ae96c09dbab1db272d6dbf73584d920dc29fa28da4d4f0226ea71ff347",
+      "bytes": 6783
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/source/kernel/kscheduler.cpp": {
+      "sha256": "df843e89ebc427e7ba7ad9bc5104f71e47ac4795f66878e22fddb35c39a379e1",
+      "bytes": 10673
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/platform/sdl/knativescreenSDL.cpp": {
+      "sha256": "3caa4058e26539a66d7a90558dbd84dfc30a88a486a2476abbedd54e9fab6934",
+      "bytes": 37401
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/platform/sdl/knativeinputSDL.cpp": {
+      "sha256": "943cb191eb739010e5fede260355d8764de7900b49746a3daef5769b9cac0925",
+      "bytes": 32007
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/source/x11/xserver.cpp": {
+      "sha256": "c532a809c3b41a7c358943f3910d0e5ad60f97240ba635ba6708270304a1d238",
+      "bytes": 46905
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/source/x11/xwindow.cpp": {
+      "sha256": "b044a08d839868d2eab7b37776cf1506843caebf827028a17ca4d7eda383af22",
+      "bytes": 43835
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/source/x11/displayData.cpp": {
+      "sha256": "71bed57ce22b80cffaeff9f93a9d05ad09479e5af7935c0b6708cd069e91c83d",
+      "bytes": 5123
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/source/emulation/cpu/common/cpu.h": {
+      "sha256": "2b510ede816796770d3c9985411483f0e22f789fc0f4e4bbd8e03d617836272f",
+      "bytes": 20321
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/source/emulation/cpu/jit/jitCodeGen.cpp": {
+      "sha256": "17708377345f497376d308e99681cf699d6b2dce517a5fc799a1e800665b4faa",
+      "bytes": 114884
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/source/emulation/cpu/normal/normalCPU.cpp": {
+      "sha256": "bca250b3ae9e241d04683f2aeb7f551c6368c1fde5f20d5d6737081d7ed5dd07",
+      "bytes": 18584
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/source/emulation/cpu/wasm/jitWasmCodeGen.cpp": {
+      "sha256": "14bcb286da84e6b0fd992f68b766d203ae9a663e1700c75ab1d953e3f4ded526",
+      "bytes": 628465
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/source/emulation/softmmu/codePageData.cpp": {
+      "sha256": "61f9061a637faa35f20995ea4aeaca3cc772a3debb95344c7a9f88339242cd2a",
+      "bytes": 18547
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/makefile": {
+      "sha256": "944bd79adc061fed4f65d0dae5f90cc12f28ccbabab0e50c56025bcacd7a863b",
+      "bytes": 23876
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.js": {
+      "sha256": "f88e60b155c53c916fe8861205f601a44e216111aef8dca1d799e66d1780f2e7",
+      "bytes": 100424
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/Build/Jit/.compile-config.json": {
+      "sha256": "6d706fd3e785ae54720700433af565a99f117d6c30b24821795ac1adff9cf430",
+      "bytes": 2904
+    },
+    "analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/Build/Jit/.link-config.json": {
+      "sha256": "0cb45dfa1ed47f0ccb0e68cd17f5b736a7fea880966ff0651f84af304584c597",
+      "bytes": 34825
+    },
+    "public/play.js": {
+      "sha256": "e19564abdcf024f8c48430854e739dad28ba38891b3df7672c68457d5c795748",
+      "bytes": 13329
+    },
+    "public/runtime/SingleThreadedJitFocus/boxedwine-shell.js": {
+      "sha256": "f88e60b155c53c916fe8861205f601a44e216111aef8dca1d799e66d1780f2e7",
+      "bytes": 100424
+    },
+    "public/runtime/SingleThreadedJitFocus/boxedwine.wasm": {
+      "sha256": "db4d1d8e601bb03cd4674eda0d05df621039a8e1d5e706b0fedcc886fc7de5a8",
+      "bytes": 5048310
+    }
+  }
+}

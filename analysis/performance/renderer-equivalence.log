@@ -1,0 +1,16 @@
+✔ MT preprocessed converter body is unchanged from the pinned baseline (9.693875ms)
+✔ known channels and arbitrary source alpha match original opaque RGBA (20.981792ms)
+✔ randomized frames, dimensions and source offsets are byte-identical (29.152375ms)
+✔ same-size frames reuse pixel storage and ImageData while pixels change (0.712583ms)
+✔ resize, equal-area reshape, resize back and refreshed heap use correct buffers (45.47275ms)
+✔ MT worker retains a fresh transferable detached buffer for every frame (20.066834ms)
+✔ shell does not reuse ImageData for foreign or MT transferred frame buffers (0.464209ms)
+✔ busy presentation guard skips work and successful frame releases it (0.398625ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 195.234125

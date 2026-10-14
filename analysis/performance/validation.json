@@ -1,0 +1,185 @@
+{
+  "capturedAtUTC": "2026-10-14T21:56:48.494710+00:00",
+  "engine": "SingleThreadedJitFast",
+  "defaultPromoted": true,
+  "method": "Interactive Playwright native-emulator probes; screenshots visually inspected. Save bytes independently hashed. Wrapper state does not decode native world state.",
+  "alienCrossfire": {
+    "freshMenuSecondsFromStart": 59.273,
+    "processRestartMenuSecondsFromStart": 42.908,
+    "finalWrapperPageReloadMenuSecondsFromStart": 43.872,
+    "newWorldAndBase": "swift haven",
+    "movementBeforeSave": [
+      [
+        9,
+        49
+      ],
+      [
+        11,
+        49
+      ]
+    ],
+    "createdSaveYear": 2102,
+    "createdSaveBytes": 288140,
+    "saveSha256": "a911afdcacb26199d25fccd08a150bbef7fa41b4cbac161cdc3b1756d6415cdc",
+    "fullBrowserRestartByteIdenticalExport": true,
+    "nativeReloadRestored": {
+      "base": "swift haven",
+      "scout": [
+        11,
+        49
+      ],
+      "year": 2102,
+      "energy": 14
+    },
+    "movementAfterReload": {
+      "scout": [
+        11,
+        47
+      ],
+      "year": 2103,
+      "energy": 16
+    },
+    "ctrlSNativeSaveDialog": true,
+    "commandSNativeSaveDialog": true,
+    "hostDialogEnterAfterFinalKeypressFix": true,
+    "fullscreenRejectionLeftGameActive": true,
+    "importedSaveRestored": "Alpha Prime, year 2101, scout (45,25), energy 11"
+  },
+  "alphaCentauri": {
+    "freshMenuSecondsFromStart": 54.128,
+    "hostImportBeforeStart": true,
+    "importedSource": "analysis/runtime/browser-base-focus/native-2102.SAV",
+    "importedSourceSha256": "9ff0c40153349baf46fc591372fd5ee52deba55fe111b6fbcfc8bc284d22efdb",
+    "nativeLoadRestored": {
+      "base": "browser gaia",
+      "scout": [
+        73,
+        55
+      ],
+      "year": 2102,
+      "energy": 12
+    },
+    "resumedMovement": {
+      "scout": [
+        75,
+        55
+      ],
+      "year": 2103,
+      "energy": 13
+    },
+    "ctrlSNativeSaveCreated": true,
+    "newSaveBytes": 286732,
+    "newSaveSha256": "08cdc56ae2dc2d094d48616551aceb133be3391323aa5ba3d65b94f36612a837"
+  },
+  "checks": {
+    "compiledWasmEngineEntriesPassed": 5,
+    "sourcePresenterEquivalenceTestsPassed": 8,
+    "readinessScreenshotCasesPassed": 17,
+    "loadingAndActualInputListenerReplay": "passed, including generated SDL keypress handling",
+    "saveHeaderAndIndexedDBRoundTrip": "passed with corrected saves-folder destination",
+    "projectUnitTestsPassed": 23,
+    "prescribedWebGameClient": "passed, screenshot inspected; does not start Wine",
+    "buildSourceAndFourPatches": "verified"
+  },
+  "limits": [
+    "No complete campaign, multiplayer, all media, or other-browser validation.",
+    "Base profile was loaded from an exported prior native save; a separate restart of this new base profile was not performed.",
+    "Original D: import failed even after restart; exact cause remains unknown. Import now targets the demonstrated saves folder.",
+    "Cooperative scheduler can exceed its nominal deadline for newly expensive dispatches or batches.",
+    "Six upstream shell DOM-mock failures occur identically on pristine baseline and candidate."
+  ],
+  "artifacts": {
+    "optimized/loading-live.png": {
+      "bytes": 87896,
+      "sha256": "246bd146111f3125616545051444f7ff758a6cb3d9e9c1d2e5839a3cc13294f2"
+    },
+    "optimized/menu-ready.png": {
+      "bytes": 1278788,
+      "sha256": "05e1107b6583ef92b57495b2ff90fa2ae655a70de1afdcb679a736081368bf65"
+    },
+    "optimized/save-after-move.png": {
+      "bytes": 596039,
+      "sha256": "231a562ef7681bb4c12eac4981ac04d8387184e59738305ce08879e8cd51e200"
+    },
+    "optimized/created-2102.SAV": {
+      "bytes": 288140,
+      "sha256": "a911afdcacb26199d25fccd08a150bbef7fa41b4cbac161cdc3b1756d6415cdc"
+    },
+    "restart/re-exported-2102.SAV": {
+      "bytes": 288140,
+      "sha256": "a911afdcacb26199d25fccd08a150bbef7fa41b4cbac161cdc3b1756d6415cdc"
+    },
+    "restart/restart-native-shortcut.png": {
+      "bytes": 522812,
+      "sha256": "508b34dc834722303cad5c25e78d49864b0f1981ef7d3ef52daa54d83d92df8e"
+    },
+    "restart/world-game-menu.png": {
+      "bytes": 661847,
+      "sha256": "3f2efeca55452dfe356c0411a174bd5ab27946c50a7e249d522fe55389d8a477"
+    },
+    "restart/resumed-command-save-later.png": {
+      "bytes": 666311,
+      "sha256": "b1ec81d7fcd882fce4678546b8d1da2adbe48a106de1ef5040c79293cc666e08"
+    },
+    "restart/final-loading-cover.png": {
+      "bytes": 83781,
+      "sha256": "e120daa45e31b1ec2163ebb5d524b989d92e837e695dd1c56d10c977bfab58df"
+    },
+    "restart/final-native-state.json": {
+      "bytes": 4847,
+      "sha256": "2b240039662c48f529e86aab331b2065a3f32209a24f846a40e6b1a0f7490d93"
+    },
+    "restart/import-restored-world.png": {
+      "bytes": 560461,
+      "sha256": "3f3ce21e134b81c3909a8aa422ced54c45b2cc3e31806907e1b733d41f0ba567"
+    },
+    "restart/final-native-command-save.png": {
+      "bytes": 513532,
+      "sha256": "3d18e7ba5443926189c96091c08439bde6ccf66dc9cb2ea108551c366f58fc82"
+    },
+    "base/native-import-list.png": {
+      "bytes": 1227096,
+      "sha256": "d62eef4b3bbad4a48ff2f7884765aa702e528aa0db19f306a04d319e17c48356"
+    },
+    "base/base-restored-world.png": {
+      "bytes": 552169,
+      "sha256": "a72a24bc09a200ae46e4fb8997a89769719fbe4633a305e5d8d13b22b5cf9909"
+    },
+    "base/base-native-save.png": {
+      "bytes": 501617,
+      "sha256": "91cc2d60632d8f337a037b4c16bc6622c766637a310c18e2e5107541d37995d6"
+    },
+    "base/base-final-world.png": {
+      "bytes": 602447,
+      "sha256": "5ec8581d5561f11dfaef9ee66d4426403752ef22e0e54d3c9857f69939688ffe"
+    },
+    "base/native-2103.SAV": {
+      "bytes": 286732,
+      "sha256": "08cdc56ae2dc2d094d48616551aceb133be3391323aa5ba3d65b94f36612a837"
+    },
+    "base/base-acceptance.json": {
+      "bytes": 2875,
+      "sha256": "efdb07413354f88b43cd3842a339280a31fe766a942054301abbedbe1b69ba01"
+    },
+    "../runtime/loading/dom-validation.json": {
+      "bytes": 2055,
+      "sha256": "5c69542293d4b7be6a3b57b3883a9aa0f91def2602f191f61fedab217b5cf01e"
+    },
+    "../runtime/storage-ui-test/validation.json": {
+      "bytes": 777,
+      "sha256": "a7a1b7db9566f2572d9af609e7125bfaef941431895e2581ab1c946799537037"
+    },
+    "skill-final/state-0.json": {
+      "bytes": 498,
+      "sha256": "5aead43938fa9c393ae761730dc929f30ad9e08a460e5afe8f1672f171511f14"
+    },
+    "../runtime/jit/browser-build-result.json": {
+      "bytes": 2245,
+      "sha256": "36f8c5802e74a8b3965969cfab3d114cd82d498522089db0fe4aad4087b57c36"
+    },
+    "../runtime/loading/readiness-corpus.json": {
+      "bytes": 8637,
+      "sha256": "03f8ddef7e56235a65d897afdd1361a719794adf2f9bbd5b483ed9bcc95dddff"
+    }
+  }
+}

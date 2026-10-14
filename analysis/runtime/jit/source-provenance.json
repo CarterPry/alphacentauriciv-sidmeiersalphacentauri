@@ -1,0 +1,123 @@
+{
+  "pinnedCommit": "65467424603484756a73308412f40b906d28b650",
+  "officialRemote": "https://github.com/danoon2/Boxedwine.git",
+  "observedMaster": "592ef90b532c24862690276421870864c7d2d1b1",
+  "observedPerformanceBranch": "ef51c62642833684cacc1885bf4db1fd47b679ca",
+  "readAtUTC": "2026-10-14T18:55:56.211442+00:00",
+  "pristineSourceStatus": "",
+  "sourceFiles": [
+    {
+      "path": "source/kernel/kmemory.cpp",
+      "sha256": "9af6eb819ac1609c798ca353b132a9250d02981b68952028dcd4e3c297216ede",
+      "localExcerpt": "analysis/runtime/jit/source-invalidation.txt",
+      "ranges": [
+        [
+          1011,
+          1090
+        ],
+        [
+          1415,
+          1584
+        ]
+      ],
+      "url": "https://github.com/danoon2/Boxedwine/blob/65467424603484756a73308412f40b906d28b650/source/kernel/kmemory.cpp"
+    },
+    {
+      "path": "source/emulation/cpu/wasm/jitWasmCodeGen.cpp",
+      "sha256": "14bcb286da84e6b0fd992f68b766d203ae9a663e1700c75ab1d953e3f4ded526",
+      "localExcerpt": "analysis/runtime/jit/source-wasmOwner.txt",
+      "ranges": [
+        [
+          4741,
+          4810
+        ],
+        [
+          13909,
+          13932
+        ]
+      ],
+      "url": "https://github.com/danoon2/Boxedwine/blob/65467424603484756a73308412f40b906d28b650/source/emulation/cpu/wasm/jitWasmCodeGen.cpp"
+    },
+    {
+      "path": "source/emulation/softmmu/soft_ram.cpp",
+      "sha256": "217d0d905f6e1c160d68d69315df2472318730bd2beb890f5dea8d37fb1edc53",
+      "localExcerpt": "analysis/runtime/jit/source-linearMemory.txt",
+      "ranges": [
+        [
+          360,
+          402
+        ]
+      ],
+      "url": "https://github.com/danoon2/Boxedwine/blob/65467424603484756a73308412f40b906d28b650/source/emulation/softmmu/soft_ram.cpp"
+    },
+    {
+      "path": "source/emulation/softmmu/codePageData.cpp",
+      "sha256": "61f9061a637faa35f20995ea4aeaca3cc772a3debb95344c7a9f88339242cd2a",
+      "localExcerpt": "analysis/runtime/jit/source-writtenCodeFlag.txt",
+      "ranges": [
+        [
+          145,
+          165
+        ]
+      ],
+      "url": "https://github.com/danoon2/Boxedwine/blob/65467424603484756a73308412f40b906d28b650/source/emulation/softmmu/codePageData.cpp"
+    },
+    {
+      "path": "source/util/log.cpp",
+      "sha256": "66f8e41103e0694fc14ad7419394bea68fcd8d0e65e8b822e747b7de368a3892",
+      "localExcerpt": "analysis/runtime/jit/source-panic.txt",
+      "ranges": [
+        [
+          31,
+          54
+        ]
+      ],
+      "url": "https://github.com/danoon2/Boxedwine/blob/65467424603484756a73308412f40b906d28b650/source/util/log.cpp"
+    },
+    {
+      "path": "platform/sdl/knativesystem.cpp",
+      "sha256": "b70f8db425094dde1de5149a6fd5d019957e66800b83499895712421f50a1fe5",
+      "localExcerpt": "analysis/runtime/jit/source-nativeExit.txt",
+      "ranges": [
+        [
+          236,
+          239
+        ]
+      ],
+      "url": "https://github.com/danoon2/Boxedwine/blob/65467424603484756a73308412f40b906d28b650/platform/sdl/knativesystem.cpp"
+    }
+  ],
+  "emsdkCommit": "8f685c26ee9f672081e61e22c6aa60fa972d00a9",
+  "emscriptenVersion": "6.0.12",
+  "patchSha256": "21814fca016f281575a47cf36a5aea62cd73a1807696e95e19a3926e8492d0f9",
+  "guardScope": "opt-in BOXEDWINE_WASM_JIT_DISJOINT, separate artifact, no default runtime changes",
+  "experimentalArtifacts": [
+    {
+      "name": "boxedwine.js",
+      "bytes": 316594,
+      "sha256": "4dcfb875f5c84ae95f0b00a7314caee73df0b878b6f94d688f2dc73e74917a24"
+    },
+    {
+      "name": "boxedwine.wasm",
+      "bytes": 5047818,
+      "sha256": "badb281b85990f2a56ed491a7c89958a5c19717a880323d52e974a4d7a455c8f"
+    },
+    {
+      "name": "boxedwine-shell.js",
+      "bytes": 100424,
+      "sha256": "f88e60b155c53c916fe8861205f601a44e216111aef8dca1d799e66d1780f2e7"
+    },
+    {
+      "name": "boxedwine.css",
+      "bytes": 4885,
+      "sha256": "f3548956400f61c2d7f400e34166a5119c5167f4a3215e07c95c5cf95eea69a3"
+    },
+    {
+      "name": "boxedwine.html",
+      "bytes": 2623,
+      "sha256": "8760628c83c799430885d181165c61e00311692ca33e10ac76d97aec96f3603d"
+    }
+  ],
+  "buildCommand": "sh analysis/runtime/jit/build-experimental.sh",
+  "fullEngineTestStatus": "targeted test passed; complete upstream suite not run"
+}

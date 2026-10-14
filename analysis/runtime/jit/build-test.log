@@ -1,0 +1,15 @@
+Setting up EMSDK environment (suppress these messages with EMSDK_QUIET=1)
+Adding directories to PATH:
+PATH += /Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk
+PATH += /Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk/upstream/emscripten
+
+Setting environment variables:
+PATH = /Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk:/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk/upstream/emscripten:/Users/carte/.nvm/versions/node/v22.22.0/lib/node_modules/@openai/codex/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/codex-path:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/Users/carte/.codex/tmp/arg0/codex-arg0ksneev:/Users/carte/.local/bin:/Users/carte/Library/Python/3.14/bin:/Users/carte/.bun/bin:/Users/carte/.nvm/versions/node/v22.22.0/bin:/opt/local/bin:/opt/local/sbin:/Users/carte/.cargo/bin
+EMSDK = /Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk
+EMSDK_NODE = /Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk/node/24.19.0_64bit/bin/node
+EMSDK_PYTHON = /Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk/python/3.13.3_64bit/bin/python3
+SSL_CERT_FILE = /Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk/python/3.13.3_64bit/lib/python3.13/site-packages/certifi/cacert.pem
+MAKEFLAGS is -j 6
+MAKEFLAGS 
+Build dependency updated: link, outputs missing (Build/TestJit/.link-config.json)
+Build dependency updated: compile, configuration changed (Build/TestJit/.compile-config.json)

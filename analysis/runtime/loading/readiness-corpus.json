@@ -1,0 +1,393 @@
+[
+  {
+    "file": "browser-native-reload/focus-menu-now.png",
+    "edition": "alien-crossfire",
+    "expected": "menu",
+    "kind": "menu",
+    "menuMatches": 7,
+    "worldMatches": 0,
+    "menuErrors": [
+      11.3515625,
+      14.127604166666666,
+      10.4453125,
+      12.177083333333334,
+      11.526041666666666,
+      10.127604166666666,
+      9.90625
+    ],
+    "worldErrors": [
+      47.669270833333336,
+      43.861979166666664,
+      36.791666666666664
+    ],
+    "milliseconds": 9.680000066757202
+  },
+  {
+    "file": "browser-probe/native-main-menu.png",
+    "edition": "alien-crossfire",
+    "expected": "menu",
+    "kind": "menu",
+    "menuMatches": 7,
+    "worldMatches": 0,
+    "menuErrors": [
+      13.916666666666666,
+      11.627604166666666,
+      10.4453125,
+      12.177083333333334,
+      11.526041666666666,
+      10.127604166666666,
+      9.90625
+    ],
+    "worldErrors": [
+      47.669270833333336,
+      43.861979166666664,
+      36.791666666666664
+    ],
+    "milliseconds": 9.424999952316284
+  },
+  {
+    "file": "browser-base-focus/base-boot-progress.png",
+    "edition": "alpha-centauri",
+    "expected": "menu",
+    "kind": "menu",
+    "menuMatches": 7,
+    "worldMatches": 0,
+    "menuErrors": [
+      14.200520833333334,
+      11.927083333333334,
+      11.015625,
+      12.6328125,
+      12.111979166666666,
+      10.591145833333334,
+      10.5234375
+    ],
+    "worldErrors": [
+      41.3203125,
+      43.330729166666664,
+      50.020833333333336
+    ],
+    "milliseconds": 8.850000023841858
+  },
+  {
+    "file": "browser-base-focus/base-keyboard-menu-selection.png",
+    "edition": "alpha-centauri",
+    "expected": "menu",
+    "kind": "menu",
+    "menuMatches": 7,
+    "worldMatches": 0,
+    "menuErrors": [
+      12.276041666666666,
+      15.533854166666666,
+      11.015625,
+      12.6328125,
+      12.111979166666666,
+      10.591145833333334,
+      10.5234375
+    ],
+    "worldErrors": [
+      41.3203125,
+      43.330729166666664,
+      50.020833333333336
+    ],
+    "milliseconds": 8.884999990463257
+  },
+  {
+    "file": "browser-native-reload/native-world-final.png",
+    "edition": "alien-crossfire",
+    "expected": "world",
+    "kind": "world",
+    "menuMatches": 0,
+    "worldMatches": 3,
+    "menuErrors": [
+      50.755208333333336,
+      53.127604166666664,
+      50.106770833333336,
+      47.565104166666664,
+      36.190104166666664,
+      47.236979166666664,
+      42.825520833333336
+    ],
+    "worldErrors": [
+      10.265625,
+      12.296875,
+      16.236979166666668
+    ],
+    "milliseconds": 7.389999985694885
+  },
+  {
+    "file": "browser-native-reload/native-loaded-world.png",
+    "edition": "alien-crossfire",
+    "expected": "world",
+    "kind": "world",
+    "menuMatches": 0,
+    "worldMatches": 3,
+    "menuErrors": [
+      49.984375,
+      52.783854166666664,
+      49.455729166666664,
+      47.270833333333336,
+      36.190104166666664,
+      45.739583333333336,
+      42.825520833333336
+    ],
+    "worldErrors": [
+      10.265625,
+      12.296875,
+      16.236979166666668
+    ],
+    "milliseconds": 7.170000076293945
+  },
+  {
+    "file": "browser-base-focus/native-world-final.png",
+    "edition": "alpha-centauri",
+    "expected": "world",
+    "kind": "world",
+    "menuMatches": 0,
+    "worldMatches": 3,
+    "menuErrors": [
+      59.442708333333336,
+      56.630208333333336,
+      55.966145833333336,
+      54.705729166666664,
+      48.916666666666664,
+      52.375,
+      46.236979166666664
+    ],
+    "worldErrors": [
+      14.166666666666666,
+      13.2421875,
+      16.236979166666668
+    ],
+    "milliseconds": 7.334999918937683
+  },
+  {
+    "file": "browser-jit-disjoint/jit-next-turn.png",
+    "edition": "alien-crossfire",
+    "expected": "world",
+    "kind": "world",
+    "menuMatches": 0,
+    "worldMatches": 3,
+    "menuErrors": [
+      48.966145833333336,
+      52.380208333333336,
+      49.770833333333336,
+      47.338541666666664,
+      36.190104166666664,
+      45.872395833333336,
+      42.825520833333336
+    ],
+    "worldErrors": [
+      10.265625,
+      12.296875,
+      16.236979166666668
+    ],
+    "milliseconds": 7.299999952316284
+  },
+  {
+    "file": "browser-probe/boot-40sec.png",
+    "edition": "alien-crossfire",
+    "expected": null,
+    "kind": null,
+    "menuMatches": 0,
+    "worldMatches": 0,
+    "menuErrors": [
+      69.48958333333333,
+      78.98697916666667,
+      78.80208333333333,
+      67.09114583333333,
+      67.15885416666667,
+      68.06510416666667,
+      69.23697916666667
+    ],
+    "worldErrors": [
+      78.71614583333333,
+      79.4453125,
+      88.11979166666667
+    ],
+    "milliseconds": 5.790000081062317
+  },
+  {
+    "file": "browser-probe/boot-70sec.png",
+    "edition": "alien-crossfire",
+    "expected": null,
+    "kind": null,
+    "menuMatches": 0,
+    "worldMatches": 0,
+    "menuErrors": [
+      69.48958333333333,
+      78.98697916666667,
+      78.80208333333333,
+      67.09114583333333,
+      67.15885416666667,
+      68.06510416666667,
+      69.23697916666667
+    ],
+    "worldErrors": [
+      78.71614583333333,
+      79.4453125,
+      88.11979166666667
+    ],
+    "milliseconds": 1.5899999141693115
+  },
+  {
+    "file": "browser-probe/interpreter-boot.png",
+    "edition": "alien-crossfire",
+    "expected": null,
+    "kind": null,
+    "menuMatches": 0,
+    "worldMatches": 0,
+    "menuErrors": [
+      51.8046875,
+      54.455729166666664,
+      50.765625,
+      48.966145833333336,
+      49.4609375,
+      48.434895833333336,
+      47.419270833333336
+    ],
+    "worldErrors": [
+      41.518229166666664,
+      46.6171875,
+      33.104166666666664
+    ],
+    "milliseconds": 5.455000042915344
+  },
+  {
+    "file": "browser-probe/after-mono-cancel.png",
+    "edition": "alien-crossfire",
+    "expected": null,
+    "kind": null,
+    "menuMatches": 0,
+    "worldMatches": 0,
+    "menuErrors": [
+      66.6640625,
+      66.79427083333333,
+      66.99479166666667,
+      67.09114583333333,
+      67.15885416666667,
+      68.06510416666667,
+      69.23697916666667
+    ],
+    "worldErrors": [
+      78.71614583333333,
+      79.4453125,
+      88.11979166666667
+    ],
+    "milliseconds": 5.690000057220459
+  },
+  {
+    "file": "browser-probe/splash-120sec.png",
+    "edition": "alien-crossfire",
+    "expected": null,
+    "kind": null,
+    "menuMatches": 0,
+    "worldMatches": 0,
+    "menuErrors": [
+      51.8046875,
+      54.455729166666664,
+      50.765625,
+      48.966145833333336,
+      49.4609375,
+      48.434895833333336,
+      47.419270833333336
+    ],
+    "worldErrors": [
+      41.518229166666664,
+      46.6171875,
+      33.104166666666664
+    ],
+    "milliseconds": 5.855000019073486
+  },
+  {
+    "file": "browser-jit-disjoint/boot-30.png",
+    "edition": "alien-crossfire",
+    "expected": null,
+    "kind": null,
+    "menuMatches": 0,
+    "worldMatches": 0,
+    "menuErrors": [
+      66.6640625,
+      66.79427083333333,
+      66.99479166666667,
+      67.09114583333333,
+      67.15885416666667,
+      68.06510416666667,
+      69.23697916666667
+    ],
+    "worldErrors": [
+      78.71614583333333,
+      79.4453125,
+      88.11979166666667
+    ],
+    "milliseconds": 5.789999961853027
+  },
+  {
+    "file": "browser-base-focus/base-boot.png",
+    "edition": "alpha-centauri",
+    "expected": null,
+    "kind": null,
+    "menuMatches": 0,
+    "worldMatches": 0,
+    "menuErrors": [
+      60.265625,
+      57.716145833333336,
+      56.7890625,
+      55.338541666666664,
+      55.940104166666664,
+      54.947916666666664,
+      53.96875
+    ],
+    "worldErrors": [
+      41.518229166666664,
+      46.6171875,
+      33.104166666666664
+    ],
+    "milliseconds": 5.4049999713897705
+  },
+  {
+    "file": "browser-probe/legacy-wine-25s.png",
+    "edition": "alien-crossfire",
+    "expected": null,
+    "kind": null,
+    "menuMatches": 0,
+    "worldMatches": 0,
+    "menuErrors": [
+      51.8046875,
+      54.455729166666664,
+      50.765625,
+      48.966145833333336,
+      49.4609375,
+      48.434895833333336,
+      47.419270833333336
+    ],
+    "worldErrors": [
+      41.518229166666664,
+      46.6171875,
+      33.104166666666664
+    ],
+    "milliseconds": 5.560000061988831
+  },
+  {
+    "file": "browser-probe/jit-failure.png",
+    "edition": "alien-crossfire",
+    "expected": null,
+    "kind": null,
+    "menuMatches": 0,
+    "worldMatches": 0,
+    "menuErrors": [
+      66.6640625,
+      66.79427083333333,
+      66.99479166666667,
+      67.09114583333333,
+      67.15885416666667,
+      68.06510416666667,
+      69.23697916666667
+    ],
+    "worldErrors": [
+      78.71614583333333,
+      79.4453125,
+      88.11979166666667
+    ],
+    "milliseconds": 1.475000023841858
+  }
+]

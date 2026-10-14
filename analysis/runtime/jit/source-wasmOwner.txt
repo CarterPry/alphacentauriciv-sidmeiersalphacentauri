@@ -1,0 +1,100 @@
+Official pinned source: source/emulation/cpu/wasm/jitWasmCodeGen.cpp
+Commit: 65467424603484756a73308412f40b906d28b650
+SHA-256: 14bcb286da84e6b0fd992f68b766d203ae9a663e1700c75ab1d953e3f4ded526
+
+
+4741: static void markPendingBlock(WasmJitPendingBlock& pending) {
+4742:     pending.op->blockLen = pending.emulatedLen;
+4743:     pending.op->blockOpCount = pending.blockOpCount;
+4744:     pending.op->runCount = JIT_RUN_COUNT;
+4745:     DecodedOp* cur = pending.op;
+4746:     for (U32 i = 0; i < pending.blockOpCount && cur; ++i) {
+4747:         DecodedOp* owner = cur->blockStart;
+4748:         if (!owner || owner->blockLen < pending.emulatedLen) {
+4749:             owner = pending.op;
+4750:         }
+4751:         cur->blockStart = owner;
+4752:         if (cur == pending.op) {
+4753:             cur->pfnJitCode = nullptr;
+4754:             cur->flags &= ~OP_FLAG_JIT;
+4755:             cur->flags2 &= ~OP_FLAG2_WASM_JIT_MEM_ARRAYS;
+4756:             cur->flags2 |= OP_FLAG2_WASM_JIT_PENDING;
+4757:         }
+4758:         cur = cur->next;
+4759:     }
+4760: }
+4761: 
+4762: static void registerPendingWasmJitBlock(std::unique_ptr<WasmJitPendingBlock> pending) {
+4763:     markPendingBlock(*pending);
+4764:     g_wasmJitPendingByOp[pending->op] = pending->id;
+4765:     g_wasmJitPendingBlocks[pending->id] = std::move(pending);
+4766: }
+4767: 
+4768: static void publishWasmJitBlock(WasmJitPendingBlock& pending, int tableIdx) {
+4769:     std::unique_ptr<U32[]> relocArr = takeWasmJitRelocArray(pending);
+4770:     if (relocArr) {
+4771:         if ((size_t)tableIdx >= g_wasmRelocBaseByTable.size()) {
+4772:             g_wasmRelocBaseByTable.resize(tableIdx + 1, nullptr);
+4773:         }
+4774:         if (g_wasmRelocBaseByTable[tableIdx]) {
+4775:             relocArr.reset();
+4776:         } else {
+4777:             g_wasmRelocBaseByTable[tableIdx] = relocArr.release();
+4778:         }
+4779:     }
+4780: 
+4781:     pending.op->blockLen = pending.emulatedLen;
+4782:     pending.op->blockOpCount = pending.blockOpCount;
+4783: #ifdef BOXEDWINE_WASM_JIT_PROFILE
+4784:     wasmJitProfileCompiledBlock(pending.blockOpCount);
+4785: #endif
+4786:     DecodedOp* cur = pending.op;
+4787:     for (U32 i = 0; i < pending.blockOpCount && cur; ++i) {
+4788:         DecodedOp* owner = cur->blockStart;
+4789:         if (!owner || owner->blockLen < pending.emulatedLen) {
+4790:             owner = pending.op;
+4791:         }
+4792:         cur->blockStart = owner;
+4793: 
+4794:         if (cur == pending.op) {
+4795:             cur->pfnJitCode = (void*)(uintptr_t)(U32)tableIdx;
+4796:             cur->flags |= OP_FLAG_JIT;
+4797:             cur->flags2 &= ~OP_FLAG2_WASM_JIT_PENDING;
+4798:             cur->pfn = pending.process->startJITOp;
+4799:             if (pending.needsMemoryPageArrays) {
+4800:                 cur->flags2 |= OP_FLAG2_WASM_JIT_MEM_ARRAYS;
+4801:             } else {
+4802:                 cur->flags2 &= ~OP_FLAG2_WASM_JIT_MEM_ARRAYS;
+4803:             }
+4804:         } else if (!isNestedWasmJitEntry(pending, cur)) {
+4805:             cur->pfnJitCode = nullptr;
+4806:             cur->flags &= ~OP_FLAG_JIT;
+4807:             cur->flags2 &= ~OP_FLAG2_WASM_JIT_MEM_ARRAYS;
+4808:             cur->pfn = NormalCPU::getFunctionForOp(cur);
+4809:         }
+4810:         cur = cur->next;
+
+13909: bool JitWasmCodeGen::shouldStopBlockBefore(U32 eip, DecodedOp* op) {
+13910: #if !defined(BOXEDWINE_MULTI_THREADED) && !defined(__TEST)
+13911:     // Honor profile-guided split hints from the grouped manifest: end the
+13912:     // block before a hot interior target so that target compiles (and is
+13913:     // cached) as its own block-start entry, making it reachable by the
+13914:     // grouped direct-call machinery. The JS side keeps the hint map; without
+13915:     // an active persistence session there are no hints and no EM_JS call.
+13916:     if (!wasmJitPersistenceActive() || !op || eip == this->startingEip) {
+13917:         return false;
+13918:     }
+13919:     if (boxedwine_wasm_profile_split_before(
+13920:         this->startingEip - cpu->seg[CS].address,
+13921:         eip - cpu->seg[CS].address) != 0) {
+13922:         m_profileSplitTargetOp = op;
+13923:         m_profileSplitBlockStartEip = this->startingEip;
+13924:         m_profileSplitTargetEip = eip;
+13925:         return true;
+13926:     }
+13927:     return false;
+13928: #else
+13929:     return false;
+13930: #endif
+13931: }
+13932: 

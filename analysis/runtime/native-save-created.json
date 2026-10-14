@@ -1,0 +1,5 @@
+{
+  "time": "2026-10-14T19:10:43.307Z",
+  "type": "log",
+  "text": "NATIVE_SAVES [{\"path\":\"/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 3.SAV\",\"name\":\"Alpha Centauri Autosave 3.SAV\",\"bytes\":290608,\"sha256\":\"8653f590dbef8727120556550d786858a3f90386a8d9d69e96a3e654bae36f34\"},{\"path\":\"/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 2.SAV\",\"name\":\"Alpha Centauri Autosave 2.SAV\",\"bytes\":290608,\"sha256\":\"b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42\"},{\"path\":\"/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 1.SAV\",\"name\":\"Alpha Centauri Autosave 1.SAV\",\"bytes\":288396,\"sha256\":\"4a379b9b13cd2fe4b58d2c7ad916b004d2473b33b0a67a720be91ce429a42d22\"},{\"path\":\"/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/Aki Zeta-5 of the Consciousness, 2101.SAV\",\"name\":\"Aki Zeta-5 of the Consciousness, 2101.SAV\",\"bytes\":288396,\"sha256\":\"f80fefa5cf5b317716513bed7f8cea3d3fcc16bbf209352bd1675e3660a4b6b5\"}]"
+}

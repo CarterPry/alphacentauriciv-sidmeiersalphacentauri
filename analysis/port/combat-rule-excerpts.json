@@ -1,0 +1,156 @@
+{
+  "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/alphax.txt",
+  "sha256": "bb01e3ac23793da0a46713f4851d65e63b599c24aef8300ffe45e7e57b332c42",
+  "excerpts": [
+    {
+      "startLine": 24,
+      "endLine": 28,
+      "lines": [
+        {
+          "line": 24,
+          "text": "#RULES"
+        },
+        {
+          "line": 25,
+          "text": "3,       ; Movement rate along roads"
+        },
+        {
+          "line": 26,
+          "text": "2,       ; Nutrient intake requirement for citizens"
+        },
+        {
+          "line": 27,
+          "text": "3,2      ; Numerator & Denominator for artillery fire damage"
+        },
+        {
+          "line": 28,
+          "text": "2,       ; Max artillery range (larger will break multiplayer)"
+        }
+      ]
+    },
+    {
+      "startLine": 42,
+      "endLine": 66,
+      "lines": [
+        {
+          "line": 42,
+          "text": "3,2,     ; Psi combat offense-to-defense ratio (LAND unit defending)"
+        },
+        {
+          "line": 43,
+          "text": "1,1,     ; Psi combat offense-to-defense ratio (SEA unit defending)"
+        },
+        {
+          "line": 44,
+          "text": "1,1,     ; Psi combat offense-to-defense ratio (AIR unit defending)"
+        },
+        {
+          "line": 45,
+          "text": "10,      ; Players' starting energy reserves"
+        },
+        {
+          "line": 46,
+          "text": "25,      ; Combat % -> intrinsic base defense"
+        },
+        {
+          "line": 47,
+          "text": "0,       ; Combat % -> attacking along road"
+        },
+        {
+          "line": 48,
+          "text": "0,       ; Combat % -> for attacking from higher elevation"
+        },
+        {
+          "line": 49,
+          "text": "0,       ; Combat penalty % -> attacking from lower elevation"
+        },
+        {
+          "line": 50,
+          "text": "25,      ; Combat % -> Mobile unit in open ground"
+        },
+        {
+          "line": 51,
+          "text": "0,       ; Combat % -> Defend vs. mobile in rough"
+        },
+        {
+          "line": 52,
+          "text": "25,      ; Combat % -> Infantry vs. Base"
+        },
+        {
+          "line": 53,
+          "text": "50,      ; Combat penalty % -> attack after airdrop"
+        },
+        {
+          "line": 54,
+          "text": "25,      ; Combat % -> Fanatic attack bonus"
+        },
+        {
+          "line": 55,
+          "text": "50,      ; Combat % -> Land based guns vs. ship artillery bonus"
+        },
+        {
+          "line": 56,
+          "text": "25,      ; Combat % -> Artillery bonus per level of altitude"
+        },
+        {
+          "line": 57,
+          "text": "50,      ; Combat % -> Trance bonus defending vs. psi"
+        },
+        {
+          "line": 58,
+          "text": "50,      ; Combat % -> Empath Song bonus attacking vs. psi"
+        },
+        {
+          "line": 59,
+          "text": "50,      ; Combat penalty % -> Air superiority unit vs. ground unit"
+        },
+        {
+          "line": 60,
+          "text": "100,     ; Combat % -> Air superiority unit vs. air unit"
+        },
+        {
+          "line": 61,
+          "text": "50,      ; Combat penalty % -> Non-combat unit defending vs. combat unit"
+        },
+        {
+          "line": 62,
+          "text": "50,      ; Combat % -> Comm Jammer unit defending vs. mobile unit"
+        },
+        {
+          "line": 63,
+          "text": "100,     ; Combat % -> Bonus vs. ships caught in port"
+        },
+        {
+          "line": 64,
+          "text": "100,     ; Combat % -> AAA bonus vs. air units"
+        },
+        {
+          "line": 65,
+          "text": "25,      ; Combat % -> Defend in range of friendly Sensor"
+        },
+        {
+          "line": 66,
+          "text": "10,      ; Combat % -> Psi attack bonus/penalty per +PLANET"
+        }
+      ]
+    },
+    {
+      "startLine": 87,
+      "endLine": 89,
+      "lines": [
+        {
+          "line": 87,
+          "text": "50,      ; Maximum % damage inflicted by arty versus units in base/bunker"
+        },
+        {
+          "line": 88,
+          "text": "99,      ; Maximum % damage inflicted by arty versus units in open"
+        },
+        {
+          "line": 89,
+          "text": "100,     ; Maximum % damage inflicted by arty versus units at sea"
+        }
+      ]
+    }
+  ]
+}

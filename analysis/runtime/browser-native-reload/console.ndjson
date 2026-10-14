@@ -1,0 +1,165 @@
+{"time":"2026-10-14T19:11:18.792Z","type":"log","text":"running initial setup"}
+{"time":"2026-10-14T19:11:18.793Z","type":"log","text":"setting rootBase to: /runtime/"}
+{"time":"2026-10-14T19:11:18.793Z","type":"log","text":"setting appBase to: /runtime/"}
+{"time":"2026-10-14T19:11:18.793Z","type":"log","text":"setting storage mode to: INDEXED_DB"}
+{"time":"2026-10-14T19:11:18.793Z","type":"log","text":"setting auto run to: true"}
+{"time":"2026-10-14T19:11:18.793Z","type":"log","text":"setting load Desktop to: false"}
+{"time":"2026-10-14T19:11:18.793Z","type":"log","text":"setting root zip file to: wine.zip"}
+{"time":"2026-10-14T19:11:18.793Z","type":"log","text":"setting app zip file to: alpha-centauri.zip"}
+{"time":"2026-10-14T19:11:18.793Z","type":"log","text":"setting program to execute to: terranx.exe"}
+{"time":"2026-10-14T19:11:18.793Z","type":"log","text":"setting sound to: true"}
+{"time":"2026-10-14T19:11:18.793Z","type":"log","text":"setting audioFreq to: 22050"}
+{"time":"2026-10-14T19:11:18.793Z","type":"log","text":"setting disableWasmJitForWrittenCode to: true"}
+{"time":"2026-10-14T19:11:18.794Z","type":"log","text":"setting BPP to: 32"}
+{"time":"2026-10-14T19:11:18.794Z","type":"log","text":"setting skipFrameFPS to: 0"}
+{"time":"2026-10-14T19:11:18.794Z","type":"log","text":"setting Resolution to: 1024x768"}
+{"time":"2026-10-14T19:11:18.794Z","type":"log","text":"networking disabled"}
+{"time":"2026-10-14T19:11:18.794Z","type":"log","text":"setting storage key to: key/alpha-centauri"}
+{"time":"2026-10-14T19:11:18.794Z","type":"log","text":"Use Storage mode: INDEXED_DB"}
+{"time":"2026-10-14T19:11:18.807Z","type":"log","text":"[WASM JIT] imported 0 blocks from server cache precompiled=0"}
+{"time":"2026-10-14T19:11:19.724Z","type":"log","text":"File created://alpha-centauri.zip"}
+{"time":"2026-10-14T19:11:20.459Z","type":"log","text":"File created://wine.zip"}
+{"time":"2026-10-14T19:11:20.460Z","type":"log","text":"Emulator params:-root,/root/key/alpha-centauri,-zip,wine.zip,-mount,alpha-centauri.zip,/home/username/.wine/dosdevices/c:/files,-mount_drive,/d_drive/key/alpha-centauri,d,-resolution,1024x768,-audioFreq,22050,-disableHideCursor,-disableWasmJitForWrittenCode,-env,WINEDLLOVERRIDES=mscoree,mshtml=,-w,/home/username/.wine/dosdevices/c:/files,/bin/wine,terranx.exe"}
+{"time":"2026-10-14T19:11:20.476Z","type":"log","text":"Starting ..."}
+{"time":"2026-10-14T19:11:20.477Z","type":"log","text":"Command line arguments: \"./this.program\" \"-root\" \"/root/key/alpha-centauri\" \"-zip\" \"wine.zip\" \"-mount\" \"alpha-centauri.zip\" \"/home/username/.wine/dosdevices/c:/files\" \"-mount_drive\" \"/d_drive/key/alpha-centauri\" \"d\" \"-resolution\" \"1024x768\" \"-audioFreq\" \"22050\" \"-disableHideCursor\" \"-disableWasmJitForWrittenCode\" \"-env\" \"WINEDLLOVERRIDES=mscoree,mshtml=\" \"-w\" \"/home/username/.wine/dosdevices/c:/files\" \"/bin/wine\" \"terranx.exe\""}
+{"time":"2026-10-14T19:11:20.480Z","type":"log","text":"BoxedWine build timestamp: Oct  9 2026 11:17:00"}
+{"time":"2026-10-14T19:11:20.480Z","type":"log","text":"Using root directory: /root/key/alpha-centauri"}
+{"time":"2026-10-14T19:11:20.492Z","type":"log","text":"Using zip file system: wine.zip"}
+{"time":"2026-10-14T19:11:20.493Z","type":"log","text":"Resolution set to: 1024x768"}
+{"time":"2026-10-14T19:11:20.520Z","type":"log","text":"Loaded wine.zip in 27 ms"}
+{"time":"2026-10-14T19:11:20.529Z","type":"log","text":"Mounted alpha-centauri.zip in 8 ms"}
+{"time":"2026-10-14T19:11:20.531Z","type":"log","text":"Launching \"/bin/wine\" \"terranx.exe\" "}
+{"time":"2026-10-14T19:11:20.548Z","type":"log","text":"[WASM JIT] first JIT block executed, tableIdx: 13215"}
+{"time":"2026-10-14T19:11:24.620Z","type":"log","text":"ran main loop in 1826ms"}
+{"time":"2026-10-14T19:11:26.279Z","type":"log","text":"[WASM JIT batching] compiledBlocks=1000 browserModules=208 functionsPerGroup=6.7 mapped=889 anonymous=111 rawBytes=3474414 mergedBytes=1915646 flushes[count=1 bytes=0 urgent=127 processCap=0] groups[live=128 created=128 released=0] cancelled=16 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:11:27.624Z","type":"log","text":"[WASM JIT batching] compiledBlocks=2000 browserModules=378 functionsPerGroup=6.2 mapped=1883 anonymous=117 rawBytes=7282627 mergedBytes=4786755 flushes[count=1 bytes=0 urgent=291 processCap=0] groups[live=292 created=292 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:11:28.841Z","type":"log","text":"[WASM JIT batching] compiledBlocks=3000 browserModules=550 functionsPerGroup=6.0 mapped=2881 anonymous=119 rawBytes=11418511 mergedBytes=7781231 flushes[count=1 bytes=0 urgent=461 processCap=0] groups[live=462 created=462 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:11:30.094Z","type":"log","text":"[WASM JIT batching] compiledBlocks=4000 browserModules=695 functionsPerGroup=6.2 mapped=3879 anonymous=121 rawBytes=14693743 mergedBytes=10098270 flushes[count=1 bytes=0 urgent=604 processCap=0] groups[live=605 created=605 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:11:31.082Z","type":"log","text":"[WASM JIT batching] compiledBlocks=5000 browserModules=833 functionsPerGroup=6.3 mapped=4877 anonymous=123 rawBytes=18159112 mergedBytes=12838224 flushes[count=2 bytes=0 urgent=739 processCap=0] groups[live=741 created=741 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:11:31.650Z","type":"log","text":"[MIPS] count=10 raw=69 avg=57 min=16 max=115 warmAvg=57 warmSamples=0"}
+{"time":"2026-10-14T19:11:32.044Z","type":"log","text":"00a4:err:ntoskrnl:ZwLoadDriver failed to create driver L\"\\\\Registry\\\\Machine\\\\System\\\\CurrentControlSet\\\\Services\\\\winebth\": c00000e5"}
+{"time":"2026-10-14T19:11:32.051Z","type":"log","text":"003c:fixme:service:scmdatabase_autostart_services Auto-start service L\"winebth\" failed to start: 1359"}
+{"time":"2026-10-14T19:11:32.075Z","type":"log","text":"[WASM JIT batching] compiledBlocks=6000 browserModules=963 functionsPerGroup=6.4 mapped=5877 anonymous=123 rawBytes=21085327 mergedBytes=14837168 flushes[count=2 bytes=0 urgent=869 processCap=0] groups[live=871 created=871 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:11:33.841Z","type":"log","text":"[WASM JIT batching] compiledBlocks=7000 browserModules=1097 functionsPerGroup=6.5 mapped=6877 anonymous=123 rawBytes=24207226 mergedBytes=17210474 flushes[count=2 bytes=0 urgent=1002 processCap=0] groups[live=1004 created=1004 released=0] cancelled=86 failed=0 tiny[deferred=32 promoted=2] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:11:35.789Z","type":"log","text":"[WASM JIT batching] compiledBlocks=8000 browserModules=1284 functionsPerGroup=6.5 mapped=7832 anonymous=168 rawBytes=27815468 mergedBytes=19377467 flushes[count=2 bytes=0 urgent=1139 processCap=0] groups[live=1141 created=1141 released=0] cancelled=86 failed=0 tiny[deferred=50 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:11:36.901Z","type":"log","text":"[WASM JIT batching] compiledBlocks=9000 browserModules=1444 functionsPerGroup=6.5 mapped=8832 anonymous=168 rawBytes=31111080 mergedBytes=21890929 flushes[count=2 bytes=0 urgent=1299 processCap=0] groups[live=1301 created=1301 released=0] cancelled=86 failed=0 tiny[deferred=50 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:11:37.228Z","type":"log","text":"Showing Window"}
+{"time":"2026-10-14T19:11:37.307Z","type":"log","text":"00d4:err:vulkan:vulkan_init_once Wine was built without Vulkan support."}
+{"time":"2026-10-14T19:11:37.570Z","type":"log","text":"WASM JIT simd enabled"}
+{"time":"2026-10-14T19:11:38.487Z","type":"log","text":"[WASM JIT batching] compiledBlocks=10000 browserModules=1585 functionsPerGroup=6.6 mapped=9830 anonymous=170 rawBytes=34918346 mergedBytes=24896425 flushes[count=3 bytes=0 urgent=1437 processCap=0] groups[live=1440 created=1440 released=0] cancelled=86 failed=0 tiny[deferred=50 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:11:39.274Z","type":"log","text":"0024:err:winediag:wined3d_dll_init Disabling 3D support."}
+{"time":"2026-10-14T19:11:39.914Z","type":"log","text":"[WASM JIT batching] compiledBlocks=11000 browserModules=1760 functionsPerGroup=6.5 mapped=10825 anonymous=175 rawBytes=38874873 mergedBytes=27595305 flushes[count=4 bytes=0 urgent=1607 processCap=0] groups[live=1611 created=1611 released=0] cancelled=86 failed=0 tiny[deferred=51 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:11:40.893Z","type":"log","text":"0024:err:ole:com_get_class_object class {d8f1eee0-f634-11cf-8700-00a0245d918b} not registered"}
+{"time":"2026-10-14T19:11:40.893Z","type":"log","text":"0024:err:ole:com_get_class_object no class object {d8f1eee0-f634-11cf-8700-00a0245d918b} could be created for context 0x1"}
+{"time":"2026-10-14T19:11:41.717Z","type":"log","text":"[MIPS] count=20 raw=65 avg=59 min=16 max=115 warmAvg=65 warmSamples=1"}
+{"time":"2026-10-14T19:11:51.786Z","type":"log","text":"[MIPS] count=30 raw=77 avg=47 min=27 max=84 warmAvg=36 warmSamples=11"}
+{"time":"2026-10-14T19:11:54.694Z","type":"log","text":"openAudio: freq=22050(got 22050) format=8120(got 8120) channels=2(got 2)"}
+{"time":"2026-10-14T19:11:54.695Z","type":"log","text":"Audio output: AudioWorklet (fixed 30 ms queue target)"}
+{"time":"2026-10-14T19:12:01.852Z","type":"log","text":"[MIPS] count=40 raw=74 avg=50 min=25 max=109 warmAvg=50 warmSamples=21"}
+{"time":"2026-10-14T19:12:03.325Z","type":"log","text":"[WASM JIT batching] compiledBlocks=12000 browserModules=1899 functionsPerGroup=6.5 mapped=11822 anonymous=178 rawBytes=42248004 mergedBytes=30504693 flushes[count=4 bytes=0 urgent=1743 processCap=0] groups[live=1747 created=1747 released=0] cancelled=86 failed=0 tiny[deferred=53 promoted=27] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:13:37.639Z","type":"log","text":"[MIPS] count=50 raw=0 avg=55 min=0 max=109 warmAvg=48 warmSamples=31"}
+{"time":"2026-10-14T19:13:37.771Z","type":"log","text":"ran main loop in 85765ms"}
+{"time":"2026-10-14T19:13:45.218Z","type":"log","text":"ran main loop in 172ms"}
+{"time":"2026-10-14T19:13:47.762Z","type":"log","text":"[MIPS] count=60 raw=6 avg=31 min=0 max=71 warmAvg=41 warmSamples=41"}
+{"time":"2026-10-14T19:14:41.130Z","type":"log","text":"ran main loop in 51951ms"}
+{"time":"2026-10-14T19:14:49.192Z","type":"log","text":"[MIPS] count=70 raw=9 avg=15 min=0 max=31 warmAvg=35 warmSamples=51"}
+{"time":"2026-10-14T19:14:59.338Z","type":"log","text":"[MIPS] count=80 raw=12 avg=10 min=0 max=25 warmAvg=31 warmSamples=61"}
+{"time":"2026-10-14T19:15:09.423Z","type":"log","text":"[MIPS] count=90 raw=6 avg=9 min=6 max=14 warmAvg=28 warmSamples=71"}
+{"time":"2026-10-14T19:15:19.524Z","type":"log","text":"[MIPS] count=100 raw=6 avg=9 min=6 max=14 warmAvg=25 warmSamples=81"}
+{"time":"2026-10-14T19:16:30.825Z","type":"log","text":"ran main loop in 64648ms"}
+{"time":"2026-10-14T19:16:33.850Z","type":"log","text":"[MIPS] count=110 raw=12 avg=9 min=6 max=34 warmAvg=24 warmSamples=91"}
+{"time":"2026-10-14T19:16:43.889Z","type":"log","text":"[MIPS] count=120 raw=29 avg=19 min=6 max=34 warmAvg=24 warmSamples=101"}
+{"time":"2026-10-14T19:16:53.958Z","type":"log","text":"[MIPS] count=130 raw=29 avg=28 min=18 max=34 warmAvg=25 warmSamples=111"}
+{"time":"2026-10-14T19:17:04.023Z","type":"log","text":"[MIPS] count=140 raw=29 avg=31 min=28 max=44 warmAvg=25 warmSamples=121"}
+{"time":"2026-10-14T19:17:14.077Z","type":"log","text":"[MIPS] count=150 raw=29 avg=30 min=28 max=44 warmAvg=26 warmSamples=131"}
+{"time":"2026-10-14T19:17:24.111Z","type":"log","text":"[MIPS] count=160 raw=29 avg=29 min=28 max=31 warmAvg=26 warmSamples=141"}
+{"time":"2026-10-14T19:17:34.169Z","type":"log","text":"[MIPS] count=170 raw=29 avg=28 min=28 max=29 warmAvg=26 warmSamples=151"}
+{"time":"2026-10-14T19:17:44.216Z","type":"log","text":"[MIPS] count=180 raw=29 avg=29 min=28 max=34 warmAvg=26 warmSamples=161"}
+{"time":"2026-10-14T19:17:54.260Z","type":"log","text":"[MIPS] count=190 raw=32 avg=29 min=28 max=35 warmAvg=26 warmSamples=171"}
+{"time":"2026-10-14T19:18:04.321Z","type":"log","text":"[MIPS] count=200 raw=29 avg=29 min=28 max=35 warmAvg=26 warmSamples=181"}
+{"time":"2026-10-14T19:18:14.379Z","type":"log","text":"[MIPS] count=210 raw=29 avg=29 min=28 max=35 warmAvg=27 warmSamples=191"}
+{"time":"2026-10-14T19:18:24.428Z","type":"log","text":"[MIPS] count=220 raw=53 avg=40 min=28 max=62 warmAvg=28 warmSamples=201"}
+{"time":"2026-10-14T19:18:29.914Z","type":"log","text":"[WASM JIT batching] compiledBlocks=13000 browserModules=2002 functionsPerGroup=6.7 mapped=12822 anonymous=178 rawBytes=46413541 mergedBytes=33617863 flushes[count=5 bytes=0 urgent=1845 processCap=0] groups[live=1850 created=1850 released=0] cancelled=86 failed=0 tiny[deferred=53 promoted=27] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:18:34.475Z","type":"log","text":"[MIPS] count=230 raw=94 avg=64 min=29 max=117 warmAvg=30 warmSamples=211"}
+{"time":"2026-10-14T19:18:44.532Z","type":"log","text":"[MIPS] count=240 raw=93 avg=86 min=49 max=117 warmAvg=33 warmSamples=221"}
+{"time":"2026-10-14T19:18:54.598Z","type":"log","text":"[MIPS] count=250 raw=95 avg=93 min=90 max=95 warmAvg=36 warmSamples=231"}
+{"time":"2026-10-14T19:19:04.648Z","type":"log","text":"[MIPS] count=260 raw=96 avg=94 min=90 max=97 warmAvg=38 warmSamples=241"}
+{"time":"2026-10-14T19:19:14.714Z","type":"log","text":"[MIPS] count=270 raw=97 avg=96 min=93 max=97 warmAvg=40 warmSamples=251"}
+{"time":"2026-10-14T19:19:24.783Z","type":"log","text":"[MIPS] count=280 raw=96 avg=96 min=94 max=97 warmAvg=42 warmSamples=261"}
+{"time":"2026-10-14T19:19:34.840Z","type":"log","text":"[MIPS] count=290 raw=96 avg=96 min=93 max=97 warmAvg=44 warmSamples=271"}
+{"time":"2026-10-14T19:19:44.892Z","type":"log","text":"[MIPS] count=300 raw=96 avg=96 min=93 max=97 warmAvg=46 warmSamples=281"}
+{"time":"2026-10-14T19:19:54.955Z","type":"log","text":"[MIPS] count=310 raw=95 avg=95 min=93 max=97 warmAvg=48 warmSamples=291"}
+{"time":"2026-10-14T19:20:05.001Z","type":"log","text":"[MIPS] count=320 raw=95 avg=266 min=93 max=3513 warmAvg=61 warmSamples=301"}
+{"time":"2026-10-14T19:20:15.055Z","type":"log","text":"[MIPS] count=330 raw=96 avg=266 min=93 max=3513 warmAvg=62 warmSamples=311"}
+{"time":"2026-10-14T19:20:25.119Z","type":"log","text":"[MIPS] count=340 raw=94 avg=95 min=93 max=97 warmAvg=63 warmSamples=321"}
+{"time":"2026-10-14T19:20:35.172Z","type":"log","text":"[MIPS] count=350 raw=93 avg=94 min=89 max=97 warmAvg=64 warmSamples=331"}
+{"time":"2026-10-14T19:20:45.228Z","type":"log","text":"[MIPS] count=360 raw=93 avg=93 min=89 max=96 warmAvg=65 warmSamples=341"}
+{"time":"2026-10-14T19:20:55.274Z","type":"log","text":"[MIPS] count=370 raw=59 avg=92 min=59 max=97 warmAvg=66 warmSamples=351"}
+{"time":"2026-10-14T19:21:05.303Z","type":"log","text":"[MIPS] count=380 raw=95 avg=91 min=59 max=97 warmAvg=66 warmSamples=361"}
+{"time":"2026-10-14T19:21:15.363Z","type":"log","text":"[MIPS] count=390 raw=95 avg=93 min=77 max=96 warmAvg=67 warmSamples=371"}
+{"time":"2026-10-14T19:21:25.421Z","type":"log","text":"[MIPS] count=400 raw=93 avg=94 min=91 max=96 warmAvg=68 warmSamples=381"}
+{"time":"2026-10-14T19:21:35.475Z","type":"log","text":"[MIPS] count=410 raw=68 avg=92 min=68 max=96 warmAvg=68 warmSamples=391"}
+{"time":"2026-10-14T19:21:45.534Z","type":"log","text":"[MIPS] count=420 raw=28 avg=65 min=28 max=96 warmAvg=68 warmSamples=401"}
+{"time":"2026-10-14T19:21:55.585Z","type":"log","text":"[MIPS] count=430 raw=89 avg=61 min=28 max=92 warmAvg=68 warmSamples=411"}
+{"time":"2026-10-14T19:22:05.641Z","type":"log","text":"[MIPS] count=440 raw=94 avg=87 min=29 max=95 warmAvg=68 warmSamples=421"}
+{"time":"2026-10-14T19:22:15.682Z","type":"log","text":"[MIPS] count=450 raw=93 avg=93 min=88 max=95 warmAvg=69 warmSamples=431"}
+{"time":"2026-10-14T19:22:25.744Z","type":"log","text":"[MIPS] count=460 raw=93 avg=94 min=92 max=95 warmAvg=70 warmSamples=441"}
+{"time":"2026-10-14T19:22:35.799Z","type":"log","text":"[MIPS] count=470 raw=94 avg=93 min=92 max=95 warmAvg=70 warmSamples=451"}
+{"time":"2026-10-14T19:22:45.861Z","type":"log","text":"[MIPS] count=480 raw=92 avg=93 min=90 max=95 warmAvg=71 warmSamples=461"}
+{"time":"2026-10-14T19:22:55.909Z","type":"log","text":"[MIPS] count=490 raw=92 avg=93 min=90 max=96 warmAvg=71 warmSamples=471"}
+{"time":"2026-10-14T19:23:05.968Z","type":"log","text":"[MIPS] count=500 raw=93 avg=94 min=91 max=96 warmAvg=72 warmSamples=481"}
+{"time":"2026-10-14T19:23:16.020Z","type":"log","text":"[MIPS] count=510 raw=92 avg=93 min=91 max=96 warmAvg=72 warmSamples=491"}
+{"time":"2026-10-14T19:23:26.080Z","type":"log","text":"[MIPS] count=520 raw=97 avg=95 min=92 max=97 warmAvg=73 warmSamples=501"}
+{"time":"2026-10-14T19:23:36.151Z","type":"log","text":"[MIPS] count=530 raw=93 avg=267 min=93 max=3521 warmAvg=80 warmSamples=511"}
+{"time":"2026-10-14T19:23:46.204Z","type":"log","text":"[MIPS] count=540 raw=94 avg=266 min=92 max=3521 warmAvg=80 warmSamples=521"}
+{"time":"2026-10-14T19:23:56.253Z","type":"log","text":"[MIPS] count=550 raw=95 avg=94 min=92 max=96 warmAvg=80 warmSamples=531"}
+{"time":"2026-10-14T19:24:06.303Z","type":"log","text":"[MIPS] count=560 raw=95 avg=95 min=92 max=97 warmAvg=80 warmSamples=541"}
+{"time":"2026-10-14T19:24:16.373Z","type":"log","text":"[MIPS] count=570 raw=96 avg=95 min=94 max=97 warmAvg=81 warmSamples=551"}
+{"time":"2026-10-14T19:24:26.426Z","type":"log","text":"[MIPS] count=580 raw=96 avg=95 min=94 max=97 warmAvg=81 warmSamples=561"}
+{"time":"2026-10-14T19:24:36.497Z","type":"log","text":"[MIPS] count=590 raw=76 avg=91 min=51 max=97 warmAvg=81 warmSamples=571"}
+{"time":"2026-10-14T19:24:46.576Z","type":"log","text":"[MIPS] count=600 raw=62 avg=75 min=51 max=97 warmAvg=81 warmSamples=581"}
+{"time":"2026-10-14T19:24:47.603Z","type":"log","text":"[WASM JIT batching] compiledBlocks=14000 browserModules=2098 functionsPerGroup=6.8 mapped=13822 anonymous=178 rawBytes=50326760 mergedBytes=36550950 flushes[count=5 bytes=0 urgent=1941 processCap=0] groups[live=1946 created=1946 released=0] cancelled=86 failed=0 tiny[deferred=53 promoted=27] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"time":"2026-10-14T19:24:56.627Z","type":"log","text":"[MIPS] count=610 raw=65 avg=63 min=54 max=82 warmAvg=80 warmSamples=591"}
+{"time":"2026-10-14T19:25:06.704Z","type":"log","text":"[MIPS] count=620 raw=62 avg=63 min=61 max=65 warmAvg=80 warmSamples=601"}
+{"time":"2026-10-14T19:25:16.763Z","type":"log","text":"[MIPS] count=630 raw=63 avg=63 min=61 max=65 warmAvg=80 warmSamples=611"}
+{"time":"2026-10-14T19:25:26.811Z","type":"log","text":"[MIPS] count=640 raw=60 avg=63 min=60 max=66 warmAvg=80 warmSamples=621"}
+{"time":"2026-10-14T19:25:36.859Z","type":"log","text":"[MIPS] count=650 raw=64 avg=63 min=60 max=66 warmAvg=79 warmSamples=631"}
+{"time":"2026-10-14T19:25:46.920Z","type":"log","text":"[MIPS] count=660 raw=62 avg=63 min=60 max=65 warmAvg=79 warmSamples=641"}
+{"time":"2026-10-14T19:25:56.960Z","type":"log","text":"[MIPS] count=670 raw=61 avg=63 min=60 max=65 warmAvg=79 warmSamples=651"}
+{"time":"2026-10-14T19:26:07.020Z","type":"log","text":"[MIPS] count=680 raw=62 avg=63 min=61 max=65 warmAvg=79 warmSamples=661"}
+{"time":"2026-10-14T19:26:17.093Z","type":"log","text":"[MIPS] count=690 raw=61 avg=64 min=61 max=66 warmAvg=78 warmSamples=671"}
+{"time":"2026-10-14T19:26:27.155Z","type":"log","text":"[MIPS] count=700 raw=65 avg=61 min=45 max=66 warmAvg=78 warmSamples=681"}
+{"time":"2026-10-14T19:26:37.216Z","type":"log","text":"[MIPS] count=710 raw=66 avg=62 min=45 max=66 warmAvg=78 warmSamples=691"}
+{"time":"2026-10-14T19:26:47.256Z","type":"log","text":"[MIPS] count=720 raw=68 avg=65 min=63 max=68 warmAvg=78 warmSamples=701"}
+{"time":"2026-10-14T19:26:57.295Z","type":"log","text":"[MIPS] count=730 raw=67 avg=65 min=63 max=68 warmAvg=78 warmSamples=711"}
+{"time":"2026-10-14T19:27:07.345Z","type":"log","text":"[MIPS] count=740 raw=65 avg=65 min=63 max=68 warmAvg=77 warmSamples=721"}
+{"time":"2026-10-14T19:27:17.388Z","type":"log","text":"[MIPS] count=750 raw=67 avg=66 min=63 max=68 warmAvg=77 warmSamples=731"}
+{"time":"2026-10-14T19:27:27.448Z","type":"log","text":"[MIPS] count=760 raw=66 avg=66 min=64 max=67 warmAvg=77 warmSamples=741"}
+{"time":"2026-10-14T19:27:37.528Z","type":"log","text":"[MIPS] count=770 raw=64 avg=66 min=62 max=67 warmAvg=77 warmSamples=751"}
+{"time":"2026-10-14T19:27:47.597Z","type":"log","text":"[MIPS] count=780 raw=63 avg=64 min=61 max=67 warmAvg=77 warmSamples=761"}
+{"time":"2026-10-14T19:27:57.676Z","type":"log","text":"[MIPS] count=790 raw=65 avg=63 min=61 max=65 warmAvg=77 warmSamples=771"}
+{"time":"2026-10-14T19:28:07.739Z","type":"log","text":"[MIPS] count=800 raw=61 avg=64 min=61 max=67 warmAvg=76 warmSamples=781"}
+{"time":"2026-10-14T19:28:17.792Z","type":"log","text":"[MIPS] count=810 raw=64 avg=64 min=61 max=67 warmAvg=76 warmSamples=791"}
+{"time":"2026-10-14T19:28:27.858Z","type":"log","text":"[MIPS] count=820 raw=65 avg=65 min=61 max=66 warmAvg=76 warmSamples=801"}
+{"time":"2026-10-14T19:28:37.897Z","type":"log","text":"[MIPS] count=830 raw=64 avg=64 min=63 max=66 warmAvg=76 warmSamples=811"}
+{"time":"2026-10-14T19:28:47.948Z","type":"log","text":"[MIPS] count=840 raw=67 avg=64 min=63 max=67 warmAvg=76 warmSamples=821"}
+{"time":"2026-10-14T19:28:58.017Z","type":"log","text":"[MIPS] count=850 raw=67 avg=66 min=63 max=68 warmAvg=76 warmSamples=831"}
+{"time":"2026-10-14T19:29:08.082Z","type":"log","text":"[MIPS] count=860 raw=66 avg=65 min=56 max=68 warmAvg=76 warmSamples=841"}
+{"time":"2026-10-14T19:29:18.142Z","type":"log","text":"[MIPS] count=870 raw=66 avg=65 min=56 max=69 warmAvg=75 warmSamples=851"}
+{"time":"2026-10-14T19:29:28.191Z","type":"log","text":"[MIPS] count=880 raw=65 avg=66 min=63 max=69 warmAvg=75 warmSamples=861"}
+{"time":"2026-10-14T19:29:38.251Z","type":"log","text":"[MIPS] count=890 raw=3434 avg=233 min=58 max=3434 warmAvg=79 warmSamples=871"}
+{"time":"2026-10-14T19:29:48.304Z","type":"log","text":"[MIPS] count=900 raw=69 avg=232 min=58 max=3434 warmAvg=79 warmSamples=881"}
+{"time":"2026-10-14T19:29:58.339Z","type":"log","text":"[MIPS] count=910 raw=56 avg=64 min=56 max=69 warmAvg=79 warmSamples=891"}
+{"time":"2026-10-14T19:29:59.172Z","type":"log","text":"FINAL_NATIVE_SAVES [{\"file\":\"/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/Aki Zeta-5 of the Consciousness, 2101.SAV\",\"name\":\"Aki Zeta-5 of the Consciousness, 2101.SAV\",\"bytes\":288396,\"sha256\":\"f80fefa5cf5b317716513bed7f8cea3d3fcc16bbf209352bd1675e3660a4b6b5\"},{\"file\":\"/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 4.SAV\",\"name\":\"Alpha Centauri Autosave 4.SAV\",\"bytes\":290608,\"sha256\":\"8653f590dbef8727120556550d786858a3f90386a8d9d69e96a3e654bae36f34\"},{\"file\":\"/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 3.SAV\",\"name\":\"Alpha Centauri Autosave 3.SAV\",\"bytes\":290608,\"sha256\":\"b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42\"},{\"file\":\"/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 2.SAV\",\"name\":\"Alpha Centauri Autosave 2.SAV\",\"bytes\":288396,\"sha256\":\"4a379b9b13cd2fe4b58d2c7ad916b004d2473b33b0a67a720be91ce429a42d22\"},{\"file\":\"/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 1.SAV\",\"name\":\"Alpha Centauri Autosave 1.SAV\",\"bytes\":288396,\"sha256\":\"86c5341bc346ac0391984c4420ffc017e47012e72d5cc7ac977bd0d829e5127f\"},{\"file\":\"/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/Aki Zeta-5 of the Consciousness, 2102.SAV\",\"name\":\"Aki Zeta-5 of the Consciousness, 2102.SAV\",\"bytes\":288396,\"sha256\":\"00030f02540e30b782bb2710b3575ee5245661f632925db537a47411bd73ee1d\"}]"}
+{"time":"2026-10-14T19:30:08.391Z","type":"log","text":"[MIPS] count=920 raw=65 avg=64 min=56 max=69 warmAvg=79 warmSamples=901"}
+{"time":"2026-10-14T19:30:18.462Z","type":"log","text":"[MIPS] count=930 raw=64 avg=65 min=63 max=68 warmAvg=78 warmSamples=911"}
+{"time":"2026-10-14T19:30:28.508Z","type":"log","text":"[MIPS] count=940 raw=65 avg=66 min=63 max=68 warmAvg=78 warmSamples=921"}
+{"time":"2026-10-14T19:30:38.550Z","type":"log","text":"[MIPS] count=950 raw=67 avg=66 min=64 max=68 warmAvg=78 warmSamples=931"}
+{"time":"2026-10-14T19:30:48.594Z","type":"log","text":"[MIPS] count=960 raw=63 avg=65 min=60 max=68 warmAvg=78 warmSamples=941"}
+{"time":"2026-10-14T19:30:58.642Z","type":"log","text":"[MIPS] count=970 raw=64 avg=63 min=57 max=66 warmAvg=78 warmSamples=951"}
+{"time":"2026-10-14T19:31:08.713Z","type":"log","text":"[MIPS] count=980 raw=64 avg=63 min=57 max=65 warmAvg=78 warmSamples=961"}
+{"time":"2026-10-14T19:31:18.773Z","type":"log","text":"[MIPS] count=990 raw=64 avg=64 min=62 max=65 warmAvg=78 warmSamples=971"}
+{"time":"2026-10-14T19:31:28.833Z","type":"log","text":"[MIPS] count=1000 raw=64 avg=65 min=63 max=66 warmAvg=77 warmSamples=981"}
+{"time":"2026-10-14T19:31:38.889Z","type":"log","text":"[MIPS] count=1010 raw=67 avg=65 min=63 max=67 warmAvg=77 warmSamples=991"}
+{"time":"2026-10-14T19:31:48.943Z","type":"log","text":"[MIPS] count=1020 raw=65 avg=65 min=63 max=67 warmAvg=77 warmSamples=1001"}
+{"time":"2026-10-14T19:31:58.996Z","type":"log","text":"[MIPS] count=1030 raw=66 avg=65 min=63 max=66 warmAvg=77 warmSamples=1011"}

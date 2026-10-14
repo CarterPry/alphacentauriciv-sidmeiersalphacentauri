@@ -1,0 +1,35 @@
+{
+  "capturedAtUTC": "2026-10-14T19:30:00.251Z",
+  "files": [
+    {
+      "file": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 4.SAV",
+      "name": "Alpha Centauri Autosave 4.SAV",
+      "bytes": 290608,
+      "sha256": "8653f590dbef8727120556550d786858a3f90386a8d9d69e96a3e654bae36f34"
+    },
+    {
+      "file": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 3.SAV",
+      "name": "Alpha Centauri Autosave 3.SAV",
+      "bytes": 290608,
+      "sha256": "b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42"
+    },
+    {
+      "file": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 2.SAV",
+      "name": "Alpha Centauri Autosave 2.SAV",
+      "bytes": 286680,
+      "sha256": "618ad186c36963d120c8351916c907702248096d418a2814f9f63bbf6705c2da"
+    },
+    {
+      "file": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 1.SAV",
+      "name": "Alpha Centauri Autosave 1.SAV",
+      "bytes": 286680,
+      "sha256": "89ed97ff97f9a2e90581750cbf19b0939ad83a55bd1df326ef8d51817433fa13"
+    },
+    {
+      "file": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/Deirdre of the Gaians, 2102.SAV",
+      "name": "Deirdre of the Gaians, 2102.SAV",
+      "bytes": 286680,
+      "sha256": "9ff0c40153349baf46fc591372fd5ee52deba55fe111b6fbcfc8bc284d22efdb"
+    }
+  ]
+}

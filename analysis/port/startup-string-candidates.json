@@ -1,0 +1,191 @@
+{
+  "source": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+  "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+  "matches": [
+    {
+      "fileOffset": 2631516,
+      "va": "0x68275c",
+      "value": "movies\\"
+    },
+    {
+      "fileOffset": 2634380,
+      "va": "0x68328c",
+      "value": "fx\\opening menu.wav"
+    },
+    {
+      "fileOffset": 2642932,
+      "va": "0x6853f4",
+      "value": "ds3d"
+    },
+    {
+      "fileOffset": 2642940,
+      "va": "0x6853fc",
+      "value": "ds3d"
+    },
+    {
+      "fileOffset": 2649656,
+      "va": "0x686e38",
+      "value": "BOOKINTRO"
+    },
+    {
+      "fileOffset": 2649720,
+      "va": "0x686e78",
+      "value": "BOOKINTRO"
+    },
+    {
+      "fileOffset": 2652832,
+      "va": "0x687aa0",
+      "value": "8BitMovieSound"
+    },
+    {
+      "fileOffset": 2652848,
+      "va": "0x687ab0",
+      "value": "8BitMovieSound"
+    },
+    {
+      "fileOffset": 2664788,
+      "va": "0x68a954",
+      "value": "SHOWMOVIES"
+    },
+    {
+      "fileOffset": 2670316,
+      "va": "0x68beec",
+      "value": "movies\\virtualWorld.wve"
+    },
+    {
+      "fileOffset": 2670340,
+      "va": "0x68bf04",
+      "value": "DisableOpeningMovie"
+    },
+    {
+      "fileOffset": 2670360,
+      "va": "0x68bf18",
+      "value": "DisableOpeningMovie"
+    },
+    {
+      "fileOffset": 2670380,
+      "va": "0x68bf2c",
+      "value": "openingx"
+    },
+    {
+      "fileOffset": 2676260,
+      "va": "0x68d624",
+      "value": "INTRO"
+    },
+    {
+      "fileOffset": 2678772,
+      "va": "0x68dff4",
+      "value": "INTRODUCEENEMYALIEN"
+    },
+    {
+      "fileOffset": 2678792,
+      "va": "0x68e008",
+      "value": "INTRODUCEENEMY"
+    },
+    {
+      "fileOffset": 2683504,
+      "va": "0x68f270",
+      "value": "Disable"
+    },
+    {
+      "fileOffset": 2683532,
+      "va": "0x68f28c",
+      "value": "Disable"
+    },
+    {
+      "fileOffset": 2683560,
+      "va": "0x68f2a8",
+      "value": "Disable"
+    },
+    {
+      "fileOffset": 2683588,
+      "va": "0x68f2c4",
+      "value": "Disable"
+    },
+    {
+      "fileOffset": 2685152,
+      "va": "0x68f8e0",
+      "value": "INTRO"
+    },
+    {
+      "fileOffset": 2685172,
+      "va": "0x68f8f4",
+      "value": "fx\\opening menu.wav"
+    },
+    {
+      "fileOffset": 2685192,
+      "va": "0x68f908",
+      "value": "xopeningb.pcx"
+    },
+    {
+      "fileOffset": 2685208,
+      "va": "0x68f918",
+      "value": "xopeninga.pcx"
+    },
+    {
+      "fileOffset": 2685224,
+      "va": "0x68f928",
+      "value": "openingb.pcx"
+    },
+    {
+      "fileOffset": 2685240,
+      "va": "0x68f938",
+      "value": "openinga.pcx"
+    },
+    {
+      "fileOffset": 2685256,
+      "va": "0x68f948",
+      "value": "xopeningb.pcx"
+    },
+    {
+      "fileOffset": 2685272,
+      "va": "0x68f958",
+      "value": "xopeninga.pcx"
+    },
+    {
+      "fileOffset": 2685288,
+      "va": "0x68f968",
+      "value": "openingb.pcx"
+    },
+    {
+      "fileOffset": 2685304,
+      "va": "0x68f978",
+      "value": "openinga.pcx"
+    },
+    {
+      "fileOffset": 2685352,
+      "va": "0x68f9a8",
+      "value": "INTRO"
+    },
+    {
+      "fileOffset": 2687336,
+      "va": "0x690168",
+      "value": "Preferences"
+    },
+    {
+      "fileOffset": 2687356,
+      "va": "0x69017c",
+      "value": "More Preferences"
+    },
+    {
+      "fileOffset": 2687556,
+      "va": "0x690244",
+      "value": "Preferences"
+    },
+    {
+      "fileOffset": 2687568,
+      "va": "0x690250",
+      "value": "More Preferences"
+    },
+    {
+      "fileOffset": 2716256,
+      "va": "0x697260",
+      "value": "PREFERENCES"
+    },
+    {
+      "fileOffset": 2716320,
+      "va": "0x6972a0",
+      "value": "PREFERENCES"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "65467424603484756a73308412f40b906d28b650",
+  "sdkCommit": "8f685c26ee9f672081e61e22c6aa60fa972d00a9",
+  "sdkVersion": "6.0.12",
+  "patches": {
+    "disjoint-blocks.patch": "21814fca016f281575a47cf36a5aea62cd73a1807696e95e19a3926e8492d0f9",
+    "focus-backport.patch": "16e0c9a3029bdfc7bf8c3c02c722fff722eb1214c1de5ca01e7bfa295f2adfa6"
+  },
+  "patchedSourceFiles": {
+    "source/emulation/cpu/jit/jitCodeGen.cpp": "17708377345f497376d308e99681cf699d6b2dce517a5fc799a1e800665b4faa",
+    "source/test/cpu/testCPU.cpp": "5b8c79e085a40a3948495cc142fda803d151d30a1cc19d007e06da40ce9bb18f",
+    "source/test/testMain.cpp": "796b8bc73830a28ec56fe71d19b704ddda48ad658b5907d9258942fa4e404037",
+    "source/x11/xserver.cpp": "c532a809c3b41a7c358943f3910d0e5ad60f97240ba635ba6708270304a1d238"
+  },
+  "engine": "SingleThreadedJitFocus"
+}

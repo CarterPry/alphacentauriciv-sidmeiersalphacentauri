@@ -1,0 +1,76 @@
+[
+  {
+    "file": "maps-container-callers.json",
+    "evidence_id": "ev_e8323dff594cdaab6aa1f8aabefaf5203deb3c1594d4071ca8480c352b205fd0",
+    "operation": "procedure_callers",
+    "parameters": {
+      "procedure": "0x5a9280"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+  },
+  {
+    "file": "maps-container-loader.json",
+    "evidence_id": "ev_2a3ac535463d0b2f659333a31c9793ec6452a4a024c50dbc267daed68f12304c",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5a9280"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+  },
+  {
+    "file": "maps-file-load.json",
+    "evidence_id": "ev_0e340fb7c87af1abb56f18b024df3b8eb1b8a88b6ed5397e7ee45d0df3bfdf44",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5a9c10"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+  },
+  {
+    "file": "maps-file-save.json",
+    "evidence_id": "ev_5d88a3328ccd7912e75f84e141d4c6a64b707d41577b81ed9855acd35ef98404",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5a9b20"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+  },
+  {
+    "file": "maps-load-callers.json",
+    "evidence_id": "ev_2d921155930a39e9eeba7f1271fcc60b7628f7a3b789426c4c45741dcc0049e6",
+    "operation": "procedure_callers",
+    "parameters": {
+      "procedure": "0x591130"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+  },
+  {
+    "file": "maps-magic-strings.json",
+    "evidence_id": "ev_e9d291d2c6af539b7c204690e59784cccff280789345a56047ec663f545d439f",
+    "operation": "search_strings",
+    "parameters": {
+      "pattern": "TERRANMAP",
+      "mode": "literal",
+      "case_sensitive": false
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+  },
+  {
+    "file": "maps-save-callers.json",
+    "evidence_id": "ev_0af3fb52a78f2372954d4409c36ba642183aa7184ba211663748c922ee3083c3",
+    "operation": "procedure_callers",
+    "parameters": {
+      "procedure": "0x5910b0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+  },
+  {
+    "file": "maps-signature-reader.json",
+    "evidence_id": "ev_b8b5f0e512e27e6871255080dd140c9ee106da421eb1ca7c41454b32b71ac00b",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x57d1f0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+  }
+]

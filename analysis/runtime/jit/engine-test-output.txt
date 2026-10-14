@@ -1,0 +1,4 @@
+Running 1 Test tests with 1 threads starting at 0
+[WASM JIT] first JIT block executed, tableIdx: 10322
+Test experimental WASM disjoint ownership policy ... OK
+0 tests FAILED in 0s

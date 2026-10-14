@@ -1,0 +1,31 @@
+{
+  "command": "sh analysis/runtime/jit/run-engine-test.sh",
+  "executedArguments": [
+    "boxedwine.cjs",
+    "0",
+    "1",
+    "1"
+  ],
+  "testedAtUTC": "2026-10-14T19:00:00.967297+00:00",
+  "node": "24.19.0 (SDK supplied)",
+  "testName": "Test experimental WASM disjoint ownership policy",
+  "testEntriesRun": 1,
+  "scenarioCount": 2,
+  "reportedFailures": 0,
+  "exitCode": 0,
+  "actualJitExecutionLogged": true,
+  "coverage": [
+    "unowned compilation",
+    "reject interior overlap",
+    "reject outside-start crossing overlap",
+    "preserve existing JIT entry",
+    "guest arithmetic with interpreter fallback",
+    "real unmap invalidation"
+  ],
+  "fullUpstreamSuiteRun": false,
+  "patchSha256": "21814fca016f281575a47cf36a5aea62cd73a1807696e95e19a3926e8492d0f9",
+  "artifacts": {
+    "boxedwine.js": "177604ba33880088e7fbe35b1b422ef6aa74bb0dcf6a4973b8b94b69a71e2da8",
+    "boxedwine.wasm": "603f5439d9e3d65232ad160b5c349892881e4efea7597e4f05c2e80feebf1d85"
+  }
+}

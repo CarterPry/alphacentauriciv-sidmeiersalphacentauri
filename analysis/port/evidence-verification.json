@@ -1,0 +1,39 @@
+{
+  "scope": "terranx.exe REA bundle identities and exact evidence references in authored reports; launcher evidence separate; no dynamic parity claim",
+  "bundleCount": 6,
+  "totalRecords": 168,
+  "uniqueEvidenceIds": 168,
+  "bundles": [
+    {
+      "path": "analysis/native/rea-evidence-bundle.json",
+      "records": 64,
+      "sha256": "f6e627c4706eaa52daa1d33862866010cd9a0667039cb6239f27b781bf4b1eb9"
+    },
+    {
+      "path": "analysis/port/combat-evidence-bundle.json",
+      "records": 13,
+      "sha256": "a7375257aa3f321127154f82f18b8f050d8fb24039cc13d927df0381b4053745"
+    },
+    {
+      "path": "analysis/port/maps-evidence-bundle.json",
+      "records": 8,
+      "sha256": "22a5cf2817418448eeaec8d1931e51ae93323bc9eef94ebaf3f5600cc9bb0ea0"
+    },
+    {
+      "path": "analysis/port/production-evidence-bundle.json",
+      "records": 7,
+      "sha256": "25eecb3c5eca7aac7c521c07790f1bca3715c7f7bc4be3f6d175e959a5224182"
+    },
+    {
+      "path": "analysis/port/startup-evidence-bundle.json",
+      "records": 55,
+      "sha256": "aed9a14ca7fb00fafbe088d1b428c1b071b7adcf7ce37a533298ed67b0484cb0"
+    },
+    {
+      "path": "analysis/port/state-mechanics-evidence-bundle.json",
+      "records": 21,
+      "sha256": "cc5593656eb7964e961dcba0d5f2280f65913bac3cc909ea12a6c023d74694e2"
+    }
+  ],
+  "issues": []
+}

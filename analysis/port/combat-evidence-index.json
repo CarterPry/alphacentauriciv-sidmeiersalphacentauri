@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+    "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "unchangedAtClose": true
+  },
+  "reaEvidence": [
+    {
+      "path": "analysis/native/combat-callers-resolution.json",
+      "sha256": "0cbf493e4996398e95f92462a0593f0328308a4550775fb7b7d98cff757e607c",
+      "evidenceId": "ev_d19edfe1315b04ef6eb657afed0afd5c65436cb5cf070de816733b64fc006e96",
+      "operation": "procedure_callers",
+      "parameters": {
+        "procedure": "0x506af0"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-code-attacker-strength.json",
+      "sha256": "3d306eb60d2048a1ac9f2397b3969a1cd66a717e041dcdb964cab2a3c7f1ccdf",
+      "evidenceId": "ev_d6ba21279fa03846796f112ed6d2df88f0271e29b70b5167266a5e8403fb262c",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5015b0"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-code-defender-strength.json",
+      "sha256": "9ed42a5a80b0095de19565ed4a050862a939dda156af3c8f307d63ebbd59bcf8",
+      "evidenceId": "ev_99598b4694bbd1224b5ba610c12a7c0d106fa53a5776a6b9af53117215dbd010",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x501940"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-code-outcome.json",
+      "sha256": "e1d1ccbe61e9ab6c7c31876c18c58f0a4343e0aae659ced4f5dcd61804386475",
+      "evidenceId": "ev_b28374592b5468cef5617f1c8183fd92b2393b533cda3057105f82f434820c82",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x50b035"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-code-resolution.json",
+      "sha256": "e7b1ac7b5bc10ac528ceb3535322102228b9319c8ea68bc8732a90658e4050a7",
+      "evidenceId": "ev_bd764bd4a141f85454a8e46c0009a55b7720ff8a501f32396ce304a27a323c16",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x507958"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-code-rng.json",
+      "sha256": "6a30757cf2afc1106e82b641e1013019ec3c5de5122dd4aa7dffb4655044ff2a",
+      "evidenceId": "ev_1e88dc7ecc27cbd89a282a7e4d1919c4441741f60f005fbea3df7dd436182b80",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x64601d"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-code-strength.json",
+      "sha256": "58a71f7d7bb613dc862a49abe9a0af39ee8618c2c50ac72f6cb47a04b238946b",
+      "evidenceId": "ev_c56faab4dffb476d23eab7cb510b2a171e7f42a6631349c40c0fbb845872c322",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x501da0"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-code-wrapper.json",
+      "sha256": "b6716bd143cd167f1457195d500aaf385e2d7741fc6b95ec889eac0157d577da",
+      "evidenceId": "ev_78e32b5bf5761a61f800ac1a7c383a3c508496fe783e9700d67130a14d0010dd",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x506a60"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-instructions-resolution.json",
+      "sha256": "2bc5af99fafda55e4ad64a7606b7e55caf243273798cce983bf7f20f6f672608",
+      "evidenceId": "ev_90f7e957c1d2e758f05603b15f8c4c0357ddce136d5bedddabaf6d56564ddb8a",
+      "operation": "read_function_instructions",
+      "parameters": {
+        "procedure": "0x506af0"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-instructions-rng.json",
+      "sha256": "30795835ce52aaeaeb8b2f3d94010fc963466763ea6b09e6d285de36a3d47f90",
+      "evidenceId": "ev_f5422fe4ef7d07a8d093520987fdc651e516b1f5fbebb6d90dfe2153ff469b81",
+      "operation": "read_function_instructions",
+      "parameters": {
+        "procedure": "0x64601d"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-xrefs-battle-damage.json",
+      "sha256": "97e0c7cdde37a3bd971c6fb5f542304b2b61d985b39641c7e09c553682ec85bf",
+      "evidenceId": "ev_122e1bfa8bf8dd83202ea0f05ed4e1671cb7ac91def47663ef241716185bf65d",
+      "operation": "xrefs",
+      "parameters": {
+        "address": "0x68a170"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-xrefs-battle-resolution.json",
+      "sha256": "c061d37df5257710160c308b80f9606e052f995111de47f3c69166045843f2f5",
+      "evidenceId": "ev_fe8bd35a6bb1c62dcead7c450d89ca305beb21d30dfad352ad1b696d2f2a8e45",
+      "operation": "xrefs",
+      "parameters": {
+        "address": "0x68a108"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "analysis/native/combat-xrefs-combat-win.json",
+      "sha256": "71c4770c527a35b1550a3ad7a50c745b508762c2b59d6cd4b973ca60bc019498",
+      "evidenceId": "ev_4200f60e93277fd83aa09fcd5db55abea6fd6432ae5fd61cbc2d29b10a7bb04c",
+      "operation": "xrefs",
+      "parameters": {
+        "address": "0x68a240"
+      },
+      "targetSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "analysis/port/combat-evidence-bundle.json",
+      "sha256": "a7375257aa3f321127154f82f18b8f050d8fb24039cc13d927df0381b4053745",
+      "sizeBytes": 892426
+    },
+    {
+      "path": "analysis/native/combat-evidence-export.json",
+      "sha256": "08ae47fe693457f2b67d1e7858f1decc27aa911b8427f67b20c8fcc9b809e245",
+      "sizeBytes": 463
+    },
+    {
+      "path": "analysis/native/combat-close-session.json",
+      "sha256": "fb3beac94c0871148d4cdb98bf38d13aafaa4e281a422cb0995a943c16648a51",
+      "sizeBytes": 251
+    },
+    {
+      "path": "analysis/port/combat-rule-excerpts.json",
+      "sha256": "08406bffc3b7b9cb39027052cc45934dee663cda00a20f5ac3ff75d99184055a",
+      "sizeBytes": 4438
+    },
+    {
+      "path": "analysis/port/combat-string-candidates.json",
+      "sha256": "09978d56cb9ebbb4863646fdc0998f4d70dc513be147d62ace31e9f8b3fc10c1",
+      "sizeBytes": 5173
+    },
+    {
+      "path": "analysis/native/code-core-rules.json",
+      "sha256": "a9e6944c63e6e0bc84c631a44be38701645beeecf8544504ab2afb6f257c5cd4",
+      "sizeBytes": 64152
+    }
+  ],
+  "verification": {
+    "rawJsonParsed": true,
+    "allTargetDigestsMatch": true,
+    "combatRoundCheckedAgainstInstructions": true,
+    "rngCheckedAgainstInstructions": true,
+    "runtimeCombatExecuted": false
+  },
+  "scope": "Bounded static combat round, RNG, damage update and artillery arithmetic; comprehensive gameplay parity not established."
+}

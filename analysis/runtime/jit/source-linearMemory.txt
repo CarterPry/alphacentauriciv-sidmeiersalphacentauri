@@ -1,0 +1,48 @@
+Official pinned source: source/emulation/softmmu/soft_ram.cpp
+Commit: 65467424603484756a73308412f40b906d28b650
+SHA-256: 217d0d905f6e1c160d68d69315df2472318730bd2beb890f5dea8d37fb1edc53
+
+
+360: void ramPageConfigureLinearMemory(bool disabled) {
+361:     linearMemoryMode = LinearMemoryMode::Disabled;
+362:     linearMemoryPageCount = 1;
+363: #if ((defined(__linux__) || defined(__APPLE__)) && (defined(BOXEDWINE_JIT_X64) || defined(BOXEDWINE_JIT_ARMV8))) || defined(BOXEDWINE_WINDOWS_LINEAR_MEMORY)
+364:     if (disabled) {
+365:         klog("Linear memory disabled; using legacy guarded MMU cache");
+366:         return;
+367:     }
+368:     U32 pageCount = Platform::getPagePermissionGranularity();
+369: #ifdef BOXEDWINE_WINDOWS_LINEAR_MEMORY
+370:     U32 allocationPageCount = Platform::getPageAllocationGranularity();
+371:     if (pageCount == 1 && allocationPageCount == 16) {
+372:         if (initializeWindowsLinearMemory()) {
+373:             linearMemoryMode = LinearMemoryMode::SingleOffset4K;
+374:             klog("Using single-offset linear memory for Windows 4K pages");
+375:         } else {
+376:             kwarn("Linear memory initialization failed; using legacy guarded MMU cache");
+377:         }
+378:     } else {
+379:         kwarn_fmt("Unsupported Windows %uK permission/%uK allocation granularity; using legacy guarded MMU cache", pageCount * 4, allocationPageCount * 4);
+380:     }
+381: #else
+382:     if (pageCount == 1) {
+383:         if (initializeLinearRam()) {
+384:             linearMemoryMode = LinearMemoryMode::SingleOffset4K;
+385:             klog("Using single-offset linear memory for 4K host pages");
+386:         } else {
+387:             kwarn("Linear memory initialization failed; using legacy guarded MMU cache");
+388:         }
+389:     } else if (pageCount == 4 || pageCount == 16) {
+390:         linearMemoryMode = LinearMemoryMode::GroupedHostPage;
+391:         linearMemoryPageCount = pageCount;
+392:         klog_fmt("Using grouped single-offset linear memory for %uK host pages", pageCount * 4);
+393:     } else {
+394:         kwarn_fmt("Unsupported %uK host page size; using legacy guarded MMU cache", pageCount * 4);
+395:     }
+396: #endif
+397: #else
+398:     (void)disabled;
+399: #endif
+400: }
+401: 
+402: bool ramPageUseLinearMemory() {

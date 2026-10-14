@@ -1,0 +1,29 @@
+{
+  "started": 1792014746206,
+  "longTasks": [
+    {
+      "start": 26326.455000042915,
+      "duration": 76
+    }
+  ],
+  "events": [
+    {
+      "type": "keydown",
+      "at": 26319.975000023842,
+      "delay": 0.6699999570846558
+    },
+    {
+      "type": "pointermove",
+      "at": 65842.53500008583,
+      "delay": 19.195000052452087
+    },
+    {
+      "type": "pointerdown",
+      "at": 65842.66500008106,
+      "delay": 19.265000104904175
+    }
+  ],
+  "elapsed": 95137.07000005245,
+  "title": "BoxedWine 206 MIPS",
+  "state": "{\"edition\":\"alpha-centauri\",\"executable\":\"terran.exe\",\"engine\":\"SingleThreadedJitFast\",\"phase\":\"game-ready\",\"error\":null,\"log\":[\"0024:err:ole:com_get_class_object class {d8f1eee0-f634-11cf-8700-00a0245d918b} not registered\",\"0024:err:ole:com_get_class_object no class object {d8f1eee0-f634-11cf-8700-00a0245d918b} could be created for context 0x1\",\"[MIPS] count=30 raw=224 avg=174 min=86 max=286 warmAvg=160 warmSamples=11\",\"[MIPS] count=40 raw=121 avg=160 min=111 max=280 warmAvg=158 warmSamples=21\",\"[MIPS] count=50 raw=196 avg=153 min=120 max=280 warmAvg=155 warmSamples=31\",\"[MIPS] count=60 raw=199 avg=177 min=123 max=230 warmAvg=168 warmSamples=41\"],\"source\":\"Installed original x86 executable; CPU emulated in WebAssembly\",\"persistence\":\"IndexedDB, this browser and origin\",\"coordinates\":\"Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.\",\"gameFiles\":1683,\"gameSha256\":\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\",\"browserSaveCount\":1,\"runtimeInitialized\":true,\"readiness\":{\"kind\":\"menu\",\"menuMatches\":7,\"worldMatches\":0},\"nativeReady\":{\"kind\":\"menu\",\"consecutive\":2,\"elapsedMs\":54128},\"canvas\":{\"width\":1024,\"height\":768}}"
+}

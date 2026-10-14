@@ -1,0 +1,30 @@
+{
+  "json_files_valid": 89,
+  "native_source_hashes_match": [
+    {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/soundx.dll",
+      "sha256": "ac272e244b3f1339d9ce63bc2e7acf76605c6ac2695bba3230e72ea59039a3f5"
+    },
+    {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/axstart.exe",
+      "sha256": "b1b5ac399584e569bd7ec00a1cb405360f1408e8fb9b036155eb9f8e691750cd"
+    },
+    {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/sound.dll",
+      "sha256": "ee27d5dfdb3ad598cab736917f9f25899118602a64f08fc7ff76496775cf4abc"
+    },
+    {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+      "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+      "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced"
+    }
+  ],
+  "verified_original_text_spans": 26,
+  "report_file_links_valid": 42,
+  "rea_doctor_exit_code": 0,
+  "rea_doctor_healthy": true,
+  "asset_source_hashes_match": 24
+}

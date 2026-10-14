@@ -1,0 +1,41 @@
+{"time":"2026-10-14T18:49:24.180Z","type":"log","text":"running initial setup"}
+{"time":"2026-10-14T18:49:24.180Z","type":"log","text":"setting rootBase to: /runtime/"}
+{"time":"2026-10-14T18:49:24.181Z","type":"log","text":"setting appBase to: /runtime/"}
+{"time":"2026-10-14T18:49:24.181Z","type":"log","text":"setting storage mode to: INDEXED_DB"}
+{"time":"2026-10-14T18:49:24.181Z","type":"log","text":"setting auto run to: false"}
+{"time":"2026-10-14T18:49:24.181Z","type":"log","text":"setting load Desktop to: false"}
+{"time":"2026-10-14T18:49:24.181Z","type":"log","text":"setting root zip file to: wine.zip"}
+{"time":"2026-10-14T18:49:24.181Z","type":"log","text":"setting app zip file to: alpha-centauri.zip"}
+{"time":"2026-10-14T18:49:24.181Z","type":"log","text":"setting program to execute to: terranx.exe"}
+{"time":"2026-10-14T18:49:24.181Z","type":"log","text":"setting sound to: true"}
+{"time":"2026-10-14T18:49:24.182Z","type":"log","text":"setting audioFreq to: 22050"}
+{"time":"2026-10-14T18:49:24.182Z","type":"log","text":"setting disableWasmJitForWrittenCode to: true"}
+{"time":"2026-10-14T18:49:24.182Z","type":"log","text":"setting BPP to: 32"}
+{"time":"2026-10-14T18:49:24.182Z","type":"log","text":"setting skipFrameFPS to: 0"}
+{"time":"2026-10-14T18:49:24.182Z","type":"log","text":"setting Resolution to: 1024x768"}
+{"time":"2026-10-14T18:49:24.182Z","type":"log","text":"networking disabled"}
+{"time":"2026-10-14T18:49:24.182Z","type":"log","text":"setting storage key to: key/alpha-centauri"}
+{"time":"2026-10-14T18:49:24.182Z","type":"log","text":"Use Storage mode: INDEXED_DB"}
+{"time":"2026-10-14T18:49:25.121Z","type":"log","text":"File created://alpha-centauri.zip"}
+{"time":"2026-10-14T18:49:25.376Z","type":"log","text":"File created://wine.zip"}
+{"time":"2026-10-14T18:50:26.577Z","type":"log","text":"running initial setup"}
+{"time":"2026-10-14T18:50:26.577Z","type":"log","text":"setting rootBase to: /runtime/"}
+{"time":"2026-10-14T18:50:26.578Z","type":"log","text":"setting appBase to: /runtime/"}
+{"time":"2026-10-14T18:50:26.578Z","type":"log","text":"setting storage mode to: INDEXED_DB"}
+{"time":"2026-10-14T18:50:26.578Z","type":"log","text":"setting auto run to: false"}
+{"time":"2026-10-14T18:50:26.578Z","type":"log","text":"setting load Desktop to: false"}
+{"time":"2026-10-14T18:50:26.578Z","type":"log","text":"setting root zip file to: wine.zip"}
+{"time":"2026-10-14T18:50:26.579Z","type":"log","text":"setting app zip file to: alpha-centauri.zip"}
+{"time":"2026-10-14T18:50:26.579Z","type":"log","text":"setting program to execute to: terranx.exe"}
+{"time":"2026-10-14T18:50:26.579Z","type":"log","text":"setting sound to: true"}
+{"time":"2026-10-14T18:50:26.579Z","type":"log","text":"setting audioFreq to: 22050"}
+{"time":"2026-10-14T18:50:26.579Z","type":"log","text":"setting disableWasmJitForWrittenCode to: true"}
+{"time":"2026-10-14T18:50:26.579Z","type":"log","text":"setting BPP to: 32"}
+{"time":"2026-10-14T18:50:26.579Z","type":"log","text":"setting skipFrameFPS to: 0"}
+{"time":"2026-10-14T18:50:26.579Z","type":"log","text":"setting Resolution to: 1024x768"}
+{"time":"2026-10-14T18:50:26.579Z","type":"log","text":"networking disabled"}
+{"time":"2026-10-14T18:50:26.579Z","type":"log","text":"setting storage key to: key/alpha-centauri"}
+{"time":"2026-10-14T18:50:26.579Z","type":"log","text":"Use Storage mode: INDEXED_DB"}
+{"time":"2026-10-14T18:50:27.197Z","type":"log","text":"File created://alpha-centauri.zip"}
+{"time":"2026-10-14T18:50:27.386Z","type":"log","text":"File created://wine.zip"}
+{"time":"2026-10-14T18:50:29.070Z","type":"log","text":"STORAGE_EVIDENCE {\"kind\":\"save-storage-roundtrip\",\"bytes\":290608,\"sha256\":\"b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42\",\"reloaded\":true,\"listed\":\"Alpha Centauri Autosave 1.SAV · 284 KBDownload\"}"}

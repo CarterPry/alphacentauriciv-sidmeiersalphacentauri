@@ -1,0 +1,59 @@
+:root { color-scheme:dark; font-family: Inter,ui-sans-serif,system-ui,sans-serif; background:#080f16; color:#dbe4e7 }
+body { background:radial-gradient(ellipse at top,#173138 0,#080f16 65%); }
+.play-toolbar { display:flex; align-items:center; gap:18px; padding:13px 22px; background:#0d1b22; border-bottom:1px solid #2c424a; flex-wrap:wrap; }
+.play-toolbar a { color:#a6c6c9; text-decoration:none; }
+.play-toolbar strong { font-family:Georgia,serif; font-weight:normal; font-size:21px; }
+#session-status { color:#93aeb4; font-size:12px; margin-right:auto; }
+button { color:#dbe9e9; background:#19343b; border:1px solid #3c6066; border-radius:4px; padding:7px 12px; cursor:pointer; }
+button:hover { background:#28515a; }
+button:disabled { opacity:.5; cursor:wait; }
+button:focus-visible,a:focus-visible { outline:2px solid #bbecef; outline-offset:4px; }
+#play-note { margin:13px 22px; color:#9ab0b4; font-size:13px; line-height:1.5; }
+#controls { font-size:12px; color:#8ca6ab; }
+#controls input { vertical-align:middle; }
+#controls #showConsole { display:none; }
+#startbtn { padding:11px 32px; font-size:17px; background:#9ac7b4; color:#09251a; border:0; margin:5px 15px; }
+#loading { color:#9dc4c4; font-size:12px; }
+#loading figure { margin:8px auto; }
+#output { font-size:11px; padding:10px; border:0; color:#9bd5bf; background:#08110e; }
+#console { flex:0 0 auto; }
+.emscripten_border { border:1px solid #2c424a; box-shadow:0 15px 60px #0008; }
+#downloadbtn,#uploadbtn,#savejitbtn,#modalLink,#modalLinkExe { display:none!important; }
+.modalDialog { color:#163334; }
+.modalDialog input { color:#123; background:#eee; }
+#controls { font-size:0; }
+#controls input,#controls button,#sound-checkbox { font-size:12px; }
+#pointerLock { display:none; }
+#saved-games { max-width:580px;width:calc(100% - 60px);border:1px solid #44636c;border-radius:8px;background:#12262d;color:#dbe9e9;padding:24px; }
+#saved-games::backdrop { background:#02090fc9; }
+#saved-games h2 { margin-top:0;font-family:Georgia,serif;font-weight:normal; }
+#saved-games p { color:#a6bdc2;font-size:13px;line-height:1.6; }
+#saved-list { max-height:45vh;overflow:auto; }
+.save-row { display:flex;gap:15px;align-items:center;justify-content:space-between;border-bottom:1px solid #29464e;padding:10px 0;font-size:13px; }
+.import-save { display:block;margin-top:18px;font-size:13px; }
+.import-save input { margin-left:12px; }
+@media(max-width:650px){.play-toolbar{gap:10px;padding:10px}.play-toolbar strong{font-size:17px}#session-status{width:100%;order:4}#play-note{margin:10px;font-size:12px}}
+/* Keep the entire startup framebuffer covered, including Wine setup/splash. */
+#loading { display:none!important; }
+#boot-screen { position:absolute;inset:0;z-index:5;display:grid;place-items:center;overflow:auto;background:#0b191f;color:#e3eee8;line-height:1.5;pointer-events:auto; }
+#boot-screen[hidden] { display:none; }
+.boot-content { box-sizing:border-box;max-height:100%;overflow:auto;width:min(440px,80%);padding:25px 0; }
+.boot-planet { width:96px;height:96px;margin:0 auto 24px;border-radius:50%;position:relative;background:radial-gradient(circle at 32% 24%,#b5d1b2 0,#5f8d80 22%,#244f50 48%,#142e38 66%,#0e202a 72%);box-shadow:inset -9px -7px 18px #061319,0 0 0 1px #7ba59844; }
+.boot-planet::after { content:'';position:absolute;inset:-16px;border:1px solid #658a7d55;border-radius:50%;transform:rotate(-25deg) scaleY(.31); }
+.boot-planet span { position:absolute;right:6px;top:-17px;width:4px;height:4px;border-radius:50%;background:#cbd7b1; }
+.boot-eyebrow { font-size:10px;letter-spacing:.2em;color:#96afa4;margin:0 0 8px; }
+#boot-title { font-family:Georgia,serif;font-size:clamp(25px,3.5vw,38px);font-weight:normal;margin:0 0 26px;line-height:1.2; }
+#boot-stage { font-size:15px;color:#d7e5df;margin:0 0 9px; }
+#boot-detail { min-height:42px;max-width:340px;margin:0 auto;color:#98aca9;font-size:13px;overflow-wrap:anywhere; }
+.boot-activity { width:112px;height:2px;background:#28413d;margin:20px auto 10px;overflow:hidden; }
+.boot-activity span { display:block;width:38px;height:100%;background:#accab4;animation:boot-travel 1.8s ease-in-out infinite; }
+#boot-elapsed { color:#738f89;font-size:11px;font-variant-numeric:tabular-nums;min-height:17px;margin:0; }
+.boot-footnote { color:#78938c;font-size:11px;margin:22px 0 0; }
+.boot-actions { margin-top:16px; }
+#boot-screen #startbtn { margin:0;padding:10px 25px;font-size:14px; }
+body[data-boot-state="ready"] .boot-activity,body[data-boot-state="error"] .boot-activity { visibility:hidden; }
+body[data-boot-state="error"] #boot-stage { color:#e0b997; }
+body[data-game-ready="false"] .emscripten_border > canvas { pointer-events:none; }
+@keyframes boot-travel { 0%{transform:translateX(-38px)}100%{transform:translateX(112px)} }
+@media(prefers-reduced-motion:reduce){.boot-activity span{animation:none;transform:translateX(37px)}}
+@media(max-height:650px){.boot-planet{width:54px;height:54px;margin-bottom:14px}#boot-title{margin-bottom:16px}.boot-content{padding:16px 0}.boot-footnote{margin-top:12px}}

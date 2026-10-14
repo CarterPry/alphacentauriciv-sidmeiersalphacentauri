@@ -1,0 +1,267 @@
+{
+  "started": 1792013317939,
+  "longTasks": [
+    {
+      "start": 837.7799999713898,
+      "duration": 60
+    },
+    {
+      "start": 27037.87999999523,
+      "duration": 60
+    },
+    {
+      "start": 108384.93999993801,
+      "duration": 108
+    }
+  ],
+  "events": [
+    {
+      "type": "pointermove",
+      "at": 86425.00499999523,
+      "delay": 9.644999980926514
+    },
+    {
+      "type": "pointermove",
+      "at": 86960.72500002384,
+      "delay": 18.420000076293945
+    },
+    {
+      "type": "pointermove",
+      "at": 87477.85000002384,
+      "delay": 9.395000100135803
+    },
+    {
+      "type": "pointermove",
+      "at": 88014.125,
+      "delay": 18.480000019073486
+    },
+    {
+      "type": "pointermove",
+      "at": 88541.42499995232,
+      "delay": 18.334999918937683
+    },
+    {
+      "type": "pointermove",
+      "at": 89068.89999997616,
+      "delay": 18.394999980926514
+    },
+    {
+      "type": "pointermove",
+      "at": 89594.09000003338,
+      "delay": 18.43500006198883
+    },
+    {
+      "type": "pointermove",
+      "at": 90119.60000002384,
+      "delay": 18.450000047683716
+    },
+    {
+      "type": "pointermove",
+      "at": 90635.46500003338,
+      "delay": 9.400000095367432
+    },
+    {
+      "type": "pointermove",
+      "at": 91160.96000003815,
+      "delay": 18.325000047683716
+    },
+    {
+      "type": "pointermove",
+      "at": 91679.32499992847,
+      "delay": 9.359999895095825
+    },
+    {
+      "type": "pointermove",
+      "at": 92197.83500003815,
+      "delay": 9.43500006198883
+    },
+    {
+      "type": "pointermove",
+      "at": 108385.01999998093,
+      "delay": 17.764999985694885
+    },
+    {
+      "type": "pointerdown",
+      "at": 108385.12000000477,
+      "delay": 17.795000076293945
+    },
+    {
+      "type": "keydown",
+      "at": 150406.59000003338,
+      "delay": 17.800000071525574
+    },
+    {
+      "type": "keydown",
+      "at": 150426.65999996662,
+      "delay": 9.044999957084656
+    },
+    {
+      "type": "keydown",
+      "at": 150445.3899999857,
+      "delay": 9.049999952316284
+    },
+    {
+      "type": "keydown",
+      "at": 150463.96500003338,
+      "delay": 8.975000023841858
+    },
+    {
+      "type": "keydown",
+      "at": 150482.53999996185,
+      "delay": 8.965000033378601
+    },
+    {
+      "type": "keydown",
+      "at": 150501.02499997616,
+      "delay": 8.985000014305115
+    },
+    {
+      "type": "keydown",
+      "at": 150519.49500000477,
+      "delay": 9.009999990463257
+    },
+    {
+      "type": "keydown",
+      "at": 150537.99000000954,
+      "delay": 9
+    },
+    {
+      "type": "keydown",
+      "at": 150556.46500003338,
+      "delay": 9.03000009059906
+    },
+    {
+      "type": "keydown",
+      "at": 150575.19999992847,
+      "delay": 8.934999942779541
+    },
+    {
+      "type": "keydown",
+      "at": 150593.76999998093,
+      "delay": 9.034999966621399
+    },
+    {
+      "type": "keydown",
+      "at": 150612.2799999714,
+      "delay": 9.019999980926514
+    },
+    {
+      "type": "keydown",
+      "at": 150630.72500002384,
+      "delay": 8.97000002861023
+    },
+    {
+      "type": "keydown",
+      "at": 150649.13499999046,
+      "delay": 9.019999980926514
+    },
+    {
+      "type": "keydown",
+      "at": 150658.37999999523,
+      "delay": 8.960000038146973
+    },
+    {
+      "type": "keydown",
+      "at": 150676.7799999714,
+      "delay": 9.004999995231628
+    },
+    {
+      "type": "keydown",
+      "at": 150695.2200000286,
+      "delay": 9.03000009059906
+    },
+    {
+      "type": "keydown",
+      "at": 150713.5799999237,
+      "delay": 9.009999990463257
+    },
+    {
+      "type": "keydown",
+      "at": 150732.2049999237,
+      "delay": 9.019999980926514
+    },
+    {
+      "type": "keydown",
+      "at": 150750.5799999237,
+      "delay": 9.014999985694885
+    },
+    {
+      "type": "keydown",
+      "at": 150768.94499993324,
+      "delay": 9.019999980926514
+    },
+    {
+      "type": "keydown",
+      "at": 150787.8899999857,
+      "delay": 8.990000009536743
+    },
+    {
+      "type": "keydown",
+      "at": 150806.35500001907,
+      "delay": 8.965000033378601
+    },
+    {
+      "type": "keydown",
+      "at": 150843.6549999714,
+      "delay": 18.210000038146973
+    },
+    {
+      "type": "keydown",
+      "at": 231958.89499998093,
+      "delay": 8.5
+    },
+    {
+      "type": "keydown",
+      "at": 253868.16999995708,
+      "delay": 9.829999923706055
+    },
+    {
+      "type": "keydown",
+      "at": 253886.689999938,
+      "delay": 8.985000014305115
+    },
+    {
+      "type": "keydown",
+      "at": 253905.189999938,
+      "delay": 8.974999904632568
+    },
+    {
+      "type": "keydown",
+      "at": 253942.65999996662,
+      "delay": 18.18499994277954
+    },
+    {
+      "type": "keydown",
+      "at": 360148.12999999523,
+      "delay": 0.565000057220459
+    },
+    {
+      "type": "keydown",
+      "at": 360187.6849999428,
+      "delay": 8.809999942779541
+    },
+    {
+      "type": "pointermove",
+      "at": 360217.92999994755,
+      "delay": 9.774999976158142
+    },
+    {
+      "type": "pointerdown",
+      "at": 360218.0149999857,
+      "delay": 9.815000057220459
+    },
+    {
+      "type": "pointermove",
+      "at": 417381.7350000143,
+      "delay": 7.085000038146973
+    },
+    {
+      "type": "pointerdown",
+      "at": 417381.7999999523,
+      "delay": 7.110000014305115
+    }
+  ],
+  "elapsed": 464946.46000003815,
+  "title": "BoxedWine 216 MIPS",
+  "state": "{\"edition\":\"alien-crossfire\",\"executable\":\"terranx.exe\",\"engine\":\"SingleThreadedJitFast\",\"phase\":\"game-ready\",\"error\":null,\"log\":[\"[MIPS] count=410 raw=216 avg=214 min=209 max=216 warmAvg=221 warmSamples=391\",\"[MIPS] count=420 raw=217 avg=204 min=130 max=218 warmAvg=220 warmSamples=401\",\"[MIPS] count=430 raw=218 avg=205 min=130 max=218 warmAvg=220 warmSamples=411\",\"[MIPS] count=440 raw=214 avg=215 min=213 max=218 warmAvg=220 warmSamples=421\",\"[MIPS] count=450 raw=217 avg=215 min=212 max=217 warmAvg=220 warmSamples=431\",\"[MIPS] count=460 raw=219 avg=216 min=212 max=219 warmAvg=220 warmSamples=441\"],\"source\":\"Installed original x86 executable; CPU emulated in WebAssembly\",\"persistence\":\"IndexedDB, this browser and origin\",\"coordinates\":\"Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.\",\"gameFiles\":1683,\"gameSha256\":\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\",\"runtimeInitialized\":true,\"readiness\":{\"kind\":\"menu\",\"menuMatches\":7,\"worldMatches\":0},\"nativeReady\":{\"kind\":\"menu\",\"consecutive\":2,\"elapsedMs\":59273},\"browserSaveCount\":1,\"canvas\":{\"width\":1024,\"height\":768}}"
+}

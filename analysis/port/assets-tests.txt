@@ -1,0 +1,10 @@
+test_cross_scanline_rle_fallback_requires_exact_raster (test_import_game.ImportGameTests.test_cross_scanline_rle_fallback_requires_exact_raster) ... ok
+test_full_import_preserves_pixels_audio_and_avoids_personal_state (test_import_game.ImportGameTests.test_full_import_preserves_pixels_audio_and_avoids_personal_state) ... ok
+test_refuses_output_inside_source_installation (test_import_game.ImportGameTests.test_refuses_output_inside_source_installation) ... ok
+test_rules_preserve_semicolons_order_and_prerequisite_states (test_import_game.ImportGameTests.test_rules_preserve_semicolons_order_and_prerequisite_states) ... ok
+test_source_spans_and_repeated_sections_are_exact (test_import_game.ImportGameTests.test_source_spans_and_repeated_sections_are_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.042s
+
+OK

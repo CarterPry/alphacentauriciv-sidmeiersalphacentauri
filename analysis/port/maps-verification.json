@@ -1,0 +1,14 @@
+{
+  "command": "node --test tests/map.test.mjs",
+  "passed": 17,
+  "failed": 0,
+  "skipped": 0,
+  "rea_session_closed": true,
+  "source_fixtures_unmodified": true,
+  "report_links_valid": true,
+  "supported_version": 5,
+  "fixture_count": 4,
+  "importer": "tools/import_maps.mjs",
+  "importer_run_against_installed_game": true,
+  "imported_hashes_match_prior_observations": true
+}

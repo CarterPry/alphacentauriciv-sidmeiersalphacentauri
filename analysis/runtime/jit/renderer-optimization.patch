@@ -1,0 +1,61 @@
+diff --git a/platform/sdl/knativescreenSDL.cpp b/platform/sdl/knativescreenSDL.cpp
+index f890ebd1..b180b702 100644
+--- a/platform/sdl/knativescreenSDL.cpp
++++ b/platform/sdl/knativescreenSDL.cpp
+@@ -57,6 +57,33 @@ EM_JS(void, boxedwinePresentSoftwareFrame, (const U32* pixels, int width, int he
+         }
+     }
+     var count = width * height;
++#if !defined(BOXEDWINE_MULTI_THREADED)
++    if (typeof document !== 'undefined') {
++        // This main-thread buffer is consumed synchronously and never transferred.
++        // Keep the worker path below separate: transferring detaches its buffer.
++        var frame = Module.__boxedwineSoftwareFrame;
++        if (!frame || frame.width !== width || frame.height !== height ||
++                frame.rgba.byteLength !== count * 4) {
++            var rgba = new Uint8ClampedArray(count * 4);
++            frame = Module.__boxedwineSoftwareFrame = {
++                width: width, height: height,
++                rgba: rgba, rgba32: new Uint32Array(rgba.buffer)
++            };
++        }
++        var rgba32 = frame.rgba32;
++        var source = pixels >>> 2;
++        // Refresh after a possible allocation or WASM memory growth.
++        var softwareHeap = HEAPU32;
++        for (var i = 0; i < count; ++i) {
++            var pixel = softwareHeap[source + i];
++            // WASM memory is little-endian; ImageData expects R,G,B,opaque A.
++            rgba32[i] = 0xff000000 | (pixel & 0x0000ff00) |
++                ((pixel & 0x00ff0000) >>> 16) | ((pixel & 0x000000ff) << 16);
++        }
++        Module.boxedwinePresentSoftwareFrame(width, height, frame.rgba.buffer, presentState);
++        return;
++    }
++#endif
+     var rgba = new Uint8ClampedArray(count * 4);
+     var source = pixels >>> 2;
+     // Refresh the heap view once per frame, avoiding a memory-growth check per pixel.
+diff --git a/project/emscripten/boxedwine-shell.js b/project/emscripten/boxedwine-shell.js
+index 43a96103..5662f15c 100644
+--- a/project/emscripten/boxedwine-shell.js
++++ b/project/emscripten/boxedwine-shell.js
+@@ -1273,7 +1273,17 @@
+               context = canvas.getContext("2d");
+             }
+             if (context) {
+-              context.putImageData(new ImageData(new Uint8ClampedArray(buffer), width, height), 0, 0);
++              var softwareFrame = Module.__boxedwineSoftwareFrame;
++              if (softwareFrame && softwareFrame.width === width && softwareFrame.height === height &&
++                  softwareFrame.rgba.buffer === buffer) {
++                if (!softwareFrame.imageData) {
++                  softwareFrame.imageData = new ImageData(softwareFrame.rgba, width, height);
++                }
++                context.putImageData(softwareFrame.imageData, 0, 0);
++              } else {
++                // Worker frames arrive in newly transferred buffers; do not retain them.
++                context.putImageData(new ImageData(new Uint8ClampedArray(buffer), width, height), 0, 0);
++              }
+             }
+             finishPresent(presentState);
+           };

@@ -1,0 +1,256 @@
+Official pinned source: source/kernel/kmemory.cpp
+Commit: 65467424603484756a73308412f40b906d28b650
+SHA-256: 9af6eb819ac1609c798ca353b132a9250d02981b68952028dcd4e3c297216ede
+
+
+1011:     U64 rangeStart = address;
+1012:     U64 rangeEnd = rangeStart + len;
+1013:     if (rangeEnd > 0x100000000ULL) {
+1014:         return -K_EINVAL;
+1015:     }
+1016:     rangeEnd = (rangeEnd + K_PAGE_MASK) & ~(U64)K_PAGE_MASK;
+1017:     if (rangeEnd > 0x100000000ULL) {
+1018:         return -K_EINVAL;
+1019:     }
+1020:     U32 pageStart = address >> K_PAGE_SHIFT;
+1021:     U32 pageCount = (U32)((rangeEnd - rangeStart) >> K_PAGE_SHIFT);
+1022:     struct PreparedSplit {
+1023:         MappedFilePtr original;
+1024:         MappedFilePtr right;
+1025:     };
+1026:     BOXEDWINE_CRITICAL_SECTION_WITH_MUTEX(process->mappedFilesMutex);
+1027:     std::vector<MappedFilePtr> mappings;
+1028:     std::vector<PreparedSplit> splits;
+1029:     bool preparedCodeInvalidation = false;
+1030:     try {
+1031:         mappings.reserve(process->mappedFiles.size());
+1032:         retirements.reserve(process->mappedFiles.size());
+1033:         splits.reserve(process->mappedFiles.size());
+1034:         for (const auto& entry : process->mappedFiles) {
+1035:             mappings.push_back(entry.value);
+1036:         }
+1037:         for (const MappedFilePtr& mapping : mappings) {
+1038:             U64 mappingStart = mapping->address;
+1039:             U64 mappingEnd = mappingStart + mapping->len;
+1040:             U64 overlapStart = std::max(rangeStart, mappingStart);
+1041:             U64 overlapEnd = std::min(rangeEnd, mappingEnd);
+1042:             if (mappingStart < overlapStart && overlapEnd < mappingEnd) {
+1043: #ifdef __TEST
+1044:                 if (testFailMappedFileRecordAllocation) {
+1045:                     throw std::bad_alloc();
+1046:                 }
+1047: #endif
+1048:                 MappedFilePtr right = std::make_shared<MappedFile>(*mapping);
+1049:                 right->address = (U32)overlapEnd;
+1050:                 right->len = mappingEnd - overlapEnd;
+1051:                 right->advanceFileOffset(overlapEnd - mappingStart);
+1052:                 right->key = process->nextMappedFileIndex++;
+1053:                 splits.push_back({mapping, right});
+1054:             }
+1055:         }
+1056:         for (U32 page = pageStart; page < pageStart + pageCount; ++page) {
+1057:             if (data->mmu[page].getPageType() == PageType::Code) {
+1058:                 prepareCodeInvalidation((U32)rangeStart, (U32)(rangeEnd - rangeStart));
+1059:                 preparedCodeInvalidation = true;
+1060:                 break;
+1061:             }
+1062:         }
+1063:         // Insertion can allocate. Do it before invalidating pages or changing
+1064:         // any live record so ENOMEM leaves the mapping whole.
+1065:         for (const PreparedSplit& split : splits) {
+1066:             process->mappedFiles.set(split.right->key, split.right);
+1067:         }
+1068:     } catch (const std::bad_alloc&) {
+1069:         discardPreparedCodeInvalidation();
+1070:         for (const PreparedSplit& split : splits) {
+1071:             process->mappedFiles.remove(split.right->key);
+1072:         }
+1073:         return -K_ENOMEM;
+1074:     } catch (const std::length_error&) {
+1075:         discardPreparedCodeInvalidation();
+1076:         for (const PreparedSplit& split : splits) {
+1077:             process->mappedFiles.remove(split.right->key);
+1078:         }
+1079:         return -K_ENOMEM;
+1080:     }
+1081: 
+1082:     this->data->setPagesInvalid(pageStart, pageCount, preparedCodeInvalidation);
+1083:     for (const MappedFilePtr& mapping : mappings) {
+1084:         U64 mappingStart = mapping->address;
+1085:         U64 mappingEnd = mappingStart + mapping->len;
+1086:         U64 overlapStart = std::max(rangeStart, mappingStart);
+1087:         U64 overlapEnd = std::min(rangeEnd, mappingEnd);
+1088:         if (overlapStart >= overlapEnd) {
+1089:             continue;
+1090:         }
+
+1415: void KMemory::prepareCodeInvalidation(U32 address, U32 len) {
+1416:     if (codeInvalidationPrepared) {
+1417:         kpanic("nested code invalidation preparation");
+1418:     }
+1419: 
+1420:     preparedCodeBlocks.clear();
+1421:     preparedCodeRemovalRanges.clear();
+1422: #if defined(BOXEDWINE_JIT)
+1423:     preparedBackendDecodedOps.clear();
+1424:     preparedBackendJitOps.clear();
+1425:     preparedBackendInvalidations.clear();
+1426: #endif
+1427:     U32 codeMemoryFreeCount = 0;
+1428: 
+1429: #ifdef __TEST
+1430:     if (testFailCodeInvalidationPreparation) {
+1431:         throw std::bad_alloc();
+1432:     }
+1433: #endif
+1434: 
+1435:     try {
+1436: #if defined(BOXEDWINE_JIT)
+1437:         struct CollectContext {
+1438:             std::vector<PreparedCodeInvalidationBlock>* blocks;
+1439:         } context = {&preparedCodeBlocks};
+1440:         data->opCache.iterateOps(address, len,
+1441:             [](U32 opAddress, DecodedOp* op, void* opaque) {
+1442:                 if (!op->blockStart) {
+1443:                     return;
+1444:                 }
+1445:                 CollectContext& context = *static_cast<CollectContext*>(opaque);
+1446:                 DecodedOp* blockStart = op->blockStart;
+1447:                 for (const PreparedCodeInvalidationBlock& block : *context.blocks) {
+1448:                     if (block.blockStart == blockStart) {
+1449:                         return;
+1450:                     }
+1451:                 }
+1452:                 U32 prefixLen = 0;
+1453:                 DecodedOp* current = blockStart;
+1454:                 while (current != op) {
+1455:                     prefixLen += current->len;
+1456:                     current = current->next;
+1457:                 }
+1458:                 context.blocks->push_back({opAddress - prefixLen, blockStart, {}, {}, nullptr});
+1459:             }, &context);
+1460: 
+1461:         for (PreparedCodeInvalidationBlock& block : preparedCodeBlocks) {
+1462:             DecodedOp* current = block.blockStart;
+1463:             U32 blockOpCount = block.blockStart->blockOpCount;
+1464:             preparedCodeRemovalRanges.push_back({block.address, block.blockStart->blockLen});
+1465:             if (block.blockStart->pfnJitCode && jitUsesCodeMemory()) {
+1466:                 block.codeMemoryToFree = (void*)block.blockStart->pfnJitCode;
+1467:                 ++codeMemoryFreeCount;
+1468:             }
+1469:             block.decodedOps.reserve(blockOpCount);
+1470:             block.jitOps.reserve(blockOpCount);
+1471:             for (U32 i = 0; i < blockOpCount; ++i) {
+1472:                 block.decodedOps.push_back(current);
+1473:                 if (current->pfnJitCode) {
+1474:                     block.jitOps.push_back((void*)current->pfnJitCode);
+1475:                 }
+1476:                 current = current->next;
+1477:             }
+1478:         }
+1479:         if (jitAggregatesPreparedCodeInvalidation()) {
+1480:             for (const PreparedCodeInvalidationBlock& block : preparedCodeBlocks) {
+1481:                 if (block.decodedOps.size() > preparedBackendDecodedOps.max_size() - preparedBackendDecodedOps.size() || block.jitOps.size() > preparedBackendJitOps.max_size() - preparedBackendJitOps.size()) {
+1482:                     throw std::length_error("prepared backend invalidation is too large");
+1483:                 }
+1484:                 preparedBackendDecodedOps.insert(preparedBackendDecodedOps.end(), block.decodedOps.begin(), block.decodedOps.end());
+1485:                 preparedBackendJitOps.insert(preparedBackendJitOps.end(), block.jitOps.begin(), block.jitOps.end());
+1486:             }
+1487:             if (!preparedBackendDecodedOps.empty() || !preparedBackendJitOps.empty()) {
+1488:                 preparedBackendInvalidations.push_back(prepareJitCodeInvalidation(this, preparedBackendDecodedOps, preparedBackendJitOps));
+1489:             }
+1490:         } else {
+1491:             preparedBackendInvalidations.reserve(preparedCodeBlocks.size());
+1492:             for (const PreparedCodeInvalidationBlock& block : preparedCodeBlocks) {
+1493:                 preparedBackendInvalidations.push_back(prepareJitCodeInvalidation(this, block.decodedOps, block.jitOps));
+1494:             }
+1495:         }
+1496: #endif
+1497:         preparedCodeRemovalRanges.push_back({address, len});
+1498:         data->opCache.prepareRemoveRanges(preparedCodeRemovalRanges);
+1499:         if (codeMemoryFreeCount >
+1500:             pendingCodeMemoryFrees.max_size() - pendingCodeMemoryFrees.size()) {
+1501:             throw std::length_error("pending code-memory frees are too large");
+1502:         }
+1503:         pendingCodeMemoryFrees.reserve(pendingCodeMemoryFrees.size() + codeMemoryFreeCount);
+1504:         codeInvalidationPrepared = true;
+1505:     } catch (...) {
+1506:         data->opCache.finishPreparedRemove();
+1507: #if defined(BOXEDWINE_JIT)
+1508:         preparedBackendInvalidations.clear();
+1509:         preparedBackendDecodedOps.clear();
+1510:         preparedBackendJitOps.clear();
+1511: #endif
+1512:         preparedCodeBlocks.clear();
+1513:         preparedCodeRemovalRanges.clear();
+1514:         throw;
+1515:     }
+1516: }
+1517: 
+1518: void KMemory::commitPreparedCodeInvalidation() {
+1519:     if (!codeInvalidationPrepared) {
+1520:         kpanic("code invalidation was not prepared");
+1521:     }
+1522: 
+1523: #if defined(BOXEDWINE_JIT)
+1524:     for (PreparedCodeInvalidationBlock& block : preparedCodeBlocks) {
+1525:         DecodedOp* blockOp = block.blockStart;
+1526:         DecodedOp* nextOp = blockOp;
+1527:         U32 blockOpCount = blockOp->blockOpCount;
+1528:         for (U32 i = 0; i < blockOpCount; ++i) {
+1529:             if (nextOp->blockStart != blockOp && nextOp->inst != Done) {
+1530:                 kpanic("KMemory::commitPreparedCodeInvalidation nextOp->blockStart");
+1531:             }
+1532: #if defined(BOXEDWINE_WASM_JIT) && defined(BOXEDWINE_MULTI_THREADED)
+1533:             if (nextOp->flags2 & OP_FLAG2_WASM_JIT_RELOC_HAZARD) {
+1534:                 __atomic_exchange_n(&nextOp->pfnJitCode, nullptr, __ATOMIC_SEQ_CST);
+1535:             } else {
+1536:                 nextOp->setJitCode(nullptr);
+1537:             }
+1538: #endif
+1539:             nextOp->blockStart = nullptr;
+1540:             nextOp->blockOpCount = 0;
+1541:             nextOp->blockLen = 0;
+1542:             if (nextOp->runCount) {
+1543:                 nextOp->runCount = 1;
+1544:             }
+1545:             nextOp->pfn = NormalCPU::getFunctionForOp(nextOp);
+1546:             nextOp->flags &= ~OP_FLAG_JIT;
+1547: #if !defined(BOXEDWINE_WASM_JIT) || !defined(BOXEDWINE_MULTI_THREADED)
+1548:             nextOp->setJitCode(nullptr);
+1549: #endif
+1550:             nextOp->jitLen = 0;
+1551:             nextOp = nextOp->next;
+1552:         }
+1553:     }
+1554:     for (PreparedJitCodeInvalidation& invalidation : preparedBackendInvalidations) {
+1555:         invalidation.commit();
+1556:     }
+1557: #endif
+1558: 
+1559:     for (const auto& range : preparedCodeRemovalRanges) {
+1560:         data->opCache.remove(range.first, range.second, false);
+1561:     }
+1562:     data->opCache.finishPreparedRemove();
+1563: 
+1564: #if defined(BOXEDWINE_JIT)
+1565:     for (const PreparedCodeInvalidationBlock& block : preparedCodeBlocks) {
+1566:         if (!block.codeMemoryToFree) {
+1567:             continue;
+1568:         }
+1569:         try {
+1570:             data->codeMemory.free(block.codeMemoryToFree);
+1571:         } catch (...) {
+1572:             // Capacity for every prepared free was reserved before mutation.
+1573:             pendingCodeMemoryFrees.push_back(block.codeMemoryToFree);
+1574:         }
+1575:     }
+1576: #endif
+1577:     codeInvalidationPrepared = false;
+1578: #if defined(BOXEDWINE_JIT)
+1579:     preparedBackendInvalidations.clear();
+1580:     preparedBackendDecodedOps.clear();
+1581:     preparedBackendJitOps.clear();
+1582: #endif
+1583:     preparedCodeBlocks.clear();
+1584:     preparedCodeRemovalRanges.clear();

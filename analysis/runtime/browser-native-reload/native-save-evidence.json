@@ -1,0 +1,41 @@
+{
+  "capturedAtUTC": "2026-10-14T19:29:59.172Z",
+  "files": [
+    {
+      "file": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/Aki Zeta-5 of the Consciousness, 2101.SAV",
+      "name": "Aki Zeta-5 of the Consciousness, 2101.SAV",
+      "bytes": 288396,
+      "sha256": "f80fefa5cf5b317716513bed7f8cea3d3fcc16bbf209352bd1675e3660a4b6b5"
+    },
+    {
+      "file": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 4.SAV",
+      "name": "Alpha Centauri Autosave 4.SAV",
+      "bytes": 290608,
+      "sha256": "8653f590dbef8727120556550d786858a3f90386a8d9d69e96a3e654bae36f34"
+    },
+    {
+      "file": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 3.SAV",
+      "name": "Alpha Centauri Autosave 3.SAV",
+      "bytes": 290608,
+      "sha256": "b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42"
+    },
+    {
+      "file": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 2.SAV",
+      "name": "Alpha Centauri Autosave 2.SAV",
+      "bytes": 288396,
+      "sha256": "4a379b9b13cd2fe4b58d2c7ad916b004d2473b33b0a67a720be91ce429a42d22"
+    },
+    {
+      "file": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/auto/Alpha Centauri Autosave 1.SAV",
+      "name": "Alpha Centauri Autosave 1.SAV",
+      "bytes": 288396,
+      "sha256": "86c5341bc346ac0391984c4420ffc017e47012e72d5cc7ac977bd0d829e5127f"
+    },
+    {
+      "file": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves/Aki Zeta-5 of the Consciousness, 2102.SAV",
+      "name": "Aki Zeta-5 of the Consciousness, 2102.SAV",
+      "bytes": 288396,
+      "sha256": "00030f02540e30b782bb2710b3575ee5245661f632925db537a47411bd73ee1d"
+    }
+  ]
+}

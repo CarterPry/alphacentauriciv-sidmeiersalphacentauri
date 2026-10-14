@@ -1,0 +1,737 @@
+{
+  "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/soundx.dll",
+  "sha256": "ac272e244b3f1339d9ce63bc2e7acf76605c6ac2695bba3230e72ea59039a3f5",
+  "bytes": 577536,
+  "machine": "0x14c",
+  "image_base": "0x10000000",
+  "entry_va": "0x10049ace",
+  "subsystem": 2,
+  "cli_directory_rva": 0,
+  "sections": [
+    {
+      "name": ".text",
+      "rva": 4096,
+      "virtual_size": 401765,
+      "raw_size": 405504,
+      "file_offset": 4096,
+      "flags": "0x60000020"
+    },
+    {
+      "name": ".rdata",
+      "rva": 409600,
+      "virtual_size": 118580,
+      "raw_size": 118784,
+      "file_offset": 409600,
+      "flags": "0x40000040"
+    },
+    {
+      "name": ".data",
+      "rva": 528384,
+      "virtual_size": 335588,
+      "raw_size": 20480,
+      "file_offset": 528384,
+      "flags": "0xc0000040"
+    },
+    {
+      "name": ".idata",
+      "rva": 864256,
+      "virtual_size": 4610,
+      "raw_size": 8192,
+      "file_offset": 548864,
+      "flags": "0xc0000040"
+    },
+    {
+      "name": ".reloc",
+      "rva": 872448,
+      "virtual_size": 17119,
+      "raw_size": 20480,
+      "file_offset": 557056,
+      "flags": "0x42000040"
+    }
+  ],
+  "imports": [
+    {
+      "dll": "KERNEL32.dll",
+      "functions": [
+        {
+          "name": "InitializeCriticalSection",
+          "iat_va": "0x100d33f4"
+        },
+        {
+          "name": "CreateEventA",
+          "iat_va": "0x100d33f8"
+        },
+        {
+          "name": "CloseHandle",
+          "iat_va": "0x100d33fc"
+        },
+        {
+          "name": "EnterCriticalSection",
+          "iat_va": "0x100d3400"
+        },
+        {
+          "name": "DeleteCriticalSection",
+          "iat_va": "0x100d3404"
+        },
+        {
+          "name": "SetThreadPriority",
+          "iat_va": "0x100d3408"
+        },
+        {
+          "name": "ResetEvent",
+          "iat_va": "0x100d340c"
+        },
+        {
+          "name": "GetCurrentThreadId",
+          "iat_va": "0x100d3410"
+        },
+        {
+          "name": "Sleep",
+          "iat_va": "0x100d3414"
+        },
+        {
+          "name": "SetEvent",
+          "iat_va": "0x100d3418"
+        },
+        {
+          "name": "GetVersion",
+          "iat_va": "0x100d341c"
+        },
+        {
+          "name": "GetModuleHandleA",
+          "iat_va": "0x100d3420"
+        },
+        {
+          "name": "ExitProcess",
+          "iat_va": "0x100d3424"
+        },
+        {
+          "name": "RtlUnwind",
+          "iat_va": "0x100d3428"
+        },
+        {
+          "name": "HeapFree",
+          "iat_va": "0x100d342c"
+        },
+        {
+          "name": "FlushFileBuffers",
+          "iat_va": "0x100d3430"
+        },
+        {
+          "name": "SetFilePointer",
+          "iat_va": "0x100d3434"
+        },
+        {
+          "name": "ReadFile",
+          "iat_va": "0x100d3438"
+        },
+        {
+          "name": "RaiseException",
+          "iat_va": "0x100d343c"
+        },
+        {
+          "name": "PeekNamedPipe",
+          "iat_va": "0x100d3440"
+        },
+        {
+          "name": "GetFileInformationByHandle",
+          "iat_va": "0x100d3444"
+        },
+        {
+          "name": "FileTimeToLocalFileTime",
+          "iat_va": "0x100d3448"
+        },
+        {
+          "name": "FileTimeToSystemTime",
+          "iat_va": "0x100d344c"
+        },
+        {
+          "name": "SetEnvironmentVariableA",
+          "iat_va": "0x100d3450"
+        },
+        {
+          "name": "CompareStringW",
+          "iat_va": "0x100d3454"
+        },
+        {
+          "name": "CompareStringA",
+          "iat_va": "0x100d3458"
+        },
+        {
+          "name": "GetLocaleInfoW",
+          "iat_va": "0x100d345c"
+        },
+        {
+          "name": "GetTimeZoneInformation",
+          "iat_va": "0x100d3460"
+        },
+        {
+          "name": "GetVersionExA",
+          "iat_va": "0x100d3464"
+        },
+        {
+          "name": "GetUserDefaultLCID",
+          "iat_va": "0x100d3468"
+        },
+        {
+          "name": "EnumSystemLocalesA",
+          "iat_va": "0x100d346c"
+        },
+        {
+          "name": "GetLocaleInfoA",
+          "iat_va": "0x100d3470"
+        },
+        {
+          "name": "IsValidCodePage",
+          "iat_va": "0x100d3474"
+        },
+        {
+          "name": "IsValidLocale",
+          "iat_va": "0x100d3478"
+        },
+        {
+          "name": "SetEndOfFile",
+          "iat_va": "0x100d347c"
+        },
+        {
+          "name": "LCMapStringW",
+          "iat_va": "0x100d3480"
+        },
+        {
+          "name": "LCMapStringA",
+          "iat_va": "0x100d3484"
+        },
+        {
+          "name": "GetStringTypeW",
+          "iat_va": "0x100d3488"
+        },
+        {
+          "name": "GetStringTypeA",
+          "iat_va": "0x100d348c"
+        },
+        {
+          "name": "MultiByteToWideChar",
+          "iat_va": "0x100d3490"
+        },
+        {
+          "name": "SetConsoleCtrlHandler",
+          "iat_va": "0x100d3494"
+        },
+        {
+          "name": "SetStdHandle",
+          "iat_va": "0x100d3498"
+        },
+        {
+          "name": "CreateFileA",
+          "iat_va": "0x100d349c"
+        },
+        {
+          "name": "LoadLibraryA",
+          "iat_va": "0x100d34a0"
+        },
+        {
+          "name": "GetOEMCP",
+          "iat_va": "0x100d34a4"
+        },
+        {
+          "name": "GetACP",
+          "iat_va": "0x100d34a8"
+        },
+        {
+          "name": "GetCPInfo",
+          "iat_va": "0x100d34ac"
+        },
+        {
+          "name": "InterlockedIncrement",
+          "iat_va": "0x100d34b0"
+        },
+        {
+          "name": "InterlockedDecrement",
+          "iat_va": "0x100d34b4"
+        },
+        {
+          "name": "IsBadCodePtr",
+          "iat_va": "0x100d34b8"
+        },
+        {
+          "name": "IsBadReadPtr",
+          "iat_va": "0x100d34bc"
+        },
+        {
+          "name": "SetUnhandledExceptionFilter",
+          "iat_va": "0x100d34c0"
+        },
+        {
+          "name": "TerminateProcess",
+          "iat_va": "0x100d34c4"
+        },
+        {
+          "name": "GetEnvironmentStrings",
+          "iat_va": "0x100d34c8"
+        },
+        {
+          "name": "WideCharToMultiByte",
+          "iat_va": "0x100d34cc"
+        },
+        {
+          "name": "WriteFile",
+          "iat_va": "0x100d34d0"
+        },
+        {
+          "name": "GetEnvironmentStringsW",
+          "iat_va": "0x100d34d4"
+        },
+        {
+          "name": "HeapAlloc",
+          "iat_va": "0x100d34d8"
+        },
+        {
+          "name": "GetLastError",
+          "iat_va": "0x100d34dc"
+        },
+        {
+          "name": "ResumeThread",
+          "iat_va": "0x100d34e0"
+        },
+        {
+          "name": "CreateThread",
+          "iat_va": "0x100d34e4"
+        },
+        {
+          "name": "TlsSetValue",
+          "iat_va": "0x100d34e8"
+        },
+        {
+          "name": "ExitThread",
+          "iat_va": "0x100d34ec"
+        },
+        {
+          "name": "GetCommandLineA",
+          "iat_va": "0x100d34f0"
+        },
+        {
+          "name": "LeaveCriticalSection",
+          "iat_va": "0x100d34f4"
+        },
+        {
+          "name": "TlsAlloc",
+          "iat_va": "0x100d34f8"
+        },
+        {
+          "name": "TlsFree",
+          "iat_va": "0x100d34fc"
+        },
+        {
+          "name": "SetLastError",
+          "iat_va": "0x100d3500"
+        },
+        {
+          "name": "TlsGetValue",
+          "iat_va": "0x100d3504"
+        },
+        {
+          "name": "GetCurrentThread",
+          "iat_va": "0x100d3508"
+        },
+        {
+          "name": "GetProcAddress",
+          "iat_va": "0x100d350c"
+        },
+        {
+          "name": "VirtualAlloc",
+          "iat_va": "0x100d3510"
+        },
+        {
+          "name": "FatalAppExitA",
+          "iat_va": "0x100d3514"
+        },
+        {
+          "name": "FreeEnvironmentStringsW",
+          "iat_va": "0x100d3518"
+        },
+        {
+          "name": "GetCurrentProcess",
+          "iat_va": "0x100d351c"
+        },
+        {
+          "name": "HeapReAlloc",
+          "iat_va": "0x100d3520"
+        },
+        {
+          "name": "HeapSize",
+          "iat_va": "0x100d3524"
+        },
+        {
+          "name": "HeapDestroy",
+          "iat_va": "0x100d3528"
+        },
+        {
+          "name": "HeapCreate",
+          "iat_va": "0x100d352c"
+        },
+        {
+          "name": "VirtualFree",
+          "iat_va": "0x100d3530"
+        },
+        {
+          "name": "FreeEnvironmentStringsA",
+          "iat_va": "0x100d3534"
+        },
+        {
+          "name": "IsBadWritePtr",
+          "iat_va": "0x100d3538"
+        },
+        {
+          "name": "UnhandledExceptionFilter",
+          "iat_va": "0x100d353c"
+        },
+        {
+          "name": "SetHandleCount",
+          "iat_va": "0x100d3540"
+        },
+        {
+          "name": "GetStdHandle",
+          "iat_va": "0x100d3544"
+        },
+        {
+          "name": "GetFileType",
+          "iat_va": "0x100d3548"
+        },
+        {
+          "name": "GetStartupInfoA",
+          "iat_va": "0x100d354c"
+        },
+        {
+          "name": "GetModuleFileNameA",
+          "iat_va": "0x100d3550"
+        }
+      ]
+    },
+    {
+      "dll": "USER32.dll",
+      "functions": [
+        {
+          "name": "PostMessageA",
+          "iat_va": "0x100d35c4"
+        },
+        {
+          "name": "RegisterClassA",
+          "iat_va": "0x100d35c8"
+        },
+        {
+          "name": "DefWindowProcA",
+          "iat_va": "0x100d35cc"
+        },
+        {
+          "name": "SetWindowLongA",
+          "iat_va": "0x100d35d0"
+        },
+        {
+          "name": "CreateWindowExA",
+          "iat_va": "0x100d35d4"
+        },
+        {
+          "name": "MessageBoxA",
+          "iat_va": "0x100d35d8"
+        },
+        {
+          "name": "PostThreadMessageA",
+          "iat_va": "0x100d35dc"
+        },
+        {
+          "name": "MsgWaitForMultipleObjects",
+          "iat_va": "0x100d35e0"
+        },
+        {
+          "name": "CallWindowProcA",
+          "iat_va": "0x100d35e4"
+        },
+        {
+          "name": "PeekMessageA",
+          "iat_va": "0x100d35e8"
+        }
+      ]
+    },
+    {
+      "dll": "ole32.dll",
+      "functions": [
+        {
+          "name": "CoCreateInstance",
+          "iat_va": "0x100d36d0"
+        },
+        {
+          "name": "CoInitialize",
+          "iat_va": "0x100d36d4"
+        },
+        {
+          "name": "CoUninitialize",
+          "iat_va": "0x100d36d8"
+        }
+      ]
+    },
+    {
+      "dll": "WINMM.dll",
+      "functions": [
+        {
+          "name": "timeBeginPeriod",
+          "iat_va": "0x100d3620"
+        },
+        {
+          "name": "waveInClose",
+          "iat_va": "0x100d3624"
+        },
+        {
+          "name": "waveInOpen",
+          "iat_va": "0x100d3628"
+        },
+        {
+          "name": "waveInAddBuffer",
+          "iat_va": "0x100d362c"
+        },
+        {
+          "name": "waveInUnprepareHeader",
+          "iat_va": "0x100d3630"
+        },
+        {
+          "name": "waveInPrepareHeader",
+          "iat_va": "0x100d3634"
+        },
+        {
+          "name": "waveInStart",
+          "iat_va": "0x100d3638"
+        },
+        {
+          "name": "waveInStop",
+          "iat_va": "0x100d363c"
+        },
+        {
+          "name": "waveInReset",
+          "iat_va": "0x100d3640"
+        },
+        {
+          "name": "waveInGetNumDevs",
+          "iat_va": "0x100d3644"
+        },
+        {
+          "name": "waveInGetDevCapsA",
+          "iat_va": "0x100d3648"
+        },
+        {
+          "name": "mmioDescend",
+          "iat_va": "0x100d364c"
+        },
+        {
+          "name": "mmioAscend",
+          "iat_va": "0x100d3650"
+        },
+        {
+          "name": "mmioSetBuffer",
+          "iat_va": "0x100d3654"
+        },
+        {
+          "name": "mmioAdvance",
+          "iat_va": "0x100d3658"
+        },
+        {
+          "name": "mmioSetInfo",
+          "iat_va": "0x100d365c"
+        },
+        {
+          "name": "timeSetEvent",
+          "iat_va": "0x100d3660"
+        },
+        {
+          "name": "timeKillEvent",
+          "iat_va": "0x100d3664"
+        },
+        {
+          "name": "timeEndPeriod",
+          "iat_va": "0x100d3668"
+        },
+        {
+          "name": "timeGetDevCaps",
+          "iat_va": "0x100d366c"
+        },
+        {
+          "name": "timeGetTime",
+          "iat_va": "0x100d3670"
+        },
+        {
+          "name": "mmioWrite",
+          "iat_va": "0x100d3674"
+        },
+        {
+          "name": "mmioStringToFOURCCA",
+          "iat_va": "0x100d3678"
+        },
+        {
+          "name": "mmioOpenA",
+          "iat_va": "0x100d367c"
+        },
+        {
+          "name": "mmioRead",
+          "iat_va": "0x100d3680"
+        },
+        {
+          "name": "mmioGetInfo",
+          "iat_va": "0x100d3684"
+        },
+        {
+          "name": "mmioSeek",
+          "iat_va": "0x100d3688"
+        },
+        {
+          "name": "mmioClose",
+          "iat_va": "0x100d368c"
+        }
+      ]
+    },
+    {
+      "dll": "DSOUND.dll",
+      "functions": [
+        {
+          "name": "ordinal:1",
+          "iat_va": "0x100d33c0"
+        },
+        {
+          "name": "ordinal:2",
+          "iat_va": "0x100d33c4"
+        }
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "name": "?call_back@WaveInDeviceMgr@@SGXPAUHWAVEIN__@@GKKK@Z",
+      "ordinal": 12,
+      "va": "0x100016db"
+    },
+    {
+      "name": "?create_device@Dll_Midi_Device@@KA?AW4SNDERR@@PAPAVMidi_Device@@K@Z",
+      "ordinal": 7,
+      "va": "0x10001faa"
+    },
+    {
+      "name": "?create_device@Dll_Wave_Device@@KA?AW4SNDERR@@PAPAVWave_Device@@K@Z",
+      "ordinal": 5,
+      "va": "0x10001df2"
+    },
+    {
+      "name": "?create_device@Dll_Wave_In_Device@@KA?AW4SNDERR@@PAPAVWave_In_Device@@K@Z",
+      "ordinal": 9,
+      "va": "0x10001edd"
+    },
+    {
+      "name": "?delete_device@Dll_Midi_Device@@KA?AW4SNDERR@@XZ",
+      "ordinal": 8,
+      "va": "0x1000191a"
+    },
+    {
+      "name": "?delete_device@Dll_Wave_Device@@KA?AW4SNDERR@@XZ",
+      "ordinal": 6,
+      "va": "0x1000117c"
+    },
+    {
+      "name": "?delete_device@Dll_Wave_In_Device@@KA?AW4SNDERR@@XZ",
+      "ordinal": 10,
+      "va": "0x10001fd2"
+    },
+    {
+      "name": "create_sound",
+      "ordinal": 1,
+      "va": "0x100017fd"
+    },
+    {
+      "name": "delete_sound",
+      "ordinal": 2,
+      "va": "0x10001942"
+    },
+    {
+      "name": "get_sound_version",
+      "ordinal": 11,
+      "va": "0x100024b9"
+    },
+    {
+      "name": "init_sound_timer",
+      "ordinal": 3,
+      "va": "0x10001af0"
+    },
+    {
+      "name": "release_sound",
+      "ordinal": 4,
+      "va": "0x100023d3"
+    }
+  ],
+  "selected_strings": [
+    {
+      "file_offset": 501384,
+      "va": "0x1007a688",
+      "value": "user32.dll"
+    },
+    {
+      "file_offset": 527296,
+      "va": "0x10080bc0",
+      "value": "Sound.dll"
+    },
+    {
+      "file_offset": 527568,
+      "va": "0x10080cd0",
+      "value": "create_sound"
+    },
+    {
+      "file_offset": 527731,
+      "va": "0x10080d73",
+      "value": "delete_sound"
+    },
+    {
+      "file_offset": 527744,
+      "va": "0x10080d80",
+      "value": "get_sound_version"
+    },
+    {
+      "file_offset": 527762,
+      "va": "0x10080d92",
+      "value": "init_sound_timer"
+    },
+    {
+      "file_offset": 527779,
+      "va": "0x10080da3",
+      "value": "release_sound"
+    },
+    {
+      "file_offset": 532024,
+      "va": "0x10081e38",
+      "value": "Firaxis Sound Output"
+    },
+    {
+      "file_offset": 550870,
+      "va": "0x100d37d6",
+      "value": "KERNEL32.dll"
+    },
+    {
+      "file_offset": 551070,
+      "va": "0x100d389e",
+      "value": "USER32.dll"
+    },
+    {
+      "file_offset": 551136,
+      "va": "0x100d38e0",
+      "value": "ole32.dll"
+    },
+    {
+      "file_offset": 551586,
+      "va": "0x100d3aa2",
+      "value": "WINMM.dll"
+    },
+    {
+      "file_offset": 551596,
+      "va": "0x100d3aac",
+      "value": "DSOUND.dll"
+    },
+    {
+      "file_offset": 551826,
+      "va": "0x100d3b92",
+      "value": "GetProcAddress"
+    }
+  ]
+}

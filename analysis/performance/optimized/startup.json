@@ -1,0 +1,17 @@
+{
+  "started": 1792013317939,
+  "longTasks": [
+    {
+      "start": 837.7799999713898,
+      "duration": 60
+    },
+    {
+      "start": 27037.87999999523,
+      "duration": 60
+    }
+  ],
+  "events": [],
+  "elapsed": 71091.29999995232,
+  "title": "BoxedWine 350 MIPS",
+  "state": "{\"edition\":\"alien-crossfire\",\"executable\":\"terranx.exe\",\"engine\":\"SingleThreadedJitFast\",\"phase\":\"game-ready\",\"error\":null,\"log\":[\"0024:err:ole:com_get_class_object class {d8f1eee0-f634-11cf-8700-00a0245d918b} not registered\",\"0024:err:ole:com_get_class_object no class object {d8f1eee0-f634-11cf-8700-00a0245d918b} could be created for context 0x1\",\"[MIPS] count=30 raw=189 avg=162 min=91 max=251 warmAvg=147 warmSamples=11\",\"[MIPS] count=40 raw=119 avg=154 min=101 max=346 warmAvg=154 warmSamples=21\",\"[MIPS] count=50 raw=128 avg=142 min=118 max=346 warmAvg=144 warmSamples=31\",\"[MIPS] count=60 raw=204 avg=146 min=118 max=228 warmAvg=151 warmSamples=41\"],\"source\":\"Installed original x86 executable; CPU emulated in WebAssembly\",\"persistence\":\"IndexedDB, this browser and origin\",\"coordinates\":\"Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.\",\"gameFiles\":1683,\"gameSha256\":\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\",\"runtimeInitialized\":true,\"readiness\":{\"kind\":\"menu\",\"menuMatches\":7,\"worldMatches\":0},\"nativeReady\":{\"kind\":\"menu\",\"consecutive\":2,\"elapsedMs\":59273},\"canvas\":{\"width\":1024,\"height\":768}}"
+}

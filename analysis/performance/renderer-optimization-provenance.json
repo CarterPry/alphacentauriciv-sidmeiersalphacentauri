@@ -1,0 +1,103 @@
+{
+  "createdAtUTC": "2026-10-14T21:25:30.586586+00:00",
+  "sourceCommit": "65467424603484756a73308412f40b906d28b650",
+  "patch": "renderer-optimization.patch",
+  "patch_sha256": "97a8ce1621ae9bd9097717ea5fd37d0db2e541b1dbc551eac88523635d04d9dd",
+  "source_files": {
+    "platform/sdl/knativescreenSDL.cpp": {
+      "before_sha256": "3caa4058e26539a66d7a90558dbd84dfc30a88a486a2476abbedd54e9fab6934",
+      "after_sha256": "251b65d41559e0186a6b4d5356c303c4c4f10d539ab730b88b130a5f9b787f7b"
+    },
+    "project/emscripten/boxedwine-shell.js": {
+      "before_sha256": "f88e60b155c53c916fe8861205f601a44e216111aef8dca1d799e66d1780f2e7",
+      "after_sha256": "696ee5451208b28b1af02183fd5172d1d1cb0839fadfce9cf575cd26e8690b05"
+    }
+  },
+  "checks": [
+    {
+      "command": [
+        "node",
+        "--test",
+        "analysis/performance/renderer-equivalence.test.mjs"
+      ],
+      "exit_code": 0,
+      "log": "renderer-equivalence.log"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.js"
+      ],
+      "exit_code": 0,
+      "log": "renderer-shell-syntax.log"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint",
+        "diff",
+        "--check",
+        "--",
+        "platform/sdl/knativescreenSDL.cpp",
+        "project/emscripten/boxedwine-shell.js"
+      ],
+      "exit_code": 0,
+      "log": "renderer-diff-check.log"
+    },
+    {
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "node",
+        "analysis/performance/renderer-microbenchmark.mjs"
+      ],
+      "exit_code": 0,
+      "log": "renderer-microbenchmark.log"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint",
+        "apply",
+        "--check",
+        "--reverse",
+        "/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/performance/renderer-optimization.patch"
+      ],
+      "exit_code": 0,
+      "log": "renderer-patch-check.log"
+    }
+  ],
+  "equivalence_tests": {
+    "passed": 8,
+    "failed": 0,
+    "method": "Actual source-extracted JS converter and shell presenter; canvas/ImageData mock. MT preprocessed converter equals baseline text and real structuredClone transfer detaches buffers."
+  },
+  "upstream_shell_suite": {
+    "baseline": {
+      "exit_code": 1,
+      "missing_mock_contains": true,
+      "tests_six": true,
+      "failed_six": true
+    },
+    "candidate": {
+      "exit_code": 1,
+      "missing_mock_contains": true,
+      "tests_six": true,
+      "failed_six": true
+    }
+  },
+  "public_runtime_unchanged": true,
+  "public_runtime_sha256": {
+    "public/runtime/SingleThreadedJitFocus/boxedwine-shell.js": "f88e60b155c53c916fe8861205f601a44e216111aef8dca1d799e66d1780f2e7",
+    "public/runtime/SingleThreadedJitFocus/boxedwine.wasm": "db4d1d8e601bb03cd4674eda0d05df621039a8e1d5e706b0fedcc886fc7de5a8"
+  },
+  "build_performed": false,
+  "browser_performed": false,
+  "recipe_sha256": "87a36c713790a5316b835bcdfd31ec201aa980429725de066f90ffa4c31ca504",
+  "test_source_sha256": "ef10a223062a5d7880b58ec39e55e70adc857608b0c43a3f6d2db0098fd1b4d6",
+  "microbenchmark_source_sha256": "f2a4f51cd4a5cd9e226e7921cbcca3692b01b158d9b082795c5682b50efe7832"
+}

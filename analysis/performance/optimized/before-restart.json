@@ -1,0 +1,442 @@
+{
+  "started": 1792013317939,
+  "longTasks": [
+    {
+      "start": 837.7799999713898,
+      "duration": 60
+    },
+    {
+      "start": 27037.87999999523,
+      "duration": 60
+    },
+    {
+      "start": 108384.93999993801,
+      "duration": 108
+    }
+  ],
+  "events": [
+    {
+      "type": "pointermove",
+      "at": 86425.00499999523,
+      "delay": 9.644999980926514
+    },
+    {
+      "type": "pointermove",
+      "at": 86960.72500002384,
+      "delay": 18.420000076293945
+    },
+    {
+      "type": "pointermove",
+      "at": 87477.85000002384,
+      "delay": 9.395000100135803
+    },
+    {
+      "type": "pointermove",
+      "at": 88014.125,
+      "delay": 18.480000019073486
+    },
+    {
+      "type": "pointermove",
+      "at": 88541.42499995232,
+      "delay": 18.334999918937683
+    },
+    {
+      "type": "pointermove",
+      "at": 89068.89999997616,
+      "delay": 18.394999980926514
+    },
+    {
+      "type": "pointermove",
+      "at": 89594.09000003338,
+      "delay": 18.43500006198883
+    },
+    {
+      "type": "pointermove",
+      "at": 90119.60000002384,
+      "delay": 18.450000047683716
+    },
+    {
+      "type": "pointermove",
+      "at": 90635.46500003338,
+      "delay": 9.400000095367432
+    },
+    {
+      "type": "pointermove",
+      "at": 91160.96000003815,
+      "delay": 18.325000047683716
+    },
+    {
+      "type": "pointermove",
+      "at": 91679.32499992847,
+      "delay": 9.359999895095825
+    },
+    {
+      "type": "pointermove",
+      "at": 92197.83500003815,
+      "delay": 9.43500006198883
+    },
+    {
+      "type": "pointermove",
+      "at": 108385.01999998093,
+      "delay": 17.764999985694885
+    },
+    {
+      "type": "pointerdown",
+      "at": 108385.12000000477,
+      "delay": 17.795000076293945
+    },
+    {
+      "type": "keydown",
+      "at": 150406.59000003338,
+      "delay": 17.800000071525574
+    },
+    {
+      "type": "keydown",
+      "at": 150426.65999996662,
+      "delay": 9.044999957084656
+    },
+    {
+      "type": "keydown",
+      "at": 150445.3899999857,
+      "delay": 9.049999952316284
+    },
+    {
+      "type": "keydown",
+      "at": 150463.96500003338,
+      "delay": 8.975000023841858
+    },
+    {
+      "type": "keydown",
+      "at": 150482.53999996185,
+      "delay": 8.965000033378601
+    },
+    {
+      "type": "keydown",
+      "at": 150501.02499997616,
+      "delay": 8.985000014305115
+    },
+    {
+      "type": "keydown",
+      "at": 150519.49500000477,
+      "delay": 9.009999990463257
+    },
+    {
+      "type": "keydown",
+      "at": 150537.99000000954,
+      "delay": 9
+    },
+    {
+      "type": "keydown",
+      "at": 150556.46500003338,
+      "delay": 9.03000009059906
+    },
+    {
+      "type": "keydown",
+      "at": 150575.19999992847,
+      "delay": 8.934999942779541
+    },
+    {
+      "type": "keydown",
+      "at": 150593.76999998093,
+      "delay": 9.034999966621399
+    },
+    {
+      "type": "keydown",
+      "at": 150612.2799999714,
+      "delay": 9.019999980926514
+    },
+    {
+      "type": "keydown",
+      "at": 150630.72500002384,
+      "delay": 8.97000002861023
+    },
+    {
+      "type": "keydown",
+      "at": 150649.13499999046,
+      "delay": 9.019999980926514
+    },
+    {
+      "type": "keydown",
+      "at": 150658.37999999523,
+      "delay": 8.960000038146973
+    },
+    {
+      "type": "keydown",
+      "at": 150676.7799999714,
+      "delay": 9.004999995231628
+    },
+    {
+      "type": "keydown",
+      "at": 150695.2200000286,
+      "delay": 9.03000009059906
+    },
+    {
+      "type": "keydown",
+      "at": 150713.5799999237,
+      "delay": 9.009999990463257
+    },
+    {
+      "type": "keydown",
+      "at": 150732.2049999237,
+      "delay": 9.019999980926514
+    },
+    {
+      "type": "keydown",
+      "at": 150750.5799999237,
+      "delay": 9.014999985694885
+    },
+    {
+      "type": "keydown",
+      "at": 150768.94499993324,
+      "delay": 9.019999980926514
+    },
+    {
+      "type": "keydown",
+      "at": 150787.8899999857,
+      "delay": 8.990000009536743
+    },
+    {
+      "type": "keydown",
+      "at": 150806.35500001907,
+      "delay": 8.965000033378601
+    },
+    {
+      "type": "keydown",
+      "at": 150843.6549999714,
+      "delay": 18.210000038146973
+    },
+    {
+      "type": "keydown",
+      "at": 231958.89499998093,
+      "delay": 8.5
+    },
+    {
+      "type": "keydown",
+      "at": 253868.16999995708,
+      "delay": 9.829999923706055
+    },
+    {
+      "type": "keydown",
+      "at": 253886.689999938,
+      "delay": 8.985000014305115
+    },
+    {
+      "type": "keydown",
+      "at": 253905.189999938,
+      "delay": 8.974999904632568
+    },
+    {
+      "type": "keydown",
+      "at": 253942.65999996662,
+      "delay": 18.18499994277954
+    },
+    {
+      "type": "keydown",
+      "at": 360148.12999999523,
+      "delay": 0.565000057220459
+    },
+    {
+      "type": "keydown",
+      "at": 360187.6849999428,
+      "delay": 8.809999942779541
+    },
+    {
+      "type": "pointermove",
+      "at": 360217.92999994755,
+      "delay": 9.774999976158142
+    },
+    {
+      "type": "pointerdown",
+      "at": 360218.0149999857,
+      "delay": 9.815000057220459
+    },
+    {
+      "type": "pointermove",
+      "at": 417381.7350000143,
+      "delay": 7.085000038146973
+    },
+    {
+      "type": "pointerdown",
+      "at": 417381.7999999523,
+      "delay": 7.110000014305115
+    },
+    {
+      "type": "keydown",
+      "at": 474959.7799999714,
+      "delay": 1.524999976158142
+    },
+    {
+      "type": "keydown",
+      "at": 482289.5799999237,
+      "delay": 8.829999923706055
+    },
+    {
+      "type": "keydown",
+      "at": 510773.2649999857,
+      "delay": 13.815000057220459
+    },
+    {
+      "type": "keydown",
+      "at": 510810.6849999428,
+      "delay": 18.289999961853027
+    },
+    {
+      "type": "keydown",
+      "at": 510829.12000000477,
+      "delay": 8.980000019073486
+    },
+    {
+      "type": "keydown",
+      "at": 510847.53999996185,
+      "delay": 9.085000038146973
+    },
+    {
+      "type": "keydown",
+      "at": 510865.9349999428,
+      "delay": 9.019999980926514
+    },
+    {
+      "type": "keydown",
+      "at": 510884.2300000191,
+      "delay": 9.040000081062317
+    },
+    {
+      "type": "keydown",
+      "at": 510893.4349999428,
+      "delay": 8.929999947547913
+    },
+    {
+      "type": "keydown",
+      "at": 510911.7150000334,
+      "delay": 9.004999995231628
+    },
+    {
+      "type": "keydown",
+      "at": 510930.0149999857,
+      "delay": 9.039999961853027
+    },
+    {
+      "type": "keydown",
+      "at": 510948.2949999571,
+      "delay": 9.02999997138977
+    },
+    {
+      "type": "keydown",
+      "at": 510966.5799999237,
+      "delay": 9.02999997138977
+    },
+    {
+      "type": "keydown",
+      "at": 510984.91499996185,
+      "delay": 9.034999966621399
+    },
+    {
+      "type": "keydown",
+      "at": 511022.6849999428,
+      "delay": 18.134999990463257
+    },
+    {
+      "type": "pointermove",
+      "at": 537217.3999999762,
+      "delay": 9.659999966621399
+    },
+    {
+      "type": "pointerdown",
+      "at": 537217.4650000334,
+      "delay": 9.675000071525574
+    },
+    {
+      "type": "keydown",
+      "at": 537908.5,
+      "delay": 18.305000066757202
+    },
+    {
+      "type": "keydown",
+      "at": 538810.0249999762,
+      "delay": 9.509999990463257
+    },
+    {
+      "type": "keydown",
+      "at": 538819.7300000191,
+      "delay": 9.540000081062317
+    },
+    {
+      "type": "keydown",
+      "at": 553917.2949999571,
+      "delay": 11.754999995231628
+    },
+    {
+      "type": "pointermove",
+      "at": 577438.5249999762,
+      "delay": 8.960000038146973
+    },
+    {
+      "type": "pointerdown",
+      "at": 577438.5900000334,
+      "delay": 8.975000023841858
+    },
+    {
+      "type": "keydown",
+      "at": 577484.7150000334,
+      "delay": 8.65500009059906
+    },
+    {
+      "type": "keydown",
+      "at": 603037.7599999905,
+      "delay": 3.225000023841858
+    },
+    {
+      "type": "keydown",
+      "at": 603047.7549999952,
+      "delay": 9.820000052452087
+    },
+    {
+      "type": "keydown",
+      "at": 656658.8400000334,
+      "delay": 2.965000033378601
+    },
+    {
+      "type": "pointermove",
+      "at": 656984.0099999905,
+      "delay": 18.72000002861023
+    },
+    {
+      "type": "pointerdown",
+      "at": 656984.0799999237,
+      "delay": 18.759999990463257
+    },
+    {
+      "type": "keydown",
+      "at": 667888.689999938,
+      "delay": 6.75
+    },
+    {
+      "type": "keydown",
+      "at": 668637.4850000143,
+      "delay": 8.665000081062317
+    },
+    {
+      "type": "keydown",
+      "at": 668646.6000000238,
+      "delay": 8.960000038146973
+    },
+    {
+      "type": "keydown",
+      "at": 669104.5249999762,
+      "delay": 8.740000009536743
+    },
+    {
+      "type": "pointermove",
+      "at": 730478.8249999285,
+      "delay": 17.954999923706055
+    },
+    {
+      "type": "pointerdown",
+      "at": 730478.8999999762,
+      "delay": 17.990000009536743
+    }
+  ],
+  "elapsed": 730539.1000000238,
+  "title": "BoxedWine 187 MIPS",
+  "state": "{\"edition\":\"alien-crossfire\",\"executable\":\"terranx.exe\",\"engine\":\"SingleThreadedJitFast\",\"phase\":\"game-ready\",\"error\":null,\"log\":[\"[MIPS] count=670 raw=191 avg=196 min=174 max=210 warmAvg=216 warmSamples=651\",\"[MIPS] count=680 raw=187 avg=191 min=174 max=207 warmAvg=215 warmSamples=661\",\"[MIPS] count=690 raw=181 avg=185 min=170 max=192 warmAvg=215 warmSamples=671\",\"[MIPS] count=700 raw=189 avg=183 min=170 max=189 warmAvg=214 warmSamples=681\",\"[MIPS] count=710 raw=190 avg=187 min=176 max=190 warmAvg=214 warmSamples=691\",\"[MIPS] count=720 raw=191 avg=188 min=177 max=191 warmAvg=214 warmSamples=701\"],\"source\":\"Installed original x86 executable; CPU emulated in WebAssembly\",\"persistence\":\"IndexedDB, this browser and origin\",\"coordinates\":\"Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.\",\"gameFiles\":1683,\"gameSha256\":\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\",\"runtimeInitialized\":true,\"readiness\":{\"kind\":\"menu\",\"menuMatches\":7,\"worldMatches\":0},\"nativeReady\":{\"kind\":\"menu\",\"consecutive\":2,\"elapsedMs\":59273},\"browserSaveCount\":7,\"canvas\":{\"width\":1024,\"height\":768}}"
+}

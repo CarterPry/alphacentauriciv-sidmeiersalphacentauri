@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/port/combat-evidence-bundle.json\",\"bytes\":892426,\"records\":13,\"unknowns\":0}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/port/combat-evidence-bundle.json",
+      "bytes": 892426,
+      "records": 13,
+      "unknowns": 0
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "kind": "Node source-extracted software conversion microbenchmark; not browser gameplay or paint latency",
+  "startedAtUTC": "2026-10-14T21:25:30.403Z",
+  "finishedAtUTC": "2026-10-14T21:25:30.544Z",
+  "baselineCommit": "65467424603484756a73308412f40b906d28b650",
+  "node": "v25.9.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "cpu": "Apple M4 Max",
+  "width": 1024,
+  "height": 768,
+  "framesPerSample": 12,
+  "samples": 7,
+  "warmupFramesPerVariant": 4,
+  "order": "alternating variants each sample",
+  "original": {
+    "sampleMeanMsPerFrame": [
+      1.031642416666666,
+      1.264875,
+      0.992322916666667,
+      1.1798125000000017,
+      1.0041735833333334,
+      1.1974479166666658,
+      0.9203194166666672
+    ],
+    "medianMsPerFrame": 1.031642416666666,
+    "frameBufferAllocationsDuringSamples": 84,
+    "imageDataConstructionsDuringSamples": 84,
+    "finalChecksum": 24024
+  },
+  "optimized": {
+    "sampleMeanMsPerFrame": [
+      0.6021110833333339,
+      0.5994339999999999,
+      0.7783333333333324,
+      0.5211145833333338,
+      0.49469441666666586,
+      0.495336833333333,
+      0.6045347499999991
+    ],
+    "medianMsPerFrame": 0.5994339999999999,
+    "frameBufferAllocationsDuringSamples": 0,
+    "imageDataConstructionsDuringSamples": 0,
+    "finalChecksum": 24024
+  },
+  "medianConversionHandoffSpeedup": 1.7210275304148015,
+  "limitations": [
+    "Runs actual extracted source in Node VM, with a mock ImageData/canvas sink.",
+    "Does not include real ImageData construction validation, putImageData paint, guest rendering or game execution.",
+    "Short local run, no forced GC or CPU isolation; sample variability and concurrent workloads remain.",
+    "No claim about browser FPS or user input latency follows from this microbenchmark alone."
+  ]
+}

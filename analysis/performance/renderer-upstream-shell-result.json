@@ -1,0 +1,14 @@
+{
+  "baseline": {
+    "exit_code": 1,
+    "missing_mock_contains": true,
+    "tests_six": true,
+    "failed_six": true
+  },
+  "candidate": {
+    "exit_code": 1,
+    "missing_mock_contains": true,
+    "tests_six": true,
+    "failed_six": true
+  }
+}

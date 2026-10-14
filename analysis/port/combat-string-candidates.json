@@ -1,0 +1,270 @@
+{
+  "sourceSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+  "strings": [
+    {
+      "fileOffset": 2636244,
+      "va": "0x6839d4",
+      "text": "ATTACKSTRING"
+    },
+    {
+      "fileOffset": 2637000,
+      "va": "0x683cc8",
+      "text": "fx\\psi attack.wav"
+    },
+    {
+      "fileOffset": 2638100,
+      "va": "0x684114",
+      "text": "fx\\CPU combat units only.wav"
+    },
+    {
+      "fileOffset": 2638272,
+      "va": "0x6841c0",
+      "text": "fx\\CPU combat report.wav"
+    },
+    {
+      "fileOffset": 2647428,
+      "va": "0x686584",
+      "text": "BATTLEWIN1ST"
+    },
+    {
+      "fileOffset": 2647456,
+      "va": "0x6865a0",
+      "text": "BATTLEWIN2ND"
+    },
+    {
+      "fileOffset": 2654860,
+      "va": "0x68828c",
+      "text": "GOTUNITDEFEND"
+    },
+    {
+      "fileOffset": 2657424,
+      "va": "0x688c90",
+      "text": "ONLYCOMBAT"
+    },
+    {
+      "fileOffset": 2658348,
+      "va": "0x68902c",
+      "text": "EDITMORALE"
+    },
+    {
+      "fileOffset": 2662568,
+      "va": "0x68a0a8",
+      "text": "MORALE"
+    },
+    {
+      "fileOffset": 2662592,
+      "va": "0x68a0c0",
+      "text": "MORALE2"
+    },
+    {
+      "fileOffset": 2662664,
+      "va": "0x68a108",
+      "text": "Battle Resolution!"
+    },
+    {
+      "fileOffset": 2662684,
+      "va": "0x68a11c",
+      "text": "PSICOMBAT"
+    },
+    {
+      "fileOffset": 2662768,
+      "va": "0x68a170",
+      "text": "BATTLEDAMAGE"
+    },
+    {
+      "fileOffset": 2662800,
+      "va": "0x68a190",
+      "text": "BATTLEPAUSE"
+    },
+    {
+      "fileOffset": 2662812,
+      "va": "0x68a19c",
+      "text": "BATTLE1"
+    },
+    {
+      "fileOffset": 2662820,
+      "va": "0x68a1a4",
+      "text": "BATTLE2"
+    },
+    {
+      "fileOffset": 2662920,
+      "va": "0x68a208",
+      "text": "COMBATSURVIVE"
+    },
+    {
+      "fileOffset": 2662936,
+      "va": "0x68a218",
+      "text": "BATTLE5"
+    },
+    {
+      "fileOffset": 2662944,
+      "va": "0x68a220",
+      "text": "BATTLE6"
+    },
+    {
+      "fileOffset": 2662952,
+      "va": "0x68a228",
+      "text": "COMBATLOSS"
+    },
+    {
+      "fileOffset": 2662964,
+      "va": "0x68a234",
+      "text": "COMBATLOSS"
+    },
+    {
+      "fileOffset": 2662976,
+      "va": "0x68a240",
+      "text": "COMBATWIN"
+    },
+    {
+      "fileOffset": 2662988,
+      "va": "0x68a24c",
+      "text": "COMBATWIN"
+    },
+    {
+      "fileOffset": 2663116,
+      "va": "0x68a2cc",
+      "text": "BATTLEPAUSE"
+    },
+    {
+      "fileOffset": 2663144,
+      "va": "0x68a2e8",
+      "text": "PACTATTACKED"
+    },
+    {
+      "fileOffset": 2663160,
+      "va": "0x68a2f8",
+      "text": "PACTATTACKING"
+    },
+    {
+      "fileOffset": 2664000,
+      "va": "0x68a640",
+      "text": "DAMAGED"
+    },
+    {
+      "fileOffset": 2664068,
+      "va": "0x68a684",
+      "text": "DEFENDIT2"
+    },
+    {
+      "fileOffset": 2664080,
+      "va": "0x68a690",
+      "text": "DEFENDIT"
+    },
+    {
+      "fileOffset": 2665716,
+      "va": "0x68acf4",
+      "text": " damage"
+    },
+    {
+      "fileOffset": 2665724,
+      "va": "0x68acfc",
+      "text": " morale"
+    },
+    {
+      "fileOffset": 2674252,
+      "va": "0x68ce4c",
+      "text": "From Server: SATELLITE ATTACK"
+    },
+    {
+      "fileOffset": 2674284,
+      "va": "0x68ce6c",
+      "text": "From Server: SMACX SAT ATTACK:  GSP Base Target"
+    },
+    {
+      "fileOffset": 2674332,
+      "va": "0x68ce9c",
+      "text": "Acknowledging SATELLITE ATTACK"
+    },
+    {
+      "fileOffset": 2678048,
+      "va": "0x68dd20",
+      "text": "NEVERBATTLEPLANS"
+    },
+    {
+      "fileOffset": 2678068,
+      "va": "0x68dd34",
+      "text": "MAPBATTLEPLANS"
+    },
+    {
+      "fileOffset": 2678084,
+      "va": "0x68dd44",
+      "text": "NOBATTLEPLANS"
+    },
+    {
+      "fileOffset": 2678100,
+      "va": "0x68dd54",
+      "text": "BATTLEPLANS"
+    },
+    {
+      "fileOffset": 2678112,
+      "va": "0x68dd60",
+      "text": "BATTLEPLAN"
+    },
+    {
+      "fileOffset": 2678124,
+      "va": "0x68dd6c",
+      "text": "BATTLENO"
+    },
+    {
+      "fileOffset": 2678136,
+      "va": "0x68dd78",
+      "text": "BATTLENO"
+    },
+    {
+      "fileOffset": 2678148,
+      "va": "0x68dd84",
+      "text": "BATTLEYES"
+    },
+    {
+      "fileOffset": 2678168,
+      "va": "0x68dd98",
+      "text": "ATTACKSTRING"
+    },
+    {
+      "fileOffset": 2678424,
+      "va": "0x68de98",
+      "text": "PROPOSEATTACK"
+    },
+    {
+      "fileOffset": 2678440,
+      "va": "0x68dea8",
+      "text": "ATTACKSTRING"
+    },
+    {
+      "fileOffset": 2678488,
+      "va": "0x68ded8",
+      "text": "ATTACKSTRING"
+    },
+    {
+      "fileOffset": 2678756,
+      "va": "0x68dfe4",
+      "text": "DEMANDATTACK"
+    },
+    {
+      "fileOffset": 2680276,
+      "va": "0x68e5d4",
+      "text": "PACTATTACKS"
+    },
+    {
+      "fileOffset": 2683884,
+      "va": "0x68f3ec",
+      "text": "MORALE"
+    },
+    {
+      "fileOffset": 2686372,
+      "va": "0x68fda4",
+      "text": "NONCOMBATANT"
+    },
+    {
+      "fileOffset": 2686928,
+      "va": "0x68ffd0",
+      "text": "COMBATCONQUER"
+    },
+    {
+      "fileOffset": 2687036,
+      "va": "0x69003c",
+      "text": "WORMSATTACK"
+    }
+  ]
+}

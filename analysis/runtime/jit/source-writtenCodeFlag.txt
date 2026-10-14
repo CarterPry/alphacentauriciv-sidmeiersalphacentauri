@@ -1,0 +1,26 @@
+Official pinned source: source/emulation/softmmu/codePageData.cpp
+Commit: 65467424603484756a73308412f40b906d28b650
+SHA-256: 61f9061a637faa35f20995ea4aeaca3cc772a3debb95344c7a9f88339242cd2a
+
+
+145: 				pendingDeallocs[thread->id].ops.push_back(page->ops[i]);
+146: 			}
+147: #ifdef BOXEDWINE_JIT_X64
+148:             page->ops[i]->detachJitEntry();
+149: #endif
+150: 			page->ops[i] = nullptr;
+151: 			activeOps--;
+152: 		}
+153: 		if (pageWriteCounts) {
+154: #if defined(BOXEDWINE_WASM_JIT) && !defined(BOXEDWINE_MULTI_THREADED)
+155: 			if (KSystem::disableWasmJitForWrittenCode) {
+156: 				pageWriteCounts[i] = MAX_DYNAMIC_COUNT;
+157: 				continue;
+158: 			}
+159: #endif
+160: 			if ((pageWriteCounts[i] < MAX_DYNAMIC_COUNT)) {
+161: 				pageWriteCounts[i]++;
+162: 			}
+163: 		}
+164: 	}
+165: }

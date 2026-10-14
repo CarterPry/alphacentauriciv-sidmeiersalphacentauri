@@ -1,0 +1,21 @@
+{
+  "sourceCommit": "65467424603484756a73308412f40b906d28b650",
+  "sdkCommit": "8f685c26ee9f672081e61e22c6aa60fa972d00a9",
+  "sdkVersion": "6.0.12",
+  "patches": {
+    "disjoint-blocks.patch": "21814fca016f281575a47cf36a5aea62cd73a1807696e95e19a3926e8492d0f9",
+    "focus-backport.patch": "16e0c9a3029bdfc7bf8c3c02c722fff722eb1214c1de5ca01e7bfa295f2adfa6",
+    "renderer-optimization.patch": "97a8ce1621ae9bd9097717ea5fd37d0db2e541b1dbc551eac88523635d04d9dd",
+    "scheduler-clock.patch": "8ad7353acbf55e63e3ef76e50f9de89696c5dc0803ab663bbbd4995cd5bfc0fe"
+  },
+  "patchedSourceFiles": {
+    "source/emulation/cpu/jit/jitCodeGen.cpp": "17708377345f497376d308e99681cf699d6b2dce517a5fc799a1e800665b4faa",
+    "source/test/cpu/testCPU.cpp": "b65ccac7f2557901ec5564c6bc819b31802549fa05514eb82fe351b3896abb4c",
+    "source/test/testMain.cpp": "796b8bc73830a28ec56fe71d19b704ddda48ad658b5907d9258942fa4e404037",
+    "source/x11/xserver.cpp": "c532a809c3b41a7c358943f3910d0e5ad60f97240ba635ba6708270304a1d238",
+    "platform/sdl/knativescreenSDL.cpp": "251b65d41559e0186a6b4d5356c303c4c4f10d539ab730b88b130a5f9b787f7b",
+    "project/emscripten/boxedwine-shell.js": "696ee5451208b28b1af02183fd5172d1d1cb0839fadfce9cf575cd26e8690b05",
+    "source/kernel/kscheduler.cpp": "0c9629cfce16c5ca7c01fa5973a822a06ca43c3eaf774ea327ad1e8623c8ad24"
+  },
+  "engine": "SingleThreadedJitFast"
+}

@@ -1,0 +1,124 @@
+✖ games mount separate persistent Wine roots and D drives (2.081292ms)
+✖ game storage survives mode, build, root ZIP, and launcher changes (0.439833ms)
+✖ overlay games are isolated and overlay lists cannot collide with filenames (0.585375ms)
+✖ encoded names have stable storage keys without adding path components (0.477167ms)
+✖ memory and regression launches do not mount persistent storage (0.338583ms)
+✖ desktop launches without archives retain the existing storage (0.350792ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 0
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 81.247417
+
+✖ failing tests:
+
+test at ../../../../../private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:46:1
+✖ games mount separate persistent Wine roots and D drives (2.081292ms)
+  evalmachine.<anonymous>:1437
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1437:28)
+      at evalmachine.<anonymous>:1305:11
+      at evalmachine.<anonymous>:1317:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:47:18)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+
+test at ../../../../../private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:61:1
+✖ game storage survives mode, build, root ZIP, and launcher changes (0.439833ms)
+  evalmachine.<anonymous>:1437
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1437:28)
+      at evalmachine.<anonymous>:1305:11
+      at evalmachine.<anonymous>:1317:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:62:19)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+
+test at ../../../../../private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:68:1
+✖ overlay games are isolated and overlay lists cannot collide with filenames (0.585375ms)
+  evalmachine.<anonymous>:1437
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1437:28)
+      at evalmachine.<anonymous>:1305:11
+      at evalmachine.<anonymous>:1317:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:69:20)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+
+test at ../../../../../private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:80:1
+✖ encoded names have stable storage keys without adding path components (0.477167ms)
+  evalmachine.<anonymous>:1437
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1437:28)
+      at evalmachine.<anonymous>:1305:11
+      at evalmachine.<anonymous>:1317:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:81:18)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+
+test at ../../../../../private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:88:1
+✖ memory and regression launches do not mount persistent storage (0.338583ms)
+  evalmachine.<anonymous>:1437
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1437:28)
+      at evalmachine.<anonymous>:1305:11
+      at evalmachine.<anonymous>:1317:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:90:26)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+
+test at ../../../../../private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:94:1
+✖ desktop launches without archives retain the existing storage (0.350792ms)
+  evalmachine.<anonymous>:1437
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1437:28)
+      at evalmachine.<anonymous>:1305:11
+      at evalmachine.<anonymous>:1317:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/private/var/folders/35/xp55m93d5gj_w7ss88zz_tfm0000gn/T/renderer-shell-baseline-maji5o2m/boxedwine-shell.test.cjs:95:21)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

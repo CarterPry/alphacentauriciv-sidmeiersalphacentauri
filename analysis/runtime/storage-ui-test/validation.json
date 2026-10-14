@@ -1,0 +1,17 @@
+{
+  "scope": "Browser UI .SAV header rejection, import, download, IndexedDB persistence across page reload; original native game was not started in this test.",
+  "passed": true,
+  "rejectedInvalidHeaders": 2,
+  "sourceBytes": 288396,
+  "sourceSha256": "f80fefa5cf5b317716513bed7f8cea3d3fcc16bbf209352bd1675e3660a4b6b5",
+  "downloadSha256": "f80fefa5cf5b317716513bed7f8cea3d3fcc16bbf209352bd1675e3660a4b6b5",
+  "persisted": {
+    "directory": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves",
+    "name": "Imported - native-roundtrip.SAV",
+    "bytes": 288396,
+    "sha256": "f80fefa5cf5b317716513bed7f8cea3d3fcc16bbf209352bd1675e3660a4b6b5",
+    "gdiRendererKeys": 1
+  },
+  "errors": [],
+  "screenshot": "analysis/runtime/storage-ui-test/after-reload.png"
+}

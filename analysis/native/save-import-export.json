@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/native/save-import-evidence-bundle.json\",\"bytes\":212925,\"records\":19,\"unknowns\":0}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/native/save-import-evidence-bundle.json",
+      "bytes": 212925,
+      "records": 19,
+      "unknowns": 0
+    }
+  }
+}

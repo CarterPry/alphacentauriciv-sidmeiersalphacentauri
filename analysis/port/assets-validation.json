@@ -1,0 +1,26 @@
+{
+  "sourceTextDocumentsVerified": 20,
+  "outputMediaHashesVerified": 1268,
+  "repeatManifestIdentical": true,
+  "repeatWork": {
+    "inventoried": 1632,
+    "reused": 1268
+  },
+  "pngs": 760,
+  "copiedAudio": 508,
+  "registeredFactions": 14,
+  "unregisteredFactions": [
+    "BRIAN",
+    "SID"
+  ],
+  "scenarioRuleOverrides": [
+    "scenarios/Alpha Centauri Scenarios/2Build/alpha.txt"
+  ],
+  "priorAnalysisSourcesUnchanged": 24,
+  "priorAnalysisSourcesCompared": 24,
+  "fallbackDecodeAssets": [
+    "Color Blind Palette/hof_5_3.pcx.pcx"
+  ],
+  "sourceSavesExcluded": true,
+  "binariesNotCopied": true
+}

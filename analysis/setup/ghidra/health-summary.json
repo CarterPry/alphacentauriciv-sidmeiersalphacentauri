@@ -1,0 +1,148 @@
+{
+  "healthy": true,
+  "scope": {
+    "mode": "explicit",
+    "clients": [],
+    "providers": [
+      "ghidra"
+    ],
+    "skill": false,
+    "target": null
+  },
+  "checks": [
+    {
+      "name": "node",
+      "ok": true,
+      "classification": "healthy",
+      "detail": "22.22.0",
+      "details": {
+        "runtime": "node",
+        "version": "22.22.0"
+      }
+    },
+    {
+      "name": "ghidra",
+      "ok": true,
+      "classification": "healthy",
+      "detail": "/opt/homebrew/opt/ghidra/libexec"
+    },
+    {
+      "name": "ghidra-platform",
+      "ok": true,
+      "classification": "healthy",
+      "detail": "darwin"
+    },
+    {
+      "name": "ghidra-architecture",
+      "ok": true,
+      "classification": "healthy",
+      "detail": "arm64"
+    },
+    {
+      "name": "ghidra-installation",
+      "ok": true,
+      "classification": "healthy",
+      "detail": "/opt/homebrew/opt/ghidra/libexec/Ghidra/application.properties"
+    },
+    {
+      "name": "ghidra-version",
+      "ok": true,
+      "classification": "healthy",
+      "detail": "12.1.4"
+    },
+    {
+      "name": "ghidra-headless",
+      "ok": true,
+      "classification": "healthy",
+      "detail": "/opt/homebrew/opt/ghidra/libexec/support/analyzeHeadless"
+    },
+    {
+      "name": "ghidra-native_decompiler",
+      "ok": true,
+      "classification": "healthy",
+      "detail": "/opt/homebrew/opt/ghidra/libexec/Ghidra/Features/Decompiler/os/mac_arm_64/decompile reports mach-o arm64, which matches darwin/arm64"
+    },
+    {
+      "name": "ghidra-java",
+      "ok": true,
+      "classification": "healthy",
+      "detail": "21.0.11; 64-bit; JDK; /opt/homebrew/Cellar/openjdk@21/21.0.11/libexec/openjdk.jdk/Contents/Home; accepted a 64-bit full JDK 21 or newer"
+    }
+  ],
+  "ghidra": {
+    "id": "ghidra",
+    "configured": true,
+    "available": true,
+    "providerVersion": "12.1.4",
+    "registrationEnvironment": {
+      "GHIDRA_INSTALL_DIR": "/opt/homebrew/opt/ghidra/libexec",
+      "JAVA_HOME": "/opt/homebrew/Cellar/openjdk@21/21.0.11/libexec/openjdk.jdk/Contents/Home"
+    },
+    "checks": [
+      {
+        "name": "configuration",
+        "ok": true,
+        "code": null,
+        "detail": "/opt/homebrew/opt/ghidra/libexec",
+        "remediation": null,
+        "classification": "config_drift"
+      },
+      {
+        "name": "platform",
+        "ok": true,
+        "code": null,
+        "detail": "darwin",
+        "remediation": null,
+        "classification": "unsupported_host"
+      },
+      {
+        "name": "architecture",
+        "ok": true,
+        "code": null,
+        "detail": "arm64",
+        "remediation": null,
+        "classification": "unsupported_host"
+      },
+      {
+        "name": "installation",
+        "ok": true,
+        "code": null,
+        "detail": "/opt/homebrew/opt/ghidra/libexec/Ghidra/application.properties",
+        "remediation": null,
+        "classification": "config_drift"
+      },
+      {
+        "name": "version",
+        "ok": true,
+        "code": null,
+        "detail": "12.1.4",
+        "remediation": null,
+        "classification": "config_drift"
+      },
+      {
+        "name": "headless",
+        "ok": true,
+        "code": null,
+        "detail": "/opt/homebrew/opt/ghidra/libexec/support/analyzeHeadless",
+        "remediation": null,
+        "classification": "config_drift"
+      },
+      {
+        "name": "native_decompiler",
+        "ok": true,
+        "code": null,
+        "detail": "/opt/homebrew/opt/ghidra/libexec/Ghidra/Features/Decompiler/os/mac_arm_64/decompile reports mach-o arm64, which matches darwin/arm64",
+        "remediation": null,
+        "classification": "config_drift"
+      },
+      {
+        "name": "java",
+        "ok": true,
+        "code": null,
+        "detail": "21.0.11; 64-bit; JDK; /opt/homebrew/Cellar/openjdk@21/21.0.11/libexec/openjdk.jdk/Contents/Home; accepted a 64-bit full JDK 21 or newer",
+        "remediation": null,
+        "classification": "config_drift"
+      }
+    ]
+  }
+}

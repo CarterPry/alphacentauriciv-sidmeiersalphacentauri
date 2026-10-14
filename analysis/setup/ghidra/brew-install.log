@@ -1,0 +1,82 @@
+Warning: The following taps are not trusted:
+  asmvik/formulae
+  hudochenkov/sshpass
+  mattt/tap
+  oven-sh/bun
+  pasrom/meeting-transcriber
+  sikarugir-app/sikarugir
+  steipete/tap
+  yakitrak/yakitrak
+
+Homebrew is currently ignoring formulae, casks and commands
+from these taps because tap trust is required.
+Prefer trusting only the specific formulae, casks or commands you need.
+Trust installed formulae from these taps with:
+  brew trust --formula hudochenkov/sshpass/sshpass
+  brew trust --formula oven-sh/bun/bun
+  brew trust --formula yakitrak/yakitrak/obsidian-cli
+Trust installed casks from these taps with:
+  brew trust --cask mattt/tap/imcp
+  brew trust --cask pasrom/meeting-transcriber/meeting-transcriber
+  brew trust --cask sikarugir-app/sikarugir/sikarugir
+Trust other specific commands with:
+  brew trust --command <user>/<tap>/<command>
+Whole-tap trust is broader and includes all current and future formulae,
+casks and commands from the listed taps. Trust whole taps with:
+  brew trust asmvik/formulae hudochenkov/sshpass mattt/tap oven-sh/bun pasrom/meeting-transcriber sikarugir-app/sikarugir steipete/tap yakitrak/yakitrak
+Untap them with:
+  brew untap asmvik/formulae hudochenkov/sshpass mattt/tap oven-sh/bun pasrom/meeting-transcriber sikarugir-app/sikarugir steipete/tap yakitrak/yakitrak
+For more information, see:
+  https://docs.brew.sh/Tap-Trust
+==> Downloading bottle manifests
+✔︎ Bottle Manifest ghidra (12.1.4)
+==> Would install 1 formula:
+ghidra 12.1.4
+==> Would install 1 dependency for ghidra:
+json-c
+==> Would upgrade 14 dependencies for ghidra:
+libpng
+freetype
+fontconfig
+pcre2
+glib
+xorgproto
+cairo
+graphite2
+harfbuzz
+jpeg-turbo
+xz
+libtiff
+little-cms2
+openjdk@21
+==> Fetching downloads for: ghidra
+✔︎ Bottle Manifest libpng (1.6.59)
+✔︎ Bottle Manifest freetype (2.15.0)
+✔︎ Bottle Manifest json-c (0.19)
+✔︎ Bottle Manifest fontconfig (2.18.3)
+✔︎ Bottle Manifest pcre2 (10.49)
+✔︎ Bottle Manifest glib (2.90.1)
+✔︎ Bottle Manifest xorgproto (2026.1)
+✔︎ Bottle Manifest cairo (1.18.6)
+✔︎ Bottle Manifest harfbuzz (14.6.0)
+✔︎ Bottle Manifest jpeg-turbo (3.2.0)
+✔︎ Bottle Manifest libtiff (4.7.2)
+✔︎ Bottle Manifest xz (5.8.4)
+✔︎ Bottle Manifest openjdk@21 (21.0.12.1)
+✔︎ Bottle graphite2 (1.3.15)
+✔︎ Bottle Manifest little-cms2 (2.19.1)
+✔︎ Bottle json-c (0.19)
+✔︎ Bottle libpng (1.6.59)
+✔︎ Bottle fontconfig (2.18.3)
+✔︎ Bottle freetype (2.15.0)
+✔︎ Bottle xz (5.8.4)
+✔︎ Bottle little-cms2 (2.19.1)
+✔︎ Bottle glib (2.90.1)
+✔︎ Bottle jpeg-turbo (3.2.0)
+✔︎ Bottle cairo (1.18.6)
+✔︎ Bottle pcre2 (10.49)
+✔︎ Bottle xorgproto (2026.1)
+✔︎ Bottle libtiff (4.7.2)
+✔︎ Bottle harfbuzz (14.6.0)
+✔︎ Bottle openjdk@21 (21.0.12.1)
+

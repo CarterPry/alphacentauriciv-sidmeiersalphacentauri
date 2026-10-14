@@ -1,0 +1,13 @@
+{
+  "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+  "target_hash_unchanged": true,
+  "new_records": 7,
+  "referenced_reused_records": 2,
+  "record_set_matches_export": true,
+  "referenced_prior_records_present": true,
+  "owned_session_closed": true,
+  "bundle_sha256": "25eecb3c5eca7aac7c521c07790f1bca3715c7f7bc4be3f6d175e959a5224182",
+  "index_sha256": "37841dff71c81ff0ef25eac3ccabcd4ff2d42e8d4cf36f99d4e796b546ef9d99",
+  "instruction_excerpt_sha256": "b73129a875e2d41262b93da2d385e377e2c7815050e0bf707ea020ba7c3509e5",
+  "verification": "Artifact consistency, target hash, and saved close response; no dynamic gameplay equivalence asserted."
+}

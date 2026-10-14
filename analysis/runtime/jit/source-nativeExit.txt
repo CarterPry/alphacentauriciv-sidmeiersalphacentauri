@@ -1,0 +1,9 @@
+Official pinned source: platform/sdl/knativesystem.cpp
+Commit: 65467424603484756a73308412f40b906d28b650
+SHA-256: b70f8db425094dde1de5149a6fd5d019957e66800b83499895712421f50a1fe5
+
+
+236: void KNativeSystem::exit(const char* msg, U32 code) {
+237:     SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Error", msg, nullptr);
+238:     _exit(code);
+239: }

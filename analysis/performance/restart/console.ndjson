@@ -1,0 +1,177 @@
+{"at":1792014076637,"type":"log","text":"running initial setup"}
+{"at":1792014076638,"type":"log","text":"setting rootBase to: /runtime/"}
+{"at":1792014076638,"type":"log","text":"setting appBase to: /runtime/"}
+{"at":1792014076638,"type":"log","text":"setting storage mode to: INDEXED_DB"}
+{"at":1792014076638,"type":"log","text":"setting auto run to: true"}
+{"at":1792014076638,"type":"log","text":"setting load Desktop to: false"}
+{"at":1792014076638,"type":"log","text":"setting root zip file to: wine.zip"}
+{"at":1792014076638,"type":"log","text":"setting app zip file to: alpha-centauri.zip"}
+{"at":1792014076638,"type":"log","text":"setting program to execute to: terranx.exe"}
+{"at":1792014076638,"type":"log","text":"setting sound to: true"}
+{"at":1792014076638,"type":"log","text":"setting audioFreq to: 22050"}
+{"at":1792014076638,"type":"log","text":"setting disableWasmJitForWrittenCode to: true"}
+{"at":1792014076638,"type":"log","text":"setting BPP to: 32"}
+{"at":1792014076638,"type":"log","text":"setting skipFrameFPS to: 0"}
+{"at":1792014076638,"type":"log","text":"setting Resolution to: 1024x768"}
+{"at":1792014076639,"type":"log","text":"networking disabled"}
+{"at":1792014076639,"type":"log","text":"setting storage key to: key/alpha-centauri"}
+{"at":1792014076639,"type":"log","text":"Use Storage mode: INDEXED_DB"}
+{"at":1792014076652,"type":"log","text":"[WASM JIT] imported 0 blocks from server cache precompiled=0"}
+{"at":1792014077625,"type":"log","text":"File created://alpha-centauri.zip"}
+{"at":1792014078379,"type":"log","text":"File created://wine.zip"}
+{"at":1792014078379,"type":"log","text":"Emulator params:-root,/root/key/alpha-centauri,-zip,wine.zip,-mount,alpha-centauri.zip,/home/username/.wine/dosdevices/c:/files,-mount_drive,/d_drive/key/alpha-centauri,d,-resolution,1024x768,-audioFreq,22050,-disableHideCursor,-disableWasmJitForWrittenCode,-env,WINEDLLOVERRIDES=mscoree,mshtml=,-w,/home/username/.wine/dosdevices/c:/files,/bin/wine,terranx.exe"}
+{"at":1792014078391,"type":"log","text":"Starting ..."}
+{"at":1792014078392,"type":"log","text":"Command line arguments: \"./this.program\" \"-root\" \"/root/key/alpha-centauri\" \"-zip\" \"wine.zip\" \"-mount\" \"alpha-centauri.zip\" \"/home/username/.wine/dosdevices/c:/files\" \"-mount_drive\" \"/d_drive/key/alpha-centauri\" \"d\" \"-resolution\" \"1024x768\" \"-audioFreq\" \"22050\" \"-disableHideCursor\" \"-disableWasmJitForWrittenCode\" \"-env\" \"WINEDLLOVERRIDES=mscoree,mshtml=\" \"-w\" \"/home/username/.wine/dosdevices/c:/files\" \"/bin/wine\" \"terranx.exe\""}
+{"at":1792014078396,"type":"log","text":"BoxedWine build timestamp: Oct  9 2026 11:17:00"}
+{"at":1792014078396,"type":"log","text":"Using root directory: /root/key/alpha-centauri"}
+{"at":1792014078407,"type":"log","text":"Using zip file system: wine.zip"}
+{"at":1792014078408,"type":"log","text":"Resolution set to: 1024x768"}
+{"at":1792014078435,"type":"log","text":"Loaded wine.zip in 27 ms"}
+{"at":1792014078443,"type":"log","text":"Mounted alpha-centauri.zip in 7 ms"}
+{"at":1792014078445,"type":"log","text":"Launching \"/bin/wine\" \"terranx.exe\" "}
+{"at":1792014078460,"type":"log","text":"[WASM JIT] first JIT block executed, tableIdx: 13215"}
+{"at":1792014080508,"type":"log","text":"[WASM JIT batching] compiledBlocks=1000 browserModules=206 functionsPerGroup=6.8 mapped=889 anonymous=111 rawBytes=3494535 mergedBytes=1923546 flushes[count=1 bytes=0 urgent=125 processCap=0] groups[live=126 created=126 released=0] cancelled=16 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014081375,"type":"log","text":"[WASM JIT batching] compiledBlocks=2000 browserModules=379 functionsPerGroup=6.2 mapped=1883 anonymous=117 rawBytes=7301086 mergedBytes=4814597 flushes[count=1 bytes=0 urgent=292 processCap=0] groups[live=293 created=293 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014082175,"type":"log","text":"[WASM JIT batching] compiledBlocks=3000 browserModules=550 functionsPerGroup=6.0 mapped=2881 anonymous=119 rawBytes=11395408 mergedBytes=7849431 flushes[count=1 bytes=0 urgent=461 processCap=0] groups[live=462 created=462 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014082930,"type":"log","text":"[WASM JIT batching] compiledBlocks=4000 browserModules=696 functionsPerGroup=6.1 mapped=3879 anonymous=121 rawBytes=14687346 mergedBytes=10079407 flushes[count=1 bytes=0 urgent=605 processCap=0] groups[live=606 created=606 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014083547,"type":"log","text":"[WASM JIT batching] compiledBlocks=5000 browserModules=833 functionsPerGroup=6.3 mapped=4877 anonymous=123 rawBytes=18153007 mergedBytes=12790226 flushes[count=2 bytes=0 urgent=739 processCap=0] groups[live=741 created=741 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014084016,"type":"log","text":"00a4:err:ntoskrnl:ZwLoadDriver failed to create driver L\"\\\\Registry\\\\Machine\\\\System\\\\CurrentControlSet\\\\Services\\\\winebth\": c00000e5"}
+{"at":1792014084024,"type":"log","text":"003c:fixme:service:scmdatabase_autostart_services Auto-start service L\"winebth\" failed to start: 1359"}
+{"at":1792014084085,"type":"log","text":"[WASM JIT batching] compiledBlocks=6000 browserModules=970 functionsPerGroup=6.4 mapped=5877 anonymous=123 rawBytes=21027209 mergedBytes=14843889 flushes[count=2 bytes=0 urgent=876 processCap=0] groups[live=878 created=878 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014085057,"type":"log","text":"[WASM JIT batching] compiledBlocks=7000 browserModules=1103 functionsPerGroup=6.4 mapped=6876 anonymous=124 rawBytes=24171201 mergedBytes=17104112 flushes[count=2 bytes=0 urgent=1007 processCap=0] groups[live=1009 created=1009 released=0] cancelled=124 failed=0 tiny[deferred=32 promoted=2] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014086210,"type":"log","text":"[WASM JIT batching] compiledBlocks=8000 browserModules=1288 functionsPerGroup=6.5 mapped=7832 anonymous=168 rawBytes=27797888 mergedBytes=19404779 flushes[count=2 bytes=0 urgent=1143 processCap=0] groups[live=1145 created=1145 released=0] cancelled=124 failed=0 tiny[deferred=50 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014086838,"type":"log","text":"[WASM JIT batching] compiledBlocks=9000 browserModules=1448 functionsPerGroup=6.4 mapped=8832 anonymous=168 rawBytes=31058239 mergedBytes=21755633 flushes[count=2 bytes=0 urgent=1303 processCap=0] groups[live=1305 created=1305 released=0] cancelled=124 failed=0 tiny[deferred=50 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014086947,"type":"log","text":"Showing Window"}
+{"at":1792014087006,"type":"log","text":"00dc:err:vulkan:vulkan_init_once Wine was built without Vulkan support."}
+{"at":1792014087530,"type":"log","text":"WASM JIT simd enabled"}
+{"at":1792014087845,"type":"log","text":"[WASM JIT batching] compiledBlocks=10000 browserModules=1606 functionsPerGroup=6.4 mapped=9830 anonymous=170 rawBytes=34662289 mergedBytes=24485447 flushes[count=3 bytes=0 urgent=1458 processCap=0] groups[live=1461 created=1461 released=0] cancelled=124 failed=0 tiny[deferred=50 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014088441,"type":"log","text":"[MIPS] count=10 raw=110 avg=115 min=65 max=180 warmAvg=115 warmSamples=0"}
+{"at":1792014088606,"type":"log","text":"0024:err:winediag:wined3d_dll_init Disabling 3D support."}
+{"at":1792014088633,"type":"log","text":"[WASM JIT batching] compiledBlocks=11000 browserModules=1792 functionsPerGroup=6.3 mapped=10826 anonymous=174 rawBytes=38190564 mergedBytes=26848913 flushes[count=3 bytes=0 urgent=1641 processCap=0] groups[live=1644 created=1644 released=0] cancelled=124 failed=0 tiny[deferred=51 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014089233,"type":"log","text":"0024:err:ole:com_get_class_object class {d8f1eee0-f634-11cf-8700-00a0245d918b} not registered"}
+{"at":1792014089233,"type":"log","text":"0024:err:ole:com_get_class_object no class object {d8f1eee0-f634-11cf-8700-00a0245d918b} could be created for context 0x1"}
+{"at":1792014093352,"type":"log","text":"[WASM JIT batching] compiledBlocks=12000 browserModules=1917 functionsPerGroup=6.4 mapped=11824 anonymous=176 rawBytes=41639391 mergedBytes=29687005 flushes[count=4 bytes=0 urgent=1763 processCap=0] groups[live=1767 created=1767 released=0] cancelled=124 failed=0 tiny[deferred=53 promoted=27] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014098509,"type":"log","text":"[MIPS] count=20 raw=149 avg=131 min=65 max=193 warmAvg=149 warmSamples=1"}
+{"at":1792014108563,"type":"log","text":"[MIPS] count=30 raw=117 avg=134 min=113 max=193 warmAvg=123 warmSamples=11"}
+{"at":1792014118631,"type":"log","text":"[MIPS] count=40 raw=178 avg=142 min=116 max=280 warmAvg=143 warmSamples=21"}
+{"at":1792014119177,"type":"log","text":"[WASM JIT batching] compiledBlocks=13000 browserModules=2030 functionsPerGroup=6.5 mapped=12824 anonymous=176 rawBytes=45633860 mergedBytes=32756354 flushes[count=4 bytes=0 urgent=1876 processCap=0] groups[live=1880 created=1880 released=0] cancelled=124 failed=0 tiny[deferred=53 promoted=27] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014128676,"type":"log","text":"[MIPS] count=50 raw=211 avg=187 min=117 max=280 warmAvg=164 warmSamples=31"}
+{"at":1792014138729,"type":"log","text":"[MIPS] count=60 raw=215 avg=213 min=164 max=243 warmAvg=177 warmSamples=41"}
+{"at":1792014148793,"type":"log","text":"[MIPS] count=70 raw=209 avg=215 min=209 max=218 warmAvg=184 warmSamples=51"}
+{"at":1792014158834,"type":"log","text":"[MIPS] count=80 raw=215 avg=214 min=208 max=217 warmAvg=189 warmSamples=61"}
+{"at":1792014168927,"type":"log","text":"[MIPS] count=90 raw=214 avg=215 min=208 max=219 warmAvg=193 warmSamples=71"}
+{"at":1792014178953,"type":"log","text":"[MIPS] count=100 raw=213 avg=215 min=211 max=219 warmAvg=195 warmSamples=81"}
+{"at":1792014188994,"type":"log","text":"[MIPS] count=110 raw=210 avg=213 min=209 max=215 warmAvg=197 warmSamples=91"}
+{"at":1792014199051,"type":"log","text":"[MIPS] count=120 raw=212 avg=214 min=209 max=217 warmAvg=199 warmSamples=101"}
+{"at":1792014209120,"type":"log","text":"[MIPS] count=130 raw=206 avg=214 min=206 max=217 warmAvg=200 warmSamples=111"}
+{"at":1792014219154,"type":"log","text":"[MIPS] count=140 raw=214 avg=212 min=206 max=216 warmAvg=201 warmSamples=121"}
+{"at":1792014229243,"type":"log","text":"[MIPS] count=150 raw=215 avg=214 min=209 max=218 warmAvg=202 warmSamples=131"}
+{"at":1792014239326,"type":"log","text":"[MIPS] count=160 raw=216 avg=216 min=214 max=218 warmAvg=203 warmSamples=141"}
+{"at":1792014249398,"type":"log","text":"[MIPS] count=170 raw=217 avg=216 min=213 max=218 warmAvg=204 warmSamples=151"}
+{"at":1792014257066,"type":"log","text":"openAudio: freq=22050(got 22050) format=8120(got 8120) channels=2(got 2)"}
+{"at":1792014257066,"type":"log","text":"Audio output: AudioWorklet (fixed 30 ms queue target)"}
+{"at":1792014259442,"type":"log","text":"[MIPS] count=180 raw=214 avg=214 min=191 max=219 warmAvg=205 warmSamples=161"}
+{"at":1792014269512,"type":"log","text":"[MIPS] count=190 raw=208 avg=377 min=191 max=3486 warmAvg=224 warmSamples=171"}
+{"at":1792014279549,"type":"log","text":"[MIPS] count=200 raw=202 avg=530 min=140 max=3486 warmAvg=241 warmSamples=181"}
+{"at":1792014289600,"type":"log","text":"[MIPS] count=210 raw=215 avg=364 min=140 max=3485 warmAvg=239 warmSamples=191"}
+{"at":1792014299634,"type":"log","text":"[MIPS] count=220 raw=216 avg=212 min=198 max=216 warmAvg=238 warmSamples=201"}
+{"at":1792014308016,"type":"log","text":"[WASM JIT batching] compiledBlocks=14000 browserModules=2144 functionsPerGroup=6.7 mapped=13824 anonymous=176 rawBytes=49822188 mergedBytes=36148806 flushes[count=5 bytes=0 urgent=1989 processCap=0] groups[live=1994 created=1994 released=0] cancelled=124 failed=0 tiny[deferred=53 promoted=27] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014309666,"type":"log","text":"[MIPS] count=230 raw=178 avg=199 min=167 max=216 warmAvg=235 warmSamples=211"}
+{"at":1792014319718,"type":"log","text":"[MIPS] count=240 raw=186 avg=186 min=167 max=193 warmAvg=233 warmSamples=221"}
+{"at":1792014329785,"type":"log","text":"[MIPS] count=250 raw=190 avg=187 min=180 max=193 warmAvg=231 warmSamples=231"}
+{"at":1792014339841,"type":"log","text":"[MIPS] count=260 raw=191 avg=189 min=180 max=198 warmAvg=229 warmSamples=241"}
+{"at":1792014349896,"type":"log","text":"[MIPS] count=270 raw=188 avg=190 min=168 max=198 warmAvg=228 warmSamples=251"}
+{"at":1792014359947,"type":"log","text":"[MIPS] count=280 raw=190 avg=189 min=168 max=197 warmAvg=226 warmSamples=261"}
+{"at":1792014370007,"type":"log","text":"[MIPS] count=290 raw=191 avg=190 min=182 max=195 warmAvg=225 warmSamples=271"}
+{"at":1792014376306,"type":"log","text":"Emulator params:-root,/root/key/alpha-centauri,-zip,wine.zip,-mount,alpha-centauri.zip,/home/username/.wine/dosdevices/c:/files,-mount_drive,/d_drive/key/alpha-centauri,d,-resolution,1024x768,-audioFreq,22050,-disableHideCursor,-disableWasmJitForWrittenCode,-env,WINEDLLOVERRIDES=mscoree,mshtml=,-w,/home/username/.wine/dosdevices/c:/files,/bin/wine,terranx.exe"}
+{"at":1792014380063,"type":"log","text":"[MIPS] count=300 raw=196 avg=189 min=161 max=196 warmAvg=224 warmSamples=281"}
+{"at":1792014390125,"type":"log","text":"[MIPS] count=310 raw=190 avg=190 min=161 max=197 warmAvg=223 warmSamples=291"}
+{"at":1792014400191,"type":"log","text":"[MIPS] count=320 raw=191 avg=192 min=188 max=197 warmAvg=222 warmSamples=301"}
+{"at":1792014410240,"type":"log","text":"[MIPS] count=330 raw=193 avg=189 min=164 max=197 warmAvg=220 warmSamples=311"}
+{"at":1792014420294,"type":"log","text":"[MIPS] count=340 raw=193 avg=190 min=164 max=198 warmAvg=220 warmSamples=321"}
+{"at":1792014430345,"type":"log","text":"[MIPS] count=350 raw=189 avg=193 min=189 max=198 warmAvg=219 warmSamples=331"}
+{"at":1792014440397,"type":"log","text":"[MIPS] count=360 raw=196 avg=190 min=176 max=196 warmAvg=218 warmSamples=341"}
+{"at":1792014450450,"type":"log","text":"[MIPS] count=370 raw=186 avg=187 min=176 max=196 warmAvg=217 warmSamples=351"}
+{"at":1792014460502,"type":"log","text":"[MIPS] count=380 raw=173 avg=184 min=173 max=191 warmAvg=216 warmSamples=361"}
+{"at":1792014470552,"type":"log","text":"[MIPS] count=390 raw=184 avg=180 min=173 max=188 warmAvg=215 warmSamples=371"}
+{"at":1792014480598,"type":"log","text":"[MIPS] count=400 raw=187 avg=181 min=173 max=190 warmAvg=214 warmSamples=381"}
+{"at":1792014490656,"type":"log","text":"[MIPS] count=410 raw=176 avg=182 min=175 max=190 warmAvg=213 warmSamples=391"}
+{"at":1792014500705,"type":"log","text":"[MIPS] count=420 raw=183 avg=182 min=175 max=191 warmAvg=213 warmSamples=401"}
+{"at":1792014510755,"type":"log","text":"[MIPS] count=430 raw=175 avg=183 min=175 max=191 warmAvg=212 warmSamples=411"}
+{"at":1792014520803,"type":"log","text":"[MIPS] count=440 raw=188 avg=179 min=135 max=193 warmAvg=211 warmSamples=421"}
+{"at":1792014530848,"type":"log","text":"[MIPS] count=450 raw=186 avg=179 min=135 max=193 warmAvg=210 warmSamples=431"}
+{"at":1792014540884,"type":"log","text":"[MIPS] count=460 raw=184 avg=184 min=172 max=189 warmAvg=210 warmSamples=441"}
+{"at":1792014550936,"type":"log","text":"[MIPS] count=470 raw=189 avg=187 min=181 max=191 warmAvg=209 warmSamples=451"}
+{"at":1792014560977,"type":"log","text":"[MIPS] count=480 raw=191 avg=188 min=181 max=191 warmAvg=209 warmSamples=461"}
+{"at":1792014571025,"type":"log","text":"[MIPS] count=490 raw=182 avg=185 min=173 max=191 warmAvg=208 warmSamples=471"}
+{"at":1792014581084,"type":"log","text":"[MIPS] count=500 raw=188 avg=185 min=173 max=191 warmAvg=208 warmSamples=481"}
+{"at":1792014591137,"type":"log","text":"[MIPS] count=510 raw=184 avg=187 min=180 max=191 warmAvg=207 warmSamples=491"}
+{"at":1792014601193,"type":"log","text":"[MIPS] count=520 raw=185 avg=185 min=173 max=190 warmAvg=207 warmSamples=501"}
+{"at":1792014611235,"type":"log","text":"[MIPS] count=530 raw=191 avg=186 min=173 max=191 warmAvg=207 warmSamples=511"}
+{"at":1792014614776,"type":"log","text":"running initial setup"}
+{"at":1792014614776,"type":"log","text":"setting rootBase to: /runtime/"}
+{"at":1792014614777,"type":"log","text":"setting appBase to: /runtime/"}
+{"at":1792014614777,"type":"log","text":"setting storage mode to: INDEXED_DB"}
+{"at":1792014614777,"type":"log","text":"setting auto run to: true"}
+{"at":1792014614777,"type":"log","text":"setting load Desktop to: false"}
+{"at":1792014614777,"type":"log","text":"setting root zip file to: wine.zip"}
+{"at":1792014614777,"type":"log","text":"setting app zip file to: alpha-centauri.zip"}
+{"at":1792014614777,"type":"log","text":"setting program to execute to: terranx.exe"}
+{"at":1792014614777,"type":"log","text":"setting sound to: true"}
+{"at":1792014614777,"type":"log","text":"setting audioFreq to: 22050"}
+{"at":1792014614777,"type":"log","text":"setting disableWasmJitForWrittenCode to: true"}
+{"at":1792014614777,"type":"log","text":"setting BPP to: 32"}
+{"at":1792014614777,"type":"log","text":"setting skipFrameFPS to: 0"}
+{"at":1792014614777,"type":"log","text":"setting Resolution to: 1024x768"}
+{"at":1792014614777,"type":"log","text":"networking disabled"}
+{"at":1792014614777,"type":"log","text":"setting storage key to: key/alpha-centauri"}
+{"at":1792014614778,"type":"log","text":"Use Storage mode: INDEXED_DB"}
+{"at":1792014614779,"type":"log","text":"[WASM JIT] imported 0 blocks from server cache precompiled=0"}
+{"at":1792014615775,"type":"log","text":"File created://alpha-centauri.zip"}
+{"at":1792014615982,"type":"log","text":"File created://wine.zip"}
+{"at":1792014615982,"type":"log","text":"Emulator params:-root,/root/key/alpha-centauri,-zip,wine.zip,-mount,alpha-centauri.zip,/home/username/.wine/dosdevices/c:/files,-mount_drive,/d_drive/key/alpha-centauri,d,-resolution,1024x768,-audioFreq,22050,-disableHideCursor,-disableWasmJitForWrittenCode,-env,WINEDLLOVERRIDES=mscoree,mshtml=,-w,/home/username/.wine/dosdevices/c:/files,/bin/wine,terranx.exe"}
+{"at":1792014615985,"type":"log","text":"Starting ..."}
+{"at":1792014615985,"type":"log","text":"Command line arguments: \"./this.program\" \"-root\" \"/root/key/alpha-centauri\" \"-zip\" \"wine.zip\" \"-mount\" \"alpha-centauri.zip\" \"/home/username/.wine/dosdevices/c:/files\" \"-mount_drive\" \"/d_drive/key/alpha-centauri\" \"d\" \"-resolution\" \"1024x768\" \"-audioFreq\" \"22050\" \"-disableHideCursor\" \"-disableWasmJitForWrittenCode\" \"-env\" \"WINEDLLOVERRIDES=mscoree,mshtml=\" \"-w\" \"/home/username/.wine/dosdevices/c:/files\" \"/bin/wine\" \"terranx.exe\""}
+{"at":1792014615985,"type":"log","text":"BoxedWine build timestamp: Oct  9 2026 11:17:00"}
+{"at":1792014615985,"type":"log","text":"Using root directory: /root/key/alpha-centauri"}
+{"at":1792014615994,"type":"log","text":"Using zip file system: wine.zip"}
+{"at":1792014615995,"type":"log","text":"Resolution set to: 1024x768"}
+{"at":1792014616016,"type":"log","text":"Loaded wine.zip in 22 ms"}
+{"at":1792014616024,"type":"log","text":"Mounted alpha-centauri.zip in 8 ms"}
+{"at":1792014616026,"type":"log","text":"Launching \"/bin/wine\" \"terranx.exe\" "}
+{"at":1792014616032,"type":"log","text":"[WASM JIT] first JIT block executed, tableIdx: 13215"}
+{"at":1792014618059,"type":"log","text":"[WASM JIT batching] compiledBlocks=1000 browserModules=207 functionsPerGroup=6.7 mapped=889 anonymous=111 rawBytes=3494535 mergedBytes=1924376 flushes[count=1 bytes=0 urgent=126 processCap=0] groups[live=127 created=127 released=0] cancelled=16 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014618953,"type":"log","text":"[WASM JIT batching] compiledBlocks=2000 browserModules=380 functionsPerGroup=6.2 mapped=1883 anonymous=117 rawBytes=7301086 mergedBytes=4815427 flushes[count=1 bytes=0 urgent=293 processCap=0] groups[live=294 created=294 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014619788,"type":"log","text":"[WASM JIT batching] compiledBlocks=3000 browserModules=551 functionsPerGroup=6.0 mapped=2881 anonymous=119 rawBytes=11412859 mergedBytes=7851122 flushes[count=1 bytes=0 urgent=462 processCap=0] groups[live=463 created=463 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014620556,"type":"log","text":"[WASM JIT batching] compiledBlocks=4000 browserModules=698 functionsPerGroup=6.1 mapped=3879 anonymous=121 rawBytes=14694027 mergedBytes=10089600 flushes[count=1 bytes=0 urgent=607 processCap=0] groups[live=608 created=608 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014621177,"type":"log","text":"[WASM JIT batching] compiledBlocks=5000 browserModules=835 functionsPerGroup=6.3 mapped=4877 anonymous=123 rawBytes=18153626 mergedBytes=12799432 flushes[count=2 bytes=0 urgent=741 processCap=0] groups[live=743 created=743 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014621654,"type":"log","text":"00a4:err:ntoskrnl:ZwLoadDriver failed to create driver L\"\\\\Registry\\\\Machine\\\\System\\\\CurrentControlSet\\\\Services\\\\winebth\": c00000e5"}
+{"at":1792014621659,"type":"log","text":"003c:fixme:service:scmdatabase_autostart_services Auto-start service L\"winebth\" failed to start: 1359"}
+{"at":1792014621725,"type":"log","text":"[WASM JIT batching] compiledBlocks=6000 browserModules=970 functionsPerGroup=6.4 mapped=5877 anonymous=123 rawBytes=21019162 mergedBytes=14822174 flushes[count=2 bytes=0 urgent=876 processCap=0] groups[live=878 created=878 released=0] cancelled=23 failed=0 tiny[deferred=32 promoted=1] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014622713,"type":"log","text":"[WASM JIT batching] compiledBlocks=7000 browserModules=1103 functionsPerGroup=6.4 mapped=6876 anonymous=124 rawBytes=24172152 mergedBytes=17101408 flushes[count=2 bytes=0 urgent=1007 processCap=0] groups[live=1009 created=1009 released=0] cancelled=124 failed=0 tiny[deferred=32 promoted=2] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014623900,"type":"log","text":"[WASM JIT batching] compiledBlocks=8000 browserModules=1289 functionsPerGroup=6.5 mapped=7832 anonymous=168 rawBytes=27798180 mergedBytes=19402824 flushes[count=2 bytes=0 urgent=1144 processCap=0] groups[live=1146 created=1146 released=0] cancelled=124 failed=0 tiny[deferred=50 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014624539,"type":"log","text":"[WASM JIT batching] compiledBlocks=9000 browserModules=1449 functionsPerGroup=6.4 mapped=8832 anonymous=168 rawBytes=31061219 mergedBytes=21749212 flushes[count=2 bytes=0 urgent=1304 processCap=0] groups[live=1306 created=1306 released=0] cancelled=124 failed=0 tiny[deferred=50 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014624648,"type":"log","text":"Showing Window"}
+{"at":1792014624705,"type":"log","text":"00dc:err:vulkan:vulkan_init_once Wine was built without Vulkan support."}
+{"at":1792014625239,"type":"log","text":"WASM JIT simd enabled"}
+{"at":1792014625551,"type":"log","text":"[WASM JIT batching] compiledBlocks=10000 browserModules=1607 functionsPerGroup=6.4 mapped=9830 anonymous=170 rawBytes=34664070 mergedBytes=24496941 flushes[count=3 bytes=0 urgent=1459 processCap=0] groups[live=1462 created=1462 released=0] cancelled=124 failed=0 tiny[deferred=50 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014626044,"type":"log","text":"[MIPS] count=10 raw=133 avg=113 min=66 max=168 warmAvg=113 warmSamples=0"}
+{"at":1792014626284,"type":"log","text":"0024:err:winediag:wined3d_dll_init Disabling 3D support."}
+{"at":1792014626325,"type":"log","text":"[WASM JIT batching] compiledBlocks=11000 browserModules=1795 functionsPerGroup=6.3 mapped=10826 anonymous=174 rawBytes=38196425 mergedBytes=26856043 flushes[count=3 bytes=0 urgent=1644 processCap=0] groups[live=1647 created=1647 released=0] cancelled=124 failed=0 tiny[deferred=51 promoted=25] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014626946,"type":"log","text":"0024:err:ole:com_get_class_object class {d8f1eee0-f634-11cf-8700-00a0245d918b} not registered"}
+{"at":1792014626946,"type":"log","text":"0024:err:ole:com_get_class_object no class object {d8f1eee0-f634-11cf-8700-00a0245d918b} could be created for context 0x1"}
+{"at":1792014631096,"type":"log","text":"[WASM JIT batching] compiledBlocks=12000 browserModules=1917 functionsPerGroup=6.4 mapped=11824 anonymous=176 rawBytes=41641413 mergedBytes=29686844 flushes[count=4 bytes=0 urgent=1763 processCap=0] groups[live=1767 created=1767 released=0] cancelled=124 failed=0 tiny[deferred=53 promoted=27] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014636093,"type":"log","text":"[MIPS] count=20 raw=151 avg=131 min=66 max=202 warmAvg=151 warmSamples=1"}
+{"at":1792014646136,"type":"log","text":"[MIPS] count=30 raw=116 avg=133 min=109 max=202 warmAvg=121 warmSamples=11"}
+{"at":1792014656197,"type":"log","text":"[MIPS] count=40 raw=208 avg=139 min=114 max=274 warmAvg=139 warmSamples=21"}
+{"at":1792014657388,"type":"log","text":"[WASM JIT batching] compiledBlocks=13000 browserModules=2028 functionsPerGroup=6.5 mapped=12824 anonymous=176 rawBytes=45593083 mergedBytes=32746243 flushes[count=4 bytes=0 urgent=1874 processCap=0] groups[live=1878 created=1878 released=0] cancelled=124 failed=0 tiny[deferred=53 promoted=27] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014666254,"type":"log","text":"[MIPS] count=50 raw=215 avg=185 min=115 max=274 warmAvg=162 warmSamples=31"}
+{"at":1792014670147,"type":"log","text":"openAudio: freq=22050(got 22050) format=8120(got 8120) channels=2(got 2)"}
+{"at":1792014670148,"type":"log","text":"Audio output: AudioWorklet (fixed 30 ms queue target)"}
+{"at":1792014676325,"type":"log","text":"[MIPS] count=60 raw=218 avg=202 min=138 max=238 warmAvg=170 warmSamples=41"}
+{"at":1792014686393,"type":"log","text":"[MIPS] count=70 raw=217 avg=205 min=138 max=219 warmAvg=179 warmSamples=51"}
+{"at":1792014696446,"type":"log","text":"[MIPS] count=80 raw=219 avg=216 min=210 max=221 warmAvg=185 warmSamples=61"}
+{"at":1792014706497,"type":"log","text":"[MIPS] count=90 raw=187 avg=208 min=163 max=221 warmAvg=187 warmSamples=71"}
+{"at":1792014710232,"type":"log","text":"[WASM JIT batching] compiledBlocks=14000 browserModules=2136 functionsPerGroup=6.7 mapped=13824 anonymous=176 rawBytes=49790308 mergedBytes=35920644 flushes[count=5 bytes=0 urgent=1981 processCap=0] groups[live=1986 created=1986 released=0] cancelled=124 failed=0 tiny[deferred=53 promoted=27] oom[pauses=0 blocked=0 retries=0 resumptions=0]"}
+{"at":1792014716537,"type":"log","text":"[MIPS] count=100 raw=190 avg=194 min=163 max=220 warmAvg=187 warmSamples=81"}
+{"at":1792014726586,"type":"log","text":"[MIPS] count=110 raw=189 avg=189 min=183 max=192 warmAvg=188 warmSamples=91"}

@@ -1,0 +1,124 @@
+✖ games mount separate persistent Wine roots and D drives (1.956875ms)
+✖ game storage survives mode, build, root ZIP, and launcher changes (0.375709ms)
+✖ overlay games are isolated and overlay lists cannot collide with filenames (0.342833ms)
+✖ encoded names have stable storage keys without adding path components (0.330458ms)
+✖ memory and regression launches do not mount persistent storage (0.312875ms)
+✖ desktop launches without archives retain the existing storage (0.713334ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 0
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 79.331041
+
+✖ failing tests:
+
+test at analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:46:1
+✖ games mount separate persistent Wine roots and D drives (1.956875ms)
+  evalmachine.<anonymous>:1447
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1447:28)
+      at evalmachine.<anonymous>:1315:11
+      at evalmachine.<anonymous>:1327:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:47:18)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+
+test at analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:61:1
+✖ game storage survives mode, build, root ZIP, and launcher changes (0.375709ms)
+  evalmachine.<anonymous>:1447
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1447:28)
+      at evalmachine.<anonymous>:1315:11
+      at evalmachine.<anonymous>:1327:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:62:19)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+
+test at analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:68:1
+✖ overlay games are isolated and overlay lists cannot collide with filenames (0.342833ms)
+  evalmachine.<anonymous>:1447
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1447:28)
+      at evalmachine.<anonymous>:1315:11
+      at evalmachine.<anonymous>:1327:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:69:20)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+
+test at analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:80:1
+✖ encoded names have stable storage keys without adding path components (0.330458ms)
+  evalmachine.<anonymous>:1447
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1447:28)
+      at evalmachine.<anonymous>:1315:11
+      at evalmachine.<anonymous>:1327:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:81:18)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+
+test at analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:88:1
+✖ memory and regression launches do not mount persistent storage (0.312875ms)
+  evalmachine.<anonymous>:1447
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1447:28)
+      at evalmachine.<anonymous>:1315:11
+      at evalmachine.<anonymous>:1327:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:90:26)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+
+test at analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:94:1
+✖ desktop launches without archives retain the existing storage (0.713334ms)
+  evalmachine.<anonymous>:1447
+      if (!target || !target.contains(canvas)) return;
+                             ^
+  
+  TypeError: target.contains is not a function
+      at setupCanvasFullscreen (evalmachine.<anonymous>:1447:28)
+      at evalmachine.<anonymous>:1315:11
+      at evalmachine.<anonymous>:1327:11
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at launcher (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:32:8)
+      at TestContext.<anonymous> (/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/Boxedwine-disjoint/project/emscripten/boxedwine-shell.test.cjs:95:21)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

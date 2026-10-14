@@ -1,0 +1,36 @@
+{
+  "createdAtUTC": "2026-10-14T19:09:11.684514+00:00",
+  "sourceCommit": "65467424603484756a73308412f40b906d28b650",
+  "patches": {
+    "disjoint-blocks.patch": "21814fca016f281575a47cf36a5aea62cd73a1807696e95e19a3926e8492d0f9",
+    "focus-backport.patch": "16e0c9a3029bdfc7bf8c3c02c722fff722eb1214c1de5ca01e7bfa295f2adfa6"
+  },
+  "focusReferenceCommit": "ef51c62642833684cacc1885bf4db1fd47b679ca",
+  "focusReferenceExactPatch": "focus-fix.patch",
+  "focusNote": "Minimal adaptation to pinned older focus API. Newer mutex and focus-event infrastructure was not backported. Runtime keyboard behavior is not established by compilation.",
+  "command": "sh analysis/runtime/jit/build-experimental.sh",
+  "emscripten": "6.0.12",
+  "browserValidation": "pending",
+  "files": {
+    "boxedwine.js": {
+      "sha256": "4dcfb875f5c84ae95f0b00a7314caee73df0b878b6f94d688f2dc73e74917a24",
+      "bytes": 316594
+    },
+    "boxedwine.wasm": {
+      "sha256": "db4d1d8e601bb03cd4674eda0d05df621039a8e1d5e706b0fedcc886fc7de5a8",
+      "bytes": 5048310
+    },
+    "boxedwine-shell.js": {
+      "sha256": "f88e60b155c53c916fe8861205f601a44e216111aef8dca1d799e66d1780f2e7",
+      "bytes": 100424
+    },
+    "boxedwine.css": {
+      "sha256": "f3548956400f61c2d7f400e34166a5119c5167f4a3215e07c95c5cf95eea69a3",
+      "bytes": 4885
+    },
+    "boxedwine.html": {
+      "sha256": "8760628c83c799430885d181165c61e00311692ca33e10ac76d97aec96f3603d",
+      "bytes": 2623
+    }
+  }
+}

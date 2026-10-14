@@ -1,0 +1,27 @@
+{
+  "started": 1792014614736,
+  "longTasks": [
+    {
+      "start": 120.82500004768372,
+      "duration": 64
+    },
+    {
+      "start": 344.0049999952316,
+      "duration": 72
+    },
+    {
+      "start": 12340.144999980927,
+      "duration": 54
+    }
+  ],
+  "events": [
+    {
+      "type": "keydown",
+      "at": 34317.81000006199,
+      "delay": 0.12000000476837158
+    }
+  ],
+  "elapsed": 46939.87000000477,
+  "title": "BoxedWine 160 MIPS",
+  "state": "{\"edition\":\"alien-crossfire\",\"executable\":\"terranx.exe\",\"engine\":\"SingleThreadedJitFast\",\"phase\":\"game-ready\",\"error\":null,\"log\":[\"0024:err:winediag:wined3d_dll_init Disabling 3D support.\",\"0024:err:ole:com_get_class_object class {d8f1eee0-f634-11cf-8700-00a0245d918b} not registered\",\"0024:err:ole:com_get_class_object no class object {d8f1eee0-f634-11cf-8700-00a0245d918b} could be created for context 0x1\",\"[MIPS] count=20 raw=151 avg=131 min=66 max=202 warmAvg=151 warmSamples=1\",\"[MIPS] count=30 raw=116 avg=133 min=109 max=202 warmAvg=121 warmSamples=11\",\"[MIPS] count=40 raw=208 avg=139 min=114 max=274 warmAvg=139 warmSamples=21\"],\"source\":\"Installed original x86 executable; CPU emulated in WebAssembly\",\"persistence\":\"IndexedDB, this browser and origin\",\"coordinates\":\"Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.\",\"gameFiles\":1683,\"gameSha256\":\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\",\"runtimeInitialized\":true,\"readiness\":{\"kind\":\"menu\",\"menuMatches\":7,\"worldMatches\":0},\"browserSaveCount\":9,\"nativeReady\":{\"kind\":\"menu\",\"consecutive\":2,\"elapsedMs\":43872},\"canvas\":{\"width\":1024,\"height\":768}}"
+}

@@ -1,0 +1,55 @@
+{
+  "sourceSha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+  "rawPointerCandidates": [
+    {
+      "value": "0x696de0",
+      "pointerOccurrences": [
+        {
+          "operandVa": "0x5f0434",
+          "fileOffset": 2032692,
+          "contextHex": "ec 00 00 00 6a 0a 51 68 e0 6d 69 00 8d 4c 24 40 e8 9f 79 fe ff 85 c0 75"
+        }
+      ]
+    },
+    {
+      "value": "0x697f30",
+      "pointerOccurrences": [
+        {
+          "operandVa": "0x6356b6",
+          "fileOffset": 2315958,
+          "contextHex": "ec 00 00 00 6a 0a 51 68 30 7f 69 00 8d 4c 24 20 e8 1d 27 fa ff 85 c0 75"
+        }
+      ]
+    },
+    {
+      "value": "0x68f918",
+      "pointerOccurrences": [
+        {
+          "operandVa": "0x58e42c",
+          "fileOffset": 1631276,
+          "contextHex": "be 08 f9 68 00 74 05 be 18 f9 68 00 39 1d 24 58 94 00 75 68 68 14 0a 00"
+        }
+      ]
+    },
+    {
+      "value": "0x68bf04",
+      "pointerOccurrences": [
+        {
+          "operandVa": "0x52ab39",
+          "fileOffset": 1223481,
+          "contextHex": "a1 64 b4 94 00 56 56 68 04 bf 68 00 a3 90 64 9a 00 e8 f9 2f 07 00 8b f8"
+        }
+      ]
+    },
+    {
+      "value": "0x68bf18",
+      "pointerOccurrences": [
+        {
+          "operandVa": "0x52ab4c",
+          "fileOffset": 1223500,
+          "contextHex": "2f 07 00 8b f8 56 57 68 18 bf 68 00 e8 db 39 07 00 83 c4 24 3b fe 75 19"
+        }
+      ]
+    }
+  ]
+}

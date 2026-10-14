@@ -1,0 +1,113 @@
+{
+  "createdAtUTC": "2026-10-14T21:41:17.229856+00:00",
+  "environment": {
+    "host": "Apple M4 Max / macOS arm64",
+    "browser": "Playwright1.58.2 Chromium headless1208",
+    "viewport": [
+      1400,
+      1080
+    ],
+    "guestResolution": [
+      1024,
+      768
+    ],
+    "wine": "11.0",
+    "renderer": "GDI",
+    "audioHz": 22050,
+    "disableWasmJitForWrittenCode": true
+  },
+  "method": "One emulator at a time. Fresh browser profiles for initial runs; identical archives and compatibility settings. CPU profiler active for both hover sequences. Twelve alternating menu button hovers,500ms settling each; original RGBA pixels detect changed text highlight. Timing ends at synchronous native presentation handoff, before final display scanout. Ordinary host activity not isolated.",
+  "baseline": {
+    "engine": "SingleThreadedJitFocus",
+    "startupSecondsFromPageNavigation": 197.25088499999046,
+    "hover": {
+      "count": 12,
+      "medianMs": 134.72250002622604,
+      "p95NearestRankMs": 145.91999995708466,
+      "minMs": 122.47000002861023,
+      "maxMs": 145.91999995708466,
+      "browserDispatchMedianMs": 19.125,
+      "guestToPresentationMedianMs": 115.76250004768372
+    }
+  },
+  "optimized": {
+    "engine": "SingleThreadedJitFast",
+    "startupSecondsFromStartAction": 59.273,
+    "hover": {
+      "count": 12,
+      "medianMs": 50.639999985694885,
+      "p95NearestRankMs": 52.394999980926514,
+      "minMs": 40.44500005245209,
+      "maxMs": 52.394999980926514,
+      "browserDispatchMedianMs": 18.337499976158142,
+      "guestToPresentationMedianMs": 32.9375
+    }
+  },
+  "startupCaveat": "Baseline timestamp starts at page navigation, optimized timestamp at auto Start about0.8s later; report approximately197s\u219260s, not an exact speed ratio. One initial startup observation each, including readiness sampling confirmation.",
+  "limits": [
+    "Menu workload only; not full-campaign frame-rate comparison.",
+    "Both hover sequences profiled; profiling can perturb absolute latency.",
+    "Small sample; nearest-rank p95 is maximum for12 observations.",
+    "Presentation probe samples a small button-text region, not physical input/display hardware latency.",
+    "No BO1 execution or cross-project FPS benchmark."
+  ],
+  "artifacts": {
+    "baseline/menu-baseline.json": {
+      "sha256": "c20f5b4ecd7cd5efa81f2d0faef3669b5aa7142a8d82377f6535e9459b58fabf",
+      "bytes": 739908
+    },
+    "baseline/startup.cpuprofile": {
+      "sha256": "c8c8b00c3c793fb0c2cd475bdef39980022eba81468013f50002e8499529e274",
+      "bytes": 755862
+    },
+    "baseline/game-startup.cpuprofile": {
+      "sha256": "b0622c464c5cd2ede63925f8c4ce4ac595e768a22daff4a2979cc60bc833c3ec",
+      "bytes": 269904
+    },
+    "baseline/menu-hover.cpuprofile": {
+      "sha256": "3a739aa69ccceeded3fbf9b85bb6dbf338e28f9590ec34836f2c6b8210886e12",
+      "bytes": 375633
+    },
+    "optimized/startup.json": {
+      "sha256": "465a008ea09ce5b95b5db09f8a89b3a518ef66420cebcfcf51c16f10c9b9e77c",
+      "bytes": 1542
+    },
+    "optimized/startup.cpuprofile": {
+      "sha256": "1d534a334c849013129919874343c9f72651b77f1fbeea8610e009cd197de214",
+      "bytes": 2028542
+    },
+    "optimized/menu-hover.cpuprofile": {
+      "sha256": "85d1b5a0feab145a958f57e5779c2480bb2ad188e79dae973557434daac52722",
+      "bytes": 372598
+    },
+    "optimized/hover.json": {
+      "sha256": "8ec78464d76c53787a90a02bd0dd19e93c9de3568adaf49fb57795fe227958a7",
+      "bytes": 33184
+    },
+    "optimized/loading-live.png": {
+      "sha256": "246bd146111f3125616545051444f7ff758a6cb3d9e9c1d2e5839a3cc13294f2",
+      "bytes": 87896
+    },
+    "optimized/menu-ready.png": {
+      "sha256": "05e1107b6583ef92b57495b2ff90fa2ae655a70de1afdcb679a736081368bf65",
+      "bytes": 1278788
+    },
+    "optimized/created-2101.SAV": {
+      "sha256": "3716c614ecf7599f94239e1671e330908de87320e57d2c47af7bc5a6ad84f9f1",
+      "bytes": 287824
+    },
+    "optimized/created-2102.SAV": {
+      "sha256": "a911afdcacb26199d25fccd08a150bbef7fa41b4cbac161cdc3b1756d6415cdc",
+      "bytes": 288140
+    },
+    "engine-tests.json": {
+      "sha256": "5055c193bf588220749ef1ce9d748becb863073a4e312cda0837454f7585a6a4",
+      "bytes": 663
+    },
+    "validation.json": {
+      "bytes": 6646,
+      "sha256": "30a7f5165926e5b56c690171544276cd620dcec8c76749bb6a59d933c60f59c8"
+    }
+  },
+  "validation": "validation.json"
+}

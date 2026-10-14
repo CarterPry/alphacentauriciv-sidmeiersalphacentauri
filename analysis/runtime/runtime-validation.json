@@ -1,0 +1,281 @@
+{
+  "updatedAtUTC": "2026-10-14T19:33:08.949770+00:00",
+  "validationComplete": true,
+  "scope": "Core local-browser acceptance completed for both installed original editions. Original binaries execute mechanics; complete campaigns, every system, and media fidelity remain unverified.",
+  "environment": {
+    "host": "macOS arm64",
+    "browser": "Playwright Chromium headless 1208 / Playwright 1.58.2",
+    "origin": "http://localhost:5173",
+    "wine": "11.0",
+    "renderer": "GDI",
+    "runtime": "Boxedwine 26.1.0 CI build87, commit65467424603484756a73308412f40b906d28b650",
+    "gameArchiveSha256": "a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb",
+    "gameFileCount": 1683,
+    "defaultEngine": "SingleThreadedJitFocus",
+    "editions": {
+      "alpha-centauri": "terran.exe",
+      "alien-crossfire": "terranx.exe"
+    },
+    "wasmSha256": "db4d1d8e601bb03cd4674eda0d05df621039a8e1d5e706b0fedcc886fc7de5a8",
+    "patchProvenance": [
+      "analysis/runtime/jit/diagnosis.md",
+      "analysis/runtime/jit/focus-provenance.json",
+      "analysis/runtime/jit/browser-build-recipe.json"
+    ]
+  },
+  "checks": {
+    "mainMenu": {
+      "status": "observed",
+      "detail": "Both editions reached their native menus on the selected repaired JIT. Alien Crossfire also reached its menu on the untouched interpreter.",
+      "screenshots": [
+        "analysis/runtime/browser-native-reload/focus-menu-now.png",
+        "analysis/runtime/browser-base-focus/base-boot-progress.png"
+      ]
+    },
+    "newGame": {
+      "status": "observed",
+      "detail": "Alien Crossfire Quick Start founded Alpha Prime (interpreter); clean-profile base Alpha Centauri Quick Start generated a Gaian world and accepted keyboard naming of browser gaia (repaired JIT).",
+      "screenshots": [
+        "analysis/runtime/browser-probe/native-first-base-confirmed.png",
+        "analysis/runtime/browser-base-focus/base-keyboard-name-typed.png",
+        "analysis/runtime/browser-base-focus/base-world-browser-gaia.png"
+      ]
+    },
+    "baseManagement": {
+      "status": "observed",
+      "detail": "Opened original base control interface with nutrients, minerals, energy, allocation, and production.",
+      "screenshot": "analysis/runtime/browser-probe/native-scout-moved.png"
+    },
+    "unitMovement": {
+      "status": "observed",
+      "engine": "SingleThreadedJitFocus",
+      "detail": "Alien Crossfire scout moved with ArrowLeft from (45,25) to (43,25) after native reload. Base Alpha Centauri scout moved northeast with PageUp to (73,55). Both reveal terrain outside the base.",
+      "screenshots": [
+        "analysis/runtime/browser-native-reload/native-world-final.png",
+        "analysis/runtime/browser-base-focus/native-world-final.png"
+      ]
+    },
+    "endTurn": {
+      "status": "observed",
+      "detail": "Both repaired-JIT worlds advanced from Mission Year 2101 / Energy 11 to 2102 / Energy 12 after unit actions. Independently, the earlier disjoint-JIT run advanced a turn through Turn Complete and its unmoved-units confirmation.",
+      "screenshots": [
+        "analysis/runtime/browser-native-reload/native-world-final.png",
+        "analysis/runtime/browser-base-focus/native-world-final.png",
+        "analysis/runtime/browser-jit-disjoint/jit-next-turn.png"
+      ]
+    },
+    "nativeSave": {
+      "status": "observed",
+      "detail": "Alien Crossfire interpreter created a 2101 native save through Game > Save Game. Repaired JIT: Ctrl+S opened the native Save dialog in both editions and Enter created a 2102 save in each. Exported files match in-browser SHA256.",
+      "screenshots": [
+        "analysis/runtime/browser-probe/native-save-dialog.png",
+        "analysis/runtime/browser-native-reload/native-control-s-save-dialog.png",
+        "analysis/runtime/browser-base-focus/native-control-s-save-dialog.png"
+      ]
+    },
+    "nativeSavePersistenceAndExport": {
+      "status": "observed",
+      "detail": "Closed Chromium, reopened same browser profile on focus candidate, downloaded the game-created save. SHA256 matches bytes written before process restart.",
+      "screenshot": "analysis/runtime/browser-native-reload/native-saved-file-persisted.png"
+    },
+    "nativeLoadAfterRestart": {
+      "status": "observed",
+      "edition": "alien-crossfire",
+      "detail": "Fully closed Chromium after native 2101 save, restarted same browser profile using repaired JIT, exported byte-identical save, selected it in native Load Game, accepted Aki Zeta-5 / 2101 confirmation, and restored Alpha Prime, Scout Patrol, map, and Energy 11. Subsequently moved scout and saved 2102. This round trip crosses interpreter to repaired-JIT emulator modes.",
+      "screenshots": [
+        "analysis/runtime/browser-native-reload/native-load-dialog-after-restart.png",
+        "analysis/runtime/browser-native-reload/native-save-loaded.png",
+        "analysis/runtime/browser-native-reload/native-loaded-world.png"
+      ]
+    },
+    "audio": {
+      "status": "partially-observed",
+      "detail": "AudioWorklet initialized at22050Hz stereo and original WAV resources opened; audible correctness was not evaluated in headless testing."
+    },
+    "movies": {
+      "status": "unverified",
+      "detail": "All installed movie assets included; opening movie disabled by copied compatibility INI."
+    },
+    "baseEdition": {
+      "status": "observed",
+      "detail": "Separate clean browser profile, terran.exe on repaired JIT: native menu, new Gaian game, keyboard base naming, scout movement, year 2102, native save and export. Native reload of this separate base-edition save was not exercised.",
+      "screenshot": "analysis/runtime/browser-base-focus/native-world-final.png"
+    },
+    "browserSaveImportUI": {
+      "status": "observed",
+      "evidence": "analysis/runtime/storage-ui-test/validation.json",
+      "detail": "Real pre-existing save import/download/reload preserves SHA256; two invalid headers rejected. This separate test did not start the native game."
+    },
+    "keyboard": {
+      "status": "observed",
+      "engine": "SingleThreadedJitFocus",
+      "detail": "Base edition: ArrowDown menu selection, Enter Quick Start, base-name typing, Enter founding, diagonal movement. Both editions: Ctrl+S and Command+S opened native save dialog; Escape returned to world. Wrapper forwards shortcuts only when game canvas has focus.",
+      "screenshots": [
+        "analysis/runtime/browser-base-focus/base-keyboard-menu-selection.png",
+        "analysis/runtime/browser-base-focus/base-keyboard-name-typed.png",
+        "analysis/runtime/browser-native-reload/native-command-s-save-dialog.png",
+        "analysis/runtime/browser-base-focus/native-command-s-save-dialog.png"
+      ]
+    },
+    "baseEditionNativeReload": {
+      "status": "unverified",
+      "detail": "Full native restart/load acceptance used Alien Crossfire; base edition save creation/export were tested separately."
+    },
+    "prescribedSkillClient": {
+      "status": "observed",
+      "detail": "Exact local copy of prescribed develop-web-game Playwright client ran after final player changes; verifies wrapper ready state, selected engine, diagnostics and no console error before native Start. Native acceptance uses the persistent probe separately.",
+      "evidence": [
+        "analysis/runtime/skill-final/state-0.json",
+        "analysis/runtime/skill-final/shot-0.png"
+      ]
+    },
+    "wholeCampaign": {
+      "status": "unverified",
+      "detail": "No complete campaign, victory, every-faction or every-mechanic regression test."
+    },
+    "multiplayer": {
+      "status": "unverified",
+      "detail": "Networking is disabled in the local runtime configuration."
+    },
+    "otherBrowsersAndMobile": {
+      "status": "unverified",
+      "detail": "Acceptance ran on headless Playwright Chromium on macOS arm64."
+    }
+  },
+  "nativeSave": {
+    "name": "Aki Zeta-5 of the Consciousness, 2101.SAV",
+    "bytes": 288396,
+    "sha256": "f80fefa5cf5b317716513bed7f8cea3d3fcc16bbf209352bd1675e3660a4b6b5",
+    "export": "analysis/runtime/browser-native-reload/native-roundtrip.SAV",
+    "createdEngine": "SingleThreaded",
+    "restartedEngine": "SingleThreadedJitFocus"
+  },
+  "startupTiming": {
+    "interpreterNativeStartApproxUTC": "2026-10-14T18:45:06Z",
+    "titleArtworkOpenedUTC": "2026-10-14T18:51:29.872Z",
+    "firstMenuScreenshotUTC": "2026-10-14T18:54:10Z",
+    "interpretation": "~6m24s to title resource; menu only confirmed by later screenshot. Diagnostic file logging and concurrent local work were active."
+  },
+  "limitations": [
+    "Complete campaigns, victories, every faction/mechanic, multiplayer, other browsers, and mobile have not been validated.",
+    "Opening movies are disabled in copied INI; asset inclusion does not establish every codec or audible correctness.",
+    "Official untouched JIT failed code invalidation, and pinned X11 focus prevented keyboard use. Selected emulator includes documented local fixes; these tests do not establish universal emulator correctness.",
+    "Native save/reload after process restart was validated in Alien Crossfire across interpreter and repaired JIT. Base edition native save/export passed; its separate native reload was not exercised.",
+    "Startup remains multi-minute and host dependent; wrapper Runtime active does not imply native menu readiness."
+  ],
+  "finalRunConsoleErrors": {
+    "browser-native-reload": [],
+    "browser-base-focus": []
+  },
+  "repairedJitNativeSaves": [
+    {
+      "edition": "alien-crossfire",
+      "name": "Aki Zeta-5 of the Consciousness, 2102.SAV",
+      "bytes": 288396,
+      "sha256": "00030f02540e30b782bb2710b3575ee5245661f632925db537a47411bd73ee1d",
+      "export": "analysis/runtime/browser-native-reload/native-2102.SAV",
+      "engine": "SingleThreadedJitFocus",
+      "evidence": "analysis/runtime/browser-native-reload/native-save-evidence.json"
+    },
+    {
+      "edition": "alpha-centauri",
+      "name": "Deirdre of the Gaians, 2102.SAV",
+      "bytes": 286680,
+      "sha256": "9ff0c40153349baf46fc591372fd5ee52deba55fe111b6fbcfc8bc284d22efdb",
+      "export": "analysis/runtime/browser-base-focus/native-2102.SAV",
+      "engine": "SingleThreadedJitFocus",
+      "evidence": "analysis/runtime/browser-base-focus/native-save-evidence.json"
+    }
+  ],
+  "evidenceArtifacts": [
+    {
+      "path": "analysis/runtime/browser-native-reload/focus-menu-now.png",
+      "sha256": "a832c19f3983554e61be3706894e26a867c6d8583068eb94e12f3e4264585923"
+    },
+    {
+      "path": "analysis/runtime/browser-base-focus/base-boot-progress.png",
+      "sha256": "08eff13ce8738e05069d7c455ede2b9dcbed298642d820c19348758dc938994d"
+    },
+    {
+      "path": "analysis/runtime/browser-probe/native-first-base-confirmed.png",
+      "sha256": "bc7b2cbcc0addf8fa46f29937550ec37142302e02f34fce58c9bb7c7e31733c2"
+    },
+    {
+      "path": "analysis/runtime/browser-base-focus/base-keyboard-name-typed.png",
+      "sha256": "a99142272b6f710baa7074929ea363632a0eab5396f5c0c7b095a0b9ab868012"
+    },
+    {
+      "path": "analysis/runtime/browser-base-focus/base-world-browser-gaia.png",
+      "sha256": "96b779d8f5e90fc4486b1dca4be4089513a33e820f38c0fdd343d32ef20aec81"
+    },
+    {
+      "path": "analysis/runtime/browser-probe/native-scout-moved.png",
+      "sha256": "3ec74298bb670ca84021d48a6c5b79c83112004d6bbd1d9934d7bd5ceb6a0fde"
+    },
+    {
+      "path": "analysis/runtime/browser-native-reload/native-world-final.png",
+      "sha256": "f56299148bac25931db3862504690f138f797ca7ab888dee5435bed9315d4d10"
+    },
+    {
+      "path": "analysis/runtime/browser-base-focus/native-world-final.png",
+      "sha256": "7bfc0635271bede6018e13ec3837288b3c600b689e75efbce5d8519062b0bc53"
+    },
+    {
+      "path": "analysis/runtime/browser-jit-disjoint/jit-next-turn.png",
+      "sha256": "bf4173bd9684fd3bbba8ab9bcbc1c69d32e8264d6da7ca4a83a9894b131348ae"
+    },
+    {
+      "path": "analysis/runtime/browser-probe/native-save-dialog.png",
+      "sha256": "5b6b7cc56008403a9174927b3e3f30a5d6fdc757cc4957387b375733b1566622"
+    },
+    {
+      "path": "analysis/runtime/browser-native-reload/native-control-s-save-dialog.png",
+      "sha256": "420269ab918cef2d7b633f80d73f002a41b10b51b5076bcde91dbbe28f8aeafb"
+    },
+    {
+      "path": "analysis/runtime/browser-base-focus/native-control-s-save-dialog.png",
+      "sha256": "6cae575367ce424c554bcd56932d05afd731bf37d7690fec52d0643e1fde2e39"
+    },
+    {
+      "path": "analysis/runtime/browser-native-reload/native-saved-file-persisted.png",
+      "sha256": "c7cbf4372ae8bef2343ec8d2e5d6476998a7690bca17555000ba7a2279e1fbff"
+    },
+    {
+      "path": "analysis/runtime/browser-native-reload/native-load-dialog-after-restart.png",
+      "sha256": "1a9bc0fa6b312430c50f1f8e87e25f77172b237e2e560a98efefc4c6aa66cee7"
+    },
+    {
+      "path": "analysis/runtime/browser-native-reload/native-save-loaded.png",
+      "sha256": "b57ac44de8d35f6884978f09ba501b278e5b937abbce14837d2aa5ea9141c086"
+    },
+    {
+      "path": "analysis/runtime/browser-native-reload/native-loaded-world.png",
+      "sha256": "57a9c568018266782e271c47da58fcaf84e66c0dbf7e92ebff295d2626fa8be5"
+    },
+    {
+      "path": "analysis/runtime/storage-ui-test/validation.json",
+      "sha256": "a988d28847ca33281f04fcfb33f9b5b3624b50244b5ba242991b6bfed8520ccb"
+    },
+    {
+      "path": "analysis/runtime/browser-base-focus/base-keyboard-menu-selection.png",
+      "sha256": "69a391725818b052eacb075ac0d36c54466705d578417b9cb6503c9feba2deab"
+    },
+    {
+      "path": "analysis/runtime/browser-native-reload/native-command-s-save-dialog.png",
+      "sha256": "3218c9c80287646e93f067b4c9703ab93bb9c021196895b886e350b03a84f80a"
+    },
+    {
+      "path": "analysis/runtime/browser-base-focus/native-command-s-save-dialog.png",
+      "sha256": "2e4672e9eaa9945cb1e781546baa7934a0f704176a8af605b9124df001eea85d"
+    },
+    {
+      "path": "analysis/runtime/skill-final/state-0.json",
+      "sha256": "c9c7cc7318284f9e9483cee44a0af1a7f9efc4f4a6de8474a1584d20d08374fe"
+    },
+    {
+      "path": "analysis/runtime/skill-final/shot-0.png",
+      "sha256": "a2062d0ad8665fe6adf3dff9d529e5712d6442ca0d721cd75ec6c9c4bfb4d265"
+    }
+  ],
+  "cleanup": "Owned runtime probe browsers/processes closed after capturing evidence; local static server left running."
+}

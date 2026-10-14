@@ -1,0 +1,162 @@
+{
+  "scope": "Read-only save import path investigation",
+  "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+  "runtime_base_commit": "65467424603484756a73308412f40b906d28b650",
+  "observed_browser_results": "Reported by parent agent, not independently run by this subagent",
+  "files": [
+    {
+      "path": "analysis/native/save-import-close.json",
+      "bytes": 251,
+      "sha256": "fb3beac94c0871148d4cdb98bf38d13aafaa4e281a422cb0995a943c16648a51"
+    },
+    {
+      "path": "analysis/native/save-import-custom-dialog.json",
+      "bytes": 13964,
+      "sha256": "c174e58d0d238c0877a834f0a709c00e4c40d18d94affdb1ae18eb8a1918c9e1",
+      "evidence_id": "ev_f4387efdeb5bfef3744156632ed015268c6987b2797a4ec396957a61514e4569"
+    },
+    {
+      "path": "analysis/native/save-import-custom-picker-filter.json",
+      "bytes": 10186,
+      "sha256": "be6d373e9c1714d4161535bdb5fae2d8ccc345224ca87887c417927bc764573f",
+      "evidence_id": "ev_39588bedd48f1eb0b9433b4f7a18e0bccaa707407f58ca203253c31acd837f04"
+    },
+    {
+      "path": "analysis/native/save-import-custom-picker-loop.json",
+      "bytes": 16976,
+      "sha256": "ea5decd41025eea700b6fd3dac2d32acd8467f5189339afe8148ec16ccd5108c",
+      "evidence_id": "ev_296a87c107a348734f0fc7756bb88460b509770423f52bc9d655284bdac620e6"
+    },
+    {
+      "path": "analysis/native/save-import-custom-picker-path.json",
+      "bytes": 13438,
+      "sha256": "21cec94e0debefce98db9f870f439a0e065658b8efb827bcdbe8f86bb035271d",
+      "evidence_id": "ev_961a29de40dc0e3544624a8b2e40dedc14b7714cadb86cdfb2be8f1fc55ad80d"
+    },
+    {
+      "path": "analysis/native/save-import-evidence-bundle.json",
+      "bytes": 212925,
+      "sha256": "02a3a089d018f15ec3967c067b67b857d1805001022a0a656721485b99a65443"
+    },
+    {
+      "path": "analysis/native/save-import-export.json",
+      "bytes": 477,
+      "sha256": "5e49775264780f07e2096dbcef559ded5757ca2ad58229abe9a81f76167691d6"
+    },
+    {
+      "path": "analysis/native/save-import-file-dialog-dispatch.json",
+      "bytes": 12918,
+      "sha256": "b7162a0280a7f357b3197bea910aa6e95cb7c72f18819e7166cf9c91f6012438",
+      "evidence_id": "ev_fb5211b7e9fca667c82ce5788e63f5190ac0f6825a58619cde60d6e12d68c224"
+    },
+    {
+      "path": "analysis/native/save-import-findfirst-callers.json",
+      "bytes": 9230,
+      "sha256": "9c1feefc04e6a6bcb62635f90596989c58b7674f8eef56fd2cb25f0b04abbac2",
+      "evidence_id": "ev_3d9eb1415a7ebd85f239d9f01c414a4ab732b14a0fb9e3be979d0800c70629e1"
+    },
+    {
+      "path": "analysis/native/save-import-game-loader.json",
+      "bytes": 30756,
+      "sha256": "29cbe4bda24bfe53dd468d195bad567855c4d5fd0e294a72fd704941002595d6",
+      "evidence_id": "ev_9f61853c3dc5245355a7b1de8741dc8d2607f8090657a01e5f9383312d27d553"
+    },
+    {
+      "path": "analysis/native/save-import-load-caller.json",
+      "bytes": 22326,
+      "sha256": "dcd7504798bfbe91842e44b666613604ca2f63d4a36e8063b95da10948e45afc",
+      "evidence_id": "ev_eb67ff459ee144f4b9c4df08e2fc14b6fe47a6e1ab9dbc99e8e24ae9fb7f9de4"
+    },
+    {
+      "path": "analysis/native/save-import-load-callers.json",
+      "bytes": 8834,
+      "sha256": "d8117dd123325495af3176cdee08f86e260b4a4bad348b396668f9334c49f3cc",
+      "evidence_id": "ev_b63b5ae057c9552aa5827095254b20d11b04d29815e86a1acab691be892c1baf"
+    },
+    {
+      "path": "analysis/native/save-import-load-dialog-instructions.json",
+      "bytes": 117660,
+      "sha256": "2388f9bfb2c5d08368be0294d50001a86de2b63980d43858034b54f9d2f956c7",
+      "evidence_id": "ev_a69cfbb16479212e8991ac9509714dc7eb45582e2922dc111b375f1ca72f703b"
+    },
+    {
+      "path": "analysis/native/save-import-load-dialog.json",
+      "bytes": 45800,
+      "sha256": "234376f1d7871266ecc604f1a5c42a1f14b8194e254d4eb2eecde5fbda575aaa",
+      "evidence_id": "ev_bc5316ef9099368fb781c7e81099f1373a1cad6e3b00a342f4c82b751d62771d"
+    },
+    {
+      "path": "analysis/native/save-import-load-neighbor.json",
+      "bytes": 14956,
+      "sha256": "5c6ecca85b8c5c376e1cbc337a3ecdff063a0ef236c2f8e01df73b909c088f08",
+      "evidence_id": "ev_10aa9ba051d922a83d344c103697b9bd2c619c0308b8dd530aac4b860bb216bb"
+    },
+    {
+      "path": "analysis/native/save-import-loadgame-xrefs.json",
+      "bytes": 8233,
+      "sha256": "73660c9a48f04b6add1c008777f3be9f19eafb16eca4d5304bda25f7a0049b91",
+      "evidence_id": "ev_e86321fdec22db9cdf9846b3bdb0b4fe02e8838f30d0a505511a3b6873020cb9"
+    },
+    {
+      "path": "analysis/native/save-import-normalize-filename.json",
+      "bytes": 10774,
+      "sha256": "cb5ad40d59ab436b1f81088b07917798cdae7f0d9429d007d303caf34802fdea",
+      "evidence_id": "ev_f1beb3937aa9eeb9691dc416f4034f8bd1820dac30a9a9c291323d4818337139"
+    },
+    {
+      "path": "analysis/native/save-import-open.json",
+      "bytes": 900,
+      "sha256": "349e1c15979e12abcba143a94fee78f8dfd175ee27e4fd2be14086bb83be9f77"
+    },
+    {
+      "path": "analysis/native/save-import-picker-accept-a.json",
+      "bytes": 18354,
+      "sha256": "664c640a5ecb2934217480f689d0f72cc7d39ac2e3c96137c4fdce76fcb54afe",
+      "evidence_id": "ev_301564dfcaa37374497e94af6b5acd44bafffeb7798fe0b2377bc7865aa2298a"
+    },
+    {
+      "path": "analysis/native/save-import-picker-accept-b.json",
+      "bytes": 29008,
+      "sha256": "e8ea6f54db6a0e8ebd1add0375fa939a2e87397cf260be3c824eb54be31057c4",
+      "evidence_id": "ev_f94b7a635cb6901c51f2cf474858e82f3c9100cf6944bf307130c33cc5495777"
+    },
+    {
+      "path": "analysis/native/save-import-picker-accept-instructions.json",
+      "bytes": 59544,
+      "sha256": "d9495d8a4a0893aac3071c46c9d7d599e788bd24c8d4b699a1f6b144576563d1",
+      "evidence_id": "ev_3d4e3ed10f808068b9fcabbd510c13d7a45d5c22c44735cc7e38ef692010f750"
+    },
+    {
+      "path": "analysis/native/save-import-picker-directory.json",
+      "bytes": 23450,
+      "sha256": "497f14b166cb2c5734746598fe5eddf295a4fe0c8acd88e40edf6e841589bcf4",
+      "evidence_id": "ev_91ca2e3047d09a5e407f4def67c379683356cedd23ca06480297a558d4175c14"
+    },
+    {
+      "path": "analysis/native/save-import-set-directory.json",
+      "bytes": 11888,
+      "sha256": "40b691e4934c8ed11b9e7c8e0737c48e7de9a94e6b7b2d2091a68c17e0f5f76f",
+      "evidence_id": "ev_9a9cafe54ad5debd6b4075db5868c26286eb6d5c8dbfe4e5d7b6bb2f64487ccb"
+    },
+    {
+      "path": "analysis/runtime/jit/Boxedwine-disjoint/source/sdl/startupArgs.cpp",
+      "bytes": 44768,
+      "sha256": "b2394a76be956c6cbc13fb9fb356d58494f9588e9998864a9dd8a9de7f0aea55"
+    },
+    {
+      "path": "analysis/runtime/jit/Boxedwine-disjoint/source/io/fsnode.cpp",
+      "bytes": 12341,
+      "sha256": "57d037a8b91a1a19051b42c0795ac6be69ba4014f1a60cb7a0c64c2cf3f45637"
+    },
+    {
+      "path": "analysis/runtime/jit/Boxedwine-disjoint/source/io/fs.cpp",
+      "bytes": 23551,
+      "sha256": "081e516513627abe9d455a82144d9e68fb76934823edcde844a763b9eceedfc4"
+    },
+    {
+      "path": "analysis/runtime/jit/Boxedwine-disjoint/source/io/fsfilenode.cpp",
+      "bytes": 29921,
+      "sha256": "ee0da2b35b2b953b68f605bbe66ee29b69bc536352e65323a4f9c552f78d5e5e"
+    }
+  ]
+}

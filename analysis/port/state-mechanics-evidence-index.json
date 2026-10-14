@@ -1,0 +1,233 @@
+[
+  {
+    "file": "../native/port-code-base-stage-4ef1c0.json",
+    "pseudocode": "../native/port-code-base-stage-4ef1c0.c",
+    "evidence_id": "ev_a14415758bace350169843a4562ef9291d5033ca42a6d0dc047256c9879f87f7",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x4ef1c0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-base-stage-4f4830.json",
+    "pseudocode": "../native/port-code-base-stage-4f4830.c",
+    "evidence_id": "ev_66f5d26606dc9da7c8116b363bfc6847ff6d33e2666898bbf522961bea836a49",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x4f4830"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-base-upkeep.json",
+    "pseudocode": "../native/port-code-base-upkeep.c",
+    "evidence_id": "ev_13fcd03ce7d7d4b1d938437a69247ad55c778ab682089b5f7967ba81e099116d",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x4f79c0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-growth-cost-factor.json",
+    "pseudocode": "../native/port-code-growth-cost-factor.c",
+    "evidence_id": "ev_4314ac9386434d96365d29d806140284cd98aeab82a03b4b4eedc7f084d8fff4",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x4e4430"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-map-allocation.json",
+    "pseudocode": "../native/port-code-map-allocation.c",
+    "evidence_id": "ev_4d8afffb48cc79eadb4b5a8f846edd253779f08ba94d897c58912a25f55e442a",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x590ed0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-map-load.json",
+    "pseudocode": "../native/port-code-map-load.c",
+    "evidence_id": "ev_7a16b94b0f070f2abba612e46c040ad27616669e0ab69c8845a38ac00e62600e",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x591130"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-map-save.json",
+    "pseudocode": "../native/port-code-map-save.c",
+    "evidence_id": "ev_3908bc07c956a80709ee9c94aba81870adf7a2d472caf7ed20dc31a72bbfa899",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5910b0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-round-advance.json",
+    "pseudocode": "../native/port-code-round-advance.c",
+    "evidence_id": "ev_99a2e917e2c565c9c248b706e18a0c10e2bb68471560cdff5eca4adc813f6dbd",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5258c0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-tile-flags-set.json",
+    "pseudocode": "../native/port-code-tile-flags-set.c",
+    "evidence_id": "ev_8c71a2e07d1023dbd72be54300c7b1d668b9090e417470a6a8c726c55579208c",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x591d60"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-tile-owner-set.json",
+    "pseudocode": "../native/port-code-tile-owner-set.c",
+    "evidence_id": "ev_82f43eb70d5b12082c71e0f49c35f3c669516f9a419a441f143d73ae3533dbac",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x591b10"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-turn-candidate.json",
+    "pseudocode": "../native/port-code-turn-candidate.c",
+    "evidence_id": "ev_3172cc12e0083436e06f898d5adc73a5f2ad5d14b53883cb7186573af7646cc4",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x527290"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-turn-dispatch.json",
+    "pseudocode": "../native/port-code-turn-dispatch.c",
+    "evidence_id": "ev_5e015772ab532fb33788249c323009dcb725bd307f53a9825068428be1c86e95",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5275b0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-turn-stage-526030.json",
+    "pseudocode": "../native/port-code-turn-stage-526030.c",
+    "evidence_id": "ev_eb8d3b5e2c6a94cdbea2e4b50b4f2e1b9b0dfeeb5bb20d20d6040d0b4df58656",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x526030"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-turn-stage-526e70.json",
+    "pseudocode": "../native/port-code-turn-stage-526e70.c",
+    "evidence_id": "ev_b74492945595a017d4c78741deb5e616a26ede8e6e53febdd1c89e56c428845d",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x526e70"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-turn-stage-5b44d0.json",
+    "pseudocode": "../native/port-code-turn-stage-5b44d0.c",
+    "evidence_id": "ev_4afbf9de2bcbfff70f8cacb58b62d073f54189a77544632edf4e7c0b3a8c2b2e",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5b44d0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-turn-to-year.json",
+    "pseudocode": "../native/port-code-turn-to-year.c",
+    "evidence_id": "ev_e62a0250d8d981c831cc843b4554f3a0a9e4d5ffca44e72da003b36ce06412f9",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5c89a0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-unit-at-coordinate.json",
+    "pseudocode": "../native/port-code-unit-at-coordinate.c",
+    "evidence_id": "ev_d2d251ada8c49552e9a3d07889bad1bb3816f72990bcff03437acd848ae265ab",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5bfe90"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-unit-create.json",
+    "pseudocode": "../native/port-code-unit-create.c",
+    "evidence_id": "ev_aa72eb59bfe424ae93a178ffd8742207a01839de15976456424e845a25b33681",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5c03d0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-unit-initialize.json",
+    "pseudocode": "../native/port-code-unit-initialize.c",
+    "evidence_id": "ev_36c9d4ac3b3e48c7df84357acbbeb9a3c243d9e450effe1d90bc6bb64523610a",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5c02d0"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-code-unit-placement.json",
+    "pseudocode": "../native/port-code-unit-placement.c",
+    "evidence_id": "ev_03fc28482af3a12e32b1ecc167e90fe26e100ecf5e8f3db97749f84cc95b3271",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5c0080"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  },
+  {
+    "file": "../native/port-callers-faction-upkeep.json",
+    "pseudocode": null,
+    "evidence_id": "ev_e979c3d0bc82d79ab217292290606c8d47801d8452cd5dea94575324f3d71fed",
+    "operation": "procedure_callers",
+    "parameters": {
+      "procedure": "0x527290"
+    },
+    "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+    "analysis_profile_sha256": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+  }
+]

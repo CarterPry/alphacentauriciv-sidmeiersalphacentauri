@@ -1,0 +1,30 @@
+Apple clang version 21.0.0 (clang-2100.1.1.101)
+Target: arm64-apple-darwin25.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+disjoint owners: 0->0 1->0 2->0 5->5 6->5 7->5
+  PASS: expected complete, observed complete
+contained owners: 0->0 1->0 2->0 3->0 4->0 5->0
+  PASS: expected complete, observed complete
+crossing-equal-length owners: 0->0 1->0 2->0 3->2 4->2
+  PASS: expected uncleared-tail, observed uncleared-tail
+crossing-longer-second owners: 0->0 1->0 2->2 3->2 4->2 5->2
+  caught: KMemory::commitPreparedCodeInvalidation nextOp->blockStart
+  PASS: expected assertion, observed assertion
+crossing-free-entry owners: 0->0 1->0 2->2 3->2 4->2 5->2
+  caught: KMemory::commitPreparedCodeInvalidation nextOp->blockStart
+  PASS: expected assertion, observed assertion
+fixed-disjoint owners: 0->0 1->0 2->0 5->5 6->5 7->5
+  PASS: expected complete, observed complete
+fixed-contained owners: 0->0 1->0 2->0 3->0 4->0 5->0
+  PASS: expected complete, observed complete
+fixed-crossing-equal-length owners: 0->0 1->0 2->0
+  PASS: expected complete, observed complete
+fixed-crossing-longer-second owners: 0->0 1->0 2->0
+  PASS: expected complete, observed complete
+fixed-crossing-free-entry owners: 2->2 3->2 4->2 5->2
+  PASS: expected complete, observed complete
+PASS: short decoded chain rejected
+
+exitCode=0

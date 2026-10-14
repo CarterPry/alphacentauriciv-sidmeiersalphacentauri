@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "inspected_at_utc": "2026-10-14T21:21:01.233557+00:00",
+  "repository": "https://github.com/MisaDev4/bo1-zombies-decompiled",
+  "commit": "102f6992be332610aff587e681e3180b15f395bb",
+  "commit_metadata": [
+    "102f6992be332610aff587e681e3180b15f395bb",
+    "2026-10-03T23:16:55-07:00",
+    "BO1 Zombies: engine source, base data, mods, launcher, map kit tools"
+  ],
+  "checkout": "analysis/reference/bo1-zombies-decompiled",
+  "checkout_mode": "Shallow, blob-filtered sparse checkout: root files and src/; other directories not checked out",
+  "checkout_clean": true,
+  "ignored_by_workspace_git": true,
+  "acquisition_commands": [
+    "git ls-remote https://github.com/MisaDev4/bo1-zombies-decompiled HEAD",
+    "git -c core.hooksPath=/dev/null clone --depth=1 --filter=blob:none --sparse https://github.com/MisaDev4/bo1-zombies-decompiled analysis/reference/bo1-zombies-decompiled",
+    "git -c core.hooksPath=/dev/null sparse-checkout set src"
+  ],
+  "repository_code_executed": false,
+  "build_attempted": false,
+  "performance_benchmark_attempted": false,
+  "files": [
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "5572ff0d7b26240c10d705fed7ce41712c01e5488f5dff5475483af1c43889ff",
+      "bytes": 5799,
+      "line_count": 129,
+      "role": "C++20 Win32/x86 executable, release flags, DirectX SDK/libs, debug Tracy definitions",
+      "anchors": [
+        {
+          "start_line": 6,
+          "end_line": 7,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/CMakeLists.txt#L6-L7"
+        },
+        {
+          "start_line": 32,
+          "end_line": 35,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/CMakeLists.txt#L32-L35"
+        },
+        {
+          "start_line": 49,
+          "end_line": 62,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/CMakeLists.txt#L49-L62"
+        },
+        {
+          "start_line": 75,
+          "end_line": 105,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/CMakeLists.txt#L75-L105"
+        }
+      ]
+    },
+    {
+      "path": "cmake_files.cmake",
+      "sha256": "45690fbde76ff839bff32bfcd2824aef220a416520e742dccf1946d23342f087",
+      "bytes": 110419,
+      "line_count": 3029,
+      "role": "Direct source-code executable target",
+      "anchors": [
+        {
+          "start_line": 2970,
+          "end_line": 2990,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/cmake_files.cmake#L2970-L2990"
+        }
+      ]
+    },
+    {
+      "path": "Play.bat",
+      "sha256": "3caad0f0e9d8844ae5c4839c32f6ba78c73424a3eb174202df38bf8e3f3ada0c",
+      "bytes": 502,
+      "line_count": 7,
+      "role": "Native executable launch",
+      "anchors": [
+        {
+          "start_line": 4,
+          "end_line": 7,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/Play.bat#L4-L7"
+        }
+      ]
+    },
+    {
+      "path": "README.md",
+      "sha256": "02e9366752fb684bf1058016e85b98bed51c399ebe1e38fec0cc6393c0978dfa",
+      "bytes": 168,
+      "line_count": 7,
+      "role": "Stated decompiled-engine scope; README contains no benchmark procedure",
+      "anchors": [
+        {
+          "start_line": 1,
+          "end_line": 7,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/README.md#L1-L7"
+        }
+      ]
+    },
+    {
+      "path": "src/gfx_d3d/r_init.cpp",
+      "sha256": "621eb3f50e0b986178953681a36fb7e35793d34a5929249228c2c1cc232e788a",
+      "bytes": 78299,
+      "line_count": 2254,
+      "role": "Hardware vertex processing and native D3D9/9Ex creation",
+      "anchors": [
+        {
+          "start_line": 329,
+          "end_line": 340,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/gfx_d3d/r_init.cpp#L329-L340"
+        },
+        {
+          "start_line": 454,
+          "end_line": 482,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/gfx_d3d/r_init.cpp#L454-L482"
+        },
+        {
+          "start_line": 1168,
+          "end_line": 1182,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/gfx_d3d/r_init.cpp#L1168-L1182"
+        }
+      ]
+    },
+    {
+      "path": "src/gfx_d3d/r_state.cpp",
+      "sha256": "3e542ec2704bb9ff579f0996d8caa765aed31aa9e898100873daaeba56d8a7ae",
+      "bytes": 121321,
+      "line_count": 3294,
+      "role": "Direct3D indexed triangle draw call",
+      "anchors": [
+        {
+          "start_line": 1017,
+          "end_line": 1039,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/gfx_d3d/r_state.cpp#L1017-L1039"
+        }
+      ]
+    },
+    {
+      "path": "src/gfx_d3d/r_buffers.cpp",
+      "sha256": "5eef426ce814819b9ed0bfb5e8d20a38e982f409909848cebbfb97616cc64de4",
+      "bytes": 25370,
+      "line_count": 670,
+      "role": "Native vertex/index buffer creation",
+      "anchors": [
+        {
+          "start_line": 94,
+          "end_line": 97,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/gfx_d3d/r_buffers.cpp#L94-L97"
+        },
+        {
+          "start_line": 191,
+          "end_line": 200,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/gfx_d3d/r_buffers.cpp#L191-L200"
+        }
+      ]
+    },
+    {
+      "path": "src/gfx_d3d/r_rendercmds.cpp",
+      "sha256": "395ad01dd68473649a01bb011dfb1ef2614c677302e29210df38ae68becbd08c",
+      "bytes": 85223,
+      "line_count": 2639,
+      "role": "Render thread creation, synchronization, handoff and synchronous fallback",
+      "anchors": [
+        {
+          "start_line": 375,
+          "end_line": 418,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/gfx_d3d/r_rendercmds.cpp#L375-L418"
+        },
+        {
+          "start_line": 436,
+          "end_line": 466,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/gfx_d3d/r_rendercmds.cpp#L436-L466"
+        }
+      ]
+    },
+    {
+      "path": "src/gfx_d3d/rb_backend.cpp",
+      "sha256": "8bb0f9155814b05b2986ee59e3046e777d3d7fa995be701a0482b3067581ab87",
+      "bytes": 240382,
+      "line_count": 6492,
+      "role": "Presentation timing and render backend dispatch",
+      "anchors": [
+        {
+          "start_line": 5234,
+          "end_line": 5252,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/gfx_d3d/rb_backend.cpp#L5234-L5252"
+        },
+        {
+          "start_line": 5793,
+          "end_line": 5855,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/gfx_d3d/rb_backend.cpp#L5793-L5855"
+        }
+      ]
+    },
+    {
+      "path": "src/qcommon/threads.cpp",
+      "sha256": "d4faf3ec0f04f1ce240280cabaeab0239aed113354632d9e3bf2eab2b342d3a0",
+      "bytes": 35885,
+      "line_count": 1219,
+      "role": "Win32 event creation and render-thread creation",
+      "anchors": [
+        {
+          "start_line": 196,
+          "end_line": 246,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/qcommon/threads.cpp#L196-L246"
+        }
+      ]
+    },
+    {
+      "path": "src/universal/com_workercmds.cpp",
+      "sha256": "17a09edff216fe5db1d3c54cbd6a30d732edc131f722c8025457b0ada79b0afb",
+      "bytes": 6038,
+      "line_count": 219,
+      "role": "Batch submission, fences, measured wait, assist while waiting",
+      "anchors": [
+        {
+          "start_line": 78,
+          "end_line": 127,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/universal/com_workercmds.cpp#L78-L127"
+        }
+      ]
+    },
+    {
+      "path": "src/win32/win_main.cpp",
+      "sha256": "20d3990d6c650bc0cb94c40de5fd8ec1d18ee56963afcb74f2f2ad933d9f4fc2",
+      "bytes": 102909,
+      "line_count": 2521,
+      "role": "Native process frame loop",
+      "anchors": [
+        {
+          "start_line": 2412,
+          "end_line": 2426,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/win32/win_main.cpp#L2412-L2426"
+        }
+      ]
+    },
+    {
+      "path": "src/qcommon/common.cpp",
+      "sha256": "6270b95b771dee635a82f45b530ac41928fd123537bdfabcbcd9aac2c59122d1",
+      "bytes": 133045,
+      "line_count": 3859,
+      "role": "Frame budget/events and measured server/client stages",
+      "anchors": [
+        {
+          "start_line": 3321,
+          "end_line": 3397,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/qcommon/common.cpp#L3321-L3397"
+        },
+        {
+          "start_line": 3399,
+          "end_line": 3459,
+          "url": "https://github.com/MisaDev4/bo1-zombies-decompiled/blob/102f6992be332610aff587e681e3180b15f395bb/src/qcommon/common.cpp#L3399-L3459"
+        }
+      ]
+    }
+  ],
+  "browser_emulator_term_search": {
+    "argv": [
+      "rg",
+      "-n",
+      "-i",
+      "\\b(emscripten|webassembly|webgl|webgpu|boxedwine|boxwine|wasm|requestAnimationFrame|qemu)\\b|dynamic binary translation",
+      "CMakeLists.txt",
+      "cmake_files.cmake",
+      "README.md",
+      "src",
+      "--glob",
+      "!src/libs/**",
+      "--glob",
+      "!src/steam/**",
+      "--glob",
+      "!src/binklib/**",
+      "--glob",
+      "!src/nvapi/**",
+      "--glob",
+      "!src/tracy/**"
+    ],
+    "exit_code": 1,
+    "matches": [],
+    "limitation": "Bounded lexical search in stated files; absence is not proof about uninspected dependencies or external launch environments."
+  },
+  "comparison_evidence": [
+    {
+      "path": "analysis/runtime/BROWSER_RUNTIME.md",
+      "sha256": "cc504d9896bf4854bc7c4ef7f69986daf2d202e571d27242a2fdba8665b80ce9",
+      "bytes": 9141,
+      "purpose": "Existing local evidence used for comparison; snapshot may change as parent work continues"
+    },
+    {
+      "path": "analysis/runtime/jit/diagnosis.md",
+      "sha256": "892f0bc913bd9d23d23ab48437121f65aeb49865fd478843957f690a7d07446e",
+      "bytes": 11195,
+      "purpose": "Existing local evidence used for comparison; snapshot may change as parent work continues"
+    },
+    {
+      "path": "analysis/port/startup-findings.md",
+      "sha256": "492b06c5ecd9a653c62a783add8d6e0ab927157e54ad92df98b11e0a128062c2",
+      "bytes": 10538,
+      "purpose": "Existing local evidence used for comparison; snapshot may change as parent work continues"
+    },
+    {
+      "path": "analysis/port/startup-evidence-index.json",
+      "sha256": "2ec208feef56b8bd82a4fee9440179df09a45851cbd420a741ef2d1e2f4762c5",
+      "bytes": 28776,
+      "purpose": "Existing local evidence used for comparison; snapshot may change as parent work continues"
+    }
+  ],
+  "limits": [
+    "Source establishes intended build and visible call paths, not successful compilation or runtime behavior.",
+    "No measured FPS, hardware-normalized comparison, or direct observation of the user-reported smooth run.",
+    "Compile-time and runtime settings can alter threading and headless paths.",
+    "No source, current runtime, or installation files modified."
+  ],
+  "report": "analysis/performance/reference-comparison.md"
+}

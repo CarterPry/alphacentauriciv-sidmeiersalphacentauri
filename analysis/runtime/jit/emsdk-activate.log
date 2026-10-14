@@ -1,0 +1,15 @@
+Resolving SDK version '6.0.12' to 'sdk-releases-6e9f6885cb17a3d6c8fd488a5cff730f50aba61d-64bit'
+Setting the following tools as active:
+   node-24.19.0-64bit
+   python-3.13.3-64bit
+   releases-6e9f6885cb17a3d6c8fd488a5cff730f50aba61d-64bit
+
+Next steps:
+- To conveniently access emsdk tools from the command line,
+  consider adding the following directories to your PATH:
+    /Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk
+    /Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk/upstream/emscripten
+- This can be done for the current shell by running:
+    source "/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk/emsdk_env.sh"
+- Configure emsdk in your shell startup scripts by running:
+    echo 'source "/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/runtime/jit/emsdk/emsdk_env.sh"' >> $HOME/.zprofile

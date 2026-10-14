@@ -1,0 +1,44 @@
+diff --git a/source/x11/xserver.cpp b/source/x11/xserver.cpp
+index 4233d3b4..9626a3e5 100644
+--- a/source/x11/xserver.cpp
++++ b/source/x11/xserver.cpp
+@@ -281,6 +281,10 @@ const XWindowPtr& XServer::getRoot() {
+ 		U32 atom = server->internAtom(B("_GTK_WORKAREAS_D0"), false);
+ 		root->setProperty(atom, XA_CARDINAL, 32, sizeof(U32) * 4, (U8*)&rect, false);
+ 		root->isMapped = true; // so that grab works
++		// Backport the PointerRoot default from upstream ef51c626. The pinned
++		// build predates its focus-state helper API.
++		inputFocus = root;
++		inputFocusIsPointerRoot = true;
+ 		root->colorMap = getDefaultColorMap();
+ 		root->attributes.colormap = root->colorMap->id;
+ 		root->cursor = std::make_shared<XCursor>(132); // XC_top_left_arrow
+@@ -1155,15 +1159,24 @@ void XServer::mouseButton(U32 button, S32 x, S32 y, bool pressed) {
+ }
+ 
+ void XServer::key(U32 key, bool pressed) {
+-	if (inputFocus) {
++	XWindowPtr focus = inputFocus;
++	if (focus) {
+ 		S32 x = 0;
+ 		S32 y = 0;
+ 		KNativeSystem::getCurrentInput()->getMousePos(&x, &y);
+-		XWindowPtr wnd = inputFocus;
+-		if (inputFocusIsPointerRoot && root) {
+-			wnd = root->getWindowFromPoint(x, y);
++		XWindowPtr pointer = root ? root->getWindowFromPoint(x, y) : nullptr;
++		XWindowPtr wnd = focus;
++		// Start at the pointer descendant when it is in the focus subtree.
++		for (XWindowPtr ancestor = pointer; ancestor; ancestor = ancestor->getParent()) {
++			if (ancestor == focus) {
++				wnd = pointer;
++				break;
++			}
+ 		}
+ 		while (wnd && !wnd->keyScreenCoords(key, x, y, pressed)) {
++			if (wnd == focus) {
++				break;
++			}
+ 			wnd = wnd->getParent();
+ 		}
+ 	}

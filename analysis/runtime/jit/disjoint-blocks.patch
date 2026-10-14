@@ -1,0 +1,120 @@
+diff --git a/source/emulation/cpu/jit/jitCodeGen.cpp b/source/emulation/cpu/jit/jitCodeGen.cpp
+index 3c3b26c0..d078bde7 100644
+--- a/source/emulation/cpu/jit/jitCodeGen.cpp
++++ b/source/emulation/cpu/jit/jitCodeGen.cpp
+@@ -855,8 +855,29 @@ bool JitCodeGen::compileOps(DecodedOp* op) {
+     return true;
+ }
+ 
++#if defined(BOXEDWINE_WASM_JIT) && defined(BOXEDWINE_WASM_JIT_DISJOINT)
++// Conservative experimental policy: keep pending and installed WASM blocks
++// disjoint so shared invalidation can retain its single-owner invariant.
++static bool wasmJitRangeIsUnowned(DecodedOp* op, U32 count) {
++    for (U32 i = 0; i < count; ++i) {
++        if (!op || op->blockStart) {
++            return false;
++        }
++        op = op->next;
++    }
++    return true;
++}
++#endif
++
+ void JitCodeGen::doJIT(U32 address, DecodedOp* op) {
+     BOXEDWINE_CRITICAL_SECTION_WITH_MUTEX(cpu->memory->mutex);
++#if defined(BOXEDWINE_WASM_JIT) && defined(BOXEDWINE_WASM_JIT_DISJOINT)
++    // Interior entries continue through normal dispatch. Existing compiled
++    // entries remain callable; this only declines a new compilation request.
++    if (op->blockStart) {
++        return;
++    }
++#endif
+     // Did another thread beat us to compiling or queueing this block?
+     if (op->flags2 & OP_FLAG2_WASM_JIT_PENDING) {
+         return;
+@@ -940,6 +961,13 @@ void JitCodeGen::doJIT(U32 address, DecodedOp* op) {
+     if (!compileOps(op)) {
+         return;    
+     }    
++#if defined(BOXEDWINE_WASM_JIT) && defined(BOXEDWINE_WASM_JIT_DISJOINT)
++    // Inspect the actual emitted instruction span, including fused ops.
++    // Nothing has been published yet; declining leaves normal dispatch intact.
++    if (!wasmJitRangeIsUnowned(op, this->blockOpCount)) {
++        return;
++    }
++#endif
+     onBlockPreCommit(op);
+     commitJIT(op);
+ }
+diff --git a/source/test/cpu/testCPU.cpp b/source/test/cpu/testCPU.cpp
+index 779b5baa..48b6b1c5 100644
+--- a/source/test/cpu/testCPU.cpp
++++ b/source/test/cpu/testCPU.cpp
+@@ -486,6 +486,44 @@ void testSetFastMode(bool fast) {
+     fastMode.store(fast);
+ }
+ 
++#if defined(BOXEDWINE_WASM_JIT) && defined(BOXEDWINE_WASM_JIT_DISJOINT)
++void testWasmJitDisjointPolicy() {
++    auto& context = testContext();
++    for (bool existingInterior : {false, true}) {
++        testNewInstruction(0);
++        for (U8 byte : {0x40, 0x41, 0x42, 0x43, 0x46, 0xcd, 0x97}) testPushCode8(byte);
++        DecodedOp* first = context.cpu->getOp(TEST_CODE_ADDRESS, 0);
++        DecodedOp* third = context.memory->getDecodedOp(TEST_CODE_ADDRESS + 2);
++        DecodedOp* owner = existingInterior ? first : third;
++        U32 ownerAddress = existingInterior ? TEST_CODE_ADDRESS : TEST_CODE_ADDRESS + 2;
++        startNewJIT(context.cpu, ownerAddress, owner);
++        if (!owner->pfnJitCode || owner->blockStart != owner) {
++            testFail("disjoint policy must still compile an unowned block");
++            return;
++        }
++        auto originalEntry = owner->pfnJitCode;
++        DecodedOp* candidate = existingInterior ? third : first;
++        U32 candidateAddress = existingInterior ? TEST_CODE_ADDRESS + 2 : TEST_CODE_ADDRESS;
++        startNewJIT(context.cpu, candidateAddress, candidate);
++        if (candidate->pfnJitCode || (candidate->flags2 & OP_FLAG2_WASM_JIT_PENDING) ||
++                owner->pfnJitCode != originalEntry || owner->blockStart != owner) {
++            testFail("disjoint policy must decline overlap without changing the existing entry");
++        }
++        testRunCPU();
++        for (U32 reg : {0, 1, 2, 3, 6}) {
++            if (context.cpu->reg[reg].u32 != 1) testFail("disjoint fallback/JIT execution must preserve guest arithmetic");
++        }
++        if (context.memory->unmap(TEST_CODE_ADDRESS, K_PAGE_SIZE)) {
++            testFail("disjoint block must invalidate through the real unmap path");
++        }
++        if (context.memory->mmap(context.thread, TEST_CODE_ADDRESS, K_PAGE_SIZE,
++                K_PROT_WRITE | K_PROT_READ | K_PROT_EXEC, K_MAP_FIXED | K_MAP_PRIVATE, -1, 0) != TEST_CODE_ADDRESS) {
++            testFail("disjoint test must restore its code page");
++        }
++    }
++}
++#endif
++
+ void testWasmJitOnlyBlockEntryIsCallable() {
+ #ifdef BOXEDWINE_WASM_JIT
+     TestContext& context = testContext();
+diff --git a/source/test/testMain.cpp b/source/test/testMain.cpp
+index 47b592e9..ff0fe872 100644
+--- a/source/test/testMain.cpp
++++ b/source/test/testMain.cpp
+@@ -200,11 +200,18 @@ void testNativeDatagramRecvmsgReportsTruncation();
+ void testNativeStreamRecvmsgZeroIovDoesNotConsumeData();
+ void testGuestWritePreservesPartialProgress();
+ 
++#if defined(BOXEDWINE_WASM_JIT) && defined(BOXEDWINE_WASM_JIT_DISJOINT)
++void testWasmJitDisjointPolicy();
++#endif
++
+ namespace {
+ 
+ int totalFails = 0;
+ 
+ const TestEntry TEST_ENTRIES[] = {
++#if defined(BOXEDWINE_WASM_JIT) && defined(BOXEDWINE_WASM_JIT_DISJOINT)
++    {testWasmJitDisjointPolicy, "Test experimental WASM disjoint ownership policy", TEST_ENTRY_SERIAL},
++#endif
+ #if defined(BOXEDWINE_OPENGL_BOOTSTRAP_TEST_ONLY)
+     {testEmscriptenMtOpenGLProcAddressBootstrap,
+         "Test Emscripten MT OpenGL proc bootstrap before context", TEST_ENTRY_SERIAL},

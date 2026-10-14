@@ -1,0 +1,10 @@
+{
+  "kind": "save-storage-roundtrip",
+  "bytes": 290608,
+  "sha256": "b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42",
+  "reloaded": true,
+  "listed": "Alpha Centauri Autosave 1.SAV \u00b7 284 KBDownload",
+  "originalSha256": "b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42",
+  "match": true,
+  "scope": "User-interface import and browser IndexedDB reload of existing installed save bytes; not yet an in-game save/load test."
+}

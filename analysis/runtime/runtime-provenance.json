@@ -1,0 +1,149 @@
+{
+  "project": "Boxedwine",
+  "version": "26.1.0 CI master build 87",
+  "builtAt": "2026-10-09 19:17 UTC",
+  "sourceCommit": "65467424603484756a73308412f40b906d28b650",
+  "sourceURL": "https://github.com/danoon2/Boxedwine/tree/65467424603484756a73308412f40b906d28b650",
+  "license": "GPL-2.0-or-later",
+  "downloads": [
+    {
+      "name": "build-87.zip",
+      "url": "https://boxedwine.org/builds/branches/master/builds/87/artifacts/build-87.zip",
+      "sha256": "efd56751338a509271cc2861eefd17304c8adce875a3a5a90d41b3c7c5660f02"
+    },
+    {
+      "name": "TinyCore15Wine11.0-web.zip",
+      "url": "https://boxedwine.org/v2/14/TinyCore15Wine11.0-web.zip",
+      "sha256": "3365e31caaf6a1fc832a0a7c4812592d25410b9f5c9536277131388c8e103a49"
+    },
+    {
+      "name": "fullWine1.7.55-v8.zip",
+      "url": "https://www.boxedwine.org/boxedwine/fs/fullWine1.7.55-v8.zip",
+      "sha256": "0fccfd4239406364c8d5707960411131ab9841056de83e0c27c053a9d4f93c44"
+    }
+  ],
+  "files": [
+    {
+      "path": "public/runtime/SingleThreaded/boxedwine.js",
+      "sha256": "60477c059431b1ba847341a78695d1d92aa1d6b48505ec550fc48a16924bef5d",
+      "bytes": 297907,
+      "archiveMember": "Web/SingleThreaded/boxedwine.js"
+    },
+    {
+      "path": "public/runtime/SingleThreaded/boxedwine.wasm",
+      "sha256": "45fdd636cfb1aa468042bef7741b4f1cb520433359fe2e76a91e9fe255bdbd23",
+      "bytes": 2969537,
+      "archiveMember": "Web/SingleThreaded/boxedwine.wasm"
+    },
+    {
+      "path": "public/runtime/SingleThreaded/boxedwine-shell.js",
+      "sha256": "f88e60b155c53c916fe8861205f601a44e216111aef8dca1d799e66d1780f2e7",
+      "bytes": 100424,
+      "archiveMember": "Web/SingleThreaded/boxedwine-shell.js"
+    },
+    {
+      "path": "public/runtime/SingleThreaded/boxedwine.css",
+      "sha256": "f3548956400f61c2d7f400e34166a5119c5167f4a3215e07c95c5cf95eea69a3",
+      "bytes": 4885,
+      "archiveMember": "Web/SingleThreaded/boxedwine.css"
+    },
+    {
+      "path": "public/runtime/SingleThreaded/boxedwine.html",
+      "sha256": "8760628c83c799430885d181165c61e00311692ca33e10ac76d97aec96f3603d",
+      "bytes": 2623,
+      "archiveMember": "Web/SingleThreaded/boxedwine.html"
+    },
+    {
+      "path": "public/runtime/SingleThreadedJit/boxedwine.js",
+      "sha256": "7ebcbcbf4b06fe39e645f5d28166563c688551b2101b293bbf1bdf1c4ce081e0",
+      "bytes": 319196,
+      "archiveMember": "Web/SingleThreadedJit/boxedwine.js"
+    },
+    {
+      "path": "public/runtime/SingleThreadedJit/boxedwine.wasm",
+      "sha256": "8846d00dfc10996162ca78f9d0a098da284fd84dc22e66b39af91c493af4d57e",
+      "bytes": 4183987,
+      "archiveMember": "Web/SingleThreadedJit/boxedwine.wasm"
+    },
+    {
+      "path": "public/runtime/SingleThreadedJit/boxedwine-shell.js",
+      "sha256": "f88e60b155c53c916fe8861205f601a44e216111aef8dca1d799e66d1780f2e7",
+      "bytes": 100424,
+      "archiveMember": "Web/SingleThreadedJit/boxedwine-shell.js"
+    },
+    {
+      "path": "public/runtime/SingleThreadedJit/boxedwine.css",
+      "sha256": "f3548956400f61c2d7f400e34166a5119c5167f4a3215e07c95c5cf95eea69a3",
+      "bytes": 4885,
+      "archiveMember": "Web/SingleThreadedJit/boxedwine.css"
+    },
+    {
+      "path": "public/runtime/SingleThreadedJit/boxedwine.html",
+      "sha256": "8760628c83c799430885d181165c61e00311692ca33e10ac76d97aec96f3603d",
+      "bytes": 2623,
+      "archiveMember": "Web/SingleThreadedJit/boxedwine.html"
+    },
+    {
+      "path": "public/runtime/MultiThreaded/boxedwine.js",
+      "sha256": "7d0e3221cd6be4d0af97ddbdfcc9023c203ee240c90c047bc7ab97f49dfb5093",
+      "bytes": 355864,
+      "archiveMember": "Web/MultiThreaded/boxedwine.js"
+    },
+    {
+      "path": "public/runtime/MultiThreaded/boxedwine.wasm",
+      "sha256": "2646d0e14ab9c8fab1ba473a833196a790e7cdedf58b42707995898365302ac1",
+      "bytes": 3041470,
+      "archiveMember": "Web/MultiThreaded/boxedwine.wasm"
+    },
+    {
+      "path": "public/runtime/MultiThreaded/boxedwine-shell.js",
+      "sha256": "f88e60b155c53c916fe8861205f601a44e216111aef8dca1d799e66d1780f2e7",
+      "bytes": 100424,
+      "archiveMember": "Web/MultiThreaded/boxedwine-shell.js"
+    },
+    {
+      "path": "public/runtime/MultiThreaded/boxedwine.css",
+      "sha256": "f3548956400f61c2d7f400e34166a5119c5167f4a3215e07c95c5cf95eea69a3",
+      "bytes": 4885,
+      "archiveMember": "Web/MultiThreaded/boxedwine.css"
+    },
+    {
+      "path": "public/runtime/MultiThreaded/boxedwine.html",
+      "sha256": "8760628c83c799430885d181165c61e00311692ca33e10ac76d97aec96f3603d",
+      "bytes": 2623,
+      "archiveMember": "Web/MultiThreaded/boxedwine.html"
+    },
+    {
+      "path": "public/runtime/MultiThreadedJit/boxedwine.js",
+      "sha256": "ff79ce271ddd3a31babd97bb3d0e8179ecd28b9d9368f2c1da67511d160c012e",
+      "bytes": 425452,
+      "archiveMember": "Web/MultiThreadedJit/boxedwine.js"
+    },
+    {
+      "path": "public/runtime/MultiThreadedJit/boxedwine.wasm",
+      "sha256": "8f6e688cc5b21930c6f1f40adf2e945ac6845582379bcdebc226850f3e0611b1",
+      "bytes": 4272499,
+      "archiveMember": "Web/MultiThreadedJit/boxedwine.wasm"
+    },
+    {
+      "path": "public/runtime/MultiThreadedJit/boxedwine-shell.js",
+      "sha256": "f88e60b155c53c916fe8861205f601a44e216111aef8dca1d799e66d1780f2e7",
+      "bytes": 100424,
+      "archiveMember": "Web/MultiThreadedJit/boxedwine-shell.js"
+    },
+    {
+      "path": "public/runtime/MultiThreadedJit/boxedwine.css",
+      "sha256": "f3548956400f61c2d7f400e34166a5119c5167f4a3215e07c95c5cf95eea69a3",
+      "bytes": 4885,
+      "archiveMember": "Web/MultiThreadedJit/boxedwine.css"
+    },
+    {
+      "path": "public/runtime/MultiThreadedJit/boxedwine.html",
+      "sha256": "8760628c83c799430885d181165c61e00311692ca33e10ac76d97aec96f3603d",
+      "bytes": 2623,
+      "archiveMember": "Web/MultiThreadedJit/boxedwine.html"
+    }
+  ],
+  "wineVersion": "11.0",
+  "networkingEnabled": false
+}

@@ -1,0 +1,13 @@
+{
+  "started": 1792012847754,
+  "longTasks": [
+    {
+      "start": 1011.1599999666214,
+      "duration": 126
+    }
+  ],
+  "events": [],
+  "elapsed": 34783.86999988556,
+  "title": "BoxedWine 110 MIPS",
+  "state": "{\"edition\":\"alien-crossfire\",\"executable\":\"terranx.exe\",\"engine\":\"SingleThreadedJitFocus\",\"phase\":\"runtime-active\",\"error\":null,\"log\":[\"Showing Window\",\"00dc:err:vulkan:vulkan_init_once Wine was built without Vulkan support.\",\"WASM JIT simd enabled\",\"[MIPS] count=20 raw=108 avg=227 min=38 max=3165 warmAvg=108 warmSamples=1\",\"013c:err:setupapi:SetupDefaultQueueCallbackW copy error 1812 L\\\"@C:\\\\\\\\windows\\\\\\\\system32\\\\\\\\drivers\\\\\\\\wineusb.sys,-1\\\" -> L\\\"C:\\\\\\\\windows\\\\\\\\inf\\\\\\\\wineusb.inf\\\"\",\"[MIPS] count=30 raw=62 avg=100 min=43 max=168 warmAvg=124 warmSamples=11\"],\"source\":\"Installed original x86 executable; CPU emulated in WebAssembly\",\"persistence\":\"IndexedDB, this browser and origin\",\"coordinates\":\"Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.\",\"gameFiles\":1683,\"gameSha256\":\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\",\"canvas\":{\"width\":1024,\"height\":768}}"
+}
