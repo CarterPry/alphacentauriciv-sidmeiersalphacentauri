@@ -4,6 +4,10 @@ The target is the **full installed Planetary Pack**, including its mechanics and
 
 **Current status:** both original editions reach gameplay in the browser. Alien Crossfire has demonstrated a new world, base founding, unit movement, turn advancement, a native save, and loading that save after a full browser restart. Base Alpha Centauri has demonstrated a new world, base naming/founding, unit movement, turn advancement, and saving. Ctrl+S opens the native save dialog in both. The default is the locally built runtime with compatibility and performance fixes. The data library and research laboratory also work. The independent JavaScript engine remains partial; long campaigns and complete compatibility are not yet verified. [Exact test scope and evidence](analysis/runtime/runtime-validation.json).
 
+## Play online
+
+Open **https://alphacentauriciv.carterpry.com**. Choose either cover to start loading. The complete runtime/game download is about 603 MB before native initialization. No CrossOver, Steam or installed game is required on the visiting computer. Saves stay in that browser and origin; use **… → Saved games** to transfer a localhost save.
+
 ## Open locally
 
 For a fresh clone, first follow **Rebuild the local assets and runtime** below using your installed game files. Git includes the source, runtime patches, analysis and evidence; generated game/runtime bundles, SDKs, browser profiles and personal saves stay local.
@@ -15,9 +19,11 @@ npm start
 
 Open **http://127.0.0.1:5173**. Keep the same host and port for browser-local saved data. The server binds only to the local machine and supplies the isolation headers and byte-range requests required by the runtime.
 
-Choose an edition, then press **Start**. A loading screen stays visible until the original menu has drawn. Click the game canvas to focus keyboard controls. Use the original menus to save, and **Saved games → Download** for a portable backup.
+Choose **Regular game** or **Expansion pack** on the cover screen. Loading starts immediately and stays covered until the original game menu has drawn. The small **…** menu contains fullscreen, saved-game backups and logs. The archive remains at `/library.html`.
 
-The default runtime is now `SingleThreadedJitFast`. Local trials reduced initial menu startup from about 197 to 60 seconds and median menu hover response from 135 to 51 ms. These are measurements on this Mac, not guarantees for other devices or full campaigns. [Performance changes, measurements, and comparison with the BO1 repository](analysis/performance/PERFORMANCE.md).
+The default runtime is `SingleThreadedJitInput`, which adds a read-only native input-state bridge to the earlier `SingleThreadedJitFast` optimizations. Those earlier local trials reduced initial menu startup from about 197 to 60 seconds and median menu hover response from 135 to 51 ms. These are measurements on this Mac, not guarantees for other devices or full campaigns. [Performance changes, measurements, and comparison with the BO1 repository](analysis/performance/PERFORMANCE.md).
+
+In **Alien Crossfire**, select an active unit and click the small **Move** button. Hover to see the original engine’s route, then click a destination. Right-click or Escape cancels. The path can span multiple turns; it is not a highlight of every tile reachable this turn. Right-click a unit for the original action menu. Base Alpha Centauri retains its native drag-to-move controls; its planning-entry guards have not been verified.
 
 - **Play:** browser compatibility launchers for `terran.exe` and `terranx.exe`.
 - **Research:** original technology tables and an interactive prerequisite laboratory. Its marked discoveries are separate from saved games.
@@ -36,7 +42,7 @@ node tools/import_maps.mjs "/Users/carte/Library/Application Support/CrossOver/B
 python3 tools/setup_browser_runtime.py --patched-runtime
 ```
 
-Use `--game-dir "/another/installation"` for another local game path. The script downloads checksum-pinned Boxedwine/Wine artifacts and packages the complete installed game. `--patched-runtime` also builds the pinned emulator with the JIT ownership guard, X11 focus backport, scheduler optimization, and reusable frame buffers, using an SDK installed inside this workspace. Git, Make, and Python are required for that build. The archive changes only documented compatibility preferences in its copied INI; both original executable hashes remain intact. Initial browser loading uses approximately 600 MB of local archives.
+Use `--game-dir "/another/installation"` for another local game path. The script downloads checksum-pinned Boxedwine/Wine artifacts and packages the complete installed game. `--patched-runtime` also builds the pinned emulator with the JIT ownership guard, X11 focus backport, scheduler optimization, reusable frame buffers, and the revision-checked input-state bridge, using an SDK installed inside this workspace. Git, Make, and Python are required for that build. The archive changes only documented compatibility preferences in its copied INI; both original executable hashes remain intact. Initial browser loading uses approximately 600 MB of local archives.
 
 For an existing game bundle, `python3 tools/build_browser_runtime.py` rebuilds just the patched emulator. Its `--check` mode verifies source and patch identities without building. Source pins, patch hashes, modified-source hashes, and resulting artifact hashes are retained under `analysis/runtime/jit/`.
 
@@ -56,6 +62,8 @@ Map fixtures were imported from the four installed `.MP` files; their paths and 
 - [Emulator diagnosis](analysis/runtime/jit/diagnosis.md): reproducible JIT ownership failure, conservative patch, and targeted engine tests.
 - [Keyboard focus backport](analysis/runtime/jit/focus-backport.md): isolated adaptation of the upstream keyboard fix and repeatable build.
 - [Save-import path analysis](analysis/port/save-import-findings.md): 19 additional REA records and a native-tested import destination.
+- [Mouse planning and minimal launcher](analysis/input/INPUT_AND_UI.md): original route preview, acknowledged cancellation, cover choices and direct launch.
+- [Deployment](deploy/README.md): Cloudflare custom domain and exact-byte game archive delivery.
 - [Loading screen](analysis/runtime/loading/LOADING_SCREEN.md): native menu detection, startup coverage, input isolation, and screenshot evidence.
 - [Evidence verification](analysis/port/evidence-verification.json): all 168 REA records across six bundles and report references checked.
 

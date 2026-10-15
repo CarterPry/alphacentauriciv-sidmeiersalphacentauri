@@ -1,0 +1,17 @@
+{
+  "scope": "Browser UI .SAV header rejection, import, download, IndexedDB persistence across page reload; original native game was not started in this test.",
+  "passed": true,
+  "rejectedInvalidHeaders": 2,
+  "sourceBytes": 290608,
+  "sourceSha256": "b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42",
+  "downloadSha256": "b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42",
+  "persisted": {
+    "directory": "/root/key/alpha-centauri/home/username/.wine/drive_c/files/saves",
+    "name": "Imported - Alpha Centauri Autosave 1.SAV",
+    "bytes": 290608,
+    "sha256": "b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42",
+    "gdiRendererKeys": 1
+  },
+  "errors": [],
+  "screenshot": "analysis/input/ui/storage/after-reload.png"
+}

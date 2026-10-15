@@ -6,7 +6,8 @@
     "disjoint-blocks.patch": "21814fca016f281575a47cf36a5aea62cd73a1807696e95e19a3926e8492d0f9",
     "focus-backport.patch": "16e0c9a3029bdfc7bf8c3c02c722fff722eb1214c1de5ca01e7bfa295f2adfa6",
     "renderer-optimization.patch": "97a8ce1621ae9bd9097717ea5fd37d0db2e541b1dbc551eac88523635d04d9dd",
-    "scheduler-clock.patch": "8ad7353acbf55e63e3ef76e50f9de89696c5dc0803ab663bbbd4995cd5bfc0fe"
+    "scheduler-clock.patch": "8ad7353acbf55e63e3ef76e50f9de89696c5dc0803ab663bbbd4995cd5bfc0fe",
+    "game-input-state.patch": "3f5243d7ffb3030402816140586de3164299d98a964e88ce65a5bb58e731014c"
   },
   "patchedSourceFiles": {
     "source/emulation/cpu/jit/jitCodeGen.cpp": "17708377345f497376d308e99681cf699d6b2dce517a5fc799a1e800665b4faa",
@@ -15,7 +16,8 @@
     "source/x11/xserver.cpp": "c532a809c3b41a7c358943f3910d0e5ad60f97240ba635ba6708270304a1d238",
     "platform/sdl/knativescreenSDL.cpp": "251b65d41559e0186a6b4d5356c303c4c4f10d539ab730b88b130a5f9b787f7b",
     "project/emscripten/boxedwine-shell.js": "696ee5451208b28b1af02183fd5172d1d1cb0839fadfce9cf575cd26e8690b05",
-    "source/kernel/kscheduler.cpp": "0c9629cfce16c5ca7c01fa5973a822a06ca43c3eaf774ea327ad1e8623c8ad24"
+    "source/kernel/kscheduler.cpp": "0c9629cfce16c5ca7c01fa5973a822a06ca43c3eaf774ea327ad1e8623c8ad24",
+    "platform/sdl/boxedwineGameRead.cpp": "ff9b0dbf455656599dcc88bbb33bba4d9a29724ef31c843b6b72bfeaa5c3bf09"
   },
-  "engine": "SingleThreadedJitFast"
+  "engine": "SingleThreadedJitInput"
 }

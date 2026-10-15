@@ -1,0 +1,17 @@
+{
+  "started": 1792082147719,
+  "longTasks": [
+    {
+      "start": 60741.74499988556,
+      "duration": 70
+    },
+    {
+      "start": 86848.57499992847,
+      "duration": 52
+    }
+  ],
+  "events": [],
+  "elapsed": 147286.20999991894,
+  "title": "BoxedWine 216 MIPS",
+  "state": "{\"edition\":\"alpha-centauri\",\"executable\":\"terran.exe\",\"engine\":\"SingleThreadedJitInput\",\"phase\":\"game-ready\",\"error\":null,\"log\":[\"[MIPS] count=30 raw=164 avg=165 min=89 max=250 warmAvg=152 warmSamples=11\",\"[MIPS] count=40 raw=124 avg=161 min=109 max=405 warmAvg=161 warmSamples=21\",\"[MIPS] count=50 raw=201 avg=157 min=123 max=405 warmAvg=155 warmSamples=31\",\"[MIPS] count=60 raw=215 avg=178 min=123 max=228 warmAvg=169 warmSamples=41\",\"[MIPS] count=70 raw=215 avg=215 min=198 max=228 warmAvg=178 warmSamples=51\",\"[MIPS] count=80 raw=214 avg=216 min=211 max=218 warmAvg=184 warmSamples=61\"],\"source\":\"Installed original x86 executable; CPU emulated in WebAssembly\",\"persistence\":\"IndexedDB, this browser and origin\",\"coordinates\":\"Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.\",\"gameFiles\":1683,\"gameSha256\":\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\",\"runtimeInitialized\":true,\"readiness\":{\"kind\":\"menu\",\"menuMatches\":7,\"worldMatches\":0},\"nativeReady\":{\"kind\":\"menu\",\"consecutive\":2,\"elapsedMs\":55099},\"canvas\":{\"width\":1024,\"height\":768}}"
+}

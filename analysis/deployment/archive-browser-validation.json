@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "name": "Archive loads, both edition launch links exist, browser isolation enabled",
+      "passed": true
+    },
+    {
+      "name": "Two prerequisite discoveries unlock High Energy Chemistry in DOM and state",
+      "passed": true
+    },
+    {
+      "name": "Ownership suppresses already known research, reset and base-edition switch work",
+      "passed": true
+    },
+    {
+      "name": "Image search, original artwork, hashes, Escape, pagination and audio metadata work",
+      "passed": true
+    },
+    {
+      "name": "Every rendered evidence link returns a retained source record",
+      "passed": true
+    },
+    {
+      "name": "Mobile launch layout fits viewport without horizontal overflow",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "state": {
+    "mode": "play",
+    "edition": "alpha",
+    "coordinateSystem": "DOM interface",
+    "selectedTechnology": "Chemist",
+    "known": [],
+    "eligible": [
+      "Biogen",
+      "Indust",
+      "InfNet",
+      "Physic",
+      "Psych",
+      "Mobile",
+      "Ecology"
+    ],
+    "search": "",
+    "assetPage": 0,
+    "assetResults": 508,
+    "launchURLs": [
+      "/play.html?edition=alpha-centauri",
+      "/play.html?edition=alien-crossfire"
+    ]
+  }
+}

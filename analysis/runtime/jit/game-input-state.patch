@@ -1,0 +1,418 @@
+diff --git a/platform/sdl/boxedwineGameRead.cpp b/platform/sdl/boxedwineGameRead.cpp
+new file mode 100644
+--- /dev/null
++++ b/platform/sdl/boxedwineGameRead.cpp
+@@ -0,0 +1,413 @@
++/*
++ * Read-only observation of the pinned Steam Alien Crossfire mouse-drag state.
++ * This bridge neither runs guest code nor changes guest memory or input.
++ *
++ * Source image: terranx.exe, 3094576 bytes, SHA-256
++ * 573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4.
++ * The live check is a bounded revision fingerprint, not a full-image hash.
++ * REA drag-begin 0x50f170: ev_22fe0e083f085068c415904aa992a658870bff0e776c38c3d40e65f8b171e48d.
++ * REA drag-reset 0x50ef50: ev_57661b2350f1fc3076a124c1acb51fb628ec4e3443a48ffa893444669b616f6f.
++ */
++
++#include "boxedwine.h"
++
++#if defined(__EMSCRIPTEN__) && !defined(BOXEDWINE_MULTI_THREADED)
++#include <cstring>
++#include <emscripten/emscripten.h>
++#include "../../source/emulation/softmmu/kmemory_soft.h"
++#include "../../source/emulation/softmmu/soft_ram.h"
++#include "knativesystem.h"
++// x11.h defines None; include PageType's enum before that X11 macro.
++#include "../../source/x11/x11.h"
++
++namespace {
++
++constexpr U32 GAME_MAP_WINDOW = 0x009156b0;
++constexpr U32 GAME_SELECTION = 0x0093928c;
++constexpr U32 GAME_MOUSE_MODE = 0x009393c0;
++constexpr U32 GAME_DRAG = GAME_MAP_WINDOW + 0x1dd80;
++constexpr U32 GAME_SPRITE = GAME_MAP_WINDOW + 0x1ef4c;
++constexpr U32 GAME_UNIT_DRAG_SPRITE = 0x0093aa9c;
++constexpr U32 GAME_CAPTURE_WINDOW = 0x009b7abc;
++constexpr U32 GAME_VEHICLE_MODE = 0x00939288;
++constexpr U32 GAME_PLAYER = 0x00939284;
++constexpr U32 GAME_UNIT_COUNT = 0x009a64c8;
++constexpr U32 GAME_UNITS = 0x00952828;
++
++// BEGIN resident-read helpers (also exercised by source-extracted host tests).
++bool gameReadResident(KMemory* memory, U32 address, U8* output, U32 length) {
++    const U64 end = static_cast<U64>(address) + length;
++    if (!memory || !output || !length || end > 0x100000000ULL) {
++        return false;
++    }
++    KMemoryData* data = memory->getData();
++    if (!data) {
++        return false;
++    }
++    const U32 firstPage = address >> K_PAGE_SHIFT;
++    const U32 lastPage = static_cast<U32>((end - 1) >> K_PAGE_SHIFT);
++    // Preflight the entire range before exposing any bytes. In this ST build,
++    // no guest thread can remap a page during this synchronous host callback.
++    for (U32 page = firstPage; page <= lastPage; ++page) {
++        const MMU& entry = data->mmu[page];
++        if (!entry.canReadRam || !(entry.flags & PAGE_READ) || !entry.ramIndex) {
++            return false;
++        }
++    }
++    while (length) {
++        const MMU& entry = data->mmu[address >> K_PAGE_SHIFT];
++        const U32 offset = address & K_PAGE_MASK;
++        const U32 count = std::min(length, static_cast<U32>(K_PAGE_SIZE) - offset);
++        const U8* ram = ramPageGet(RamPage{entry.ramIndex});
++        std::memcpy(output, ram + offset, count);
++        output += count;
++        address += count;
++        length -= count;
++    }
++    return true;
++}
++
++bool gameReadU32(KMemory* memory, U32 address, U32& value) {
++    U8 bytes[4];
++    if (!gameReadResident(memory, address, bytes, sizeof(bytes))) {
++        return false;
++    }
++    value = static_cast<U32>(bytes[0]) | (static_cast<U32>(bytes[1]) << 8) |
++        (static_cast<U32>(bytes[2]) << 16) | (static_cast<U32>(bytes[3]) << 24);
++    return true;
++}
++
++template <size_t N>
++U32 gameAnchorStatus(KMemory* memory, U32 address, const U8 (&expected)[N], U32 bit) {
++    U8 actual[N];
++    if (!gameReadResident(memory, address, actual, static_cast<U32>(N))) {
++        return 0;
++    }
++    return (1U << (bit + 8)) |
++        (std::memcmp(actual, expected, N) == 0 ? 1U << bit : 0);
++}
++// END resident-read helpers.
++
++U32 gameFingerprintStatus(KMemory* memory) {
++    // Bytes taken directly from the pinned image at these preferred VAs.
++    // Require its PE32 header, image base and size, then instructions containing
++    // the selection/mode/capture addresses and MapWin drag/sprite offsets.
++    // No successful result is cached across process exits, loads or remappings.
++    static constexpr U8 dos[] = {
++        0x4d,0x5a,0x90,0x00,0x03,0x00,0x00,0x00,0x04,0x00,0x00,0x00,0xff,0xff,0x00,0x00
++    };
++    static constexpr U8 peOffset[] = {0x00,0x01,0x00,0x00};
++    static constexpr U8 pe[] = {
++        0x50,0x45,0x00,0x00,0x4c,0x01,0x08,0x00,0xff,0x91,0x5e,0x38,0x00,0x00,0x00,0x00,
++        0x00,0x00,0x00,0x00,0xe0,0x00,0x0e,0x01,0x0b,0x01,0x06,0x00,0x00,0x80,0x26,0x00
++    };
++    static constexpr U8 imageBase[] = {0x00,0x00,0x40,0x00};
++    static constexpr U8 imageSize[] = {0x00,0xc0,0x60,0x00,0x00,0x10,0x00,0x00};
++    static constexpr U8 selectionAndSprite[] = {
++        0x89,0x35,0x8c,0x92,0x93,0x00,0x8b,0x75,0xfc,0x8b,0x36,0x8d,0x14,0xbf,0x8d,0x04,
++        0x57,0x8d,0x1c,0x85,0x70,0xaa,0x93,0x00,0x8b,0x86,0x4c,0xef,0x01,0x00,0x3b,0xc3,
++        0x74,0x23,0x8b,0x0c,0xbd,0x40,0xaa,0x93,0x00
++    };
++    static constexpr U8 captureModeAndDrag[] = {
++        0xa1,0xbc,0x7a,0x9b,0x00,0x8b,0x75,0xfc,0x85,0xc0,0x75,0x19,0x8b,0x06,0x8b,0x08,
++        0x8b,0x51,0x04,0xc7,0x05,0xc0,0x7a,0x9b,0x00,0x00,0x00,0x00,0x00,0x03,0xd0,0x89,
++        0x15,0xbc,0x7a,0x9b,0x00,0x6a,0x09,0xb9,0x18,0x71,0x93,0x00,0x89,0x3d,0xc0,0x93,
++        0x93,0x00,0xe8,0xec,0x5e,0x0c,0x00,0x6a,0x00,0xb9,0x18,0x71,0x93,0x00,0xe8,0x60,
++        0xe6,0x0d,0x00,0x8b,0x0e,0xb8,0x01,0x00,0x00,0x00,0x89,0x81,0x80,0xdd,0x01,0x00
++    };
++    return gameAnchorStatus(memory, 0x00400000, dos, 0) |
++        gameAnchorStatus(memory, 0x0040003c, peOffset, 1) |
++        gameAnchorStatus(memory, 0x00400100, pe, 2) |
++        gameAnchorStatus(memory, 0x00400134, imageBase, 3) |
++        gameAnchorStatus(memory, 0x00400150, imageSize, 4) |
++        gameAnchorStatus(memory, 0x0050f2e8, selectionAndSprite, 5) |
++        gameAnchorStatus(memory, 0x0050f32d, captureModeAndDrag, 6);
++}
++
++bool gameMatchesSteamTerranx(KMemory* memory) {
++    return (gameFingerprintStatus(memory) & 0x7fU) == 0x7fU;
++}
++
++bool gameMapWindow(KMemory* memory, U32& window) {
++    // Jackal capture is its window subobject, not an X11 pointer grab:
++    // capture == MapWin + *(int32_t*)(*(uint32_t*)MapWin + 4).
++    U32 virtualBaseTable, rawAdjustment;
++    if (!gameReadU32(memory, GAME_MAP_WINDOW, virtualBaseTable) ||
++        !virtualBaseTable || virtualBaseTable > 0xfffffff8U ||
++        !gameReadU32(memory, virtualBaseTable + 4, rawAdjustment)) {
++        return false;
++    }
++    const S64 adjustment = rawAdjustment <= 0x7fffffffU ?
++        static_cast<S64>(rawAdjustment) : static_cast<S64>(rawAdjustment) - 0x100000000LL;
++    const S64 capturedWindow = static_cast<S64>(GAME_MAP_WINDOW) + adjustment;
++    if (capturedWindow <= 0 || capturedWindow > 0xffffffffLL) {
++        return false;
++    }
++    window = static_cast<U32>(capturedWindow);
++    return true;
++}
++
++S32 gameReadDragState(KMemory* memory) {
++    if (!gameMatchesSteamTerranx(memory)) {
++        return -1;
++    }
++    U32 selection, mode, drag, sprite, capture;
++    if (!gameReadU32(memory, GAME_SELECTION, selection) ||
++        !gameReadU32(memory, GAME_MOUSE_MODE, mode) ||
++        !gameReadU32(memory, GAME_DRAG, drag) ||
++        !gameReadU32(memory, GAME_SPRITE, sprite) ||
++        !gameReadU32(memory, GAME_CAPTURE_WINDOW, capture)) {
++        return -1;
++    }
++    if (selection > 0x7fffffffU || mode != 1 || !drag ||
++            sprite != GAME_UNIT_DRAG_SPRITE || !capture) {
++        return 0;
++    }
++    U32 window;
++    if (!gameMapWindow(memory, window)) {
++        return -1;
++    }
++    return capture == window ? 1 : 0;
++}
++
++S32 gameReadUnitMode(KMemory* memory) {
++    if (!gameMatchesSteamTerranx(memory)) {
++        return -1;
++    }
++    U32 mode;
++    if (!gameReadU32(memory, GAME_VEHICLE_MODE, mode)) {
++        return -1;
++    }
++    return mode ? 1 : 0;
++}
++
++// Native Win_is_visible 0x5f7e90: bit 0 at +0x9c and the same check on
++// parent +0xc4. Bound traversal and reject cycles instead of executing recursion.
++// Evidence ev_35154d77355d6e0f3ded955a0606f61b9888eeccb11de8d8a3603d1055ea5a46.
++S32 gameWindowVisible(KMemory* memory, U32 window) {
++    U32 visited[32];
++    for (U32 depth = 0; depth < 32; ++depth) {
++        if (!window || window > 0xffffff38U) {
++            return -1;
++        }
++        for (U32 previous = 0; previous < depth; ++previous) {
++            if (visited[previous] == window) {
++                return -1;
++            }
++        }
++        visited[depth] = window;
++        U8 flags;
++        U32 parent;
++        if (!gameReadResident(memory, window + 0x9c, &flags, 1)) {
++            return -1;
++        }
++        if (!(flags & 1)) {
++            return 0;
++        }
++        if (!gameReadU32(memory, window + 0xc4, parent)) {
++            return -1;
++        }
++        if (!parent) {
++            return 1;
++        }
++        window = parent;
++    }
++    return -1;
++}
++
++S32 gameReadCanPlanMove(KMemory* memory) {
++    if (!gameMatchesSteamTerranx(memory)) {
++        return -1;
++    }
++    // Native mouse/upkeep gates (0x46ed30/0x46f000), Jackal modal state
++    // (0x5ee190/0x5ee280), and mouse owners (0x5f6f10). A nonzero owner
++    // already has the input; do not start another synthetic gesture.
++    static constexpr U32 mustBeZero[] = {
++        GAME_MOUSE_MODE, GAME_DRAG, GAME_CAPTURE_WINDOW,
++        0x009b7ac0, 0x009b7acc, 0x009b7ad0, 0x009b7ae0, 0x009b7ae4,
++        0x0093a934, 0x0093a938, 0x007f67c4, GAME_MAP_WINDOW + 0x1dd78
++    };
++    for (U32 address : mustBeZero) {
++        U32 value;
++        if (!gameReadU32(memory, address, value)) {
++            return -1;
++        }
++        if (value) {
++            return 0;
++        }
++    }
++    U32 mouseEnabled, vehicleMode, selection, count, player;
++    if (!gameReadU32(memory, 0x0090d938, mouseEnabled) ||
++        !gameReadU32(memory, GAME_VEHICLE_MODE, vehicleMode) ||
++        !gameReadU32(memory, GAME_SELECTION, selection) ||
++        !gameReadU32(memory, GAME_UNIT_COUNT, count) ||
++        !gameReadU32(memory, GAME_PLAYER, player)) {
++        return -1;
++    }
++    if (!mouseEnabled || !vehicleMode || count < 1 || count > 2048 ||
++        selection >= count || player < 1 || player > 7) {
++        return 0;
++    }
++    // Ownership comparison matches activation 0x4d2f00. This is an entry
++    // guard, not a replacement for the original route/order legality checks.
++    // Evidence ev_a84ca632b656fb1b99286d66fbbd0a4994653556e1f2df7dba78fedcdd05dc0c.
++    U8 owner;
++    if (!gameReadResident(memory, GAME_UNITS + selection * 0x34 + 0x0e, &owner, 1)) {
++        return -1;
++    }
++    if (owner != player) {
++        return 0;
++    }
++    U32 mapWindow;
++    if (!gameMapWindow(memory, mapWindow)) {
++        return -1;
++    }
++    const S32 mapVisible = gameWindowVisible(memory, mapWindow);
++    if (mapVisible != 1) {
++        return mapVisible;
++    }
++    // Native keyboard dispatch tests these BaseWin and main-menu windows
++    // with Win_is_visible (0x517fb8 and 0x517a36 respectively).
++    for (U32 window : {0x006a7628U, 0x009380dcU}) {
++        const S32 visible = gameWindowVisible(memory, window);
++        if (visible < 0) {
++            return -1;
++        }
++        if (visible) {
++            return 0;
++        }
++    }
++    return 1;
++}
++
++KProcessPtr gameFocusedProcess(S32* diagnostic = nullptr) {
++    XServer* server = XServer::getServer(true);
++    if (diagnostic) {
++        *diagnostic = -1;
++    }
++    if (!server) {
++        return nullptr;
++    }
++    XWindowPtr focused = server->inputFocus;
++    if (!focused) {
++        if (diagnostic) {
++            *diagnostic = -2;
++        }
++        return nullptr;
++    }
++    // With PointerRoot focus, the root belongs to the server (display 0),
++    // while XServer::key routes through the client beneath the pointer.
++    // Follow that same subtree resolution before choosing its process.
++    // An explicit client focus is retained even if the pointer is elsewhere.
++    if (server->inputFocusIsPointerRoot || focused->displayId == 0) {
++        KNativeInputPtr input = KNativeSystem::getCurrentInput();
++        S32 x = 0, y = 0;
++        // Do not warp or synthesize input when merely observing its owner.
++        if (!input || !input->getMousePos(&x, &y, false)) {
++            if (diagnostic) {
++                *diagnostic = -9;
++            }
++            return nullptr;
++        }
++        XWindowPtr pointed = focused->getWindowFromPoint(x, y);
++        XWindowPtr ancestor = pointed;
++        bool inFocusSubtree = false;
++        for (U32 depth = 0; ancestor && depth < 64; ++depth) {
++            if (ancestor == focused) {
++                inFocusSubtree = true;
++                break;
++            }
++            ancestor = ancestor->getParent();
++        }
++        if (!inFocusSubtree) {
++            if (diagnostic) {
++                *diagnostic = -10;
++            }
++            return nullptr;
++        }
++        focused = pointed;
++    }
++    DisplayDataPtr display = server->getDisplayDataById(focused->displayId);
++    if (!display) {
++        if (diagnostic) {
++            *diagnostic = focused->displayId == 0 ? -3 : -4;
++        }
++        return nullptr;
++    }
++    KProcessPtr process = display->process.lock();
++    if (!process) {
++        if (diagnostic) {
++            *diagnostic = -5;
++        }
++        return nullptr;
++    }
++    if (process->isTerminated()) {
++        if (diagnostic) {
++            *diagnostic = -6;
++        }
++        return nullptr;
++    }
++    if (!process->memory) {
++        if (diagnostic) {
++            *diagnostic = -7;
++        }
++        return nullptr;
++    }
++    // Wine can retain a Linux loader name/path in KProcess. Identify the PE
++    // mapped in the focused client's address space, not that mutable label.
++    if (diagnostic) {
++        *diagnostic = 0;
++    }
++    return process;
++}
++
++} // namespace
++
++// -1: unavailable, unsupported image, or unreadable/nonresident state.
++//  0: supported image and readable state, but no active native unit drag.
++//  1: supported image, selected unit, drag mode/sprite, and matching capture.
++// Call from a later browser turn after posting mouse input: the input export
++// queues X events and does not synchronously execute the game's event handler.
++extern "C" EMSCRIPTEN_KEEPALIVE S32 boxedwineGameDragState() {
++    KProcessPtr process = gameFocusedProcess();
++    return process ? gameReadDragState(process->memory) : -1;
++}
++
++// -1: unknown; 0: a proven entry guard blocks planning; 1: all guards passed.
++// The native game must still start the drag and validate every action. This
++// bounded predicate does not claim a complete specification of every UI mode.
++extern "C" EMSCRIPTEN_KEEPALIVE S32 boxedwineGameCanPlanMove() {
++    KProcessPtr process = gameFocusedProcess();
++    return process ? gameReadCanPlanMove(process->memory) : -1;
++}
++
++// -1: unknown; 0: native View Map; 1: native Move Units (any nonzero value).
++// Native V dispatch clears the route before toggling this field (0x517ed6,
++// 0x518539). Observe after the guest has consumed the event, not on posting it.
++// This observes mode only; callers must independently verify drag completion.
++extern "C" EMSCRIPTEN_KEEPALIVE S32 boxedwineGameUnitMode() {
++    KProcessPtr process = gameFocusedProcess();
++    return process ? gameReadUnitMode(process->memory) : -1;
++}
++
++// Bounded diagnostics only: no raw guest bytes, addresses or process identifiers.
++// Negative: -1 no server; -2 no focus; -3 server-owned/root focus (display 0);
++// -4 missing display; -5 expired process; -6 terminated; -7 no memory; -8 no MMU.
++// -9 unavailable/out-of-bounds pointer; -10 invalid/excessive pointer ancestry.
++// Nonnegative: bits 0..6 matched anchors, bits 8..14 readable anchors, in order
++// DOS, PE offset, PE prefix, image base, image size, selection/sprite, drag/capture.
++// A readable mismatch has its upper bit set and lower bit clear. 0x7f7f is an
++// exact match of all seven anchors; no result changes the normal state guards.
++extern "C" EMSCRIPTEN_KEEPALIVE S32 boxedwineGameBridgeDiagnostic() {
++    S32 diagnostic;
++    KProcessPtr process = gameFocusedProcess(&diagnostic);
++    if (!process) {
++        return diagnostic;
++    }
++    if (!process->memory->getData()) {
++        return -8;
++    }
++    return static_cast<S32>(gameFingerprintStatus(process->memory));
++}
++
++#endif

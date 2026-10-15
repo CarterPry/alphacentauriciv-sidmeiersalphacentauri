@@ -1,0 +1,31 @@
+{
+  "manual": {
+    "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/Manual.pdf",
+    "sha256": "21d2e5f602ecce969456b0281c017686772002d219d1648ba1b66ffcda640ec8",
+    "sections": [
+      {
+        "printedPage": 21,
+        "pdfPage": 23,
+        "heading": "Mouse movement; Examining the map",
+        "findings": [
+          "Left-drag a unit to set a destination; release issues the order.",
+          "The path can be displayed before movement, with up to three waypoints including destination.",
+          "Plain left-click recenters; units activate and bases open their control screen."
+        ]
+      },
+      {
+        "printedPage": 196,
+        "pdfPage": 198,
+        "heading": "Right-click menu",
+        "findings": [
+          "Move Unit to Here issues movement for the active unit.",
+          "Options depend on clicked square, including unit Action or Terraform and base controls."
+        ]
+      }
+    ]
+  },
+  "gameExecutable": {
+    "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+    "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+  }
+}

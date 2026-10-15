@@ -9,7 +9,7 @@ const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
 const errors = [], checks = [];
 page.on('pageerror', error => errors.push(String(error)));
 page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
-const base = process.env.TEST_URL || 'http://127.0.0.1:5173';
+const base = process.env.TEST_URL || 'http://127.0.0.1:5173/library.html';
 const textState = async () => JSON.parse(await page.evaluate(() => window.render_game_to_text()));
 const record = name => checks.push({ name, passed: true });
 try {
@@ -74,7 +74,7 @@ try {
   await page.getByRole('link', { name: 'Analysis', exact: true }).click();
   await page.getByRole('heading', { name: 'From evidence to a browser' }).waitFor();
   const links = await page.locator('main a[href^="/evidence/"]').evaluateAll(as => as.map(a => a.getAttribute('href')));
-  for (const link of links) assert.equal((await page.request.get(base + link)).status(), 200, link);
+  for (const link of links) assert.equal((await page.request.get(new URL(link, base).href)).status(), 200, link);
   record('Every rendered evidence link returns a retained source record');
 
   await page.setViewportSize({ width: 390, height: 844 });

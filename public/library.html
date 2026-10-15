@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alpha Centauri · Planetary Archive</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#play" aria-label="Alpha Centauri home"><span class="brand-symbol">✧</span><span>ALPHA CENTAURI<small>PLANETARY ARCHIVE</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#play" data-view="play">Play</a>
+      <a href="#research" data-view="research">Research</a>
+      <a href="#assets" data-view="assets">Assets</a>
+      <a href="#evidence" data-view="evidence">Analysis</a>
+    </nav>
+    <span class="local-status"><i></i> LOCAL INSTALLATION</span>
+  </header>
+  <main id="app" aria-live="polite"><div class="loading">Reading the planetary archive…</div></main>
+  <footer><span>SID MEIER’S ALPHA CENTAURI · PLANETARY PACK</span><span>Personal browser workspace · <a href="#evidence">Evidence &amp; coverage ↗</a></span></footer>
+  <dialog id="asset-dialog"><button class="dialog-close" aria-label="Close asset preview">×</button><div id="asset-detail"></div></dialog>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

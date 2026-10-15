@@ -1,0 +1,81 @@
+{
+  "url": "https://alphacentauriciv.carterpry.com",
+  "provider": "Cloudflare Workers Static Assets + private R2",
+  "worker": "alphacentauriciv",
+  "versionId": "d7b1d51e-537f-4ab1-8448-2ef21bf7cd71",
+  "gameRuns": "Client browser WebAssembly; Worker only serves bytes",
+  "staticIsolationHeaders": true,
+  "remoteArchivesFullyHashed": true,
+  "privateGitHub": "https://github.com/CarterPry/alphacentauriciv-sidmeiersalphacentauri",
+  "files": [
+    {
+      "path": "deploy/serve.js",
+      "sha256": "c9267751c5f83e11dcdd5aa04f99455e2df7a18b90aa16d6547dbcea6e3f3f86"
+    },
+    {
+      "path": "deploy/worker.js",
+      "sha256": "fcb53764207840f1c799de0b2ad749a9990720712e3db56ab5edf851259a6765"
+    },
+    {
+      "path": "wrangler.jsonc",
+      "sha256": "0ebb235b84266aa9d09294f39edd3860cb6ec0ee47f1126cb62fce246d4bd044"
+    },
+    {
+      "path": "analysis/deployment/large-files.json",
+      "sha256": "a0c9f486efc8f2bbede050688c2dbb5df2e25f834a9b3b037dfc863bdfb10db5"
+    }
+  ],
+  "archiveBrowserFlows": 6,
+  "baseNativeMenu": "passed",
+  "expansionNativeMenu": "passed",
+  "completedAt": "2026-10-15T16:41:46.687108+00:00",
+  "ownedNativeBrowsersClosed": true,
+  "evidence": [
+    {
+      "path": "analysis/deployment/http-validation.json",
+      "sha256": "ea36fe262741363bd917fba7c17b12c0bb47c60f62bf975cfdcaf7bec8bfcf25",
+      "bytes": 3845
+    },
+    {
+      "path": "analysis/deployment/archive-browser-validation.json",
+      "sha256": "6f34ef50510fa02e4866dfb526d9c1e73515c205a17f8cbff4392a4a0b3e0ea7",
+      "bytes": 1247
+    },
+    {
+      "path": "analysis/deployment/browser/hosted-base-loading.png",
+      "sha256": "8722009f7d88779cf9a49589bc61a44d1386f0eb883180ab9eeec5b0435c7fb2",
+      "bytes": 438211
+    },
+    {
+      "path": "analysis/deployment/browser/hosted-base-menu.png",
+      "sha256": "7ab3aaa9fa149f00afe72b5098c25fb4b4c2159c41dd5d213d55e1f6c095692c",
+      "bytes": 1314226
+    },
+    {
+      "path": "analysis/deployment/browser/hosted-covers.png",
+      "sha256": "ec97c4a1304f130dbd3ccfe7120575ebd7943cc4d1b81a3a6d41c37a788178b2",
+      "bytes": 553169
+    },
+    {
+      "path": "analysis/deployment/browser/hosted-expansion-loading.png",
+      "sha256": "341135795c0b427584ab254f79dc020436e4d7183917390c44bdec725e29cce0",
+      "bytes": 438208
+    },
+    {
+      "path": "analysis/deployment/browser/hosted-expansion-menu.png",
+      "sha256": "cbbc1b75422b09abb6dabbbb7c48c9d0608538599fca74e3fdb9f0ba032c25ec",
+      "bytes": 1461857
+    },
+    {
+      "path": "analysis/deployment/browser/hosted-base.json",
+      "sha256": "1096516c7164607f68b41a6a10b7c32fea3c00ec0d8546b214e9c4feee07dd85",
+      "bytes": 1476
+    },
+    {
+      "path": "analysis/deployment/browser/hosted-expansion.json",
+      "sha256": "17db5ab5daddfaa8c5068957642ab31053ac6d943cc808dd61045de5a1337801",
+      "bytes": 1507
+    }
+  ],
+  "scope": "Both cover buttons followed into opaque loading then original native menus on HTTPS. Native gameplay/movement and cancellation checked separately on identical local runtime/game bytes. Full campaigns are not claimed."
+}

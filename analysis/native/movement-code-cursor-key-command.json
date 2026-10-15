@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "provenance": {
+      "untrusted_content": true,
+      "source": "analysis_target"
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_d25045b3e84539aeb69b41f5f2adb8c716b18a653aa643887554989c78ea75dc\",\"subject\":{\"name\":\"terranx.exe\",\"digest\":{\"sha256\":\"573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4\"},\"local_path\":\"/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe\",\"format\":\"pe\",\"architecture\":\"x86\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"pe\",\"executable_role\":\"application\",\"managed\":false,\"native_aot_metadata\":{\"contract_revision\":\"rtr-9.1-x64-pe-read-only-v3\",\"source_bytes\":134217728,\"work_units\":67108864,\"working_memory_bytes\":67108864,\"report_bytes\":4194304},\"architecture\":\"x86\",\"available_architectures\":[\"x86\"],\"import_mode\":\"ephemeral-source-immutable\",\"pdb_observations\":\"program-info-v1\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"call_relationship_coverage\":\"function-body-call-coverage-v5\",\"function_dossier_coverage\":\"observed-facets-and-call-relationships-v1\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"procedure_file_offset_resolution\":\"address-first-unique-target-source-mapping-v2\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"instruction_references\":\"exact-address-incoming-v1\",\"function_boundary_observations\":\"ghidra-function-boundary-limitations-v3\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"procedure_pseudo_code\",\"parameters\":{\"procedure\":\"0x5166d0\"},\"raw_result\":{\"value\":\"\\nvoid FUN_005166d0(undefined4 param_1,undefined4 param_2)\\n\\n{\\n  uint uVar1;\\n  int iVar2;\\n  int iVar3;\\n  int *piVar4;\\n  \\n  switch(param_2) {\\n  case 0x20:\\n    iVar3 = FUN_004e3a50((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8]);\\n    if (-1 < iVar3) {\\n      if (((byte)DAT_009a64c0 & 0x80) != 0) {\\nLAB_00516761:\\n        FUN_0041a920(iVar3,0);\\n        return;\\n      }\\n      if (((byte)(&DAT_0097d044)[iVar3 * 0x134] == DAT_00939284) ||\\n         ((((&DAT_0097d04a)[iVar3 * 0x134] & (byte)(1 << ((byte)DAT_00939284 & 0x1f))) != 0 &&\\n          (iVar2 = FUN_0055bc00((uint)(byte)(&DAT_0097d044)[iVar3 * 0x134]), iVar2 != 0))))\\n      goto LAB_00516761;\\n    }\\n  case 0x61:\\n    if (DAT_0093e944 == 0) {\\n      FUN_004d2f00((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8],1);\\n      return;\\n    }\\n    break;\\n  case 0x62:\\n    iVar3 = FUN_004e3c60((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8],DAT_00939284);\\n    if (-1 < iVar3) {\\n      FUN_0041a920(iVar3,0);\\n      return;\\n    }\\n    break;\\n  case 0x67:\\n    if (((DAT_0093a938 == 0) && (DAT_0093e944 == 0)) &&\\n       (iVar3 = FUN_004e3a50((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8]),\\n       -1 < iVar3)) {\\n      FUN_004d61a0(iVar3,0xffffffff,0);\\n      return;\\n    }\\n    break;\\n  case 0x70:\\n    piVar4 = &DAT_007d3c3c;\\n    uVar1 = *(uint *)(DAT_007d3c3c + 0x1dd70);\\n    do {\\n      iVar3 = *piVar4;\\n      if ((iVar3 != 0) && ((piVar4 == &DAT_007d3c3c || (*(int *)(iVar3 + 0x1dd74) != 0)))) {\\n        if ((uVar1 & 0x400000) == 0) {\\n          *(uint *)(iVar3 + 0x1dd70) = *(uint *)(iVar3 + 0x1dd70) | 0x400000;\\n          FUN_00467970(1);\\n        }\\n        else {\\n          *(uint *)(iVar3 + 0x1dd70) = *(uint *)(iVar3 + 0x1dd70) & 0xffbfffff;\\n          FUN_0046a550(1);\\n        }\\n      }\\n      piVar4 = piVar4 + 1;\\n    } while ((int)piVar4 < 0x7d3c5c);\\n  }\\n  return;\\n}\\n\\n\",\"limitations\":[]},\"normalized_result\":\"\\nvoid FUN_005166d0(undefined4 param_1,undefined4 param_2)\\n\\n{\\n  uint uVar1;\\n  int iVar2;\\n  int iVar3;\\n  int *piVar4;\\n  \\n  switch(param_2) {\\n  case 0x20:\\n    iVar3 = FUN_004e3a50((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8]);\\n    if (-1 < iVar3) {\\n      if (((byte)DAT_009a64c0 & 0x80) != 0) {\\nLAB_00516761:\\n        FUN_0041a920(iVar3,0);\\n        return;\\n      }\\n      if (((byte)(&DAT_0097d044)[iVar3 * 0x134] == DAT_00939284) ||\\n         ((((&DAT_0097d04a)[iVar3 * 0x134] & (byte)(1 << ((byte)DAT_00939284 & 0x1f))) != 0 &&\\n          (iVar2 = FUN_0055bc00((uint)(byte)(&DAT_0097d044)[iVar3 * 0x134]), iVar2 != 0))))\\n      goto LAB_00516761;\\n    }\\n  case 0x61:\\n    if (DAT_0093e944 == 0) {\\n      FUN_004d2f00((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8],1);\\n      return;\\n    }\\n    break;\\n  case 0x62:\\n    iVar3 = FUN_004e3c60((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8],DAT_00939284);\\n    if (-1 < iVar3) {\\n      FUN_0041a920(iVar3,0);\\n      return;\\n    }\\n    break;\\n  case 0x67:\\n    if (((DAT_0093a938 == 0) && (DAT_0093e944 == 0)) &&\\n       (iVar3 = FUN_004e3a50((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8]),\\n       -1 < iVar3)) {\\n      FUN_004d61a0(iVar3,0xffffffff,0);\\n      return;\\n    }\\n    break;\\n  case 0x70:\\n    piVar4 = &DAT_007d3c3c;\\n    uVar1 = *(uint *)(DAT_007d3c3c + 0x1dd70);\\n    do {\\n      iVar3 = *piVar4;\\n      if ((iVar3 != 0) && ((piVar4 == &DAT_007d3c3c || (*(int *)(iVar3 + 0x1dd74) != 0)))) {\\n        if ((uVar1 & 0x400000) == 0) {\\n          *(uint *)(iVar3 + 0x1dd70) = *(uint *)(iVar3 + 0x1dd70) | 0x400000;\\n          FUN_00467970(1);\\n        }\\n        else {\\n          *(uint *)(iVar3 + 0x1dd70) = *(uint *)(iVar3 + 0x1dd70) & 0xffbfffff;\\n          FUN_0046a550(1);\\n        }\\n      }\\n      piVar4 = piVar4 + 1;\\n    } while ((int)piVar4 < 0x7d3c5c);\\n  }\\n  return;\\n}\\n\\n\",\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.\",\"External functions and functions without an analyzable body return null; other decompiler failures remain explicit.\",\"macOS sessions require a matching executable Ghidra native decompiler; REA checks for it but does not build native components or change Gatekeeper quarantine state.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_d25045b3e84539aeb69b41f5f2adb8c716b18a653aa643887554989c78ea75dc",
+    "subject": {
+      "name": "terranx.exe",
+      "digest": {
+        "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+      },
+      "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+      "format": "pe",
+      "architecture": "x86"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "pdb_observations": "program-info-v1",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "call_relationship_coverage": "function-body-call-coverage-v5",
+        "function_dossier_coverage": "observed-facets-and-call-relationships-v1",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "procedure_file_offset_resolution": "address-first-unique-target-source-mapping-v2",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "instruction_references": "exact-address-incoming-v1",
+        "function_boundary_observations": "ghidra-function-boundary-limitations-v3",
+        "no_return_repair": "returning-imports-decoded-return-v2",
+        "process_launch": "inspected-jvm-launch-support-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "483a3c23d7b0c6333d61d7e050154873e5f8d7ea53a284362e069d8e793666a4"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x5166d0"
+    },
+    "raw_result": {
+      "value": "\nvoid FUN_005166d0(undefined4 param_1,undefined4 param_2)\n\n{\n  uint uVar1;\n  int iVar2;\n  int iVar3;\n  int *piVar4;\n  \n  switch(param_2) {\n  case 0x20:\n    iVar3 = FUN_004e3a50((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8]);\n    if (-1 < iVar3) {\n      if (((byte)DAT_009a64c0 & 0x80) != 0) {\nLAB_00516761:\n        FUN_0041a920(iVar3,0);\n        return;\n      }\n      if (((byte)(&DAT_0097d044)[iVar3 * 0x134] == DAT_00939284) ||\n         ((((&DAT_0097d04a)[iVar3 * 0x134] & (byte)(1 << ((byte)DAT_00939284 & 0x1f))) != 0 &&\n          (iVar2 = FUN_0055bc00((uint)(byte)(&DAT_0097d044)[iVar3 * 0x134]), iVar2 != 0))))\n      goto LAB_00516761;\n    }\n  case 0x61:\n    if (DAT_0093e944 == 0) {\n      FUN_004d2f00((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8],1);\n      return;\n    }\n    break;\n  case 0x62:\n    iVar3 = FUN_004e3c60((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8],DAT_00939284);\n    if (-1 < iVar3) {\n      FUN_0041a920(iVar3,0);\n      return;\n    }\n    break;\n  case 0x67:\n    if (((DAT_0093a938 == 0) && (DAT_0093e944 == 0)) &&\n       (iVar3 = FUN_004e3a50((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8]),\n       -1 < iVar3)) {\n      FUN_004d61a0(iVar3,0xffffffff,0);\n      return;\n    }\n    break;\n  case 0x70:\n    piVar4 = &DAT_007d3c3c;\n    uVar1 = *(uint *)(DAT_007d3c3c + 0x1dd70);\n    do {\n      iVar3 = *piVar4;\n      if ((iVar3 != 0) && ((piVar4 == &DAT_007d3c3c || (*(int *)(iVar3 + 0x1dd74) != 0)))) {\n        if ((uVar1 & 0x400000) == 0) {\n          *(uint *)(iVar3 + 0x1dd70) = *(uint *)(iVar3 + 0x1dd70) | 0x400000;\n          FUN_00467970(1);\n        }\n        else {\n          *(uint *)(iVar3 + 0x1dd70) = *(uint *)(iVar3 + 0x1dd70) & 0xffbfffff;\n          FUN_0046a550(1);\n        }\n      }\n      piVar4 = piVar4 + 1;\n    } while ((int)piVar4 < 0x7d3c5c);\n  }\n  return;\n}\n\n",
+      "limitations": []
+    },
+    "normalized_result": "\nvoid FUN_005166d0(undefined4 param_1,undefined4 param_2)\n\n{\n  uint uVar1;\n  int iVar2;\n  int iVar3;\n  int *piVar4;\n  \n  switch(param_2) {\n  case 0x20:\n    iVar3 = FUN_004e3a50((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8]);\n    if (-1 < iVar3) {\n      if (((byte)DAT_009a64c0 & 0x80) != 0) {\nLAB_00516761:\n        FUN_0041a920(iVar3,0);\n        return;\n      }\n      if (((byte)(&DAT_0097d044)[iVar3 * 0x134] == DAT_00939284) ||\n         ((((&DAT_0097d04a)[iVar3 * 0x134] & (byte)(1 << ((byte)DAT_00939284 & 0x1f))) != 0 &&\n          (iVar2 = FUN_0055bc00((uint)(byte)(&DAT_0097d044)[iVar3 * 0x134]), iVar2 != 0))))\n      goto LAB_00516761;\n    }\n  case 0x61:\n    if (DAT_0093e944 == 0) {\n      FUN_004d2f00((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8],1);\n      return;\n    }\n    break;\n  case 0x62:\n    iVar3 = FUN_004e3c60((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8],DAT_00939284);\n    if (-1 < iVar3) {\n      FUN_0041a920(iVar3,0);\n      return;\n    }\n    break;\n  case 0x67:\n    if (((DAT_0093a938 == 0) && (DAT_0093e944 == 0)) &&\n       (iVar3 = FUN_004e3a50((&DAT_009392c0)[DAT_009392b8],(&DAT_00939340)[DAT_009392b8]),\n       -1 < iVar3)) {\n      FUN_004d61a0(iVar3,0xffffffff,0);\n      return;\n    }\n    break;\n  case 0x70:\n    piVar4 = &DAT_007d3c3c;\n    uVar1 = *(uint *)(DAT_007d3c3c + 0x1dd70);\n    do {\n      iVar3 = *piVar4;\n      if ((iVar3 != 0) && ((piVar4 == &DAT_007d3c3c || (*(int *)(iVar3 + 0x1dd74) != 0)))) {\n        if ((uVar1 & 0x400000) == 0) {\n          *(uint *)(iVar3 + 0x1dd70) = *(uint *)(iVar3 + 0x1dd70) | 0x400000;\n          FUN_00467970(1);\n        }\n        else {\n          *(uint *)(iVar3 + 0x1dd70) = *(uint *)(iVar3 + 0x1dd70) & 0xffbfffff;\n          FUN_0046a550(1);\n        }\n      }\n      piVar4 = piVar4 + 1;\n    } while ((int)piVar4 < 0x7d3c5c);\n  }\n  return;\n}\n\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "macOS sessions require a matching executable Ghidra native decompiler; REA checks for it but does not build native components or change Gatekeeper quarantine state."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

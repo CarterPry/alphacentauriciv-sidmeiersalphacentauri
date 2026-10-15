@@ -1,0 +1,148 @@
+{
+  "scope": "Live local Chromium/WASM observations plus separately identified UI fixtures and host tests. No full-campaign parity claim.",
+  "engine": "SingleThreadedJitInput",
+  "nativeExpansion": {
+    "fingerprintDiagnostic": 32639,
+    "before": {
+      "unit": "Scout Patrol",
+      "tile": [
+        11,
+        49
+      ],
+      "year": 2102,
+      "energy": 14,
+      "moves": 1,
+      "orders": "No Orders"
+    },
+    "cancel": [
+      "Escape",
+      "right-click",
+      "host tools focus",
+      "delayed Cancel click"
+    ],
+    "afterCancel": {
+      "drag": 0,
+      "canPlan": 1,
+      "unitMode": 1,
+      "unitAndYearUnchanged": true
+    },
+    "saveDialog": {
+      "canPlan": 0,
+      "moveHidden": true
+    },
+    "afterDestinationClick": {
+      "tile": [
+        11,
+        47
+      ],
+      "year": 2103,
+      "energy": 16,
+      "phase": "idle"
+    }
+  },
+  "nativeBase": {
+    "autostart": true,
+    "reached": "original menu",
+    "moveAdapterHidden": true
+  },
+  "tests": {
+    "project": 37,
+    "archiveFlows": 6,
+    "bridgeHostAssertions": 183,
+    "readinessFrames": 17,
+    "isolatedUIFlows": 11
+  },
+  "artifacts": [
+    {
+      "path": "analysis/input/adapter/final-cancel-button.png",
+      "sha256": "9c8471b945a6648ee400da44776a28514099275d97a08d266ba806a7a459fe9a",
+      "bytes": 720690
+    },
+    {
+      "path": "analysis/input/adapter/final-click-move.png",
+      "sha256": "d1e6e78e7c872f3d3e2611cb88678e8bfa269a6cd380ad9fcfe5c3e4d1b4f9d1",
+      "bytes": 754966
+    },
+    {
+      "path": "analysis/input/adapter/final-escape-restored.png",
+      "sha256": "d217fb278e0b58216984f0171a3b6d574bf42e224396afbc0f253feba35e7491",
+      "bytes": 718149
+    },
+    {
+      "path": "analysis/input/adapter/final-host-focus-cancel.png",
+      "sha256": "3f93d8fb0fc341f12d11fdd5c2b97ec2c949c7161b93ca47e87fb56212c8f171",
+      "bytes": 725108
+    },
+    {
+      "path": "analysis/input/adapter/final-hover.png",
+      "sha256": "0912a873306a12199ac84ace52da5716fac664ffb0573c3d00e790733ba60edb",
+      "bytes": 718194
+    },
+    {
+      "path": "analysis/input/adapter/final-loading.png",
+      "sha256": "ac048b02a8177c904dc06a6b74442892646f488042bbeb4790ae0e618b99e010",
+      "bytes": 438215
+    },
+    {
+      "path": "analysis/input/adapter/final-native-route.png",
+      "sha256": "464164ab91fb46be9ae1e0371ef4ca1de0cdc7623043772e069c0ab81eff1238",
+      "bytes": 718175
+    },
+    {
+      "path": "analysis/input/adapter/final-native-save-guard.png",
+      "sha256": "30e0cf43e4b71386936e77a2160ce499cf0e079bd60151e112b86219a38031db",
+      "bytes": 609229
+    },
+    {
+      "path": "analysis/input/adapter/final-right-cancel.png",
+      "sha256": "fdd22ed56597987aabd79aa4e90f7f07204961e3a889688babd6973441521eed",
+      "bytes": 718909
+    },
+    {
+      "path": "analysis/input/adapter/final-selected.png",
+      "sha256": "645cf0c264e19871f2024c2accd0faf04351ae0852b3cfa077a4736a9c984324",
+      "bytes": 718957
+    },
+    {
+      "path": "analysis/input/adapter/base-final-loader.png",
+      "sha256": "4d90991a9d1e112533f0897a52f8d9198e194916652e054bf36731b341a34619",
+      "bytes": 438204
+    },
+    {
+      "path": "analysis/input/adapter/base-final-menu.png",
+      "sha256": "bdb78169c173ce258ade8bc35e7379280ce5be1878fd3a7474127f0e01bd62b7",
+      "bytes": 1314240
+    },
+    {
+      "path": "analysis/input/ui/skill-covers/shot-0.png",
+      "sha256": "c8c96c613eb43e49ea34c7e0227cf4132c8e4d55f3b106a82718a85fdf0c2e67",
+      "bytes": 317079
+    },
+    {
+      "path": "analysis/input/game-input-bridge-validation.json",
+      "sha256": "4b97c3fc44cfc114b79342940af41897788095e81f783627452ec3b7374b8a8b",
+      "bytes": 3854
+    },
+    {
+      "path": "analysis/input/movement-evidence-verification.json",
+      "sha256": "d3ed26dc43f8331b7f8a94ef29e9826aa44ff154f9f56070228b3c4556782f73",
+      "bytes": 24473
+    },
+    {
+      "path": "analysis/input/ui/layout/validation.json",
+      "sha256": "ad41347e86abe28c9e8d2eae8b8064d1b2547d3fd9a7680beeafb8193fbe31f9",
+      "bytes": 2110
+    },
+    {
+      "path": "analysis/input/ui/skill-base/shot-0.png",
+      "sha256": "7f4b485824e1ff8fe5b25b6f84b2bd5d1edc61e07576dbe4e5621a1b560b0493",
+      "bytes": 140864
+    },
+    {
+      "path": "analysis/input/ui/skill-base/state-0.json",
+      "sha256": "63582942c9e1fb1a2f855ad196167758a356133c0a40b2940fa7052011fda1c6",
+      "bytes": 1094
+    }
+  ],
+  "prescribedClientBase": "Cover click began real native loading. At the 60-second capture it was booting with first menu-frame recognition; this capture alone does not establish menu reveal. Separate live probe reached the base menu."
+}

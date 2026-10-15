@@ -1,0 +1,71 @@
+{
+  "reason": "Keep current UI fixture outputs separate from historical performance evidence.",
+  "files": [
+    {
+      "from": "analysis/runtime/loading/base-menu-revealed.png",
+      "to": "analysis/input/ui/loading/base-menu-revealed.png",
+      "sha256": "52da9c590c26091f8794b356cd7e7a881082a56c754ef24c85a9a06b100e7b05",
+      "restoredHistoricalSha256": "fb3d522843fd1e2fb7a0382f4bc01f6f869925310a1d162a766c335c91b9dff8"
+    },
+    {
+      "from": "analysis/runtime/loading/blue-frame-covered.png",
+      "to": "analysis/input/ui/loading/blue-frame-covered.png",
+      "sha256": "626c38e25b76a23e3f6678aff08831a637ad8c7c0c5fffc955917ceb9d0c36c6",
+      "restoredHistoricalSha256": "4307ae3ca20b3d51a8414cb7a2ca6348849087e7204e50176bd10e7787a8fb79"
+    },
+    {
+      "from": "analysis/runtime/loading/dom-validation.json",
+      "to": "analysis/input/ui/loading/dom-validation.json",
+      "sha256": "f9c7af69ebc86bbe9c6f5946446c61f4e4e191e39db0e842b85e473f4d77ad55",
+      "restoredHistoricalSha256": "5c69542293d4b7be6a3b57b3883a9aa0f91def2602f191f61fedab217b5cf01e"
+    },
+    {
+      "from": "analysis/runtime/loading/fullscreen-rejected-game-active.png",
+      "to": "analysis/input/ui/loading/fullscreen-rejected-game-active.png",
+      "sha256": "fe450e2529edb916476b151b71a964a8201484c8bb9a5e9969fb1e8049dd63d1",
+      "restoredHistoricalSha256": "ca014c8aaaf72dc082211a4083e6398c7b784413314b5d9c55d581d33d02b37a"
+    },
+    {
+      "from": "analysis/runtime/loading/native-menu-revealed.png",
+      "to": "analysis/input/ui/loading/native-menu-revealed.png",
+      "sha256": "122dd38b5cc8b3a702937ddce63e0c4c733ca53a6c0b6fd6975e70da298fa84c",
+      "restoredHistoricalSha256": "561c94003739a3ba085c32b054bbb71898afc1b873a02056a5819ee1d3321564"
+    },
+    {
+      "from": "analysis/runtime/loading/runtime-error-covered.png",
+      "to": "analysis/input/ui/loading/runtime-error-covered.png",
+      "sha256": "e4ec805154709bb072dacf29c9648c2ec92ce7cfb5fd5f3c31fefef2c1985e73",
+      "restoredHistoricalSha256": "73c8eedae388b99d69ab8bb0966ceca02f8c6c79cd502fd970d3f63152c06c53"
+    },
+    {
+      "from": "analysis/runtime/loading/splash-covered.png",
+      "to": "analysis/input/ui/loading/splash-covered.png",
+      "sha256": "7b1069e58b96729c4e8b2e9dcd54350bb810c97877d0a2fa157d23bd3d9fe279",
+      "restoredHistoricalSha256": "86a692f0374632b51bef35f774d9ee43d989932d812d220639f947447a3b05c8"
+    },
+    {
+      "from": "analysis/runtime/loading/runtime-initialized-covered.png",
+      "to": "analysis/input/ui/loading/runtime-initialized-covered.png",
+      "sha256": "2781a9b354353dff8257f82b6065b98ec427b202c27d83dd2097b63549777498"
+    },
+    {
+      "from": "analysis/runtime/storage-ui-test/after-reload.png",
+      "to": "analysis/input/ui/storage/after-reload.png",
+      "sha256": "5d5f7b23f1eb5a984bafe68f549bbbe9d739b88d42dc396e475400cde9cac05b",
+      "restoredHistoricalSha256": "72804dfe0bb69cfc2d8c580836fe91323f1d1e68bc99a61d32c65be93e5d6384"
+    },
+    {
+      "from": "analysis/runtime/storage-ui-test/validation.json",
+      "to": "analysis/input/ui/storage/validation.json",
+      "sha256": "dbfe57e1d43f32202f99c90c40a94576681040260b05d73aca7b79495ce77e5f",
+      "restoredHistoricalSha256": "a7a1b7db9566f2572d9af609e7125bfaef941431895e2581ab1c946799537037",
+      "originalGeneratedSha256": "63bdffc74f97d2d0551e27766af0220c15f8614acb3d09fe54c04485b0cab51d",
+      "adjustment": "Updated relocated report screenshot path only."
+    },
+    {
+      "from": "analysis/runtime/storage-ui-test/roundtrip.SAV",
+      "to": "analysis/input/ui/storage/roundtrip.SAV",
+      "sha256": "b2e499e09ce0e458d02d13ab1a8e9e55dc846c6d88a98d050801c3c5b17a0e42"
+    }
+  ]
+}

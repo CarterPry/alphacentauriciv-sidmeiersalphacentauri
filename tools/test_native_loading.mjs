@@ -4,7 +4,7 @@ import {chromium} from 'playwright';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-const out='analysis/runtime/loading';await fs.mkdir(out,{recursive:true});
+const out='analysis/input/ui/loading';await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage({viewport:{width:1400,height:1080}});
 const errors=[];page.on('pageerror',error=>errors.push(String(error)));
@@ -51,9 +51,12 @@ window.installSdlKeyboard=()=>{
 window.addEventListener('wheel',event=>{const rect=Module.canvas.getBoundingClientRect();if(event.clientX>=rect.left&&event.clientX<rect.right&&event.clientY>=rect.top&&event.clientY<rect.bottom){guestInputLog.push({type:'wheel'});event.preventDefault();event.stopImmediatePropagation();}},{capture:true,passive:false});
 Module.onRuntimeInitialized();document.getElementById('startbtn').style.display='';
 `}));
-async function open(edition='alien-crossfire') {
- await page.goto('http://localhost:5173/play.html?edition='+edition);
- await page.waitForFunction(()=>JSON.parse(render_game_to_text()).phase==='ready');
+async function open(edition='alien-crossfire',autoStart=false) {
+ await page.goto('http://localhost:5173/play.html?edition='+edition+(autoStart?'':'&autostart=0'));
+ await page.waitForFunction(phase=>JSON.parse(render_game_to_text()).phase===phase,autoStart?'booting':'ready');
+}
+async function openTools() {
+ if(!await page.locator('#player-tools').evaluate(details=>details.open))await page.locator('#player-tools summary').click();
 }
 async function paint(file) {
  const b=await fs.readFile('analysis/runtime/'+file);
@@ -75,14 +78,19 @@ assert.equal(await page.locator('#boot-screen').getAttribute('aria-busy'),'false
 assert.equal(await page.locator('#canvas').evaluate(c=>c.inert),true);
 assert.equal(await page.locator('#fullscreen-btn').isDisabled(),true);
 assert.equal(await page.evaluate(()=>JSON.parse(render_game_to_text()).runtimeInitialized),true);
-await page.screenshot({path:out+'/ready-to-start.png'});
+assert.equal(await page.locator('#startbtn').isVisible(),false,'diagnostic startup control stays out of the player UI');
+await page.screenshot({path:out+'/runtime-initialized-covered.png'});
 await coveredInput();
+await openTools();
 await page.locator('#saves-btn').click();
 assert.equal(await page.locator('#saved-games').isVisible(),true);
 await page.keyboard.press('Escape');
 assert.equal(await page.locator('#saved-games').isVisible(),false);
 assert.deepEqual(await inputLog(),[],'host dialog and Escape remain outside the guest before Start');
-await page.locator('#startbtn').focus();await page.keyboard.press('Enter');
+await page.locator('#player-tools summary').click();
+// The hidden compatibility control is not a user-facing start gate. Start the
+// stub explicitly so initialization-before-start remains independently tested.
+await page.evaluate(()=>start());
 await page.waitForFunction(()=>JSON.parse(render_game_to_text()).phase==='booting');
 await page.evaluate(()=>{const c=document.getElementById('canvas');c.width=1024;c.height=768;c.getContext('2d').fillStyle='#2040cc';c.getContext('2d').fillRect(0,0,1024,768)});
 await page.waitForTimeout(2200);
@@ -119,6 +127,7 @@ input=await inputLog();
 assert.deepEqual(input.filter(event=>event.type==='button').map(event=>event.down),[1,0],'drag release remains paired outside the canvas');
 assert.deepEqual(await heldInput(),{keys:[],buttons:[]});
 // A ready game must never steal normal host dialog keys or covered clicks.
+await openTools();
 await page.locator('#saves-btn').click();await clearInput();
 await page.locator('#saved-games h2').click();await page.mouse.wheel(0,60);
 await page.locator('#close-saves').focus();await page.keyboard.press('Tab');
@@ -157,12 +166,14 @@ assert.equal(await page.locator('#fullscreen-btn').isDisabled(),true);
 assert.equal(await page.locator('#boot-stage').textContent(),'The game could not start');
 await coveredInput();
 await page.screenshot({path:out+'/runtime-error-covered.png'});
-await open('alpha-centauri');await page.locator('#startbtn').click();
+// The ordinary base-edition URL must start automatically without a button.
+await open('alpha-centauri',true);
+assert.equal(await page.locator('#startbtn').isVisible(),false);
 await paint('browser-base-focus/base-boot-progress.png');
 await page.waitForFunction(()=>JSON.parse(render_game_to_text()).phase==='game-ready');
 assert.equal(await page.locator('#edition-title').textContent(),'Alpha Centauri');
 await page.screenshot({path:out+'/base-menu-revealed.png'});
 await browser.close();
 assert.deepEqual(errors,[]);
-await fs.writeFile(out+'/dom-validation.json',JSON.stringify({passed:true,emulatorStarted:false,scope:'Real player DOM with exact pinned runtime window-capture input handlers, generated SDL keypress listener, stub native exports and retained native screenshots',nativeInputFixture:'tools/fixtures/boxedwine-input-listeners.js',keypressFixture,runtimeInitializationDoesNotReveal:true,blueAndSplashRemainCovered:true,twoSampleNativeMenuReveal:true,bothEditions:true,keyboardStartAndDialogEscape:true,coveredGuestInputBlocked:true,readyDialogTabEnterEscapePreserved:true,canvasMouseArrowAndCtrlMetaShortcuts:true,dragOutsideCanvasRelease:true,heldKeyAndMouseReleasedOnModalOpen:true,fullscreenRejectionNonfatal:true,canvasFocusRestored:true,readinessReadsAtReveal:reads,noSamplingAfterReveal:true,failureRestoresCover:true,consoleErrors:errors,completedState:completed},null,2)+'\n');
+await fs.writeFile(out+'/dom-validation.json',JSON.stringify({passed:true,emulatorStarted:false,scope:'Real player DOM with exact pinned runtime window-capture input handlers, generated SDL keypress listener, stub native exports and retained native screenshots',nativeInputFixture:'tools/fixtures/boxedwine-input-listeners.js',keypressFixture,runtimeInitializationDoesNotReveal:true,blueAndSplashRemainCovered:true,twoSampleNativeMenuReveal:true,bothEditions:true,defaultAutostart:true,compatibilityStartHidden:true,diagnosticStartAndDialogEscape:true,toolsMenuAccessible:true,coveredGuestInputBlocked:true,readyDialogTabEnterEscapePreserved:true,canvasMouseArrowAndCtrlMetaShortcuts:true,dragOutsideCanvasRelease:true,heldKeyAndMouseReleasedOnModalOpen:true,fullscreenRejectionNonfatal:true,canvasFocusRestored:true,readinessReadsAtReveal:reads,noSamplingAfterReveal:true,failureRestoresCover:true,consoleErrors:errors,completedState:completed},null,2)+'\n');
 console.log('Loading DOM replay passed; no native emulation started.');

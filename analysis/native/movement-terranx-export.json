@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/port/movement-terranx-evidence-bundle.json\",\"bytes\":943632,\"records\":43,\"unknowns\":0}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/Users/carte/Documents/ChatGPT/REA-AlphaCentauri/analysis/port/movement-terranx-evidence-bundle.json",
+      "bytes": 943632,
+      "records": 43,
+      "unknowns": 0
+    }
+  }
+}

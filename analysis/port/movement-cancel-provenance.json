@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-15T16:01:26.196390+00:00",
+  "source": {
+    "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+    "bytes": 3094576,
+    "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+  },
+  "source_unchanged_sha256": true,
+  "rea_version": "6.5.0",
+  "provider": "Ghidra12.1.4",
+  "bundle": {
+    "path": "analysis/port/movement-cancel-evidence-bundle.json",
+    "bytes": 165075,
+    "sha256": "f5de23cef993d8c1ac3e287e2bdb518d8ac14844184e1c9d05d6a5fd83de1c04",
+    "evidence_ids": [
+      "ev_41c5a06f4acea268787021b5a79d5c040abd3e001b0ea826dfea20ec0e2a49a6",
+      "ev_456a757053fb643bf391459cfafe4c4d0224b52cad938c0a72391823003c0472",
+      "ev_4c71aae8e067c40ce50e32167801d532697bf7a382f42c7db505091e35d56dd3",
+      "ev_7ce25fd708cf5bb99fb578e67969a3cb662765e183c983fd19e850a68c089515",
+      "ev_9491923f1b969c667fa9840ec33b9c34ea6c3f5492e00afb5c0db59c6b312798",
+      "ev_a7171b2ad977224f2ae44507a96f5db13090e05c5b8a7c92a7f43fdd2dc71b72",
+      "ev_ab2d49dbe800ca52f8c6ce3eb281a74517a52a6c5b7feaf2cdd6b27c2b8ddd23",
+      "ev_ffcccd489717bdfb9a7fd01f12879edf4e7a7c455d511e630d028ee7cbe946a5"
+    ],
+    "record_count": 8
+  },
+  "new_artifacts": [
+    {
+      "path": "analysis/native/movement-cancel-check-unit.c",
+      "bytes": 53873,
+      "sha256": "3d4762dbcaca1edf958d9e77e9d7e995005d625ff06134d2db636db00086bd1d"
+    },
+    {
+      "path": "analysis/native/movement-cancel-check-unit.json",
+      "bytes": 230738,
+      "sha256": "18b43284ff9a176b295bdd53322b0a5123d6bcb4479297fce01f1641356c6076",
+      "evidence_id": "ev_4c71aae8e067c40ce50e32167801d532697bf7a382f42c7db505091e35d56dd3",
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      },
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5b6260"
+      }
+    },
+    {
+      "path": "analysis/native/movement-cancel-close.json",
+      "bytes": 251,
+      "sha256": "fb3beac94c0871148d4cdb98bf38d13aafaa4e281a422cb0995a943c16648a51"
+    },
+    {
+      "path": "analysis/native/movement-cancel-edit-lock.c",
+      "bytes": 306,
+      "sha256": "096ef9e7587e490846f6a30340b8e89be3520eaf98ef345004c5640c9967618f"
+    },
+    {
+      "path": "analysis/native/movement-cancel-edit-lock.json",
+      "bytes": 9216,
+      "sha256": "b28ec9cdd6b97efbff8b79fc62945d8774c2a3a9e18bdfae55e3fe99895edc3e",
+      "evidence_id": "ev_9491923f1b969c667fa9840ec33b9c34ea6c3f5492e00afb5c0db59c6b312798",
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      },
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x4e1f40"
+      }
+    },
+    {
+      "path": "analysis/native/movement-cancel-export.json",
+      "bytes": 479,
+      "sha256": "41b5745edebab244ca65e9c7542b1c0991c0de5950e834eb8b5790742b823db0"
+    },
+    {
+      "path": "analysis/native/movement-cancel-focus.c",
+      "bytes": 1359,
+      "sha256": "5cb49324a3a093847be18fc8ea1c3f1b2d5ff059b6a196bd04fcad99251f7383"
+    },
+    {
+      "path": "analysis/native/movement-cancel-focus.json",
+      "bytes": 13662,
+      "sha256": "113c126ba9b8bae853896898640945d7e1d9465789417fb34cdd943360102b9f",
+      "evidence_id": "ev_ab2d49dbe800ca52f8c6ce3eb281a74517a52a6c5b7feaf2cdd6b27c2b8ddd23",
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      },
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5108a0"
+      }
+    },
+    {
+      "path": "analysis/native/movement-cancel-open.json",
+      "bytes": 900,
+      "sha256": "349e1c15979e12abcba143a94fee78f8dfd175ee27e4fd2be14086bb83be9f77"
+    },
+    {
+      "path": "analysis/native/movement-cancel-ready.c",
+      "bytes": 6617,
+      "sha256": "5b99a90e1700cdfb3e89437123751236188d2706854d20adc07e9620e38f2a52"
+    },
+    {
+      "path": "analysis/native/movement-cancel-ready.json",
+      "bytes": 35500,
+      "sha256": "dd3357495c1ae9a950a6b9e25d2189bca83602e2a31f4fc0a5e693c90ace5e2f",
+      "evidence_id": "ev_a7171b2ad977224f2ae44507a96f5db13090e05c5b8a7c92a7f43fdd2dc71b72",
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      },
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x510f50"
+      }
+    },
+    {
+      "path": "analysis/native/movement-cancel-set-move.c",
+      "bytes": 2879,
+      "sha256": "e2f690ec78e455347ebc1ab9233ad835919d3ccafb4bbf92ce41f9fcd6fcd680"
+    },
+    {
+      "path": "analysis/native/movement-cancel-set-move.json",
+      "bytes": 20014,
+      "sha256": "f1a62b1adc4c69228392fc2cf88d5e217c059728d22cdc17ba722e2002fb8169",
+      "evidence_id": "ev_41c5a06f4acea268787021b5a79d5c040abd3e001b0ea826dfea20ec0e2a49a6",
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      },
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x511520"
+      }
+    },
+    {
+      "path": "analysis/native/movement-cancel-set-view.c",
+      "bytes": 592,
+      "sha256": "8dc5388fd643d28fe8080c64a55ab62f51333bf541a0620e0dac263232b21d29"
+    },
+    {
+      "path": "analysis/native/movement-cancel-set-view.json",
+      "bytes": 10408,
+      "sha256": "dbb193f5118bfcfeba2f698bf3ae7cc14227e1726f6d72b076399926faea4482",
+      "evidence_id": "ev_ffcccd489717bdfb9a7fd01f12879edf4e7a7c455d511e630d028ee7cbe946a5",
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      },
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x511480"
+      }
+    },
+    {
+      "path": "analysis/native/movement-cancel-unit-active.c",
+      "bytes": 734,
+      "sha256": "a5ad16004f7e23e84495c5173b4001a4542b140473d7f743b998ad7f586d44b1"
+    },
+    {
+      "path": "analysis/native/movement-cancel-unit-active.json",
+      "bytes": 10988,
+      "sha256": "300dca4692f243550a7d6cd1fb0b5a0d97965daaf6ee0fcb014c84d51795b86f",
+      "evidence_id": "ev_7ce25fd708cf5bb99fb578e67969a3cb662765e183c983fd19e850a68c089515",
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      },
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5c1a20"
+      }
+    },
+    {
+      "path": "analysis/native/movement-cancel-unit-dependency.c",
+      "bytes": 964,
+      "sha256": "11a43459b263d4427fa74a787ea6093e5e40e6a525c3a164636d1ee1a436b12a"
+    },
+    {
+      "path": "analysis/native/movement-cancel-unit-dependency.json",
+      "bytes": 11920,
+      "sha256": "e5d141e454a75a029446dd648835b18b9b8a1606a2d952ad13286449e4763cd3",
+      "evidence_id": "ev_456a757053fb643bf391459cfafe4c4d0224b52cad938c0a72391823003c0472",
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      },
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5c1c40"
+      }
+    }
+  ],
+  "existing_evidence_used": [
+    {
+      "path": "analysis/native/movement-instructions-key-click.json",
+      "bytes": 616008,
+      "sha256": "9b62334bca09282dee8cc89d39b07bbcc22a638eb674b86e193d1f7649f67754",
+      "evidence_id": "ev_06dd438640e537ff6686c2b565b3df3e06d657a820b34d3d59f12a1ed6f2fb73"
+    },
+    {
+      "path": "analysis/native/movement-code-key-click.json",
+      "bytes": 305788,
+      "sha256": "f4740bf7991f191c7615e87d5dc538c061fc4834f8fb47ff615b9db65d85341d",
+      "evidence_id": "ev_3ba9aec13fe4fbde68c632dbe84d4a6801b5fecbfd96bee9f57903929a28daea"
+    },
+    {
+      "path": "analysis/native/movement-code-drag-reset.json",
+      "bytes": 18154,
+      "sha256": "385fa67bac1e2a41d25a6a1f29209efed8e6c0c0169cd1ecef89ce72522ef3f6",
+      "evidence_id": "ev_57661b2350f1fc3076a124c1acb51fb628ec4e3443a48ffa893444669b616f6f"
+    },
+    {
+      "path": "analysis/native/movement-code-map-click.json",
+      "bytes": 89894,
+      "sha256": "fd0a7f183f3e60a14bfd04be5065bbf57078560fc62e36afef90b4dacea35405",
+      "evidence_id": "ev_55ccb2968fb91bb95204a271e39ca702d0f826f3710592d7a06d2d47c129c65e"
+    },
+    {
+      "path": "analysis/native/movement-code-unit-key-command.json",
+      "bytes": 36396,
+      "sha256": "ceb2c0221804949229cb5ef8c9f1941f5170a3803785dbbe01983d49ef405edc",
+      "evidence_id": "ev_733be95d108c3dd580af618bed9d15483b53e46db3a48d1b94b262fc2e7e8dc7"
+    },
+    {
+      "path": "analysis/native/movement-code-cursor-key-command.json",
+      "bytes": 15994,
+      "sha256": "541477ff1ca84d73ae823d255320654e87140db9acf5cea3216d70cba76898fe",
+      "evidence_id": "ev_d25045b3e84539aeb69b41f5f2adb8c716b18a653aa643887554989c78ea75dc"
+    }
+  ],
+  "manual": {
+    "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/Manual.pdf",
+    "bytes": 2042298,
+    "sha256": "21d2e5f602ecce969456b0281c017686772002d219d1648ba1b66ffcda640ec8"
+  },
+  "report": {
+    "path": "analysis/port/movement-cancel-findings.md",
+    "bytes": 6637,
+    "sha256": "b18551d777735aac1ea8a3d3a0225a7fa16bd43635de059a4acfd8f03c0223e9"
+  },
+  "observed": "Static reset-before-V ordering and restore-selection behavior in installed terranx.exe.",
+  "not_observed": "No live V or Y cancellation test and no guest input argument capture performed in this pass.",
+  "session_status": "Exported, target closed, private helper exited."
+}

@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "emulatorStarted": false,
+  "scope": "Real player DOM with exact pinned runtime window-capture input handlers, generated SDL keypress listener, stub native exports and retained native screenshots",
+  "nativeInputFixture": "tools/fixtures/boxedwine-input-listeners.js",
+  "keypressFixture": {
+    "path": "public/runtime/SingleThreadedJitFocus/boxedwine.js",
+    "function": "registerKeyEventCallback",
+    "sha256": "ba43c78fc96956e760cf1512aadb1e48e59091ba8d419dad5c22de6907c301a5",
+    "wasmCallback": "SDL_HandleKeyPress with SDL_TEXTINPUT enabled; returns true"
+  },
+  "runtimeInitializationDoesNotReveal": true,
+  "blueAndSplashRemainCovered": true,
+  "twoSampleNativeMenuReveal": true,
+  "bothEditions": true,
+  "defaultAutostart": true,
+  "compatibilityStartHidden": true,
+  "diagnosticStartAndDialogEscape": true,
+  "toolsMenuAccessible": true,
+  "coveredGuestInputBlocked": true,
+  "readyDialogTabEnterEscapePreserved": true,
+  "canvasMouseArrowAndCtrlMetaShortcuts": true,
+  "dragOutsideCanvasRelease": true,
+  "heldKeyAndMouseReleasedOnModalOpen": true,
+  "fullscreenRejectionNonfatal": true,
+  "canvasFocusRestored": true,
+  "readinessReadsAtReveal": 6,
+  "noSamplingAfterReveal": true,
+  "failureRestoresCover": true,
+  "consoleErrors": [],
+  "completedState": {
+    "edition": "alien-crossfire",
+    "executable": "terranx.exe",
+    "engine": "SingleThreadedJitFast",
+    "phase": "game-ready",
+    "error": null,
+    "log": [],
+    "source": "Installed original x86 executable; CPU emulated in WebAssembly",
+    "persistence": "IndexedDB, this browser and origin",
+    "coordinates": "Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.",
+    "gameFiles": 1683,
+    "gameSha256": "a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb",
+    "runtimeInitialized": true,
+    "browserSaveCount": 0,
+    "readiness": {
+      "kind": "menu",
+      "menuMatches": 7,
+      "worldMatches": 0
+    },
+    "nativeReady": {
+      "kind": "menu",
+      "consecutive": 2,
+      "elapsedMs": 6006
+    },
+    "canvas": {
+      "width": 1024,
+      "height": 768
+    }
+  }
+}

@@ -40,7 +40,8 @@ for(const [edition,file,expected] of cases) {
  console.log(file,expected,result.kind,Math.round(result.milliseconds*100)/100,'ms',result.menuMatches,result.worldMatches);
 }
 await browser.close();
-await fs.mkdir('analysis/runtime/loading',{recursive:true});
-await fs.writeFile('analysis/runtime/loading/readiness-corpus.json',JSON.stringify(results,null,2)+'\n');
+const out=process.env.TEST_OUTPUT||'analysis/input/ui';
+await fs.mkdir(out,{recursive:true});
+await fs.writeFile(out+'/readiness-corpus.json',JSON.stringify(results,null,2)+'\n');
 for(const r of results)assert.equal(r.kind,r.expected,r.file);
 console.log('Readiness screenshot corpus passed:',results.length);

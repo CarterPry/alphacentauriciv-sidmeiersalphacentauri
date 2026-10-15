@@ -1,0 +1,71 @@
+{
+  "target_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+  "method": "printable ASCII runs matched case-insensitive; PE section-based VA mapping",
+  "strings": [
+    {
+      "file_offset": 2642204,
+      "va": "0x68511c",
+      "value": "CURSOR.PCX"
+    },
+    {
+      "file_offset": 2656568,
+      "va": "0x688938",
+      "value": "Console ACTIVATE"
+    },
+    {
+      "file_offset": 2656664,
+      "va": "0x688998",
+      "value": "Activate AWAKEN"
+    },
+    {
+      "file_offset": 2656688,
+      "va": "0x6889b0",
+      "value": "Activate AWAKENING"
+    },
+    {
+      "file_offset": 2663888,
+      "va": "0x68a5d0",
+      "value": "Bad Cursor Move"
+    },
+    {
+      "file_offset": 2671920,
+      "va": "0x68c530",
+      "value": "Net.Action Go to"
+    },
+    {
+      "file_offset": 2686960,
+      "va": "0x68fff0",
+      "value": "GOTOGOODY"
+    },
+    {
+      "file_offset": 3079282,
+      "va": "0xa0ac72",
+      "value": "GetCursorPos"
+    },
+    {
+      "file_offset": 3079298,
+      "va": "0xa0ac82",
+      "value": "SetCursor"
+    },
+    {
+      "file_offset": 3079310,
+      "va": "0xa0ac8e",
+      "value": "LoadCursorA"
+    },
+    {
+      "file_offset": 3079786,
+      "va": "0xa0ae6a",
+      "value": "DestroyCursor"
+    },
+    {
+      "file_offset": 3079858,
+      "va": "0xa0aeb2",
+      "value": "SetCursorPos"
+    },
+    {
+      "file_offset": 3080138,
+      "va": "0xa0afca",
+      "value": "ShowCursor"
+    }
+  ]
+}

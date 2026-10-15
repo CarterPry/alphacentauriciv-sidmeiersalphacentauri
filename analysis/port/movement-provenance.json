@@ -1,0 +1,1389 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-14T22:56:40.710008+00:00",
+  "scope": "Read-only native movement, drag-state, modal gating and cancellation analysis; no target execution by this investigator.",
+  "sources": [
+    {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+      "bytes": 3094576,
+      "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    },
+    {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+      "bytes": 3201128,
+      "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced"
+    },
+    {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/Manual.pdf",
+      "bytes": 2042298,
+      "sha256": "21d2e5f602ecce969456b0281c017686772002d219d1648ba1b66ffcda640ec8"
+    }
+  ],
+  "rea_version": "6.5.0",
+  "provider": "Ghidra 12.1.4",
+  "bundles": [
+    {
+      "path": "analysis/port/movement-terran-evidence-bundle.json",
+      "bytes": 96796,
+      "sha256": "100e483b62ee636877843ccfd039ba570691f8da0657e693808e2ccc7bc4203a",
+      "record_count": 9,
+      "evidence_ids": [
+        "ev_0996d195cd8d35434b52ea00907c810bd9f7fe14023e13e8f5a0b057b438ed06",
+        "ev_0fd95801d342389ce0c8e0c5418fe07fbd755866c8ad9dc8fb261cfac99cf7d0",
+        "ev_1f3717379a3c888f75bc065adf523554db4cce567d42ec285c97ab9952eaccd6",
+        "ev_2fe6c1cafab423e3611bc56fa8c51ca1833c6fa7cc9d1cb58bbfe3587a943854",
+        "ev_3ec479c6c59180ea02d8af1a486f00399f04107f36577b2009f63c316a1935ef",
+        "ev_90d5aa08636de2908df8b24fc0e190d663b7fbe058de208a45fc4f72a7007b5d",
+        "ev_9423ca9e4350e0052daf637e0b35b73a4d6c6b2087e1cbb706a7f449b9f15650",
+        "ev_c5fd1b04474f82fcfa5b0c6df4c9e20fead53a1999de68cfc40e4d3d90833ee9",
+        "ev_cf4c8e180a83e5dd3f7f8a6e405d82b6e0fad5b9e8f6c3c617e128525faa610f"
+      ]
+    },
+    {
+      "path": "analysis/port/movement-terranx-evidence-bundle.json",
+      "bytes": 943632,
+      "sha256": "dc4e52134e0a0bbb1303a0536398d1656a413b5ce1e1b4d3bdd00a462a3f36e7",
+      "record_count": 43,
+      "evidence_ids": [
+        "ev_01ffdf4b020aacfc7c6d6491ed5e56deeabc2365b584f2c45e1ed78f3a9837fb",
+        "ev_034189ce7703e4b6cecea6f18f64b2b553d7246ac37f003bc7b45df72e1d3f68",
+        "ev_058349e3894dcd59179091c449c60c3a2794c13ae8530b17a1813000ca6f2351",
+        "ev_06dd438640e537ff6686c2b565b3df3e06d657a820b34d3d59f12a1ed6f2fb73",
+        "ev_173fad6b81d8ee0052c5aac5d6d3bbf07bdef44a16425a81acc31e57090e2bc0",
+        "ev_21bff56dda09bd0934aea1da0e036c2e17af3f8f1d0fc8294cf635e21ed5ff27",
+        "ev_22fe0e083f085068c415904aa992a658870bff0e776c38c3d40e65f8b171e48d",
+        "ev_242cdbdccb780332dcbd1522156e8ef6b40e9b46828b8fec5196da7b56ba883c",
+        "ev_24551a33ac84cfdccf2ae3052a14faad0be27407c317040df3ea484b763ccdca",
+        "ev_296fff50db0005a0972b3bdccbdc6d09f2053cafe0d69283469b9cf789db281c",
+        "ev_35154d77355d6e0f3ded955a0606f61b9888eeccb11de8d8a3603d1055ea5a46",
+        "ev_3755f86b63ae4e9bbabe64e2f17f6c8cd8e88783e610bee88b93605db0ee304f",
+        "ev_3ba9aec13fe4fbde68c632dbe84d4a6801b5fecbfd96bee9f57903929a28daea",
+        "ev_3cebdae3366c907733a4df9376f3e3cb7997d84b8785a5155e57702f7c58798d",
+        "ev_4ebbdba227a72596b6f8c60122adb68f13fda00e7d8223209a1af9a9bebd3ef2",
+        "ev_5454802b1d841718e5f98aa580352727bf9aeb30d14ed58eca113aed5e99ea01",
+        "ev_55ccb2968fb91bb95204a271e39ca702d0f826f3710592d7a06d2d47c129c65e",
+        "ev_57661b2350f1fc3076a124c1acb51fb628ec4e3443a48ffa893444669b616f6f",
+        "ev_5ffad2b673410b1c5b4ce0c1584cc63b799fc8cacff4e208787f1629865db6d1",
+        "ev_651ad9d78e4d4d7c963ce86c729460daa50e52f4eeb79bc1f9c2dd68c02e4a48",
+        "ev_733be95d108c3dd580af618bed9d15483b53e46db3a48d1b94b262fc2e7e8dc7",
+        "ev_740e4f27204a5d42b12ff4ad91ea3ea197d4a181a7d9aca2cba2cd152769a04a",
+        "ev_775fbc71f1c5186163191e29d20b91d8e7d58977d82ccd29fe76620e48984a2a",
+        "ev_7a277e3f0398388541deb91aa11dbe16b9f8a40de6bb39b6a96f15f36fa2145c",
+        "ev_942b7c982ea50eb8029c85e2a91b676cf9ca983f589c6c293e5cd613f82bc825",
+        "ev_a55003869d218de4c329c1ed4a4d0821f1d09aa99b21fec630b6e368679bad79",
+        "ev_a84ca632b656fb1b99286d66fbbd0a4994653556e1f2df7dba78fedcdd05dc0c",
+        "ev_a8e5efe96a8dd48ef025b57cfad33c94886f9c0ef80bf5968dc723f32c9afd7d",
+        "ev_ae56060593a40123a44f5a7f3fedb5605186903df2a8dabad11091c1ae1300f2",
+        "ev_b0756a97532658ab0c6dcca6d5c4a9207b80e6dffd3a28d38876643b7ac28896",
+        "ev_b123665c5bc1fdb452866a3783da9a9e80c1346f3868a7d19402a60d25f55897",
+        "ev_bcc0303fdba0e57782e51b6b7a23d47e8e1870c8425c131d626e01a819d000cd",
+        "ev_bfd9985b90b254eeb7dd1faaa3a7155e54bda28bb99daef86569fb2d37216601",
+        "ev_ca5e7799b4cbff8567054c5c01a841c7a5554c67de9b975c1d26b2b8d0705123",
+        "ev_cffbf28f90f39ce7bf42aa9308b47bab64055592f4052fb6bc062da31daee44a",
+        "ev_d25045b3e84539aeb69b41f5f2adb8c716b18a653aa643887554989c78ea75dc",
+        "ev_d9d1c316c5d6cd52a7b4e7e0bdfa51026b775bf911ef100c6f0b2d3056dc6ec3",
+        "ev_e3632a8c7e7cf344509f8f0330b602084a834da94b167e92f44c6aa8df76ddfd",
+        "ev_eb20db70671def6a6db5d06120e8b5829b6ea739a27f49160a8333fc62b92206",
+        "ev_ef1244bd67d14622a9686bc53fb3d02743aa9461d45646001a813aa567109900",
+        "ev_ef93731bf73f16416e6d7bd809d225968fa64053afa645c50695d16997e6b0f0",
+        "ev_f252fd27fd3311b4fd41b82a3180e4956d84ecd7464648129824b2a4652e1343",
+        "ev_f5b8ffde285df4ded664e55fc8a4f26c4b3ab698d167a9e16b2f18951870913a"
+      ]
+    }
+  ],
+  "responses_and_derivatives": [
+    {
+      "path": "analysis/native/movement-bytes-left-up.json",
+      "bytes": 94,
+      "sha256": "79be417b1dacf87c0de7a7f39ffbb69104d92b7b778479ba6536be133b1b69b2",
+      "response_kind": "unparsed response"
+    },
+    {
+      "path": "analysis/native/movement-code-activate.json",
+      "bytes": 29636,
+      "sha256": "7d4ef8414d7558658a94f0e0a196e8f48cffa7f9df31603976d15170d930cc81",
+      "evidence_id": "ev_a84ca632b656fb1b99286d66fbbd0a4994653556e1f2df7dba78fedcdd05dc0c",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x4d2f00"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-cursor-key-command.json",
+      "bytes": 15994,
+      "sha256": "541477ff1ca84d73ae823d255320654e87140db9acf5cea3216d70cba76898fe",
+      "evidence_id": "ev_d25045b3e84539aeb69b41f5f2adb8c716b18a653aa643887554989c78ea75dc",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5166d0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-dest-line.json",
+      "bytes": 32554,
+      "sha256": "ee4c72c4d5084330e3e9b9bb05341d2a6973335726ac29871284eac8bc44196d",
+      "evidence_id": "ev_b123665c5bc1fdb452866a3783da9a9e80c1346f3868a7d19402a60d25f55897",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x467430"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-dispatch-left-down.json",
+      "bytes": 15060,
+      "sha256": "760c6c888bed4d055152e602c06f5ab984cb8cbe3e0c692163e08cfc18662dbb",
+      "response_kind": "failed or unsupported query retained"
+    },
+    {
+      "path": "analysis/native/movement-code-dispatch-left-up.json",
+      "bytes": 15060,
+      "sha256": "5915cc49c1e238ad748e56e0a887a8af6568cec11f9bd32f2d297ab2eaf5f861",
+      "response_kind": "failed or unsupported query retained"
+    },
+    {
+      "path": "analysis/native/movement-code-drag-begin.json",
+      "bytes": 19056,
+      "sha256": "e43160dc65bdffc6d02cb94059d3f297ea4ea25c0fe3425d9cbcfd38b1ca44bd",
+      "evidence_id": "ev_22fe0e083f085068c415904aa992a658870bff0e776c38c3d40e65f8b171e48d",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x50f170"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-drag-reset.json",
+      "bytes": 18154,
+      "sha256": "385fa67bac1e2a41d25a6a1f29209efed8e6c0c0169cd1ecef89ce72522ef3f6",
+      "evidence_id": "ev_57661b2350f1fc3076a124c1acb51fb628ec4e3443a48ffa893444669b616f6f",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x50ef50"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-goto-command.json",
+      "bytes": 198464,
+      "sha256": "7689cf7d0fbb14534db9229dccf4dd021c23e79c3eb71c429842b6b65b472e16",
+      "evidence_id": "ev_a55003869d218de4c329c1ed4a4d0821f1d09aa99b21fec630b6e368679bad79",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x4d61a0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-goto-routine.json",
+      "bytes": 12680,
+      "sha256": "c810986264ac6c970107f2f1088b5bd762268731dba8915cf59fd162b167c1a0",
+      "evidence_id": "ev_e3632a8c7e7cf344509f8f0330b602084a834da94b167e92f44c6aa8df76ddfd",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x4d6070"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-key-click.json",
+      "bytes": 305788,
+      "sha256": "f4740bf7991f191c7615e87d5dc538c061fc4834f8fb47ff615b9db65d85341d",
+      "evidence_id": "ev_3ba9aec13fe4fbde68c632dbe84d4a6801b5fecbfd96bee9f57903929a28daea",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5178c0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-left-click.json",
+      "bytes": 8812,
+      "sha256": "754385589f14555081fb05b6c1cb7cbfbdd1e987a0c469c9398f070f37028966",
+      "evidence_id": "ev_5ffad2b673410b1c5b4ce0c1584cc63b799fc8cacff4e208787f1629865db6d1",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x46eba0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-left-down.json",
+      "bytes": 20656,
+      "sha256": "338a28a924000e0a4c82d4a9a3c6fad2827309eb003894754aa3103582dd01ae",
+      "evidence_id": "ev_f5b8ffde285df4ded664e55fc8a4f26c4b3ab698d167a9e16b2f18951870913a",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x46ed30"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-left-up.json",
+      "bytes": 15060,
+      "sha256": "e2b92e569aa5b45c8132eb160b1af792463f68b2ed434b34160ff07aabc4f0f6",
+      "response_kind": "failed or unsupported query retained"
+    },
+    {
+      "path": "analysis/native/movement-code-lose-capture.json",
+      "bytes": 9513,
+      "sha256": "d5aaee0a2a491f3dd538932e82ae83cad1800e92e08a04371a905449b1af6d03",
+      "evidence_id": "ev_d9d1c316c5d6cd52a7b4e7e0bdfa51026b775bf911ef100c6f0b2d3056dc6ec3",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x46eb90"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-map-click.json",
+      "bytes": 89894,
+      "sha256": "fd0a7f183f3e60a14bfd04be5065bbf57078560fc62e36afef90b4dacea35405",
+      "evidence_id": "ev_55ccb2968fb91bb95204a271e39ca702d0f826f3710592d7a06d2d47c129c65e",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x46d5d0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-mouse-hit-window.json",
+      "bytes": 28062,
+      "sha256": "8a18bd24e966f6115390fabfb581c41c5ad18f37c6f252d4bfee7e74346608aa",
+      "evidence_id": "ev_b0756a97532658ab0c6dcca6d5c4a9207b80e6dffd3a28d38876643b7ac28896",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5f6f10"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-mouse-move.json",
+      "bytes": 35028,
+      "sha256": "56805c1a1165ad994dd503193587da4d4bd03b28ea82082dbb72018234e9327d",
+      "evidence_id": "ev_ef93731bf73f16416e6d7bd809d225968fa64053afa645c50695d16997e6b0f0",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x46f000"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-pixel-to-tile.json",
+      "bytes": 21890,
+      "sha256": "4bd37a9c647693537ae49b36fb1d69825485359009efd72d10dc1cf4a6c2710f",
+      "evidence_id": "ev_942b7c982ea50eb8029c85e2a91b676cf9ca983f589c6c293e5cd613f82bc825",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x463040"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-release-modal.json",
+      "bytes": 12954,
+      "sha256": "fc8accb6cfaaf3110dabb23f0f59daa423dfbf65a7918bfc374e25e495593728",
+      "evidence_id": "ev_ca5e7799b4cbff8567054c5c01a841c7a5554c67de9b975c1d26b2b8d0705123",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5ee280"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-right-click.json",
+      "bytes": 8812,
+      "sha256": "1fb952dbf80f1ea67841acb1b95dcd59616c477d84696eac2478ce2a7be67089",
+      "evidence_id": "ev_3cebdae3366c907733a4df9376f3e3cb7997d84b8785a5155e57702f7c58798d",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x46ebe0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-right-down.json",
+      "bytes": 13952,
+      "sha256": "a41ac9736efefb52e5f70d1f082b02f1882ec0e3659bf4e0b541210bd421d87c",
+      "evidence_id": "ev_242cdbdccb780332dcbd1522156e8ef6b40e9b46828b8fec5196da7b56ba883c",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x46ec10"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-selection-gate.json",
+      "bytes": 17976,
+      "sha256": "bd4799ebf1110bb74d5076db5ecd2c8227f89dd0545217daaa956b2ea005fc8f",
+      "evidence_id": "ev_173fad6b81d8ee0052c5aac5d6d3bbf07bdef44a16425a81acc31e57090e2bc0",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5105c0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-set-modal.json",
+      "bytes": 13246,
+      "sha256": "da52f0df95bad83b0c8de5f6ce7e2a7c627e13b0130587198cdab0f53840661f",
+      "evidence_id": "ev_24551a33ac84cfdccf2ae3052a14faad0be27407c317040df3ea484b763ccdca",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5ee190"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-tile-to-pixel.json",
+      "bytes": 15752,
+      "sha256": "0f28a3da14c1145f7c45ce0c563a972c013c09bc9b2f31d43c08a61b5bb784fe",
+      "evidence_id": "ev_a8e5efe96a8dd48ef025b57cfad33c94886f9c0ef80bf5968dc723f32c9afd7d",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x462f00"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-unit-key-command.json",
+      "bytes": 36396,
+      "sha256": "ceb2c0221804949229cb5ef8c9f1941f5170a3803785dbbe01983d49ef405edc",
+      "evidence_id": "ev_733be95d108c3dd580af618bed9d15483b53e46db3a48d1b94b262fc2e7e8dc7",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5171d0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-window-proc.json",
+      "bytes": 15060,
+      "sha256": "b19b4d1a71200421cb2aa26cae6c77b2b87a2e65f08406a613fce9436ce6b7c6",
+      "response_kind": "failed or unsupported query retained"
+    },
+    {
+      "path": "analysis/native/movement-code-window-visible.json",
+      "bytes": 9322,
+      "sha256": "1dfa69cd8de9af1b6aef9d64dd16f12cbc653cc5ea578b123bc0dafa225be9e6",
+      "evidence_id": "ev_35154d77355d6e0f3ded955a0606f61b9888eeccb11de8d8a3603d1055ea5a46",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5f7e90"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-world-ui-gate-setter.json",
+      "bytes": 10682,
+      "sha256": "73e700ac3c87cf006042e5e8ebb795834bd6da47a91246216643e9b797372316",
+      "evidence_id": "ev_4ebbdba227a72596b6f8c60122adb68f13fda00e7d8223209a1af9a9bebd3ef2",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x4c49a0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-instruction-dispatch-up.json",
+      "bytes": 101439,
+      "sha256": "c8e3bad439ab5ec6fe28e7af11d29e0daeb830570cbed2a71e41addde0b51b40",
+      "evidence_id": "ev_740e4f27204a5d42b12ff4ad91ea3ea197d4a181a7d9aca2cba2cd152769a04a",
+      "operation": "inspect_native_instruction",
+      "parameters": {
+        "address": "0x5f6550"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-instruction-left-up.json",
+      "bytes": 16849,
+      "sha256": "59285565f7cd5a09c31f6765652f6bbfd53c275cac0583ef2ec1dfd570d9a1f7",
+      "evidence_id": "ev_034189ce7703e4b6cecea6f18f64b2b553d7246ac37f003bc7b45df72e1d3f68",
+      "operation": "inspect_native_instruction",
+      "parameters": {
+        "address": "0x46eff0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-instructions-drag-begin.json",
+      "bytes": 37232,
+      "sha256": "8192a941e45cb7ad4fbacea4f316df497628a90d00620e0116f623528889254a",
+      "evidence_id": "ev_5454802b1d841718e5f98aa580352727bf9aeb30d14ed58eca113aed5e99ea01",
+      "operation": "read_function_instructions",
+      "parameters": {
+        "procedure": "0x50f170"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-instructions-key-click.json",
+      "bytes": 616008,
+      "sha256": "9b62334bca09282dee8cc89d39b07bbcc22a638eb674b86e193d1f7649f67754",
+      "evidence_id": "ev_06dd438640e537ff6686c2b565b3df3e06d657a820b34d3d59f12a1ed6f2fb73",
+      "operation": "read_function_instructions",
+      "parameters": {
+        "procedure": "0x5178c0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-instructions-left-down.json",
+      "bytes": 40440,
+      "sha256": "b2d39b23095f1e73301e0c81ba8ce1dfc6ee98a4925e06e88cbc5810ba1fc1be",
+      "evidence_id": "ev_eb20db70671def6a6db5d06120e8b5829b6ea739a27f49160a8333fc62b92206",
+      "operation": "read_function_instructions",
+      "parameters": {
+        "procedure": "0x46ed30"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-instructions-map-click.json",
+      "bytes": 212556,
+      "sha256": "e09fc55911008dfff8c8e3083feff57c0380632cb6bc82a3ccd56a6bc26579b9",
+      "evidence_id": "ev_bfd9985b90b254eeb7dd1faaa3a7155e54bda28bb99daef86569fb2d37216601",
+      "operation": "read_function_instructions",
+      "parameters": {
+        "procedure": "0x46d5d0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-open-success.json",
+      "bytes": 900,
+      "sha256": "349e1c15979e12abcba143a94fee78f8dfd175ee27e4fd2be14086bb83be9f77",
+      "response_kind": "non-evidence result"
+    },
+    {
+      "path": "analysis/native/movement-open.json",
+      "bytes": 298,
+      "sha256": "09b61447a9076a20ce7e44bb52415bec29743abf18247bcee611d705847582e8",
+      "response_kind": "unparsed response"
+    },
+    {
+      "path": "analysis/native/movement-procedures-event-neighbors.json",
+      "bytes": 9510,
+      "sha256": "434deeb8390c204afe6229a8c3efa4f3fcbc09060aadffbc9dce2f46b723b84d",
+      "evidence_id": "ev_bcc0303fdba0e57782e51b6b7a23d47e8e1870c8425c131d626e01a819d000cd",
+      "operation": "search_procedures",
+      "parameters": {
+        "pattern": "FUN_005f6",
+        "mode": "literal",
+        "case_sensitive": false
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-read-bytes-left-up.json",
+      "bytes": 8578,
+      "sha256": "0d7dd71114358c3f32784e0ab1f1c812870c61d34a92b36897cc994dd3a932c5",
+      "evidence_id": "ev_ae56060593a40123a44f5a7f3fedb5605186903df2a8dabad11091c1ae1300f2",
+      "operation": "read_bytes",
+      "parameters": {
+        "address": "0x46eff0",
+        "length": 16
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-resolve-dispatch-down.json",
+      "bytes": 8478,
+      "sha256": "221afa524b597d420e85e789dc628aa7fb9fd10cf2dc79087e31867a1f5cf766",
+      "evidence_id": "ev_3755f86b63ae4e9bbabe64e2f17f6c8cd8e88783e610bee88b93605db0ee304f",
+      "operation": "resolve_containing_procedure",
+      "parameters": {
+        "address": "0x5f63c0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-resolve-dispatch-up.json",
+      "bytes": 8478,
+      "sha256": "678c4825035158aa5c16b7063845d0887f3d2601aae36bfaac9e10de23e1ff1b",
+      "evidence_id": "ev_21bff56dda09bd0934aea1da0e036c2e17af3f8f1d0fc8294cf635e21ed5ff27",
+      "operation": "resolve_containing_procedure",
+      "parameters": {
+        "address": "0x5f6550"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-resolve-world-ui-gate.json",
+      "bytes": 10370,
+      "sha256": "44a159e9f95b19f06262b42674164c8c8b7010779f1df6e2c6d25b3766dd4fe4",
+      "evidence_id": "ev_7a277e3f0398388541deb91aa11dbe16b9f8a40de6bb39b6a96f15f36fa2145c",
+      "operation": "resolve_containing_procedure",
+      "parameters": {
+        "address": "0x4c49ed"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-string-candidates.json",
+      "bytes": 1470,
+      "sha256": "5b630895342821bf5b525abf77298a20c76b85f966fec138aba25aaefe970a48",
+      "response_kind": "unparsed response"
+    },
+    {
+      "path": "analysis/native/movement-terran-close.json",
+      "bytes": 251,
+      "sha256": "fb3beac94c0871148d4cdb98bf38d13aafaa4e281a422cb0995a943c16648a51",
+      "response_kind": "non-evidence result"
+    },
+    {
+      "path": "analysis/native/movement-terran-drag-begin-instructions.json",
+      "bytes": 37297,
+      "sha256": "aa81aa62a6f2338d3ccbb20431230974ceeba548aca5ebd698ff618114461fe7",
+      "evidence_id": "ev_c5fd1b04474f82fcfa5b0c6df4c9e20fead53a1999de68cfc40e4d3d90833ee9",
+      "operation": "read_function_instructions",
+      "parameters": {
+        "procedure": "0x5231b0"
+      },
+      "subject": {
+        "name": "terran.exe",
+        "digest": {
+          "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-terran-drag-begin.json",
+      "bytes": 19051,
+      "sha256": "c363e091ce5e3287e3bc02602d0693b2303f8c2410908601921431368934812b",
+      "evidence_id": "ev_9423ca9e4350e0052daf637e0b35b73a4d6c6b2087e1cbb706a7f449b9f15650",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x5231b0"
+      },
+      "subject": {
+        "name": "terran.exe",
+        "digest": {
+          "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-terran-drag-reset.json",
+      "bytes": 18847,
+      "sha256": "765fb0d3fd2bbff29616e20b474341bcfbcad07c3b0abcbdebd046a03dec73b8",
+      "evidence_id": "ev_cf4c8e180a83e5dd3f7f8a6e405d82b6e0fad5b9e8f6c3c617e128525faa610f",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x522fc0"
+      },
+      "subject": {
+        "name": "terran.exe",
+        "digest": {
+          "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-terran-export.json",
+      "bytes": 477,
+      "sha256": "ddeaa4165eed0462591132125dbd191d4f4cadacf810260ea6b6b1b0b6bae3d1",
+      "response_kind": "non-evidence result"
+    },
+    {
+      "path": "analysis/native/movement-terran-left-down-bytes.json",
+      "bytes": 9447,
+      "sha256": "f15a5d87f902b9c60a88647369a1ef662d4cddc7a26c97587126bb9cf7fc51af",
+      "evidence_id": "ev_2fe6c1cafab423e3611bc56fa8c51ca1833c6fa7cc9d1cb58bbfe3587a943854",
+      "operation": "read_bytes",
+      "parameters": {
+        "address": "0x47b790",
+        "length": 32
+      },
+      "subject": {
+        "name": "terran.exe",
+        "digest": {
+          "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-terran-left-down.json",
+      "bytes": 21397,
+      "sha256": "0237ebdf5095a153eef7eecf45dc20d5a78ad7aed4a4f4b0faf9f24c12f1055a",
+      "evidence_id": "ev_3ec479c6c59180ea02d8af1a486f00399f04107f36577b2009f63c316a1935ef",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x47b790"
+      },
+      "subject": {
+        "name": "terran.exe",
+        "digest": {
+          "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-terran-mouse-move.json",
+      "bytes": 71729,
+      "sha256": "fc8fc7ca4e3eff54da05c461ca7a7404b71bd2fa3d9fe55f49fa54d0d85cc88a",
+      "evidence_id": "ev_0fd95801d342389ce0c8e0c5418fe07fbd755866c8ad9dc8fb261cfac99cf7d0",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x47ba60"
+      },
+      "subject": {
+        "name": "terran.exe",
+        "digest": {
+          "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-terran-open.json",
+      "bytes": 898,
+      "sha256": "9ed0ce36dafb822e95820f2009a65f3b6cbc13e2da8b830ddc586c4edad7c914",
+      "response_kind": "non-evidence result"
+    },
+    {
+      "path": "analysis/native/movement-terran-reset-bytes.json",
+      "bytes": 9447,
+      "sha256": "2c2f50cfbd2a43d14320e6e03e2cb3472c3047810bf6d19d6ee423ac15c7ebc1",
+      "evidence_id": "ev_0996d195cd8d35434b52ea00907c810bd9f7fe14023e13e8f5a0b057b438ed06",
+      "operation": "read_bytes",
+      "parameters": {
+        "address": "0x522fc0",
+        "length": 32
+      },
+      "subject": {
+        "name": "terran.exe",
+        "digest": {
+          "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-terran-set-modal.json",
+      "bytes": 13987,
+      "sha256": "e4aba504ba30e49e551853bee8bcae7af51b1fc987f6db1cb2a9561e01988ec3",
+      "evidence_id": "ev_90d5aa08636de2908df8b24fc0e190d663b7fbe058de208a45fc4f72a7007b5d",
+      "operation": "procedure_pseudo_code",
+      "parameters": {
+        "procedure": "0x607010"
+      },
+      "subject": {
+        "name": "terran.exe",
+        "digest": {
+          "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-terran-timer-bytes.json",
+      "bytes": 9447,
+      "sha256": "b7c52580af53889b8ce17491b2b8b8ef3fc4a6af7c9833c0916a9372300976e5",
+      "evidence_id": "ev_1f3717379a3c888f75bc065adf523554db4cce567d42ec285c97ab9952eaccd6",
+      "operation": "read_bytes",
+      "parameters": {
+        "address": "0x5231b0",
+        "length": 32
+      },
+      "subject": {
+        "name": "terran.exe",
+        "digest": {
+          "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-terranx-close.json",
+      "bytes": 251,
+      "sha256": "fb3beac94c0871148d4cdb98bf38d13aafaa4e281a422cb0995a943c16648a51",
+      "response_kind": "non-evidence result"
+    },
+    {
+      "path": "analysis/native/movement-terranx-export.json",
+      "bytes": 483,
+      "sha256": "3ac3a6b0a053be5b2dbb35d53d3a7841685161ac9e65fb6de4d3ccb80ae1300e",
+      "response_kind": "non-evidence result"
+    },
+    {
+      "path": "analysis/native/movement-xrefs-activate.json",
+      "bytes": 8233,
+      "sha256": "2e63b66abaf3ddd3275655a86535a5a062138dbf653edf21b6331f2a3acb6928",
+      "evidence_id": "ev_775fbc71f1c5186163191e29d20b91d8e7d58977d82ccd29fe76620e48984a2a",
+      "operation": "xrefs",
+      "parameters": {
+        "address": "0x688938"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-xrefs-bad-cursor.json",
+      "bytes": 8233,
+      "sha256": "7fee81614fe2d96401ef1f1b6a68d82275c7d7b22db38ea1f18a9b30858051a0",
+      "evidence_id": "ev_01ffdf4b020aacfc7c6d6491ed5e56deeabc2365b584f2c45e1ed78f3a9837fb",
+      "operation": "xrefs",
+      "parameters": {
+        "address": "0x68a5d0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-xrefs-drag-begin.json",
+      "bytes": 8295,
+      "sha256": "e7276e90dbad5c4211e384d052415c1cb85c6ad4590363bd2dd35533fe320198",
+      "evidence_id": "ev_651ad9d78e4d4d7c963ce86c729460daa50e52f4eeb79bc1f9c2dd68c02e4a48",
+      "operation": "xrefs",
+      "parameters": {
+        "address": "0x50f170"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-xrefs-drag-blocker.json",
+      "bytes": 8667,
+      "sha256": "d3b9f953c4ab0a8a7e507af177fea3e971a86373b151ce870b8b0a50fc2d126c",
+      "evidence_id": "ev_f252fd27fd3311b4fd41b82a3180e4956d84ecd7464648129824b2a4652e1343",
+      "operation": "xrefs",
+      "parameters": {
+        "address": "0x915620"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-xrefs-drag-reset.json",
+      "bytes": 8667,
+      "sha256": "ae14e003be49d694aacc5a16c72241ec929ea03edf69fcf25f20cb74dd3e78a9",
+      "evidence_id": "ev_cffbf28f90f39ce7bf42aa9308b47bab64055592f4052fb6bc062da31daee44a",
+      "operation": "xrefs",
+      "parameters": {
+        "address": "0x50ef50"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-xrefs-left-click.json",
+      "bytes": 8357,
+      "sha256": "ba9360f6cb24c8dd1382b3b6a2983f8dcd49886a9bcfcb820c947978730714d0",
+      "evidence_id": "ev_ef1244bd67d14622a9686bc53fb3d02743aa9461d45646001a813aa567109900",
+      "operation": "xrefs",
+      "parameters": {
+        "address": "0x46eba0"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-xrefs-net-goto.json",
+      "bytes": 8233,
+      "sha256": "7a249205bb374c83cc9a87ab7408f16749b8c85a02eb45e19c487498e3220dda",
+      "evidence_id": "ev_058349e3894dcd59179091c449c60c3a2794c13ae8530b17a1813000ca6f2351",
+      "operation": "xrefs",
+      "parameters": {
+        "address": "0x68c530"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-xrefs-world-ui-gate.json",
+      "bytes": 8543,
+      "sha256": "c32924684a1683627c1ca61ae331bf1fecac39f05b1a6686bd90ef2677d0726a",
+      "evidence_id": "ev_296fff50db0005a0972b3bdccbdc6d09f2053cafe0d69283469b9cf789db281c",
+      "operation": "xrefs",
+      "parameters": {
+        "address": "0x90d938"
+      },
+      "subject": {
+        "name": "terranx.exe",
+        "digest": {
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+        },
+        "local_path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+        "format": "pe",
+        "architecture": "x86"
+      }
+    },
+    {
+      "path": "analysis/native/movement-code-activate.c",
+      "bytes": 5205,
+      "sha256": "780cb9634d7930051e0ceca7b9965eceba85118b269f7bee6d091bf61188c4ed"
+    },
+    {
+      "path": "analysis/native/movement-code-cursor-key-command.c",
+      "bytes": 1926,
+      "sha256": "b0a32b071551afc6706b229a6144fd75a65b8a36bac64b8174ffecc073c9ae73"
+    },
+    {
+      "path": "analysis/native/movement-code-dest-line.c",
+      "bytes": 5908,
+      "sha256": "628a2d34364e6b74a87e2add5db4377431510c6fdc051a5c70c1ffdf5d4ad6df"
+    },
+    {
+      "path": "analysis/native/movement-code-drag-begin.c",
+      "bytes": 2669,
+      "sha256": "78e2f5a2512c508751d70b03418faa3e1e41b104a77586323f62a54f9e7aa6b8"
+    },
+    {
+      "path": "analysis/native/movement-code-drag-reset.c",
+      "bytes": 2454,
+      "sha256": "732c450cd77b94b3ad9cf42721cba37cc5b258235451bd10fdeaaa8370a7f876"
+    },
+    {
+      "path": "analysis/native/movement-code-goto-command.c",
+      "bytes": 45785,
+      "sha256": "0562e727c7fec29fb5fa2122a66e1684ce064ad3d7dfa34c403caea78f65bfa3"
+    },
+    {
+      "path": "analysis/native/movement-code-goto-routine.c",
+      "bytes": 1147,
+      "sha256": "ff4a9a8365d4ac00018538527a362632f28a8bbc226d0743aca4b13dccd4fd6e"
+    },
+    {
+      "path": "analysis/native/movement-code-key-click.c",
+      "bytes": 71394,
+      "sha256": "c7a2fbb1d713746e1d5c1b12eef498faf035e360e0f62cbedf3df54431994c65"
+    },
+    {
+      "path": "analysis/native/movement-code-left-click.c",
+      "bytes": 213,
+      "sha256": "190eaedd29e4004756abc156a66df611245decd8edafd3111051c6c01d5ed4c2"
+    },
+    {
+      "path": "analysis/native/movement-code-left-down.c",
+      "bytes": 3062,
+      "sha256": "7f39d7999cafca492b08c8d87f1ea5c5224fd91326349630216df3e0650979cb"
+    },
+    {
+      "path": "analysis/native/movement-code-lose-capture.c",
+      "bytes": 136,
+      "sha256": "5dc31fab1978179f54ced66f55b287d3874715dc27ce7027ecf559c9f9072f1c"
+    },
+    {
+      "path": "analysis/native/movement-code-map-click.c",
+      "bytes": 19721,
+      "sha256": "2ca9e0ee407e5293a3e00e8593b053e93fc95c93e401943ce5ac6a614599dfaf"
+    },
+    {
+      "path": "analysis/native/movement-code-mouse-hit-window.c",
+      "bytes": 4835,
+      "sha256": "3901a44f2d24cafa41407216c89aaf0b1fecec7ebe0fc9d12471b281b75dc501"
+    },
+    {
+      "path": "analysis/native/movement-code-mouse-move.c",
+      "bytes": 6504,
+      "sha256": "9d8a65a44b9a4695f4aefee9b6b9dc9f5301e7c467f403282d7b72bd5ede5205"
+    },
+    {
+      "path": "analysis/native/movement-code-pixel-to-tile.c",
+      "bytes": 3328,
+      "sha256": "a7eeb576e7e13432de9e3fdefaba35db3b69ab03e260e9cf55587d312964f4f2"
+    },
+    {
+      "path": "analysis/native/movement-code-release-modal.c",
+      "bytes": 1190,
+      "sha256": "ab507325ef3fb35164c7eb7c0b9ecee158744db1d3eeefd4a2d81389baaab252"
+    },
+    {
+      "path": "analysis/native/movement-code-right-click.c",
+      "bytes": 213,
+      "sha256": "bdde4d7016a55d37d284e1fbbd41c60266d8133ea8b80b520010427cbbdf50d8"
+    },
+    {
+      "path": "analysis/native/movement-code-right-down.c",
+      "bytes": 1441,
+      "sha256": "b0231bb524d8bb6f8b728382bc1abc25c960e7fc2588d3e4af8ffd3d54ce788f"
+    },
+    {
+      "path": "analysis/native/movement-code-selection-gate.c",
+      "bytes": 2411,
+      "sha256": "d32d1befa8b17b7eaa6a8cf72fcacc330113e67c532fdbc078edca74d03f0192"
+    },
+    {
+      "path": "analysis/native/movement-code-set-modal.c",
+      "bytes": 1263,
+      "sha256": "428d9ec7539474a3d1dce7bcef54011312e9530e1032c41ff98986251e605127"
+    },
+    {
+      "path": "analysis/native/movement-code-tile-to-pixel.c",
+      "bytes": 1876,
+      "sha256": "9421fa3f22c9e5ea24e11f707e1a998300c6c2957268a67064531208e180f8e9"
+    },
+    {
+      "path": "analysis/native/movement-code-unit-key-command.c",
+      "bytes": 6728,
+      "sha256": "92b806420c03affe65404086e7f8268885fc50ae9982a5b26296d4d7ed253c3e"
+    },
+    {
+      "path": "analysis/native/movement-code-window-visible.c",
+      "bytes": 327,
+      "sha256": "d5d4c292431d9795f37299cbe40541daa2645ab7d3fff7204399b277e4ae723c"
+    },
+    {
+      "path": "analysis/native/movement-code-world-ui-gate-setter.c",
+      "bytes": 652,
+      "sha256": "8277df0bcbcf6f7c49012cf1b4a82edc974d2cc60a3b0f0a525e9f31db09f6d3"
+    },
+    {
+      "path": "analysis/native/movement-dispatch-supplemental-objdump.asm",
+      "bytes": 18531,
+      "sha256": "9bc441b7223985b6915071cda2e95fc95d1ea5e0eee4278cc4ffef413bcfcf62"
+    },
+    {
+      "path": "analysis/native/movement-instructions-drag-begin.asm",
+      "bytes": 5165,
+      "sha256": "a19451a111f807ab22da847bf3a345aea730a6f683dcb0d4a6adfb53dc5a062f"
+    },
+    {
+      "path": "analysis/native/movement-instructions-key-click.asm",
+      "bytes": 117999,
+      "sha256": "35dd2613c3315da424727705dad00c3a99b6f3ed7910de6fb04cab346e62020c"
+    },
+    {
+      "path": "analysis/native/movement-instructions-left-down.asm",
+      "bytes": 5775,
+      "sha256": "5a23abcaf15cba99b7f6b02dc22c94dffadf8deb524e9f2ff9062e7f70a0baa0"
+    },
+    {
+      "path": "analysis/native/movement-instructions-map-click.asm",
+      "bytes": 40433,
+      "sha256": "38af8a305b742ce1a5fa41e443b95b99cf6717ebfb9fb0dc618829d6ce340a47"
+    },
+    {
+      "path": "analysis/native/movement-terran-drag-begin.c",
+      "bytes": 2490,
+      "sha256": "3053f1e1b35d2200a0a8ab756e14426570026811ea8ab4bd3ac3a2751748d1b9"
+    },
+    {
+      "path": "analysis/native/movement-terran-drag-reset.c",
+      "bytes": 2442,
+      "sha256": "c48852011a4087d4f42b12b699b54f120a14d19e39ade829b44e4d5dc3604483"
+    },
+    {
+      "path": "analysis/native/movement-terran-left-down.c",
+      "bytes": 3062,
+      "sha256": "0d90b41677478df98c799908dc6fe6247dfb59605e23ff1fcb004bf3c4716748"
+    },
+    {
+      "path": "analysis/native/movement-terran-mouse-move.c",
+      "bytes": 14954,
+      "sha256": "83c07a7a98721cea001e5dd0e4a387f299a7afa3c4c42a74c4fb21b71185b86d"
+    },
+    {
+      "path": "analysis/native/movement-terran-set-modal.c",
+      "bytes": 1263,
+      "sha256": "655624ecad25956c3b474be043f8fd5e8c3870e12ef677a36aa8670bb7fe9371"
+    }
+  ],
+  "reference": {
+    "repository": "https://github.com/induktio/thinker",
+    "commit": "c633f0b801bdf065a0a81450c685f66e97962c16",
+    "files": [
+      "src/engine.cpp",
+      "src/engine_win.h",
+      "src/engine.h"
+    ],
+    "authority": "Candidate names/layouts only; address claims require installed binary evidence."
+  },
+  "report": {
+    "path": "analysis/port/movement-findings.md",
+    "bytes": 13428,
+    "sha256": "9b32f9e996e35dcdd2dc345b36a00ef01e5d2d498c49ebe489219cfc3b9aa7f2"
+  },
+  "manual_extract": {
+    "path": "analysis/port/movement-manual.txt",
+    "bytes": 445696,
+    "sha256": "3a5fcc4ecc4976dcac8cfdea3861da74346a3e981b05a75e9359bf679b1f671f"
+  },
+  "runtime_artifacts_reported_by_agent": [
+    {
+      "path": "analysis/input/native/escape-while-held.png",
+      "bytes": 564735,
+      "sha256": "c30bc227e409f0fcfb9fe607a54c961cab4c77bfa98a4c0f20e5583064e8a6f3"
+    },
+    {
+      "path": "analysis/input/native/escape-then-release.png",
+      "bytes": 524495,
+      "sha256": "d459bddc4a7f35ba1b1f19e0edd235d86e17b39698b322b10c780882eb306772"
+    },
+    {
+      "path": "analysis/input/native/backslash-after-settled.png",
+      "bytes": 722501,
+      "sha256": "6b9706bb82d0214d7be3bc6a6a08d77e2ca70d7c059ef2ae9dab02fbd57143ce"
+    },
+    {
+      "path": "analysis/input/native/raw-backslash-after.png",
+      "bytes": 746044,
+      "sha256": "52568157a864b18ff915bdf593d49fbd6d3857dc4c54edbeeecd35c075f8ac2c"
+    }
+  ],
+  "runtime_authority": "Agent /root/browser_runtime reported outcomes to this investigator; no live guest key arguments were captured in this analysis.",
+  "unresolved": [
+    "Backslash failed two live cancel trials; cause unproven.",
+    "Escape clears preview but opens Quit.",
+    "Complete canPlanMove predicate requires runtime validation against dialogs, base, menu and world.",
+    "Base-edition full gate and vehicle count not recovered in bounded pass.",
+    "Native line preview can fall back to direct line; not a legal-range oracle."
+  ],
+  "session_status": "Both owned targets exported and closed; private MCP helper exited."
+}

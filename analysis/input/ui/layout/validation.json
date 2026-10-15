@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "scope": "Isolated DOM with original native input listeners, hostile keypress stub, mocked read-only unit/route state, and replayed saved native frame; no emulator or native game files loaded.",
+  "checks": [
+    "Two exact edition links with decoded cover images and watermark",
+    "Autostart without visible Start",
+    "Full-viewport opaque cover over blue frame",
+    "Keyboard tools menu",
+    "Saved games dialog Enter close with native key handlers",
+    "Log toggle",
+    "Existing native-frame detector reveals replayed world",
+    "Error/retry readable",
+    "Mobile covers stay inside viewport above watermark without horizontal overflow",
+    "Legacy root archive hash on direct load and same-page changes; query preserved",
+    "Archive research/assets/evidence navigation"
+  ],
+  "replay": {
+    "source": "analysis/runtime/browser-native-reload/native-world-final.png",
+    "sha256": "f56299148bac25931db3862504690f138f797ca7ab888dee5435bed9315d4d10",
+    "crop": {
+      "x": 66,
+      "y": 120,
+      "width": 1268,
+      "height": 951
+    }
+  },
+  "errors": [],
+  "nativeDownloads": [],
+  "artifacts": [
+    {
+      "path": "analysis/input/ui/layout/edition-choice-mobile.png",
+      "sha256": "0a74fe836a26cbf9f786c19b72a1c7e78dbbc0f0a5519327a35c31858e5bc1c5"
+    },
+    {
+      "path": "analysis/input/ui/layout/edition-choice.png",
+      "sha256": "53bd0f3c72ff929fce641dcfd6740172245825db8cabf07223797fbc38afea66"
+    },
+    {
+      "path": "analysis/input/ui/layout/error-and-retry.png",
+      "sha256": "78b92111ed088e94bf9ed4d33b59c656e5d31247a62b99c1eb6f0adb431a375d"
+    },
+    {
+      "path": "analysis/input/ui/layout/loading-covered.png",
+      "sha256": "aae0040f884ab489425ecfd217194bf6c6aa4272de494cc95f4416b039abb292"
+    },
+    {
+      "path": "analysis/input/ui/layout/native-world-frame-replayed.png",
+      "sha256": "4e482d288c53c199c1b4f5ad624b36ed9d527f0947dd53c341910de5da2bb402"
+    },
+    {
+      "path": "analysis/input/ui/layout/tools-menu.png",
+      "sha256": "19543c35716a5c69aac1d24d52423e09f63d04c73e64fcf89bfdbc13424482f9"
+    }
+  ]
+}

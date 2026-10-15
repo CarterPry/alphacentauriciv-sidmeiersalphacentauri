@@ -1,0 +1,200 @@
+{
+  "recordedAt": "2026-10-14T22:53:35.025773+00:00",
+  "runtime": "SingleThreadedJitFast",
+  "url": "http://127.0.0.1:5173/play.html?edition=alien-crossfire&engine=SingleThreadedJitFast&autostart=1",
+  "browser": "Playwright Chromium headless, viewport1400x1080",
+  "profile": "analysis/performance/optimized/profile",
+  "scope": "Actual installed terranx.exe running in Boxedwine/Wine WebAssembly. No public edits, game binary patches, or simulation-state reads/writes. Browser inputs only.",
+  "inputMethod": {
+    "clickAndMove": "Playwright page.mouse.click/move",
+    "holds": "Bubbling DOM MouseEvent mousedown/up on focused game canvas, through existing gate and native runtime listeners",
+    "shift": "DOM KeyboardEvent ShiftLeft down/up; typically100ms beforemouse,100or250ms aftermousedown, releaseShift beforehover",
+    "cancelKey": "Playwright Backslash and separate raw Module._boxedwineEmscriptenKey(49,92,down) trial"
+  },
+  "canvas": {
+    "pixels": [
+      1024,
+      768
+    ],
+    "pageRect": {
+      "x": 66,
+      "y": 120.5,
+      "width": 1268,
+      "height": 950.5
+    }
+  },
+  "menuReadyElapsedMs": 43886,
+  "cases": [
+    {
+      "id": "left-select",
+      "screenshot": "unit-left-selected.png",
+      "sha256": "846017a29f2dff525253e819480e02c759144d9fb077858bae87e152d8f53285",
+      "observed": "Scout selected at (11,49); Moves1, NoOrders, year2102."
+    },
+    {
+      "id": "left-destination",
+      "screenshot": "left-destination-no-move.png",
+      "sha256": "70115cc54e7d2dd466f801451bf67fa32ecf1c7f5ffa1c033c4d3bdd8a0037e2",
+      "observed": "Plain left-click moved camera, not the selected scout."
+    },
+    {
+      "id": "double-left-destination",
+      "screenshot": "double-left-destination-no-move.png",
+      "sha256": "70115cc54e7d2dd466f801451bf67fa32ecf1c7f5ffa1c033c4d3bdd8a0037e2",
+      "observed": "Double-click destination did not move scout in tested state."
+    },
+    {
+      "id": "right-menu",
+      "screenshot": "right-destination-menu.png",
+      "sha256": "98ba6f5df341272f49d3fd24eb7437af92d15295f9d08371b3b4e20a2ce8aa6b",
+      "observed": "Native context menu offers Move unit to here and Action."
+    },
+    {
+      "id": "held-drag",
+      "screenshot": "native-route-preview.png",
+      "sha256": "bc9f779eab2375d7d4c13555c0f6fc018f2f9a61397d7531532a6a3ea99da9a1",
+      "observed": "Green route and Move to (11,45): Dist=2 appear before release; scout remains (11,49)."
+    },
+    {
+      "id": "escape-cancel",
+      "screenshot": "escape-while-held.png",
+      "sha256": "c30bc227e409f0fcfb9fe607a54c961cab4c77bfa98a4c0f20e5583064e8a6f3",
+      "observed": "Escape cleared preview but opened Quit confirmation; not a transparent cancel."
+    },
+    {
+      "id": "origin-cancel",
+      "screenshot": "origin-release-cancel.png",
+      "sha256": "78b241400f8dfc43569a72dba2459495d141800083b4085cd1bd91d446e15953",
+      "observed": "Move back to original unit pixel then release: no movement/order/year change in unchanged view."
+    },
+    {
+      "id": "shift-start",
+      "screenshot": "shift-down-immediate.png",
+      "sha256": "ceb22c3ecad7df74f24b76781f965bec3b7515faf9094e10bd47d57ac417d63b",
+      "observed": "Route cursor observed after Shift-left-down and nominal100ms wait."
+    },
+    {
+      "id": "shift-preview",
+      "screenshot": "shift-drag-neighbor-preview.png",
+      "sha256": "a660188eaf7d49ec6d85fd59199a74f2cf9a19a9e737dc3d9204bb31c140702b",
+      "observed": "Releasing Shift while holding mouse preserves destination preview."
+    },
+    {
+      "id": "native-commit",
+      "screenshot": "native-drag-moved.png",
+      "sha256": "4f58383d8f11c0e0cf5f628da54727f99871f399b24d572b94a3988e7844c593",
+      "observed": "Release moved scout (11,49)->(11,47), revealed terrain, and automatic year2102->2103."
+    },
+    {
+      "id": "empty-hold",
+      "screenshot": "empty-tile-held.png",
+      "sha256": "596816b53fa98dd3a94ecb5f48c0ad5aaa6dbb13d015b904cdac6bdb9c81d722",
+      "observed": "Ordinary1200ms hold on an empty tile arms route for previously selected scout."
+    },
+    {
+      "id": "base-hold",
+      "screenshot": "base-tile-held.png",
+      "sha256": "220b99e654777de3c5526c99de473ff509f9707a8880464708bb1049f018d7e2",
+      "observed": "Ordinary1200ms hold on base arms route for previously selected scout."
+    },
+    {
+      "id": "base-click",
+      "screenshot": "plain-base-click.png",
+      "sha256": "f8ece57ce51900871d6ebeb74d84143b07d149244ced380c258ba08781554722",
+      "observed": "Quick native base click opens base control screen."
+    },
+    {
+      "id": "shift-base",
+      "screenshot": "shift-base-world-preview.png",
+      "sha256": "4ee17a756314a3e0432339f6462f31a54009c9b813b4b8d09b82f250ba44b0d0",
+      "observed": "Shift-left-down on base immediately previews movement to that base for prior selected scout."
+    },
+    {
+      "id": "shift-empty",
+      "screenshot": "shift-empty-world-preview.png",
+      "sha256": "cacf8fc553aed32d62bf272886794c092ca4ded01ac140497a8d8a7882e0c3c7",
+      "observed": "Shift-left-down on empty tile immediately previews movement for prior selected scout."
+    },
+    {
+      "id": "unit-recenter",
+      "screenshot": "unit-recentered-confirmed.png",
+      "sha256": "4c7c97ba21c28cfd12b2b3526ee8cd88e2b3ea4afec8b46c6586929ce81cd63a",
+      "observed": "Plain selected-unit click recentered unit page position roughly(842,411)->(722,472), without changing world(11,47)."
+    },
+    {
+      "id": "backslash-before",
+      "screenshot": "backslash-before.png",
+      "sha256": "42b0059a4947485c9328b00ce165876ed4177d830be84bca957ffc2400ced330",
+      "observed": "Native route armed from(11,47) toward(11,45), year2103."
+    },
+    {
+      "id": "backslash-failed",
+      "screenshot": "backslash-after-settled.png",
+      "sha256": "6b9706bb82d0214d7be3bc6a6a08d77e2ca70d7c059ef2ae9dab02fbd57143ce",
+      "observed": "Playwright Backslash then100ms then mouseup FAILED cancellation; moved(11,47)->(11,45), year2104."
+    },
+    {
+      "id": "raw-backslash-before",
+      "screenshot": "raw-backslash-before.png",
+      "sha256": "e8280b5e0c6e0c99b136eaf293f115fab26941c6f7826ad4176b4b4be1e1cd7a",
+      "observed": "Native route armed from(11,45) toward(11,43), year2104."
+    },
+    {
+      "id": "raw-backslash-failed",
+      "screenshot": "raw-backslash-after.png",
+      "sha256": "52568157a864b18ff915bdf593d49fbd6d3857dc4c54edbeeecd35c075f8ac2c",
+      "observed": "Direct scan49/key92 down/up immediately followed by mouseup FAILED cancellation; moved(11,45)->(11,43), year2105."
+    }
+  ],
+  "source": {
+    "manual": {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/Manual.pdf",
+      "sha256": "21d2e5f602ecce969456b0281c017686772002d219d1648ba1b66ffcda640ec8",
+      "sections": [
+        {
+          "printedPage": 21,
+          "pdfPage": 23,
+          "heading": "Mouse movement; Examining the map",
+          "findings": [
+            "Left-drag a unit to set a destination; release issues the order.",
+            "The path can be displayed before movement, with up to three waypoints including destination.",
+            "Plain left-click recenters; units activate and bases open their control screen."
+          ]
+        },
+        {
+          "printedPage": 196,
+          "pdfPage": 198,
+          "heading": "Right-click menu",
+          "findings": [
+            "Move Unit to Here issues movement for the active unit.",
+            "Options depend on clicked square, including unit Action or Terraform and base controls."
+          ]
+        }
+      ]
+    },
+    "gameExecutable": {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+      "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4"
+    }
+  },
+  "limits": [
+    "No all-reachable-tiles overlay was observed; this is a native selected-route preview.",
+    "Native Dist values include fractions and Dist1 at the origin; their exact formula was not recovered by this runtime probe.",
+    "No attack, transport, naval, air, multi-unit, faction, or full map pathfinding parity is claimed.",
+    "Return-to-origin cancellation was tested with unchanged camera; map scrolling can invalidate stored screen coordinates.",
+    "Shift/drag flag alone does not establish that the clicked square contained the selected unit.",
+    "Escape and Backslash were unsuitable cancellation methods in the observed restored-world mode.",
+    "This probe does not validate any new bridge, pointer adapter, or future public implementation."
+  ],
+  "cleanup": {
+    "browserClosed": true,
+    "sessionExitCode": 0,
+    "lastObservedUnit": [
+      11,
+      43
+    ],
+    "lastObservedYear": 2105,
+    "savedOverNamed2102Save": false,
+    "nativeInstallationModified": false
+  }
+}

@@ -4,9 +4,9 @@
   const edition = params.get('edition') === 'alpha-centauri' ? 'alpha-centauri' : 'alien-crossfire';
   const executable = edition === 'alpha-centauri' ? 'terran.exe' : 'terranx.exe';
   const legacyWine = params.get('wine') === 'legacy';
-  const engines = new Set(['SingleThreaded', 'SingleThreadedJit', 'MultiThreaded', 'MultiThreadedJit', 'SingleThreadedJitDisjoint', 'SingleThreadedJitFocus', 'SingleThreadedJitFast']);
+  const engines = new Set(['SingleThreaded', 'SingleThreadedJit', 'MultiThreaded', 'MultiThreadedJit', 'SingleThreadedJitDisjoint', 'SingleThreadedJitFocus', 'SingleThreadedJitFast', 'SingleThreadedJitInput']);
   const requested = params.get('engine');
-  const engine = engines.has(requested) ? requested : 'SingleThreadedJitFast';
+  const engine = engines.has(requested) ? requested : 'SingleThreadedJitInput';
   const base = '/runtime/' + engine + '/';
   const status = document.getElementById('session-status');
   const state = { edition, executable, engine, phase:'loading', error:null, log:[], source:'Installed original x86 executable; CPU emulated in WebAssembly', persistence:'IndexedDB, this browser and origin', coordinates:'Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.' };
@@ -15,7 +15,7 @@
   document.getElementById('boot-title').textContent=title;
   const boot=document.getElementById('boot-screen');
   const gameLayers=[document.getElementById('canvas'),document.getElementById('boxedwine-webgl-canvas-0')];
-  let stopReadiness=null, sampler=null, watchReadiness=null, startedAt=null;
+  let stopReadiness=null, sampler=null, watchReadiness=null, startedAt=null, movement=null;
   const bootState=(phase,stage,detail)=>{document.body.dataset.bootState=phase;boot.setAttribute('aria-busy',String(phase!=='ready'&&phase!=='error'));document.getElementById('boot-stage').textContent=stage;document.getElementById('boot-detail').textContent=detail;};
   const elapsedTimer=setInterval(()=>{if(startedAt){const seconds=Math.floor((performance.now()-startedAt)/1000);document.getElementById('boot-elapsed').textContent=Math.floor(seconds/60)+':'+String(seconds%60).padStart(2,'0')+' elapsed';}},1000);
   document.getElementById('fullscreen-btn').disabled=true;
@@ -38,7 +38,19 @@
   }
   const isGameCanvas=target=>gameLayers.includes(target);
   const guestVisible=()=>document.body.dataset.gameReady==='true'&&boot.hidden&&!document.querySelector('dialog[open]');
-  function releaseGuestInput() {
+  let moveRefresh=[];
+  function refreshMoveControl() {
+    if(!movement)return;
+    const active=movement.state().phase!=='idle';
+    document.getElementById('move-btn').hidden=!guestVisible()||(!active&&Module._boxedwineGameCanPlanMove?.()!==1);
+  }
+  function refreshMoveAfterInput() {
+    if(!movement)return;
+    for(const timer of moveRefresh)clearTimeout(timer);
+    moveRefresh=[100,500].map(ms=>setTimeout(refreshMoveControl,ms));
+  }
+  function releaseGuestInput(keepMovement=false) {
+    if(keepMovement!==true)movement?.beforeRelease();
     // Key callbacks keep no JS capture state; release exactly the forwarded keys.
     if(typeof Module!=='undefined'&&typeof Module._boxedwineEmscriptenKey==='function')for(const {scan,key} of guestKeys.values())Module._boxedwineEmscriptenKey(scan,key,0);
     guestKeys.clear();
@@ -56,7 +68,10 @@
     const canvasTarget=isGameCanvas(event.target);
     const captured=guestButtons.size>0&&/^(?:mouse|pointer)(?:move|up)$/.test(event.type);
     const allowed=visible&&(keyboard?isGameCanvas(document.activeElement)&&canvasTarget:canvasTarget||captured||isGameCanvas(document.pointerLockElement));
-    if(!allowed){if(!visible||keyboard||event.type==='mousedown'||event.type==='pointerdown')releaseGuestInput();event.stopImmediatePropagation();return;}
+    if(!allowed){if(!visible||keyboard||event.type==='mousedown'||event.type==='pointerdown')releaseGuestInput(visible&&event.target?.id==='move-btn');event.stopImmediatePropagation();return;}
+    if(Number.isFinite(event.clientX)&&Number.isFinite(event.clientY))lastGuestPoint={clientX:event.clientX,clientY:event.clientY};
+    if(event.type==='mouseup'||event.type==='keyup')refreshMoveAfterInput();
+    if(movement?.handle(event)){event.preventDefault();event.stopImmediatePropagation();return;}
     if(keyboard) {
       // Closing a host dialog can restore canvas focus before the Escape/Enter
       // keyup arrives. A key whose down stayed on the host must stay there too.
@@ -71,10 +86,10 @@
     }
   }
   // SDL also consumes keypress on window and can cancel host button activation.
-  for(const type of ['keydown','keyup','keypress','mousedown','mouseup','mousemove','wheel','pointerdown','pointerup','pointermove','touchstart','touchend','touchmove'])window.addEventListener(type,gateGuestInput,{capture:true,passive:true});
+  for(const type of ['keydown','keyup','keypress','mousedown','mouseup','mousemove','wheel','pointerdown','pointerup','pointermove','touchstart','touchend','touchmove'])window.addEventListener(type,gateGuestInput,{capture:true,passive:false});
   window.addEventListener('blur',releaseGuestInput);
-  window.addEventListener('focusin',event=>{if(!isGameCanvas(event.target))releaseGuestInput();},true);
-  window.addEventListener('focusout',event=>{if(isGameCanvas(event.target)&&!isGameCanvas(event.relatedTarget))releaseGuestInput();},true);
+  window.addEventListener('focusin',event=>{if(!isGameCanvas(event.target)&&event.target?.id!=='move-btn')releaseGuestInput();},true);
+  window.addEventListener('focusout',event=>{if(isGameCanvas(event.target)&&!isGameCanvas(event.relatedTarget)&&event.relatedTarget?.id!=='move-btn')releaseGuestInput();},true);
   document.addEventListener('visibilitychange',()=>{if(document.hidden)releaseGuestInput();});
   document.addEventListener('pointerlockchange',releaseGuestInput);
   window.addEventListener('pointercancel',releaseGuestInput,true);
@@ -86,10 +101,13 @@
     boot.hidden=true;boot.setAttribute('aria-busy','false');document.body.dataset.gameReady='true';
     for(const canvas of gameLayers){canvas.inert=false;canvas.removeAttribute('aria-hidden');}
     status.textContent='Game ready';document.getElementById('fullscreen-btn').disabled=false;
-    document.getElementById('play-note').textContent='Click the game to focus keyboard controls. Ctrl+S opens Save Game; use Saved games to download backups.';
+    document.getElementById('move-btn').hidden=true;
+    document.getElementById('move-btn').disabled=false;
+    document.getElementById('play-note').textContent=movement?'Select a unit, then choose Move to hover a route and click its destination. Right-click a unit for actions. Ctrl+S saves.':'Click the game to focus keyboard controls. Drag a unit to move it; right-click for actions. Ctrl+S saves.';
     if(!document.querySelector('dialog[open]'))gameLayers[0].focus();
+    refreshMoveControl();
   }
-  window.render_game_to_text = () => JSON.stringify({...state, log:state.log.slice(-6), canvas:{width:document.getElementById('canvas').width,height:document.getElementById('canvas').height}});
+  window.render_game_to_text = () => JSON.stringify({...state, movement:movement?.state(), log:state.log.slice(-6), canvas:{width:document.getElementById('canvas').width,height:document.getElementById('canvas').height}});
   // Native Wine time is real time; this hook deliberately does not claim deterministic simulation.
   window.advanceTime = ms => new Promise(resolve => setTimeout(resolve, Math.min(ms, 1000)));
   const fail = error => {
@@ -99,6 +117,7 @@
     boot.hidden=false;boot.setAttribute('aria-busy','false');document.body.dataset.gameReady='false';
     for(const canvas of gameLayers){canvas.inert=true;canvas.setAttribute('aria-hidden','true');canvas.blur();}
     document.getElementById('fullscreen-btn').disabled=true;
+    document.getElementById('move-btn').disabled=true;
     bootState('error','The game could not start',String(error));
     document.getElementById('boot-retry').hidden=false;document.getElementById('startbtn').style.display='none';
     document.getElementById('play-note').textContent='Open Log for the captured error, or reload the player to try again.';
@@ -168,8 +187,19 @@
     const manifest=await manifestResponse.json();
     state.gameFiles=manifest.fileCount;state.gameSha256=manifest.archiveSha256;
     await loadScript(base+'boxedwine-shell.js');
+    if(engine==='SingleThreadedJitInput'&&edition==='alien-crossfire'&&params.get('controls')!=='legacy') {
+      const {createMovementControls}=await import('/movement-controls.js');
+      const moveButton=document.getElementById('move-btn');
+      movement=createMovementControls({
+        native:()=>Module,canvas:()=>gameLayers[0],visible:guestVisible,
+        point:event=>{const canvas=gameLayers[0],r=canvas.getBoundingClientRect();return {x:Math.max(0,Math.min(canvas.width-1,Math.round((event.clientX-r.left)*canvas.width/r.width))),y:Math.max(0,Math.min(canvas.height-1,Math.round((event.clientY-r.top)*canvas.height/r.height)))};},
+        note:text=>{document.getElementById('play-note').textContent=text;moveButton.title=text;},
+        changed:({phase})=>{moveButton.textContent=phase==='idle'?'Move':'Cancel move';moveButton.setAttribute('aria-pressed',String(phase!=='idle'));moveButton.setAttribute('aria-busy',String(['starting','cancelling','restoring'].includes(phase)));refreshMoveControl();refreshMoveAfterInput();}
+      });
+      moveButton.onclick=()=>movement.start();
+    }
     // A single same-origin archive preserves every installed game asset and both editions.
-    Config.urlParams = new URLSearchParams({root:legacyWine?'wine-legacy.zip':'wine.zip',rootBase:'/runtime/',app:'alpha-centauri.zip',appBase:'/runtime/',p:executable,resolution:'1024x768',bpp:'32',auto:params.get('autostart')==='1'?'true':'false',sound:params.get('sound')==='false'?'false':'true',audioFreq:'22050',storage:'indexeddb',storageKey:legacyWine?'legacy-alpha-centauri':'alpha-centauri',disableWasmJitForWrittenCode:params.get('jitWritten')==='allow'?'false':'true',network:'false'}).toString() + '&env=%22WINEDLLOVERRIDES:mscoree,mshtml' + (params.get('audio')==='disabled'?',sound,soundx':'') + '=%22';
+    Config.urlParams = new URLSearchParams({root:legacyWine?'wine-legacy.zip':'wine.zip',rootBase:'/runtime/',app:'alpha-centauri.zip',appBase:'/runtime/',p:executable,resolution:'1024x768',bpp:'32',auto:params.get('autostart')==='0'?'false':'true',sound:params.get('sound')==='false'?'false':'true',audioFreq:'22050',storage:'indexeddb',storageKey:legacyWine?'legacy-alpha-centauri':'alpha-centauri',disableWasmJitForWrittenCode:params.get('jitWritten')==='allow'?'false':'true',network:'false'}).toString() + '&env=%22WINEDLLOVERRIDES:mscoree,mshtml' + (params.get('audio')==='disabled'?',sound,soundx':'') + '=%22';
     Config.showUploadDownload=false;
     Config.showSaveJITCache=false;
     if(params.get('trace')==='files') {
@@ -210,8 +240,8 @@
     const originalInit=Module.onRuntimeInitialized;
     Module.onRuntimeInitialized=()=>{if(originalInit)originalInit();state.runtimeInitialized=true;};
     const originalStart=start;
-    window.start=()=>{if(startedAt||state.error)return;startedAt=performance.now();state.phase='booting';status.textContent='Loading '+title;bootState('booting','Loading '+title,'Preparing the original menus and game assets. This can take several minutes.');stopReadiness=watchReadiness({sampler,layers:()=>gameLayers,onReady:nativeReady,onWaiting:result=>{state.readiness={kind:result.kind,menuMatches:result.menuMatches||0,worldMatches:result.worldMatches||0};if(result.error)state.readiness.error=result.error;}});originalStart();};
-    const monitor=setInterval(()=>{if(state.phase==='loading'&&document.getElementById('startbtn').style.display!=='none'){state.phase='ready';status.textContent='Ready to start';bootState('ready','Ready to begin','Your local game files and browser saves are available.');}if(state.phase!=='loading')clearInterval(monitor);},250);
+    window.start=()=>{if(startedAt||state.error)return;startedAt=performance.now();state.phase='booting';status.textContent='Loading '+title;bootState('booting','Loading…','');stopReadiness=watchReadiness({sampler,layers:()=>gameLayers,onReady:nativeReady,onWaiting:result=>{state.readiness={kind:result.kind,menuMatches:result.menuMatches||0,worldMatches:result.worldMatches||0};if(result.error)state.readiness.error=result.error;}});originalStart();};
+    const monitor=setInterval(()=>{if(state.phase==='loading'&&document.getElementById('startbtn').style.display!=='none'){state.phase='ready';status.textContent='Loading';bootState('ready','Loading…','');if(params.get('autostart')!=='0')window.start();}if(state.phase!=='loading')clearInterval(monitor);},250);
     await loadScript(base+'boxedwine.js');
   } catch(error) {fail(error.message);}
 })();

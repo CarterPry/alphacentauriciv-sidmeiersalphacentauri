@@ -1,0 +1,56 @@
+{
+  "/runtime/wine.zip": {
+    "size": 99456246,
+    "etag": "\"3365e31caaf6a1fc832a0a7c4812592d25410b9f5c9536277131388c8e103a49\"",
+    "type": "application/zip",
+    "parts": [
+      {
+        "key": "objects/916d1c5c2e740ae4c4bdfdcdbe0ecb53b0c09e8b4f550110fd6646155f129206",
+        "size": 67108864
+      },
+      {
+        "key": "objects/49ff6caa89c9a785d4ae3abb3c1a70b80d990d5836495a782fdb5ea40f858864",
+        "size": 32347382
+      }
+    ]
+  },
+  "/runtime/alpha-centauri.zip": {
+    "size": 503754181,
+    "etag": "\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\"",
+    "type": "application/zip",
+    "parts": [
+      {
+        "key": "objects/1c976976671c431bcafac62eead0e01b2be997983947c0fcdc69713f1843cf59",
+        "size": 67108864
+      },
+      {
+        "key": "objects/b27e07cf859b22eb8ac998b33d0660d365a4c073181d02b867627299623d935d",
+        "size": 67108864
+      },
+      {
+        "key": "objects/aac40c73ecccbec7f7b5da8cba00263639a6a64f3d65be0cce76786d5d84073c",
+        "size": 67108864
+      },
+      {
+        "key": "objects/f623af1ab37e3127670ae85805fa0dea16ed7828aea01f22dbee294f998afd32",
+        "size": 67108864
+      },
+      {
+        "key": "objects/49c50857c3ab3d73da4ecd3fe8bd3c970fa635e11a4b27a680ced036d285e873",
+        "size": 67108864
+      },
+      {
+        "key": "objects/520e0860b94d8470b5e2779f21ff6c0b9c284013ad5dbf73b799f823f1d78ad7",
+        "size": 67108864
+      },
+      {
+        "key": "objects/bd34b31871a2714f932c98b78cc3e1b173cded10d72d2d1a0978b1c992a4590a",
+        "size": 67108864
+      },
+      {
+        "key": "objects/09efb79ebbda4dfcce94e59a4a93c1f34f359721bf6db35f248f9954aa057c9e",
+        "size": 33992133
+      }
+    ]
+  }
+}

@@ -7,13 +7,18 @@ import crypto from 'node:crypto';
 const manifest=JSON.parse(fs.readFileSync('analysis/runtime/game-bundle-manifest.json','utf8'));
 const source=process.argv[2]||path.join(manifest.sourceDirectory,manifest.files.find(x=>/\.sav$/i.test(x.path)).path);
 const sha=buffer=>crypto.createHash('sha256').update(buffer).digest('hex');
-const output='analysis/runtime/storage-ui-test';fs.mkdirSync(output,{recursive:true});
+const output='analysis/input/ui/storage';fs.mkdirSync(output,{recursive:true});
 const browser=await chromium.launch({headless:true});
 try {
   const context=await browser.newContext({viewport:{width:1400,height:1080},acceptDownloads:true});
   const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));
-  await page.goto('http://localhost:5173/play.html?edition=alien-crossfire');
+  // Initialize the real browser filesystem, but keep Wine/native execution
+  // behind its run dependency throughout this isolated storage test.
+  await page.goto('http://localhost:5173/play.html?edition=alien-crossfire&autostart=0');
   await page.waitForFunction(()=>JSON.parse(window.render_game_to_text?.()||'{}').phase==='ready',{},{timeout:120000});
+  if(await page.evaluate(()=>isRunning))throw new Error('Native game unexpectedly started in storage fixture');
+  if(await page.locator('#startbtn').isVisible())throw new Error('Compatibility Start control should remain hidden');
+  await page.locator('#player-tools summary').click();
   await page.click('#saves-btn');
   for(const bytes of [Buffer.from([84,69,82,82,65,78,0,26]),Buffer.from([84,69,82,82,65,78,9,9,0,0,0,0])]) {
     await page.locator('#import-save').setInputFiles({name:'invalid.SAV',mimeType:'application/octet-stream',buffer:bytes});
@@ -27,6 +32,8 @@ try {
   const original=fs.readFileSync(source), exported=fs.readFileSync(output+'/roundtrip.SAV');
   if(sha(original)!==sha(exported))throw new Error('Downloaded save differs from imported bytes');
   await page.reload();await page.waitForFunction(()=>JSON.parse(window.render_game_to_text?.()||'{}').phase==='ready',{},{timeout:120000});
+  if(await page.evaluate(()=>isRunning))throw new Error('Native game unexpectedly started after storage reload');
+  await page.locator('#player-tools summary').click();
   await page.click('#saves-btn');
   await page.locator('.save-row').waitFor();
   const persisted=await page.evaluate(async()=>{

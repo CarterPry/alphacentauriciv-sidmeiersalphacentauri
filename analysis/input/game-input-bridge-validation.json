@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "testKind": "source-extracted host C++ with mocked resident memory and focus",
+  "sourcePath": "analysis/runtime/jit/Boxedwine-disjoint/platform/sdl/boxedwineGameRead.cpp",
+  "sourceOrigin": "tracked new-file patch (checkout equality checked if present)",
+  "sourceSha256": "ff9b0dbf455656599dcc88bbb33bba4d9a29724ef31c843b6b72bfeaa5c3bf09",
+  "patchPath": "analysis/runtime/jit/game-input-state.patch",
+  "patchSha256": "3f5243d7ffb3030402816140586de3164299d98a964e88ce65a5bb58e731014c",
+  "harnessPath": "tools/test_game_input_bridge.py",
+  "harnessSha256": "3978598ea198b72b6661de97707ec86019a2605b4c3c4a0564f1ea207532e48c",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "compilerFlags": [
+    "-std=c++20",
+    "-O1",
+    "-Wall",
+    "-Wextra",
+    "-Werror"
+  ],
+  "assertionsPassed": 183,
+  "includeOrderCheck": "memory enum header precedes X11 None macro",
+  "diagnosticExport": {
+    "name": "boxedwineGameBridgeDiagnostic",
+    "matchedAnchorMask": "value & 0x7f",
+    "readableAnchorMask": "(value >> 8) & 0x7f",
+    "allAnchorsMatch": 32639,
+    "negativeStatuses": {
+      "-1": "no X server",
+      "-2": "no focus",
+      "-3": "root/server-owned focus has no resolved client",
+      "-4": "missing display",
+      "-5": "expired process",
+      "-6": "terminated process",
+      "-7": "no process memory",
+      "-8": "no MMU",
+      "-9": "unavailable or out-of-bounds pointer",
+      "-10": "invalid or excessive pointer ancestry"
+    }
+  },
+  "images": [
+    {
+      "name": "terranx.exe",
+      "sizeBytes": 3094576,
+      "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+      "anchorMatches": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "matchedAnchors": 7,
+      "acceptedByFingerprint": true
+    },
+    {
+      "name": "terran.exe",
+      "sizeBytes": 3201128,
+      "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced",
+      "anchorMatches": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "matchedAnchors": 1,
+      "acceptedByFingerprint": false
+    }
+  ],
+  "fingerprints": [
+    {
+      "name": "dos",
+      "address": "0x00400000",
+      "length": 16,
+      "expectedHex": "4d5a90000300000004000000ffff0000"
+    },
+    {
+      "name": "peOffset",
+      "address": "0x0040003c",
+      "length": 4,
+      "expectedHex": "00010000"
+    },
+    {
+      "name": "pe",
+      "address": "0x00400100",
+      "length": 32,
+      "expectedHex": "504500004c010800ff915e380000000000000000e0000e010b01060000802600"
+    },
+    {
+      "name": "imageBase",
+      "address": "0x00400134",
+      "length": 4,
+      "expectedHex": "00004000"
+    },
+    {
+      "name": "imageSize",
+      "address": "0x00400150",
+      "length": 8,
+      "expectedHex": "00c0600000100000"
+    },
+    {
+      "name": "selectionAndSprite",
+      "address": "0x0050f2e8",
+      "length": 41,
+      "expectedHex": "89358c9293008b75fc8b368d14bf8d04578d1c8570aa93008b864cef01003bc374238b0cbd40aa9300"
+    },
+    {
+      "name": "captureModeAndDrag",
+      "address": "0x0050f32d",
+      "length": 80,
+      "expectedHex": "a1bc7a9b008b75fc85c075198b068b088b5104c705c07a9b000000000003d08915bc7a9b006a09b918719300893dc0939300e8ec5e0c006a00b918719300e860e60d008b0eb801000000898180dd0100"
+    }
+  ],
+  "limitations": [
+    "The mock supplies MMU entries and X11 focus; no actual engine or guest executes.",
+    "Includes are excluded from the extracted body; actual Boxedwine/WASM build remains required.",
+    "Seven live anchors are a partial revision fingerprint, not a full in-memory image hash.",
+    "Entry guards do not establish complete UI readiness, route legality, or safe cancellation."
+  ]
+}

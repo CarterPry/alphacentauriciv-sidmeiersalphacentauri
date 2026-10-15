@@ -1,0 +1,154 @@
+{
+  "base": "https://alphacentauriciv.carterpry.com",
+  "checkedAt": "2026-10-15T16:35:40.797Z",
+  "passed": true,
+  "records": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 1171,
+      "sha256": "7010b0e0019f5b23acefcaedb5896312619188cfe247076e2577fb634f23ba46",
+      "matchesLocal": true
+    },
+    {
+      "path": "/play.html",
+      "status": 200,
+      "bytes": 4322,
+      "sha256": "4ebbd821d866ac42cd139b3d1e0781ef85de826653bdc61f1da10b57c84fbe3c",
+      "matchesLocal": true
+    },
+    {
+      "path": "/library.html",
+      "status": 200,
+      "bytes": 1305,
+      "sha256": "553835938a103938c05262f8c2863193ae2fedb970d71cbf23c44dde5d183c70",
+      "matchesLocal": true
+    },
+    {
+      "path": "/play.js",
+      "status": 200,
+      "bytes": 20879,
+      "sha256": "9c893cd40b5da4cd0dd9b13f306de073e8663fa43cf185ee0879fdfded01f316",
+      "matchesLocal": true
+    },
+    {
+      "path": "/movement-controls.js",
+      "status": 200,
+      "bytes": 5635,
+      "sha256": "d66ed1ddb61db6b15e53b60e85b1dd75d407482ddfa6d8de6db8789f5c9be567",
+      "matchesLocal": true
+    },
+    {
+      "path": "/game-data/images/openinga.png",
+      "status": 200,
+      "bytes": 249111,
+      "sha256": "70e0182bafbcf339ccc4a0a86cd9733fb8734dd4bab0be13d7ddf81ffc7a0e95",
+      "matchesLocal": true
+    },
+    {
+      "path": "/game-data/images/xopeninga.png",
+      "status": 200,
+      "bytes": 272285,
+      "sha256": "9bdd4a8195956dd1418c3a060485c3af43def96feee51e18c6351071e1229400",
+      "matchesLocal": true
+    },
+    {
+      "path": "/runtime/SingleThreadedJitInput/boxedwine.css",
+      "status": 200,
+      "bytes": 4885,
+      "sha256": "f3548956400f61c2d7f400e34166a5119c5167f4a3215e07c95c5cf95eea69a3",
+      "matchesLocal": true
+    },
+    {
+      "path": "/runtime/SingleThreadedJitInput/boxedwine.wasm",
+      "status": 200,
+      "bytes": 5053761,
+      "sha256": "ad29bd0df523ad16c01ab6f4d368e83d454033f61a770c24807c869a068bf2c8",
+      "matchesLocal": true
+    },
+    {
+      "path": "/src/research.mjs",
+      "status": 200,
+      "bytes": 2235,
+      "sha256": "47814d33c0bcf63df4f713b5fda5905cf579e6686fd6e23b53c60dbff33a23f2",
+      "matchesLocal": true
+    },
+    {
+      "path": "/evidence/native/evidence-index.json",
+      "status": 200,
+      "bytes": 21240,
+      "sha256": "1de496f6a85e587a6bf7725644f7a1cf60daac733227b88c1b49e969420601cc",
+      "matchesLocal": true
+    },
+    {
+      "path": "/runtime/wine.zip",
+      "bytes": 99456246,
+      "etag": "\"3365e31caaf6a1fc832a0a7c4812592d25410b9f5c9536277131388c8e103a49\"",
+      "fullSha256": "3365e31caaf6a1fc832a0a7c4812592d25410b9f5c9536277131388c8e103a49",
+      "head": true,
+      "exactRanges": [
+        [
+          0,
+          63
+        ],
+        [
+          99456182,
+          99456245
+        ],
+        [
+          67108832,
+          67108895
+        ]
+      ],
+      "invalidRange": 416,
+      "conditional": 304
+    },
+    {
+      "path": "/runtime/alpha-centauri.zip",
+      "bytes": 503754181,
+      "etag": "\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\"",
+      "fullSha256": "a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb",
+      "head": true,
+      "exactRanges": [
+        [
+          0,
+          63
+        ],
+        [
+          503754117,
+          503754180
+        ],
+        [
+          67108832,
+          67108895
+        ],
+        [
+          134217696,
+          134217759
+        ],
+        [
+          201326560,
+          201326623
+        ],
+        [
+          268435424,
+          268435487
+        ],
+        [
+          335544288,
+          335544351
+        ],
+        [
+          402653152,
+          402653215
+        ],
+        [
+          469762016,
+          469762079
+        ]
+      ],
+      "invalidRange": 416,
+      "conditional": 304
+    }
+  ]
+}

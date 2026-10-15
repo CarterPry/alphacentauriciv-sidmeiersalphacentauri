@@ -1,0 +1,13 @@
+{
+  "started": 1792082347071,
+  "longTasks": [
+    {
+      "start": 943.2200000286102,
+      "duration": 115
+    }
+  ],
+  "events": [],
+  "elapsed": 100864.03999996185,
+  "title": "BoxedWine 219 MIPS",
+  "state": "{\"edition\":\"alien-crossfire\",\"executable\":\"terranx.exe\",\"engine\":\"SingleThreadedJitInput\",\"phase\":\"game-ready\",\"error\":null,\"log\":[\"[MIPS] count=20 raw=124 avg=137 min=77 max=218 warmAvg=124 warmSamples=1\",\"[MIPS] count=30 raw=129 avg=140 min=124 max=218 warmAvg=128 warmSamples=11\",\"[MIPS] count=40 raw=192 avg=156 min=125 max=276 warmAvg=154 warmSamples=21\",\"[MIPS] count=50 raw=219 avg=200 min=125 max=276 warmAvg=174 warmSamples=31\",\"[MIPS] count=60 raw=217 avg=219 min=199 max=221 warmAvg=186 warmSamples=41\",\"[MIPS] count=70 raw=217 avg=220 min=217 max=221 warmAvg=192 warmSamples=51\"],\"source\":\"Installed original x86 executable; CPU emulated in WebAssembly\",\"persistence\":\"IndexedDB, this browser and origin\",\"coordinates\":\"Canvas pixels, origin top-left, x right and y down. Native game state is opaque to this wrapper.\",\"gameFiles\":1683,\"gameSha256\":\"a0fded734a1628767cc20698923bc6cebf23164f21fd28d3ee1e65e23875c7eb\",\"runtimeInitialized\":true,\"readiness\":{\"kind\":\"menu\",\"menuMatches\":7,\"worldMatches\":0},\"nativeReady\":{\"kind\":\"menu\",\"consecutive\":2,\"elapsedMs\":41855},\"movement\":{\"phase\":\"idle\",\"preview\":\"Original engine route; may span multiple turns\"},\"canvas\":{\"width\":1024,\"height\":768}}"
+}

@@ -1,0 +1,6 @@
+{
+  "protocol_error": {
+    "code": -32602,
+    "message": "Tool read_memory not found"
+  }
+}

@@ -1,0 +1,661 @@
+{
+  "schema_version": 1,
+  "verified_utc": "2026-10-15T16:27:14.611296+00:00",
+  "method": "Independent read-only local verification of existing bundles, retained inline responses, report IDs, derived pseudocode, original-file hashes and PE byte ranges. No REA session opened, no target execution, no runtime or hosting changes.",
+  "summary": {
+    "status": "pass",
+    "bundle_count": 3,
+    "record_count": 60,
+    "unique_record_count": 60,
+    "target_hash_checks_passed": 2,
+    "report_count": 2,
+    "report_reference_occurrences": 29,
+    "unique_report_reference_ids": 26,
+    "all_report_references_resolve": true,
+    "exact_retained_response_matches": 60,
+    "original_binary_fingerprint_matches": 4,
+    "errors": []
+  },
+  "targets": {
+    "terranx.exe": {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terranx.exe",
+      "bytes": 3094576,
+      "expected_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+      "actual_sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+      "hash_matches": true
+    },
+    "terran.exe": {
+      "path": "/Users/carte/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sid Meier's Alpha Centauri/terran.exe",
+      "bytes": 3201128,
+      "expected_sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced",
+      "actual_sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced",
+      "hash_matches": true
+    }
+  },
+  "bundles": [
+    {
+      "path": "analysis/port/movement-terranx-evidence-bundle.json",
+      "sha256": "dc4e52134e0a0bbb1303a0536398d1656a413b5ce1e1b4d3bdd00a462a3f36e7",
+      "target": "terranx.exe",
+      "record_count": 43,
+      "expected_record_count": 43,
+      "record_count_matches": true,
+      "unique_ids": 43,
+      "all_ids_unique": true,
+      "artifact_identity_matches": true,
+      "record_identity_failures": [],
+      "complete_payload_failures": [],
+      "exact_retained_response_matches": 43,
+      "missing_retained_responses": [],
+      "retained_response_mismatches": [],
+      "providers": [
+        {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        }
+      ]
+    },
+    {
+      "path": "analysis/port/movement-terran-evidence-bundle.json",
+      "sha256": "100e483b62ee636877843ccfd039ba570691f8da0657e693808e2ccc7bc4203a",
+      "target": "terran.exe",
+      "record_count": 9,
+      "expected_record_count": 9,
+      "record_count_matches": true,
+      "unique_ids": 9,
+      "all_ids_unique": true,
+      "artifact_identity_matches": true,
+      "record_identity_failures": [],
+      "complete_payload_failures": [],
+      "exact_retained_response_matches": 9,
+      "missing_retained_responses": [],
+      "retained_response_mismatches": [],
+      "providers": [
+        {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        }
+      ]
+    },
+    {
+      "path": "analysis/port/movement-cancel-evidence-bundle.json",
+      "sha256": "f5de23cef993d8c1ac3e287e2bdb518d8ac14844184e1c9d05d6a5fd83de1c04",
+      "target": "terranx.exe",
+      "record_count": 8,
+      "expected_record_count": 8,
+      "record_count_matches": true,
+      "unique_ids": 8,
+      "all_ids_unique": true,
+      "artifact_identity_matches": true,
+      "record_identity_failures": [],
+      "complete_payload_failures": [],
+      "exact_retained_response_matches": 8,
+      "missing_retained_responses": [],
+      "retained_response_mismatches": [],
+      "providers": [
+        {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "path": "analysis/port/movement-cancel-findings.md",
+      "sha256": "b18551d777735aac1ea8a3d3a0225a7fa16bd43635de059a4acfd8f03c0223e9",
+      "reference_count": 9,
+      "unique_reference_count": 9,
+      "all_references_resolve_once": true,
+      "target_hash_mentions": [
+        {
+          "line": 5,
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+          "matching_targets": [
+            "terranx.exe"
+          ]
+        }
+      ],
+      "broken_local_links": [],
+      "references": [
+        {
+          "line": 19,
+          "evidence_id": "ev_06dd438640e537ff6686c2b565b3df3e06d657a820b34d3d59f12a1ed6f2fb73",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "read_function_instructions",
+          "parameters": {
+            "procedure": "0x5178c0"
+          }
+        },
+        {
+          "line": 19,
+          "evidence_id": "ev_3ba9aec13fe4fbde68c632dbe84d4a6801b5fecbfd96bee9f57903929a28daea",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x5178c0"
+          }
+        },
+        {
+          "line": 21,
+          "evidence_id": "ev_57661b2350f1fc3076a124c1acb51fb628ec4e3443a48ffa893444669b616f6f",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x50ef50"
+          }
+        },
+        {
+          "line": 21,
+          "evidence_id": "ev_55ccb2968fb91bb95204a271e39ca702d0f826f3710592d7a06d2d47c129c65e",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x46d5d0"
+          }
+        },
+        {
+          "line": 29,
+          "evidence_id": "ev_41c5a06f4acea268787021b5a79d5c040abd3e001b0ea826dfea20ec0e2a49a6",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-cancel-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x511520"
+          }
+        },
+        {
+          "line": 31,
+          "evidence_id": "ev_7ce25fd708cf5bb99fb578e67969a3cb662765e183c983fd19e850a68c089515",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-cancel-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x5c1a20"
+          }
+        },
+        {
+          "line": 31,
+          "evidence_id": "ev_456a757053fb643bf391459cfafe4c4d0224b52cad938c0a72391823003c0472",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-cancel-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x5c1c40"
+          }
+        },
+        {
+          "line": 33,
+          "evidence_id": "ev_a7171b2ad977224f2ae44507a96f5db13090e05c5b8a7c92a7f43fdd2dc71b72",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-cancel-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x510f50"
+          }
+        },
+        {
+          "line": 39,
+          "evidence_id": "ev_733be95d108c3dd580af618bed9d15483b53e46db3a48d1b94b262fc2e7e8dc7",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x5171d0"
+          }
+        }
+      ]
+    },
+    {
+      "path": "analysis/port/movement-findings.md",
+      "sha256": "9b32f9e996e35dcdd2dc345b36a00ef01e5d2d498c49ebe489219cfc3b9aa7f2",
+      "reference_count": 20,
+      "unique_reference_count": 20,
+      "all_references_resolve_once": true,
+      "target_hash_mentions": [
+        {
+          "line": 9,
+          "sha256": "573fd44cf18392da7cd048e2d8c24a8e130034364f374647e34e79a6c621d6f4",
+          "matching_targets": [
+            "terranx.exe"
+          ]
+        },
+        {
+          "line": 69,
+          "sha256": "f3d10f92d2b4b5d6ce0cdef740f8af3ce90c8f97cbe7707932888c052ec79ced",
+          "matching_targets": [
+            "terran.exe"
+          ]
+        }
+      ],
+      "broken_local_links": [],
+      "references": [
+        {
+          "line": 13,
+          "evidence_id": "ev_f5b8ffde285df4ded664e55fc8a4f26c4b3ab698d167a9e16b2f18951870913a",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x46ed30"
+          }
+        },
+        {
+          "line": 14,
+          "evidence_id": "ev_22fe0e083f085068c415904aa992a658870bff0e776c38c3d40e65f8b171e48d",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x50f170"
+          }
+        },
+        {
+          "line": 15,
+          "evidence_id": "ev_ef93731bf73f16416e6d7bd809d225968fa64053afa645c50695d16997e6b0f0",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x46f000"
+          }
+        },
+        {
+          "line": 16,
+          "evidence_id": "ev_b123665c5bc1fdb452866a3783da9a9e80c1346f3868a7d19402a60d25f55897",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x467430"
+          }
+        },
+        {
+          "line": 17,
+          "evidence_id": "ev_5ffad2b673410b1c5b4ce0c1584cc63b799fc8cacff4e208787f1629865db6d1",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x46eba0"
+          }
+        },
+        {
+          "line": 17,
+          "evidence_id": "ev_55ccb2968fb91bb95204a271e39ca702d0f826f3710592d7a06d2d47c129c65e",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x46d5d0"
+          }
+        },
+        {
+          "line": 18,
+          "evidence_id": "ev_a84ca632b656fb1b99286d66fbbd0a4994653556e1f2df7dba78fedcdd05dc0c",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x4d2f00"
+          }
+        },
+        {
+          "line": 22,
+          "evidence_id": "ev_bfd9985b90b254eeb7dd1faaa3a7155e54bda28bb99daef86569fb2d37216601",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "read_function_instructions",
+          "parameters": {
+            "procedure": "0x46d5d0"
+          }
+        },
+        {
+          "line": 53,
+          "evidence_id": "ev_24551a33ac84cfdccf2ae3052a14faad0be27407c317040df3ea484b763ccdca",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x5ee190"
+          }
+        },
+        {
+          "line": 53,
+          "evidence_id": "ev_ca5e7799b4cbff8567054c5c01a841c7a5554c67de9b975c1d26b2b8d0705123",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x5ee280"
+          }
+        },
+        {
+          "line": 53,
+          "evidence_id": "ev_35154d77355d6e0f3ded955a0606f61b9888eeccb11de8d8a3603d1055ea5a46",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x5f7e90"
+          }
+        },
+        {
+          "line": 53,
+          "evidence_id": "ev_b0756a97532658ab0c6dcca6d5c4a9207b80e6dffd3a28d38876643b7ac28896",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x5f6f10"
+          }
+        },
+        {
+          "line": 65,
+          "evidence_id": "ev_3ba9aec13fe4fbde68c632dbe84d4a6801b5fecbfd96bee9f57903929a28daea",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x5178c0"
+          }
+        },
+        {
+          "line": 65,
+          "evidence_id": "ev_06dd438640e537ff6686c2b565b3df3e06d657a820b34d3d59f12a1ed6f2fb73",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "read_function_instructions",
+          "parameters": {
+            "procedure": "0x5178c0"
+          }
+        },
+        {
+          "line": 82,
+          "evidence_id": "ev_9423ca9e4350e0052daf637e0b35b73a4d6c6b2087e1cbb706a7f449b9f15650",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terran-evidence-bundle.json",
+          "target": "terran.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x5231b0"
+          }
+        },
+        {
+          "line": 82,
+          "evidence_id": "ev_3ec479c6c59180ea02d8af1a486f00399f04107f36577b2009f63c316a1935ef",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terran-evidence-bundle.json",
+          "target": "terran.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x47b790"
+          }
+        },
+        {
+          "line": 82,
+          "evidence_id": "ev_cf4c8e180a83e5dd3f7f8a6e405d82b6e0fad5b9e8f6c3c617e128525faa610f",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terran-evidence-bundle.json",
+          "target": "terran.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x522fc0"
+          }
+        },
+        {
+          "line": 82,
+          "evidence_id": "ev_90d5aa08636de2908df8b24fc0e190d663b7fbe058de208a45fc4f72a7007b5d",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terran-evidence-bundle.json",
+          "target": "terran.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x607010"
+          }
+        },
+        {
+          "line": 88,
+          "evidence_id": "ev_942b7c982ea50eb8029c85e2a91b676cf9ca983f589c6c293e5cd613f82bc825",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x463040"
+          }
+        },
+        {
+          "line": 88,
+          "evidence_id": "ev_a8e5efe96a8dd48ef025b57cfad33c94886f9c0ef80bf5968dc723f32c9afd7d",
+          "id_format_valid": true,
+          "bundle_matches": 1,
+          "bundle": "analysis/port/movement-terranx-evidence-bundle.json",
+          "target": "terranx.exe",
+          "operation": "procedure_pseudo_code",
+          "parameters": {
+            "procedure": "0x462f00"
+          }
+        }
+      ]
+    }
+  ],
+  "fingerprints": [
+    {
+      "evidence_id": "ev_ae56060593a40123a44f5a7f3fedb5605186903df2a8dabad11091c1ae1300f2",
+      "target": "terranx.exe",
+      "address": "0x46eff0",
+      "file_offset": 454640,
+      "bytes": 16,
+      "matches_original_binary": true
+    },
+    {
+      "evidence_id": "ev_0996d195cd8d35434b52ea00907c810bd9f7fe14023e13e8f5a0b057b438ed06",
+      "target": "terran.exe",
+      "address": "0x522fc0",
+      "file_offset": 1191872,
+      "bytes": 32,
+      "matches_original_binary": true
+    },
+    {
+      "evidence_id": "ev_1f3717379a3c888f75bc065adf523554db4cce567d42ec285c97ab9952eaccd6",
+      "target": "terran.exe",
+      "address": "0x5231b0",
+      "file_offset": 1192368,
+      "bytes": 32,
+      "matches_original_binary": true
+    },
+    {
+      "evidence_id": "ev_2fe6c1cafab423e3611bc56fa8c51ca1833c6fa7cc9d1cb58bbfe3587a943854",
+      "target": "terran.exe",
+      "address": "0x47b790",
+      "file_offset": 505744,
+      "bytes": 32,
+      "matches_original_binary": true
+    }
+  ],
+  "derived_pseudocode_checks": [
+    {
+      "path": "analysis/native/movement-code-key-click.c",
+      "evidence_id": "ev_3ba9aec13fe4fbde68c632dbe84d4a6801b5fecbfd96bee9f57903929a28daea",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-code-drag-reset.c",
+      "evidence_id": "ev_57661b2350f1fc3076a124c1acb51fb628ec4e3443a48ffa893444669b616f6f",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-code-map-click.c",
+      "evidence_id": "ev_55ccb2968fb91bb95204a271e39ca702d0f826f3710592d7a06d2d47c129c65e",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-cancel-set-move.c",
+      "evidence_id": "ev_41c5a06f4acea268787021b5a79d5c040abd3e001b0ea826dfea20ec0e2a49a6",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-cancel-unit-active.c",
+      "evidence_id": "ev_7ce25fd708cf5bb99fb578e67969a3cb662765e183c983fd19e850a68c089515",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-cancel-unit-dependency.c",
+      "evidence_id": "ev_456a757053fb643bf391459cfafe4c4d0224b52cad938c0a72391823003c0472",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-cancel-ready.c",
+      "evidence_id": "ev_a7171b2ad977224f2ae44507a96f5db13090e05c5b8a7c92a7f43fdd2dc71b72",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-code-unit-key-command.c",
+      "evidence_id": "ev_733be95d108c3dd580af618bed9d15483b53e46db3a48d1b94b262fc2e7e8dc7",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-code-set-modal.c",
+      "evidence_id": "ev_24551a33ac84cfdccf2ae3052a14faad0be27407c317040df3ea484b763ccdca",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-code-release-modal.c",
+      "evidence_id": "ev_ca5e7799b4cbff8567054c5c01a841c7a5554c67de9b975c1d26b2b8d0705123",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-code-window-visible.c",
+      "evidence_id": "ev_35154d77355d6e0f3ded955a0606f61b9888eeccb11de8d8a3603d1055ea5a46",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-code-mouse-hit-window.c",
+      "evidence_id": "ev_b0756a97532658ab0c6dcca6d5c4a9207b80e6dffd3a28d38876643b7ac28896",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-terran-drag-begin.c",
+      "evidence_id": "ev_9423ca9e4350e0052daf637e0b35b73a4d6c6b2087e1cbb706a7f449b9f15650",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-terran-left-down.c",
+      "evidence_id": "ev_3ec479c6c59180ea02d8af1a486f00399f04107f36577b2009f63c316a1935ef",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-terran-drag-reset.c",
+      "evidence_id": "ev_cf4c8e180a83e5dd3f7f8a6e405d82b6e0fad5b9e8f6c3c617e128525faa610f",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-terran-set-modal.c",
+      "evidence_id": "ev_90d5aa08636de2908df8b24fc0e190d663b7fbe058de208a45fc4f72a7007b5d",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-code-pixel-to-tile.c",
+      "evidence_id": "ev_942b7c982ea50eb8029c85e2a91b676cf9ca983f589c6c293e5cd613f82bc825",
+      "matches_retained_pseudocode": true
+    },
+    {
+      "path": "analysis/native/movement-code-tile-to-pixel.c",
+      "evidence_id": "ev_a8e5efe96a8dd48ef025b57cfad33c94886f9c0ef80bf5968dc723f32c9afd7d",
+      "matches_retained_pseudocode": true
+    }
+  ],
+  "provenance_checks": [
+    {
+      "path": "analysis/port/movement-provenance.json",
+      "report_sha256_matches": true
+    },
+    {
+      "path": "analysis/port/movement-cancel-provenance.json",
+      "report_sha256_matches": true
+    }
+  ],
+  "session_close_evidence": [
+    {
+      "path": "analysis/native/movement-terranx-close.json",
+      "retained_successful_close_response": true
+    },
+    {
+      "path": "analysis/native/movement-terran-close.json",
+      "retained_successful_close_response": true
+    },
+    {
+      "path": "analysis/native/movement-cancel-close.json",
+      "retained_successful_close_response": true
+    }
+  ],
+  "remaining_limitations": [
+    "This verifies evidence identity, reference integrity and retained bytes; it does not independently reproduce decompilation or prove every semantic inference.",
+    "Evidence IDs were cross-checked as retained identifiers, not recomputed with an undocumented ID algorithm or treated as digital signatures.",
+    "Static V reset ordering does not prove browser-to-Wine delivery or cancellation success; live acceptance is recorded separately by the runtime owner.",
+    "Backslash failed earlier cancellation trials; Escape opened Quit. Historical movement reports preserve those outcomes.",
+    "The proposed world-entry predicate requires runtime coverage of dialogs, base screens, menus and turn processing; unsupported or unreadable state must remain unknown.",
+    "Base-game drag machinery is identified, but its complete Move entry predicate and runtime behavior remain unvalidated.",
+    "Native route lines can use a direct-line fallback and do not establish an exhaustive legal movement range.",
+    "Inspection is scoped to the two movement findings reports and the three named bundles; unrelated analysis is not certified."
+  ]
+}

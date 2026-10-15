@@ -1,26 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alpha Centauri · Planetary Archive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Alpha Centauri</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/play.css">
+  <script>
+    // Preserve bookmarks into the former archive home.
+    function openArchiveBookmark() {
+      if (['#play', '#research', '#assets', '#evidence'].includes(location.hash)) {
+        location.replace('/library.html' + location.search + location.hash);
+      }
+    }
+    openArchiveBookmark();
+    window.addEventListener('hashchange', openArchiveBookmark);
+  </script>
 </head>
-<body>
-  <header class="topbar">
-    <a class="brand" href="#play" aria-label="Alpha Centauri home"><span class="brand-symbol">✧</span><span>ALPHA CENTAURI<small>PLANETARY ARCHIVE</small></span></a>
-    <nav aria-label="Main navigation">
-      <a href="#play" data-view="play">Play</a>
-      <a href="#research" data-view="research">Research</a>
-      <a href="#assets" data-view="assets">Assets</a>
-      <a href="#evidence" data-view="evidence">Analysis</a>
-    </nav>
-    <span class="local-status"><i></i> LOCAL INSTALLATION</span>
-  </header>
-  <main id="app" aria-live="polite"><div class="loading">Reading the planetary archive…</div></main>
-  <footer><span>SID MEIER’S ALPHA CENTAURI · PLANETARY PACK</span><span>Personal browser workspace · <a href="#evidence">Evidence &amp; coverage ↗</a></span></footer>
-  <dialog id="asset-dialog"><button class="dialog-close" aria-label="Close asset preview">×</button><div id="asset-detail"></div></dialog>
-  <script type="module" src="/app.js"></script>
+<body class="edition-picker">
+  <main class="edition-choices" aria-label="Choose game edition">
+    <a class="edition-choice" href="/play.html?edition=alpha-centauri"><img src="/game-data/images/openinga.png" alt="" width="1024" height="768"><span>Regular game</span></a>
+    <a class="edition-choice" href="/play.html?edition=alien-crossfire"><img src="/game-data/images/xopeninga.png" alt="" width="1024" height="768"><span>Expansion pack</span></a>
+  </main>
+  <p class="save-watermark">Saves stay in this browser</p>
 </body>
 </html>

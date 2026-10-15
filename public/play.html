@@ -1,25 +1,82 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Alpha Centauri · Play</title>
-<link rel="stylesheet" href="/runtime/SingleThreadedJit/boxedwine.css">
-<link rel="stylesheet" href="/play.css">
-</head><body data-game-ready="false">
-<header class="play-toolbar"><a href="/">← Library</a><strong id="edition-title">Alpha Centauri</strong><span id="session-status" role="status">Preparing the original game</span><button id="fullscreen-btn">Fullscreen</button><button id="saves-btn">Saved games</button><button id="log-btn">Log</button></header>
-<p id="play-note">Your game will appear when its menu is ready. Initial startup can take several minutes.</p>
-<div id=loading><figure id=spinner style=overflow:visible><div class=spinner style=margin-top:.5em;margin-left:auto;margin-right:auto></div></figure><div id=status class=emscripten>Downloading...</div><div class=emscripten><progress id=progress max=100 value=0></progress></div></div><div id=app><div id=controls class=emscripten><button onclick='document.getElementById("upload").click()'id=uploadbtn style=display:none>Add File(s)</button> <input id=upload type=file onclick='document.getElementById("uploadbtn").click()'multiple name=upload onchange=startWithFiles(event.target.files) style=display:none> <button onclick=buildGetFilesModal() id=downloadbtn style=display:none>Get File(s)</button> <button onclick=saveJitModules() id=savejitbtn style=display:none>Save JIT Cache</button> <a href=#openModal id=modalLink style=display:none>Open</a> <a href=#openModalExe id=modalLinkExe style=display:none>Open</a> <span id=sound-checkbox style=display:none><input id=soundToggle type=checkbox onclick=toggleSound()>Enable Sound </span><input id=pointerLock type=checkbox>Lock/hide mouse pointer <input id=showConsole type=checkbox onclick=toggleConsole() >Show console</div><div id=dropzone><div class=emscripten_border>
-<section id="boot-screen" aria-labelledby="boot-title" aria-busy="true">
-  <div class="boot-content">
-    <div class="boot-planet" aria-hidden="true"><span></span></div>
-    <p class="boot-eyebrow">A NEW WORLD AWAITS</p>
-    <h1 id="boot-title">Alpha Centauri</h1>
-    <p id="boot-stage" role="status">Preparing your game</p>
-    <p id="boot-detail">Loading your local game files.</p>
-    <div class="boot-activity" aria-hidden="true"><span></span></div>
-    <p id="boot-elapsed"></p>
-    <div class="boot-actions"><button onclick="start()" id="startbtn" style="display:none">Start game</button><button id="boot-retry" hidden>Reload player</button></div>
-    <p class="boot-footnote">Your saved games stay in this browser.</p>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Alpha Centauri</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/runtime/SingleThreadedJitInput/boxedwine.css">
+  <link rel="stylesheet" href="/play.css">
+</head>
+<body data-game-ready="false">
+  <!-- Required by the emulator shell; the player starts automatically. -->
+  <div hidden>
+    <span id="edition-title">Alpha Centauri</span>
+    <span id="session-status">Loading</span>
+    <div id="loading">
+      <figure id="spinner"><div class="spinner"></div></figure>
+      <div id="status">Loading</div>
+      <progress id="progress" max="100" value="0"></progress>
+    </div>
+    <div id="controls">
+      <button id="startbtn" onclick="start()" style="display:none">Start game</button>
+      <button id="uploadbtn" onclick="document.getElementById('upload').click()" style="display:none">Add files</button>
+      <input id="upload" type="file" multiple name="upload" onchange="startWithFiles(event.target.files)" style="display:none">
+      <button id="downloadbtn" onclick="buildGetFilesModal()" style="display:none">Get files</button>
+      <button id="savejitbtn" onclick="saveJitModules()" style="display:none">Save JIT cache</button>
+      <a href="#openModal" id="modalLink" style="display:none">Open</a>
+      <a href="#openModalExe" id="modalLinkExe" style="display:none">Open</a>
+      <span id="sound-checkbox" style="display:none"><input id="soundToggle" type="checkbox" onclick="toggleSound()">Enable sound</span>
+      <input id="pointerLock" type="checkbox">
+      <input id="showConsole" type="checkbox" onclick="toggleConsole()">
+    </div>
   </div>
-</section><canvas class=emscripten id=canvas aria-hidden="true" inert oncontextmenu=event.preventDefault()></canvas><canvas class="emscripten boxedwine-webgl-canvas"id=boxedwine-webgl-canvas-0 aria-hidden="true" inert oncontextmenu=event.preventDefault()></canvas></div></div><div id=console><textarea class=emscripten id=output rows=8 style=display:none></textarea></div><div id=openModal class=modalDialog><div><a href=#close class=close title=Close onclick=closeGetFilesModal()>X</a><div><h3>Get File(s)</h3><input id=selectedItem size=50 readonly> <button onclick=extract()>Get</button></div><div id=tree class=scroll-style></div><div><h3 id=loadStatus>Loading...</h3></div></div></div><div id=openModalExe class=modalDialog><div><a href=#close id=openModalExeClick class=close title=Close>X</a><div><h3>Execute</h3><div id=message></div><div id=items class=scroll-style></div></div></div></div></div>
-<script src="/play.js"></script>
-<script src="/game-shortcuts.js"></script>
-</body></html>
+  <main id="app">
+    <div id="dropzone">
+      <div class="emscripten_border">
+        <canvas class="emscripten" id="canvas" aria-label="Alpha Centauri game" aria-hidden="true" inert oncontextmenu="event.preventDefault()"></canvas>
+        <canvas class="emscripten boxedwine-webgl-canvas" id="boxedwine-webgl-canvas-0" aria-hidden="true" inert oncontextmenu="event.preventDefault()"></canvas>
+      </div>
+      <section id="boot-screen" aria-label="Game loading" aria-busy="true">
+        <div class="boot-content">
+          <span id="boot-title" hidden>Alpha Centauri</span>
+          <div class="loading-indicator">
+            <span class="boot-activity" aria-hidden="true"></span>
+            <p id="boot-stage" role="status">Loading</p>
+          </div>
+          <p id="boot-detail">Loading</p>
+          <span id="boot-elapsed" hidden></span>
+          <button id="boot-retry" hidden>Try again</button>
+        </div>
+      </section>
+      <details id="player-tools" class="player-tools">
+        <summary aria-label="Game tools" title="Game tools">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
+        </summary>
+        <div class="tools-panel">
+          <button id="saves-btn" type="button">Saved games</button>
+          <button id="fullscreen-btn" type="button">Fullscreen</button>
+          <button id="log-btn" type="button">Log</button>
+          <a href="/library.html">Archive</a>
+          <p id="play-note" role="status">Loading</p>
+        </div>
+      </details>
+      <button id="move-btn" hidden disabled aria-describedby="play-note">Move</button>
+      <div id="console"><textarea class="emscripten" id="output" rows="8" aria-label="Game log" style="display:none"></textarea></div>
+    </div>
+    <div id="openModal" class="modalDialog">
+      <div><a href="#close" class="close" title="Close" onclick="closeGetFilesModal()">×</a>
+        <div><h3>Get files</h3><input id="selectedItem" size="50" readonly><button onclick="extract()">Get</button></div>
+        <div id="tree" class="scroll-style"></div><h3 id="loadStatus">Loading</h3>
+      </div>
+    </div>
+    <div id="openModalExe" class="modalDialog">
+      <div><a href="#close" id="openModalExeClick" class="close" title="Close">×</a>
+        <h3>Execute</h3><div id="message"></div><div id="items" class="scroll-style"></div>
+      </div>
+    </div>
+  </main>
+  <script src="/play.js"></script>
+  <script src="/game-shortcuts.js"></script>
+</body>
+</html>
