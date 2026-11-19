@@ -1,6 +1,6 @@
 # Hosting
 
-Target: **https://games.sidmeiersalphacentauri.carterpry.com**. The Worker serves files; all game execution remains in the visitor's browser. Saves belong to that browser and origin. Saves from localhost or the previous address, **https://alphacentauriciv.carterpry.com**, can be downloaded through … → Saved games and imported on the new origin. The previous address remains available for this transfer.
+Target: **https://sidmeiersalphacentauri.games.carterpry.com**. The Worker serves files; all game execution remains in the visitor's browser. Saves belong to that browser and origin. Saves from localhost or either previous address, **https://games.sidmeiersalphacentauri.carterpry.com** and **https://alphacentauriciv.carterpry.com**, can be downloaded through … → Saved games and imported on the new origin. Both previous addresses remain available for this transfer.
 
 The generated site uses Workers Static Assets for the interface, artwork, runtime and archive. The two large ZIPs use a private R2 bucket. `prepare_deploy.py` splits them into content-addressed 64 MiB objects, below Wrangler's upload limit. The Worker presents each as the original contiguous file, supports HEAD, byte ranges, ETag validation and bounded streaming. No original bytes are changed. Cloudflare's [static asset limit](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/) is 25 MiB per file; the [R2 binding](https://developers.cloudflare.com/r2/api/workers/workers-api-reference/) supplies range streams.
 

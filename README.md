@@ -6,7 +6,7 @@ The target is the **full installed Planetary Pack**, including its mechanics and
 
 ## Play online
 
-Open **https://games.sidmeiersalphacentauri.carterpry.com**. Choose either cover to start loading. The complete runtime/game download is about 603 MB before native initialization. No CrossOver, Steam or installed game is required on the visiting computer. Saves stay in that browser and origin; use **… → Saved games** to transfer a save from localhost or the [previous address](https://alphacentauriciv.carterpry.com).
+Open **https://sidmeiersalphacentauri.games.carterpry.com**. Choose either cover to start loading. The complete runtime/game download is about 603 MB before native initialization. No CrossOver, Steam or installed game is required on the visiting computer. Saves stay in that browser and origin; use **… → Saved games** to transfer a save from localhost, the [previous address](https://games.sidmeiersalphacentauri.carterpry.com), or the [original address](https://alphacentauriciv.carterpry.com).
 
 ## Open locally
 
