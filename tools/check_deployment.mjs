@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-const base=process.argv[2]||'https://alphacentauriciv.carterpry.com';
+const base=process.argv[2]||'https://games.sidmeiersalphacentauri.carterpry.com';
 const out=process.argv[3]||'analysis/deployment';
 const records=[];
 async function check(path,options={}){

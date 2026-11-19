@@ -1,6 +1,6 @@
 # Hosting
 
-Target: **https://alphacentauriciv.carterpry.com**. The Worker serves files; all game execution remains in the visitor's browser. Saves belong to that browser and origin. Localhost saves can be downloaded through … → Saved games and imported on the hosted origin.
+Target: **https://games.sidmeiersalphacentauri.carterpry.com**. The Worker serves files; all game execution remains in the visitor's browser. Saves belong to that browser and origin. Saves from localhost or the previous address, **https://alphacentauriciv.carterpry.com**, can be downloaded through … → Saved games and imported on the new origin. The previous address remains available for this transfer.
 
 The generated site uses Workers Static Assets for the interface, artwork, runtime and archive. The two large ZIPs use a private R2 bucket. `prepare_deploy.py` splits them into content-addressed 64 MiB objects, below Wrangler's upload limit. The Worker presents each as the original contiguous file, supports HEAD, byte ranges, ETag validation and bounded streaming. No original bytes are changed. Cloudflare's [static asset limit](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/) is 25 MiB per file; the [R2 binding](https://developers.cloudflare.com/r2/api/workers/workers-api-reference/) supplies range streams.
 
@@ -23,4 +23,4 @@ env -u CLOUDFLARE_API_TOKEN -u CLOUDFLARE_ACCOUNT_ID npx --yes wrangler@4.151.0 
 
 The deployed default is SingleThreadedJitInput; the prior Fast fallback is also staged. Earlier diagnostic engines/legacy Wine are local-only. The worker's custom domain is managed by `wrangler.jsonc`; workers.dev and preview URLs are disabled.
 
-Verified live: both editions reach their original menus after clicking their cover. Eleven static resources and both complete ZIP downloads match local bytes; every archive chunk boundary, suffix/end range, ETag and HEAD behavior was checked. The archive passes all six browser flows on HTTPS. See [deployment evidence](../analysis/deployment/deployment.json). Native game initialization is still substantial; the 504 MB game archive may be downloaded again when the browser does not cache such a large response.
+Verified on the original hostname: both editions reached their original menus after clicking their cover. Eleven static resources and both complete ZIP downloads matched local bytes; every archive chunk boundary, suffix/end range, ETag and HEAD behavior was checked. The archive passed all six browser flows on HTTPS. See [deployment evidence](../analysis/deployment/deployment.json). Native game initialization is still substantial; the 504 MB game archive may be downloaded again when the browser does not cache such a large response.
